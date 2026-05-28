@@ -324,6 +324,35 @@ button.chip {
   background: rgba(255, 118, 64, 0.36);
 }
 
+.preset-scroll-box {
+  position: relative;
+  display: grid;
+  min-width: 0;
+  gap: 2px;
+}
+
+.preset-scroll-box::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 56px;
+  height: 42px;
+  border-radius: 0 var(--radius-control) var(--radius-control) 0;
+  background: linear-gradient(90deg, rgba(255, 253, 248, 0), rgba(255, 253, 248, 0.94) 72%);
+  content: "";
+  pointer-events: none;
+}
+
+.scroll-cue {
+  justify-self: end;
+  padding-right: 4px;
+  color: var(--muted);
+  font-size: 0.72rem;
+  font-weight: 850;
+  line-height: 1;
+  white-space: nowrap;
+}
+
 .preset-chip {
   display: inline-flex;
   min-height: 36px;

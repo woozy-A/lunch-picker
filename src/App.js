@@ -1253,21 +1253,26 @@
                 <span className="state-count">{menus.length}개 메뉴</span>
               </div>
               <h2>{hasFilters ? "입맛 적용 중" : "입맛 세팅"}</h2>
-              <div className={`chip-row ${hasFilters ? "selected-chip-row" : "preset-row"}`}>
-                {activeLabels.length ? (
-                  activeLabels.map((label) => (
+              {activeLabels.length ? (
+                <div className="chip-row selected-chip-row">
+                  {activeLabels.map((label) => (
                     <span className="chip is-active" key={label}>
                       {label}
                     </span>
-                  ))
-                ) : (
-                  presetOptions.map((preset) => (
-                    <button className="preset-chip" type="button" key={preset.id} onClick={() => applyPreset(preset)}>
-                      {preset.question}
-                    </button>
-                  ))
-                )}
-              </div>
+                  ))}
+                </div>
+              ) : (
+                <div className="preset-scroll-box">
+                  <div className="chip-row preset-row" aria-label="추천 프리셋. 옆으로 밀어 더 볼 수 있습니다.">
+                    {presetOptions.map((preset) => (
+                      <button className="preset-chip" type="button" key={preset.id} onClick={() => applyPreset(preset)}>
+                        {preset.question}
+                      </button>
+                    ))}
+                  </div>
+                  <span className="scroll-cue" aria-hidden="true">옆으로 밀어 더 보기 →</span>
+                </div>
+              )}
             </div>
             <div className="state-panel">
               <div className="state-actions">

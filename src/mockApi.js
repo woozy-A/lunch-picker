@@ -140,7 +140,19 @@
 
   function getLunchHistory() {
     try {
-      return JSON.parse(global.localStorage.getItem(HISTORY_KEY)) || [];
+      const rawHistory = JSON.parse(global.localStorage.getItem(HISTORY_KEY)) || [];
+      const latestByDate = new Map();
+      rawHistory
+        .filter((record) => record?.date)
+        .sort((a, b) => new Date(b.decidedAt || 0) - new Date(a.decidedAt || 0))
+        .forEach((record) => {
+          if (!latestByDate.has(record.date)) latestByDate.set(record.date, record);
+        });
+      const normalizedHistory = [...latestByDate.values()];
+      if (normalizedHistory.length !== rawHistory.length) {
+        global.localStorage.setItem(HISTORY_KEY, JSON.stringify(normalizedHistory));
+      }
+      return normalizedHistory;
     } catch (error) {
       return [];
     }
@@ -185,13 +197,14 @@
   function saveLunchDecision(menu, context = {}) {
     const history = getLunchHistory();
     const profile = context.profile || getProfile();
-    const todayKey = getLocalDateKey();
+    const dateKey = context.date || getLocalDateKey();
     const location = context.location || profile?.location || null;
+    const previousRecord = history.find((record) => record.date === dateKey);
     const nextRecord = {
-      id: `${todayKey}-${menu.id}-${Date.now()}`,
+      id: previousRecord?.id || `${dateKey}-${menu.id}-${Date.now()}`,
       anonymousId: profile?.anonymousId || "",
       nickname: profile?.nickname || "",
-      regionName: "",
+      regionName: context.regionName || "",
       locationLabel: location ? profile?.locationLabel || context.locationLabel || "현재 위치" : "",
       location: location
         ? {
@@ -208,9 +221,10 @@
       moodLabels: context.moodLabels || [],
       budgetMode: context.budgetMode || "상관없음",
       decidedAt: new Date().toISOString(),
-      date: todayKey,
+      date: dateKey,
+      source: context.source || "decision",
     };
-    const nextHistory = [nextRecord, ...history].slice(0, 120);
+    const nextHistory = [nextRecord, ...history.filter((record) => record.date !== dateKey)].slice(0, 120);
     global.localStorage.setItem(HISTORY_KEY, JSON.stringify(nextHistory));
     saveLocalStat(nextRecord);
     return nextRecord;

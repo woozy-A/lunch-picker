@@ -23,8 +23,25 @@
     { key: "rainy", label: "비 오는 날" },
   ];
 
-  const QUICK_STATE_MOOD_KEYS = ["spicy", "comfort", "noTime", "hangover", "diet"];
   const STRONG_MOOD_KEYS = ["spicy", "soup", "hangover", "noTime", "diet"];
+  const PRESET_OPTIONS = [
+    { id: "preset-spicy", question: "매운 게 땡기세요?", filters: { ...DEFAULT_FILTERS, moods: ["spicy"] } },
+    { id: "preset-hangover", question: "어제 과음하셨나요?", filters: { ...DEFAULT_FILTERS, moods: ["hangover", "soup"] } },
+    { id: "preset-diet", question: "다이어트 중이세요?", filters: { ...DEFAULT_FILTERS, moods: ["diet"] } },
+    { id: "preset-rain", question: "비 오면 국물이죠?", filters: { ...DEFAULT_FILTERS, moods: ["rainy", "soup"] } },
+    { id: "preset-meeting", question: "회의 전이라 깔끔하게?", filters: { ...DEFAULT_FILTERS, moods: ["meeting", "comfort"] } },
+    { id: "preset-team", question: "팀원 반대 없는 걸로?", filters: { ...DEFAULT_FILTERS, moods: ["team", "safe"] } },
+    { id: "preset-solo", question: "혼자 빨리 먹을까요?", filters: { ...DEFAULT_FILTERS, moods: ["solo", "noTime"] } },
+    { id: "preset-payday", question: "월급날 느낌 낼까요?", filters: { ...DEFAULT_FILTERS, budget: "월급날" } },
+    { id: "preset-broke", question: "월급 전 방어전인가요?", filters: { ...DEFAULT_FILTERS, budget: "월급 전" } },
+    { id: "preset-company-card", question: "법카 찬스인가요?", filters: { ...DEFAULT_FILTERS, budget: "법카" } },
+    { id: "preset-chinese", question: "중식 한 방 갈까요?", filters: { ...DEFAULT_FILTERS, categories: ["중식"] } },
+    { id: "preset-korean", question: "든든한 한식으로?", filters: { ...DEFAULT_FILTERS, categories: ["한식"], moods: ["safe"] } },
+    { id: "preset-asian", question: "동남아 기분 낼까요?", filters: { ...DEFAULT_FILTERS, categories: ["아시안"] } },
+    { id: "preset-comfort", question: "속 편한 걸로 갈까요?", filters: { ...DEFAULT_FILTERS, moods: ["comfort"] } },
+    { id: "preset-sleepy", question: "입맛 좀 깨워볼까요?", filters: { ...DEFAULT_FILTERS, moods: ["sleepy"] } },
+    { id: "preset-bunsik", question: "분식으로 스트레스 풀까요?", filters: { ...DEFAULT_FILTERS, categories: ["분식"], moods: ["spicy"] } },
+  ];
   const LOCATION_ANCHORS = [
     { name: "여의도", latitude: 37.5219, longitude: 126.9246 },
     { name: "강남역", latitude: 37.4979, longitude: 127.0276 },
@@ -306,10 +323,9 @@
       .filter(Boolean);
   }
 
-  function buildHistoryCalendar(history = []) {
-    const today = new Date();
-    const year = today.getFullYear();
-    const month = today.getMonth();
+  function buildHistoryCalendar(history = [], cursorDate = new Date()) {
+    const year = cursorDate.getFullYear();
+    const month = cursorDate.getMonth();
     const firstDay = new Date(year, month, 1);
     const lastDay = new Date(year, month + 1, 0);
     const recordsByDate = new Map();
@@ -335,8 +351,42 @@
 
     return {
       title: `${year}년 ${month + 1}월`,
+      year,
+      month,
       cells,
     };
+  }
+
+  function shiftMonth(date, offset) {
+    return new Date(date.getFullYear(), date.getMonth() + offset, 1);
+  }
+
+  function formatDateKey(dateKey) {
+    const date = parseDateKey(dateKey);
+    if (!date) return "날짜 선택";
+    return new Intl.DateTimeFormat("ko-KR", {
+      month: "long",
+      day: "numeric",
+      weekday: "short",
+    }).format(date);
+  }
+
+  function getPresetOptions(limit = 6) {
+    return [...PRESET_OPTIONS].sort(() => Math.random() - 0.5).slice(0, limit);
+  }
+
+  function cloneFilters(filters = DEFAULT_FILTERS) {
+    return {
+      categories: [...(filters.categories || [])],
+      moods: [...(filters.moods || [])],
+      budget: filters.budget || "상관없음",
+    };
+  }
+
+  function escapeCsv(value) {
+    const text = value == null ? "" : String(value);
+    if (/[",\n]/.test(text)) return `"${text.replace(/"/g, '""')}"`;
+    return text;
   }
 
   function getMoodLabel(key) {
@@ -780,6 +830,9 @@
     const [isFindingNearby, setIsFindingNearby] = React.useState(false);
     const [isLoading, setIsLoading] = React.useState(true);
     const [error, setError] = React.useState("");
+    const [calendarCursor, setCalendarCursor] = React.useState(() => new Date());
+    const [selectedCalendarDate, setSelectedCalendarDate] = React.useState(() => getDateKey());
+    const [manualMenuName, setManualMenuName] = React.useState("");
     const rollTimerRef = React.useRef(null);
     const rollEndTimerRef = React.useRef(null);
 
@@ -790,11 +843,16 @@
     const activeLabels = React.useMemo(() => getActiveLabels(filters), [filters]);
     const hasFilters = React.useMemo(() => hasActiveFilters(filters), [filters]);
     const recentAvoidRecords = React.useMemo(() => getRecentAvoidRecords(history), [history]);
-    const historyCalendar = React.useMemo(() => buildHistoryCalendar(history), [history]);
-    const quickMoodOptions = React.useMemo(
-      () => QUICK_STATE_MOOD_KEYS.map((key) => MOOD_OPTIONS.find((mood) => mood.key === key)).filter(Boolean),
-      [],
+    const historyCalendar = React.useMemo(() => buildHistoryCalendar(history, calendarCursor), [history, calendarCursor]);
+    const presetOptions = React.useMemo(() => getPresetOptions(6), []);
+    const selectedCalendarRecords = React.useMemo(
+      () =>
+        history
+          .filter((record) => getRecordDateKey(record) === selectedCalendarDate)
+          .sort((a, b) => new Date(b.decidedAt || 0) - new Date(a.decidedAt || 0)),
+      [history, selectedCalendarDate],
     );
+    const menuNameOptions = React.useMemo(() => [...new Set(menus.map((menu) => menu.name))].sort((a, b) => a.localeCompare(b, "ko-KR")), [menus]);
     const selectedFeedback = selectedMenu ? app.api.getFeedback(selectedMenu.id) : { verdict: "" };
     const profileName = profile?.nickname || "익명 미식가";
     const profileLocationLabel = getProfileLocationLabel(profile);
@@ -950,8 +1008,94 @@
       window.setTimeout(() => recommend(getCandidateMenus(menus, DEFAULT_FILTERS), { ignoreCurrent: true, ignoreSkipped: true, filters: DEFAULT_FILTERS }), 0);
     }
 
-    function applyQuickMood(moodKey) {
-      applyFiltersAndRecommend({ ...DEFAULT_FILTERS, moods: [moodKey] });
+    function applyPreset(preset) {
+      applyFiltersAndRecommend(cloneFilters(preset.filters));
+    }
+
+    function selectCalendarDate(dateKey) {
+      const records = history.filter((record) => getRecordDateKey(record) === dateKey);
+      const date = parseDateKey(dateKey);
+      if (date) setCalendarCursor(new Date(date.getFullYear(), date.getMonth(), 1));
+      setSelectedCalendarDate(dateKey);
+      setManualMenuName(records[0]?.name || "");
+    }
+
+    function findMenuByName(name) {
+      const trimmedName = name.trim();
+      if (!trimmedName) return null;
+      return (
+        menus.find((menu) => menu.name === trimmedName) ||
+        menus.find((menu) => menu.searchName === trimmedName) ||
+        menus.find((menu) => menu.name.includes(trimmedName) || trimmedName.includes(menu.name)) ||
+        null
+      );
+    }
+
+    function saveManualHistory() {
+      const trimmedName = manualMenuName.trim();
+      if (!trimmedName) {
+        setToast("기록할 메뉴 이름을 입력해주세요.");
+        return;
+      }
+
+      const matchedMenu = findMenuByName(trimmedName);
+      const manualMenu = matchedMenu || {
+        id: `manual-${trimmedName.replace(/\s+/g, "-")}`,
+        name: trimmedName,
+        category: "직접 입력",
+      };
+
+      app.api.saveLunchDecision?.(manualMenu, {
+        profile,
+        selectedCategories: matchedMenu ? [matchedMenu.category] : [],
+        selectedMoods: [],
+        moodLabels: ["수동 기록"],
+        budgetMode: "직접 추가",
+        regionName: profileLocationLabel,
+        locationLabel: profileLocationLabel,
+        location: profile?.location || null,
+        date: selectedCalendarDate,
+        source: "manual",
+      });
+
+      refreshHistory();
+      setManualMenuName("");
+      setFeedbackVersion((version) => version + 1);
+      setToast(`${formatDateKey(selectedCalendarDate)} 점심 기록을 저장했습니다.`);
+    }
+
+    function exportHistoryCsv() {
+      if (!history.length) {
+        setToast("내보낼 점심 기록이 아직 없습니다.");
+        return;
+      }
+
+      const rows = [
+        ["date", "menu", "category", "budget", "moods", "location", "decidedAt", "source"],
+        ...[...history]
+          .sort((a, b) => getRecordDateKey(a).localeCompare(getRecordDateKey(b)) || (a.decidedAt || "").localeCompare(b.decidedAt || ""))
+          .map((record) => [
+            getRecordDateKey(record),
+            record.name,
+            record.category,
+            record.budgetMode,
+            (record.moodLabels || []).join(" / "),
+            record.locationLabel || record.regionName || "",
+            record.decidedAt || "",
+            record.source || "decision",
+          ]),
+      ];
+      const csv = rows.map((row) => row.map(escapeCsv).join(",")).join("\n");
+      const blob = new Blob(["\uFEFF", csv], { type: "text/csv;charset=utf-8" });
+      const url = URL.createObjectURL(blob);
+      const link = document.createElement("a");
+      link.href = url;
+      link.download = `babpick-lunch-history-${getDateKey()}.csv`;
+      document.body.appendChild(link);
+      link.click();
+      link.remove();
+      URL.revokeObjectURL(url);
+      setToast("점심 기록 CSV를 내보냈습니다.");
     }
 
     function pickSpecificMenu(menu) {
@@ -1109,7 +1253,7 @@
                 <span className="state-count">{menus.length}개 메뉴</span>
               </div>
               <h2>{hasFilters ? "입맛 적용 중" : "입맛 세팅"}</h2>
-              <div className="chip-row">
+              <div className={`chip-row ${hasFilters ? "selected-chip-row" : "preset-row"}`}>
                 {activeLabels.length ? (
                   activeLabels.map((label) => (
                     <span className="chip is-active" key={label}>
@@ -1117,14 +1261,11 @@
                     </span>
                   ))
                 ) : (
-                  <React.Fragment>
-                    <span className="chip">아무거나</span>
-                    {quickMoodOptions.map((option) => (
-                      <button className="chip state-suggestion" type="button" key={option.key} onClick={() => applyQuickMood(option.key)}>
-                        {option.label}
-                      </button>
-                    ))}
-                  </React.Fragment>
+                  presetOptions.map((preset) => (
+                    <button className="preset-chip" type="button" key={preset.id} onClick={() => applyPreset(preset)}>
+                      {preset.question}
+                    </button>
+                  ))
                 )}
               </div>
             </div>
@@ -1219,80 +1360,104 @@
                 <h2>점심 기록</h2>
                 <p className="muted small">최근 2일은 추천에서 피합니다.</p>
               </div>
+              <button className="btn btn-ghost btn-small" type="button" onClick={exportHistoryCsv}>
+                CSV 내보내기
+              </button>
             </div>
 
-            {history.length ? (
-              <React.Fragment>
-                <section className="recent-avoid">
-                  <h3>최근 피하기</h3>
-                  {recentAvoidRecords.length ? (
-                    <ol className="popular-list history-list">
-                      {recentAvoidRecords.map((record) => {
-                        const savedMenu = menus.find((menu) => menu.id === record.menuId || menu.name === record.name);
-                        return (
-                          <li className="popular-item" key={record.id}>
-                            <span className="rank history-date">{getHistoryOffsetLabel(record)}</span>
-                            <button
-                              className="popular-name"
-                              type="button"
-                              onClick={() => {
-                                if (savedMenu) pickSpecificMenu(savedMenu);
-                              }}
-                              disabled={!savedMenu}
-                            >
-                              {record.name}
-                            </button>
-                            <span className="popular-vibe">{record.category || formatHistoryTime(record)}</span>
-                          </li>
-                        );
-                      })}
-                    </ol>
-                  ) : (
-                    <p className="muted small">어제와 그제 기록이 아직 없습니다.</p>
-                  )}
-                </section>
+            <section className="recent-avoid">
+              <h3>최근 피하기</h3>
+              {recentAvoidRecords.length ? (
+                <ol className="popular-list history-list">
+                  {recentAvoidRecords.map((record) => (
+                    <li className="popular-item" key={record.id}>
+                      <span className="rank history-date">{getHistoryOffsetLabel(record)}</span>
+                      <button className="popular-name" type="button" onClick={() => selectCalendarDate(getRecordDateKey(record))}>
+                        {record.name}
+                      </button>
+                      <span className="popular-vibe">{record.category || formatHistoryTime(record)}</span>
+                    </li>
+                  ))}
+                </ol>
+              ) : (
+                <p className="muted small">어제와 그제 기록이 아직 없습니다.</p>
+              )}
+            </section>
 
-                <section className="history-calendar" aria-label={`${historyCalendar.title} 점심 캘린더`}>
-                  <div className="calendar-head">
-                    <h3>{historyCalendar.title}</h3>
-                    <span className="muted small">{profileName}</span>
-                  </div>
-                  <div className="calendar-weekdays" aria-hidden="true">
-                    {["일", "월", "화", "수", "목", "금", "토"].map((day) => (
-                      <span key={day}>{day}</span>
-                    ))}
-                  </div>
-                  <div className="calendar-grid">
-                    {historyCalendar.cells.map((cell, index) => {
-                      if (!cell) return <span className="calendar-cell is-empty" key={`empty-${index}`} />;
-                      const firstRecord = cell.records[0];
-                      const savedMenu = firstRecord ? menus.find((menu) => menu.id === firstRecord.menuId || menu.name === firstRecord.name) : null;
-                      return (
-                        <button
-                          className={`calendar-cell ${cell.records.length ? "has-record" : ""} ${cell.isToday ? "is-today" : ""}`}
-                          type="button"
-                          key={cell.dateKey}
-                          onClick={() => {
-                            if (savedMenu) pickSpecificMenu(savedMenu);
-                          }}
-                          disabled={!savedMenu}
-                          aria-label={firstRecord ? `${cell.day}일 ${firstRecord.name}` : `${cell.day}일 기록 없음`}
-                        >
-                          <span className="calendar-day">{cell.day}</span>
-                          {firstRecord && <span className="calendar-menu">{firstRecord.name}</span>}
-                          {cell.records.length > 1 && <span className="calendar-more">+{cell.records.length - 1}</span>}
-                        </button>
-                      );
-                    })}
-                  </div>
-                </section>
-              </React.Fragment>
-            ) : (
-              <div className="history-empty">
-                <strong>아직 기록이 없습니다</strong>
-                <p className="muted small">결정하면 오늘 메뉴가 여기 쌓입니다.</p>
+            <section className="history-calendar" aria-label={`${historyCalendar.title} 점심 캘린더`}>
+              <div className="calendar-head">
+                <button className="calendar-nav" type="button" onClick={() => setCalendarCursor((date) => shiftMonth(date, -1))} aria-label="이전 달">
+                  ‹
+                </button>
+                <h3>{historyCalendar.title}</h3>
+                <button className="calendar-nav" type="button" onClick={() => setCalendarCursor((date) => shiftMonth(date, 1))} aria-label="다음 달">
+                  ›
+                </button>
               </div>
-            )}
+              <div className="calendar-weekdays" aria-hidden="true">
+                {["일", "월", "화", "수", "목", "금", "토"].map((day) => (
+                  <span key={day}>{day}</span>
+                ))}
+              </div>
+              <div className="calendar-grid">
+                {historyCalendar.cells.map((cell, index) => {
+                  if (!cell) return <span className="calendar-cell is-empty" key={`empty-${index}`} />;
+                  const firstRecord = cell.records[0];
+                  return (
+                    <button
+                      className={`calendar-cell ${cell.records.length ? "has-record" : ""} ${cell.isToday ? "is-today" : ""} ${cell.dateKey === selectedCalendarDate ? "is-selected" : ""}`}
+                      type="button"
+                      key={cell.dateKey}
+                      onClick={() => selectCalendarDate(cell.dateKey)}
+                      aria-label={firstRecord ? `${cell.day}일 ${firstRecord.name}` : `${cell.day}일 기록 없음`}
+                    >
+                      <span className="calendar-day">{cell.day}</span>
+                      {firstRecord && <span className="calendar-menu">{firstRecord.name}</span>}
+                      {cell.records.length > 1 && <span className="calendar-more">+{cell.records.length - 1}</span>}
+                    </button>
+                  );
+                })}
+              </div>
+            </section>
+
+            <section className="calendar-detail" aria-label="선택한 날짜 점심 기록">
+              <div className="calendar-detail-head">
+                <strong>{formatDateKey(selectedCalendarDate)}</strong>
+                <span className="muted small">{selectedCalendarRecords.length ? "기록 있음" : "비어 있음"}</span>
+              </div>
+              {selectedCalendarRecords.length ? (
+                <div className="calendar-record-list">
+                  {selectedCalendarRecords.map((record) => (
+                    <div className="calendar-record" key={record.id}>
+                      <span>{record.name}</span>
+                      <small>{record.category || formatHistoryTime(record)}</small>
+                    </div>
+                  ))}
+                </div>
+              ) : (
+                <p className="muted small">이 날짜는 비어 있습니다. 기억나는 메뉴를 직접 넣어두면 캘린더가 채워집니다.</p>
+              )}
+              <div className="manual-record-row">
+                <input
+                  type="text"
+                  list="menu-name-options"
+                  value={manualMenuName}
+                  placeholder="예: 김치찌개"
+                  onChange={(event) => setManualMenuName(event.target.value)}
+                  onKeyDown={(event) => {
+                    if (event.key === "Enter") saveManualHistory();
+                  }}
+                />
+                <button className="btn btn-primary" type="button" onClick={saveManualHistory}>
+                  {selectedCalendarRecords.length ? "수정" : "추가"}
+                </button>
+              </div>
+              <datalist id="menu-name-options">
+                {menuNameOptions.map((menuName) => (
+                  <option value={menuName} key={menuName} />
+                ))}
+              </datalist>
+            </section>
           </aside>
         </div>
 

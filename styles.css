@@ -209,6 +209,7 @@ figure {
 .state-copy {
   display: grid;
   min-width: 0;
+  overflow: hidden;
   gap: 8px;
 }
 
@@ -300,7 +301,27 @@ button.chip {
 }
 
 .preset-row {
+  max-width: 100%;
+  overscroll-behavior-inline: contain;
   padding-top: 2px;
+  padding-bottom: 8px;
+  scrollbar-color: rgba(255, 118, 64, 0.38) transparent;
+  scrollbar-width: thin;
+}
+
+.chip-row.preset-row::-webkit-scrollbar {
+  display: block;
+  height: 7px;
+}
+
+.chip-row.preset-row::-webkit-scrollbar-track {
+  border-radius: var(--radius-control);
+  background: rgba(40, 33, 24, 0.06);
+}
+
+.chip-row.preset-row::-webkit-scrollbar-thumb {
+  border-radius: var(--radius-control);
+  background: rgba(255, 118, 64, 0.36);
 }
 
 .preset-chip {
@@ -394,6 +415,10 @@ button.chip {
   min-height: 36px;
   padding: 8px 12px;
   font-size: 0.82rem;
+}
+
+.download-action {
+  white-space: nowrap;
 }
 
 .btn:disabled,

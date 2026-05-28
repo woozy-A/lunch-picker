@@ -1095,7 +1095,7 @@
       link.click();
       link.remove();
       URL.revokeObjectURL(url);
-      setToast("점심 기록 CSV를 내보냈습니다.");
+      setToast("점심 기록 파일을 내려받았습니다.");
     }
 
     function pickSpecificMenu(menu) {
@@ -1360,8 +1360,8 @@
                 <h2>점심 기록</h2>
                 <p className="muted small">최근 2일은 추천에서 피합니다.</p>
               </div>
-              <button className="btn btn-ghost btn-small" type="button" onClick={exportHistoryCsv}>
-                CSV 내보내기
+              <button className="btn btn-ghost btn-small download-action" type="button" onClick={exportHistoryCsv} aria-label="점심 기록 파일 내려받기">
+                기록 내려받기
               </button>
             </div>
 
@@ -1435,14 +1435,15 @@
                   ))}
                 </div>
               ) : (
-                <p className="muted small">이 날짜는 비어 있습니다. 기억나는 메뉴를 직접 넣어두면 캘린더가 채워집니다.</p>
+                <p className="muted small">먹었던 음식을 적어두면 점심 캘린더를 쉽게 관리할 수 있어요.</p>
               )}
               <div className="manual-record-row">
                 <input
                   type="text"
                   list="menu-name-options"
                   value={manualMenuName}
-                  placeholder="예: 김치찌개"
+                  aria-label={selectedCalendarRecords.length ? "다른 메뉴를 드셨다면 메뉴 이름을 고쳐주세요" : "먹었던 메뉴 이름을 적어주세요"}
+                  placeholder={selectedCalendarRecords.length ? "다른 걸 드셨으면 고쳐주세요" : "먹었던 메뉴 이름을 적어주세요"}
                   onChange={(event) => setManualMenuName(event.target.value)}
                   onKeyDown={(event) => {
                     if (event.key === "Enter") saveManualHistory();

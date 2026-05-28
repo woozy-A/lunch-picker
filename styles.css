@@ -13,9 +13,14 @@
   --primary: #226f61;
   --primary-strong: #15584c;
   --primary-soft: #e3f2ea;
+  --brand-deep: #143b34;
+  --brand-night: #102f2a;
+  --brand-ink: #172b27;
   --accent: #ff7640;
   --accent-strong: #e45721;
   --accent-soft: #fff0e8;
+  --green-soft: #edf6ef;
+  --green-line: rgba(34, 111, 97, 0.22);
   --blue-soft: #e9f2ff;
   --yellow-soft: #fff3b8;
   --shadow: 0 22px 64px rgba(45, 37, 27, 0.16);
@@ -38,7 +43,7 @@ body {
   background:
     linear-gradient(180deg, rgba(255, 253, 248, 0.76) 0%, rgba(246, 241, 232, 0.98) 320px),
     linear-gradient(115deg, rgba(34, 111, 97, 0.14) 0%, rgba(34, 111, 97, 0) 38%),
-    linear-gradient(245deg, rgba(255, 118, 64, 0.12) 0%, rgba(255, 118, 64, 0) 42%),
+    linear-gradient(245deg, rgba(255, 118, 64, 0.05) 0%, rgba(255, 118, 64, 0) 42%),
     var(--bg);
   color: var(--ink);
   font-family:
@@ -105,7 +110,7 @@ figure {
   height: 44px;
   place-items: center;
   border-radius: var(--radius-card);
-  background: var(--ink);
+  background: var(--brand-deep);
   color: #fff;
   font-weight: 950;
   box-shadow: 0 10px 24px rgba(23, 21, 18, 0.18);
@@ -193,10 +198,11 @@ figure {
   display: grid;
   grid-column: 1;
   grid-template-columns: minmax(0, 1fr) auto;
-  gap: 14px;
+  gap: 12px;
   align-items: center;
-  padding: 14px 16px;
-  background: rgba(255, 253, 248, 0.94);
+  padding: 12px 14px;
+  background: rgba(255, 253, 248, 0.78);
+  box-shadow: 0 14px 34px rgba(45, 37, 27, 0.08);
 }
 
 .state-guide.is-active {
@@ -210,7 +216,7 @@ figure {
   display: grid;
   min-width: 0;
   overflow: hidden;
-  gap: 8px;
+  gap: 6px;
 }
 
 .state-heading {
@@ -222,11 +228,11 @@ figure {
 
 .state-eyebrow {
   width: fit-content;
-  padding: 5px 9px;
+  padding: 4px 8px;
   border-radius: var(--radius-control);
-  background: var(--accent-soft);
-  color: var(--accent-strong);
-  font-size: 0.78rem;
+  background: var(--green-soft);
+  color: var(--primary-strong);
+  font-size: 0.74rem;
   font-weight: 950;
 }
 
@@ -234,18 +240,18 @@ figure {
   display: inline-flex;
   min-height: 26px;
   align-items: center;
-  padding: 5px 9px;
+  padding: 4px 8px;
   border: 1px solid var(--line);
   border-radius: var(--radius-control);
   background: #fff;
   color: var(--muted);
-  font-size: 0.78rem;
+  font-size: 0.74rem;
   font-weight: 900;
 }
 
 .state-guide h2 {
   max-width: 560px;
-  font-size: clamp(1.25rem, 2.2vw, 1.72rem);
+  font-size: clamp(1.1rem, 1.7vw, 1.42rem);
   line-height: 1.12;
   letter-spacing: 0;
 }
@@ -257,7 +263,7 @@ figure {
 
 .state-panel {
   display: grid;
-  min-width: 230px;
+  min-width: 214px;
   gap: 8px;
 }
 
@@ -265,6 +271,10 @@ figure {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 8px;
+}
+
+.state-actions .btn {
+  min-height: 40px;
 }
 
 .chip-row {
@@ -304,8 +314,8 @@ button.chip {
   max-width: 100%;
   overscroll-behavior-inline: contain;
   padding-top: 2px;
-  padding-bottom: 8px;
-  scrollbar-color: rgba(255, 118, 64, 0.38) transparent;
+  padding-bottom: 6px;
+  scrollbar-color: rgba(34, 111, 97, 0.32) transparent;
   scrollbar-width: thin;
 }
 
@@ -321,7 +331,7 @@ button.chip {
 
 .chip-row.preset-row::-webkit-scrollbar-thumb {
   border-radius: var(--radius-control);
-  background: rgba(255, 118, 64, 0.36);
+  background: rgba(34, 111, 97, 0.32);
 }
 
 .preset-scroll-box {
@@ -346,27 +356,31 @@ button.chip {
 .scroll-cue {
   justify-self: end;
   padding-right: 4px;
-  color: var(--muted);
-  font-size: 0.72rem;
+  color: var(--primary-strong);
+  font-size: 0.7rem;
   font-weight: 850;
   line-height: 1;
   white-space: nowrap;
 }
 
+.cue-mobile {
+  display: none;
+}
+
 .preset-chip {
   display: inline-flex;
-  min-height: 36px;
+  min-height: 32px;
   align-items: center;
   justify-content: center;
-  padding: 8px 12px;
-  border: 1px solid rgba(255, 118, 64, 0.28);
+  padding: 6px 11px;
+  border: 1px solid var(--green-line);
   border-radius: var(--radius-control);
-  background: rgba(255, 240, 232, 0.72);
-  color: var(--accent-strong);
-  font-size: 0.88rem;
+  background: rgba(237, 246, 239, 0.72);
+  color: var(--primary-strong);
+  font-size: 0.84rem;
   font-weight: 900;
   white-space: nowrap;
-  box-shadow: inset 0 -1px 0 rgba(255, 118, 64, 0.08);
+  box-shadow: inset 0 -1px 0 rgba(34, 111, 97, 0.08);
   transition:
     transform 160ms ease,
     background 160ms ease,
@@ -374,7 +388,7 @@ button.chip {
 }
 
 .preset-chip:hover {
-  background: #fff7f1;
+  background: #f7fbf7;
   transform: translateY(-1px);
 }
 
@@ -473,9 +487,10 @@ button.chip {
   min-height: 360px;
   padding: 22px;
   background:
-    linear-gradient(135deg, rgba(255, 118, 64, 0.12), rgba(255, 118, 64, 0) 46%),
-    linear-gradient(210deg, rgba(34, 111, 97, 0.18), rgba(34, 111, 97, 0) 42%),
-    var(--ink);
+    radial-gradient(circle at 18% 12%, rgba(255, 243, 184, 0.09), rgba(255, 243, 184, 0) 28%),
+    linear-gradient(135deg, rgba(34, 111, 97, 0.24), rgba(16, 47, 42, 0) 48%),
+    linear-gradient(210deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0) 38%),
+    var(--brand-night);
   color: #fff;
 }
 
@@ -587,23 +602,23 @@ button.chip {
 
 .verdict-stamp {
   position: static;
-  border: 1px solid rgba(255, 118, 64, 0.85);
-  background: rgba(255, 118, 64, 0.15);
-  color: #ffd8ca;
+  border: 1px solid rgba(255, 243, 184, 0.72);
+  background: rgba(255, 243, 184, 0.14);
+  color: var(--yellow-soft);
   transform: rotate(-4deg);
 }
 
 .reroll-button {
   position: static;
   gap: 6px;
-  border: 1px solid rgba(255, 243, 184, 0.5);
-  background: rgba(255, 243, 184, 0.14);
-  color: #fff7c8;
+  border: 1px solid rgba(227, 242, 234, 0.34);
+  background: rgba(227, 242, 234, 0.1);
+  color: #eaf6ef;
   box-shadow: 0 10px 22px rgba(0, 0, 0, 0.12);
 }
 
 .reroll-button:hover {
-  background: rgba(255, 243, 184, 0.22);
+  background: rgba(227, 242, 234, 0.16);
   transform: translateY(-1px);
 }
 
@@ -823,6 +838,17 @@ button.chip {
   background: rgba(255, 253, 248, 0.9);
 }
 
+.history-band {
+  background:
+    linear-gradient(180deg, rgba(227, 242, 234, 0.28), rgba(255, 253, 248, 0.88) 42%),
+    rgba(255, 253, 248, 0.92);
+  box-shadow: var(--shadow-soft);
+}
+
+.history-band .band-title-row h2 {
+  color: var(--brand-deep);
+}
+
 .popular-list {
   display: grid;
   gap: 9px;
@@ -976,7 +1002,7 @@ button.chip {
 }
 
 .calendar-cell.is-today {
-  box-shadow: inset 0 0 0 1px rgba(255, 118, 64, 0.52);
+  box-shadow: inset 0 0 0 1px rgba(34, 111, 97, 0.48);
 }
 
 .calendar-cell.is-selected {
@@ -1012,7 +1038,7 @@ button.chip {
   position: absolute;
   right: 4px;
   bottom: 3px;
-  color: var(--accent-strong);
+  color: var(--primary-strong);
   font-size: 0.62rem;
   font-weight: 900;
 }
@@ -1324,7 +1350,7 @@ button.chip {
   gap: 10px;
   padding: 18px;
   border-radius: var(--radius-card);
-  background: var(--accent-soft);
+  background: var(--green-soft);
 }
 
 .decision-note h3 {
@@ -1449,6 +1475,14 @@ button.chip {
 
   .state-guide h2 {
     font-size: clamp(1.35rem, 7vw, 2.05rem);
+  }
+
+  .cue-desktop {
+    display: none;
+  }
+
+  .cue-mobile {
+    display: inline;
   }
 
   .state-actions {

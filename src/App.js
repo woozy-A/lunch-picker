@@ -1270,7 +1270,8 @@
                       </button>
                     ))}
                   </div>
-                  <span className="scroll-cue" aria-hidden="true">옆으로 밀어 더 보기 →</span>
+                  <span className="scroll-cue cue-desktop" aria-hidden="true">더 보기 →</span>
+                  <span className="scroll-cue cue-mobile" aria-hidden="true">옆으로 밀어 더 보기 →</span>
                 </div>
               )}
             </div>
@@ -1365,8 +1366,8 @@
           <aside className="popular-band history-band" aria-label="내 점심 기록">
             <div className="band-title-row">
               <div>
-                <h2>점심 기록</h2>
-                <p className="muted small">최근 2일은 추천에서 피합니다.</p>
+                <h2>내 점심로그</h2>
+                <p className="muted small">최근 2일은 추천에서 살짝 피해요.</p>
               </div>
               <button className="btn btn-ghost btn-small download-action" type="button" onClick={exportHistoryCsv} aria-label="점심 기록 파일 내려받기">
                 기록 내려받기
@@ -1374,7 +1375,7 @@
             </div>
 
             <section className="recent-avoid">
-              <h3>최근 피하기</h3>
+              <h3>최근 먹은 것</h3>
               {recentAvoidRecords.length ? (
                 <ol className="popular-list history-list">
                   {recentAvoidRecords.map((record) => (
@@ -1388,7 +1389,7 @@
                   ))}
                 </ol>
               ) : (
-                <p className="muted small">어제와 그제 기록이 아직 없습니다.</p>
+                <p className="muted small">어제와 그제 기록이 아직 없어요.</p>
               )}
             </section>
 

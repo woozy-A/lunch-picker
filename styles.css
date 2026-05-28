@@ -910,6 +910,11 @@ button.chip {
   font-weight: 900;
 }
 
+.field-title {
+  color: var(--ink);
+  font-weight: 900;
+}
+
 .field-group input {
   width: 100%;
   min-height: 48px;
@@ -924,6 +929,37 @@ button.chip {
 .field-group input:focus {
   border-color: rgba(34, 111, 97, 0.5);
   box-shadow: 0 0 0 4px rgba(34, 111, 97, 0.12);
+}
+
+.location-box {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 12px;
+  align-items: center;
+  padding: 14px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-card);
+  background: #fff;
+}
+
+.location-box div {
+  display: grid;
+  min-width: 0;
+  gap: 5px;
+}
+
+.location-box strong {
+  overflow: hidden;
+  color: var(--primary-strong);
+  font-size: 1.12rem;
+  font-weight: 920;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.location-box .btn {
+  width: auto;
+  white-space: nowrap;
 }
 
 .privacy-note {
@@ -1232,6 +1268,14 @@ button.chip {
   .modal-actions {
     display: grid;
     grid-template-columns: 1fr;
+  }
+
+  .location-box {
+    grid-template-columns: 1fr;
+  }
+
+  .location-box .btn {
+    width: 100%;
   }
 }
 

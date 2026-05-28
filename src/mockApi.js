@@ -99,10 +99,24 @@
   }
 
   function normalizeProfile(profile = {}) {
+    const location = profile.location || {};
+    const latitude = Number(location.latitude);
+    const longitude = Number(location.longitude);
+    const hasLocation = Number.isFinite(latitude) && Number.isFinite(longitude);
+
     return {
       anonymousId: profile.anonymousId || profile.anonymous_id || createAnonymousId(),
       nickname: String(profile.nickname || "").trim(),
       regionName: String(profile.regionName || profile.region_name || "").trim(),
+      locationLabel: String(profile.locationLabel || profile.location_label || profile.regionName || "").trim(),
+      location: hasLocation
+        ? {
+            latitude,
+            longitude,
+            accuracy: Number(location.accuracy) || null,
+            capturedAt: location.capturedAt || new Date().toISOString(),
+          }
+        : null,
       createdAt: profile.createdAt || new Date().toISOString(),
       updatedAt: new Date().toISOString(),
     };
@@ -148,7 +162,7 @@
   }
 
   function saveLocalStat(record) {
-    const regionName = record.regionName || "지역 미설정";
+    const regionName = record.locationLabel || record.regionName || "위치 미설정";
     const moodKey = record.moodLabels?.length ? record.moodLabels.join("+") : "상태 없음";
     const categoryKey = record.selectedCategories?.length ? record.selectedCategories.join("+") : "전체";
     const key = [record.date, regionName, categoryKey, moodKey, record.budgetMode, record.name].join("|");
@@ -172,11 +186,20 @@
     const history = getLunchHistory();
     const profile = context.profile || getProfile();
     const todayKey = getLocalDateKey();
+    const location = context.location || profile?.location || null;
     const nextRecord = {
       id: `${todayKey}-${menu.id}-${Date.now()}`,
       anonymousId: profile?.anonymousId || "",
       nickname: profile?.nickname || "",
       regionName: profile?.regionName || context.regionName || "",
+      locationLabel: profile?.locationLabel || context.locationLabel || profile?.regionName || context.regionName || "",
+      location: location
+        ? {
+            latitude: location.latitude,
+            longitude: location.longitude,
+            accuracy: location.accuracy || null,
+          }
+        : null,
       menuId: menu.id,
       name: menu.name,
       category: menu.category,

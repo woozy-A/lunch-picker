@@ -25,6 +25,18 @@
 
   const QUICK_STATE_MOOD_KEYS = ["spicy", "comfort", "noTime", "hangover", "diet"];
   const STRONG_MOOD_KEYS = ["spicy", "soup", "hangover", "noTime", "diet"];
+  const LOCATION_ANCHORS = [
+    { name: "여의도", latitude: 37.5219, longitude: 126.9246 },
+    { name: "강남역", latitude: 37.4979, longitude: 127.0276 },
+    { name: "판교", latitude: 37.3948, longitude: 127.1112 },
+    { name: "종로", latitude: 37.5704, longitude: 126.9827 },
+    { name: "광화문", latitude: 37.5725, longitude: 126.9769 },
+    { name: "홍대입구", latitude: 37.5572, longitude: 126.9245 },
+    { name: "성수", latitude: 37.5446, longitude: 127.0557 },
+    { name: "잠실", latitude: 37.5133, longitude: 127.1002 },
+    { name: "가산디지털단지", latitude: 37.4816, longitude: 126.8826 },
+    { name: "구로디지털단지", latitude: 37.4853, longitude: 126.9015 },
+  ];
 
   const MENU_CATCHPHRASES = {
     김치찌개: "보글보글 김치가 끓으면 밥 한 공기는 이미 결재 완료.",
@@ -263,8 +275,46 @@
     return labels;
   }
 
-  function getMenuSearchUrl(menu) {
-    return `https://map.naver.com/p/search/${encodeURIComponent(menu.searchName || menu.name)}`;
+  function getDistanceKm(left, right) {
+    const earthRadiusKm = 6371;
+    const toRadians = (value) => (value * Math.PI) / 180;
+    const latDistance = toRadians(right.latitude - left.latitude);
+    const lngDistance = toRadians(right.longitude - left.longitude);
+    const a =
+      Math.sin(latDistance / 2) * Math.sin(latDistance / 2) +
+      Math.cos(toRadians(left.latitude)) *
+        Math.cos(toRadians(right.latitude)) *
+        Math.sin(lngDistance / 2) *
+        Math.sin(lngDistance / 2);
+    return earthRadiusKm * 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+  }
+
+  function getApproxLocationLabel(location) {
+    if (!location?.latitude || !location?.longitude) return "";
+    const current = { latitude: location.latitude, longitude: location.longitude };
+    const nearest = LOCATION_ANCHORS.map((anchor) => ({
+      ...anchor,
+      distanceKm: getDistanceKm(current, anchor),
+    })).sort((a, b) => a.distanceKm - b.distanceKm)[0];
+
+    if (nearest?.distanceKm <= 2.8) return `${nearest.name} 근처`;
+    if (location.latitude >= 37.41 && location.latitude <= 37.71 && location.longitude >= 126.76 && location.longitude <= 127.19) {
+      return "서울 현재 위치";
+    }
+    return "현재 위치";
+  }
+
+  function getProfileLocationLabel(profile) {
+    return profile?.locationLabel || profile?.regionName || "";
+  }
+
+  function getMenuSearchUrl(menu, profile) {
+    const query = encodeURIComponent(menu.searchName || menu.name);
+    const location = profile?.location;
+    if (location?.latitude && location?.longitude) {
+      return `https://map.naver.com/p/search/${query}?c=${location.longitude},${location.latitude},15,0,0,0,dh`;
+    }
+    return `https://map.naver.com/p/search/${query}`;
   }
 
   function hasTag(menu, tags) {
@@ -570,13 +620,64 @@
 
   function ProfileModal({ profile, isRequired, onSave, onClose }) {
     const [nickname, setNickname] = React.useState(profile?.nickname || "");
-    const [regionName, setRegionName] = React.useState(profile?.regionName || "");
+    const [location, setLocation] = React.useState(profile?.location || null);
+    const [locationLabel, setLocationLabel] = React.useState(getProfileLocationLabel(profile));
+    const [isLocating, setIsLocating] = React.useState(false);
+    const [locationMessage, setLocationMessage] = React.useState(
+      profile?.location ? "현재 위치가 저장되어 있습니다." : "위치 권한을 허용하면 근처 식당 검색과 지역 집계 기준으로 씁니다.",
+    );
 
     function submitProfile(nextNickname = nickname) {
       onSave({
         nickname: nextNickname.trim(),
-        regionName: regionName.trim(),
+        regionName: locationLabel,
+        locationLabel,
+        location,
       });
+    }
+
+    function submitWithoutLocation() {
+      onSave({
+        nickname: nickname.trim(),
+        regionName: "",
+        locationLabel: "",
+        location: null,
+      });
+    }
+
+    function requestLocation() {
+      if (!global.navigator?.geolocation) {
+        setLocationMessage("이 브라우저에서는 위치 기능을 사용할 수 없습니다.");
+        return;
+      }
+
+      setIsLocating(true);
+      setLocationMessage("현재 위치를 확인하는 중입니다.");
+      global.navigator.geolocation.getCurrentPosition(
+        (position) => {
+          const nextLocation = {
+            latitude: position.coords.latitude,
+            longitude: position.coords.longitude,
+            accuracy: Math.round(position.coords.accuracy || 0),
+            capturedAt: new Date().toISOString(),
+          };
+          const nextLabel = getApproxLocationLabel(nextLocation);
+          setLocation(nextLocation);
+          setLocationLabel(nextLabel);
+          setLocationMessage(`${nextLabel}로 설정했습니다. 정확도 약 ${nextLocation.accuracy}m`);
+          setIsLocating(false);
+        },
+        (locationError) => {
+          const denied = locationError.code === locationError.PERMISSION_DENIED;
+          setLocationMessage(denied ? "위치 권한이 거부됐습니다. 위치 없이도 사용할 수 있어요." : "위치를 가져오지 못했습니다. 잠시 후 다시 시도해주세요.");
+          setIsLocating(false);
+        },
+        {
+          enableHighAccuracy: true,
+          timeout: 10000,
+          maximumAge: 1000 * 60 * 5,
+        },
+      );
     }
 
     return (
@@ -584,8 +685,8 @@
         <section className="modal profile-modal" role="dialog" aria-modal="true" aria-labelledby="profile-title" onMouseDown={(event) => event.stopPropagation()}>
           <header className="modal-head">
             <div>
-              <h2 id="profile-title">내 점심 기록 이름 정하기</h2>
-              <p className="muted small">닉네임은 내 점심 캘린더에만 씁니다. 지역은 나중에 지역별 집계에 숫자로만 반영할 예정이에요.</p>
+              <h2 id="profile-title">내 점심 기록 설정</h2>
+              <p className="muted small">닉네임은 내 기록에만 쓰고, 위치는 근처 식당 검색과 익명 지역 집계 기준으로 씁니다.</p>
             </div>
             {!isRequired && (
               <button className="close-btn" type="button" onClick={onClose} aria-label="닫기">
@@ -606,25 +707,25 @@
               />
             </label>
 
-            <label className="field-group">
-              <span>자주 점심 먹는 지역</span>
-              <input
-                type="text"
-                value={regionName}
-                maxLength="20"
-                placeholder="예: 여의도, 강남역, 판교"
-                onChange={(event) => setRegionName(event.target.value)}
-              />
-            </label>
+            <div className="location-box">
+              <div>
+                <span className="field-title">점심 먹는 위치</span>
+                <strong>{locationLabel || "위치 미설정"}</strong>
+                <p className="muted small">{locationMessage}</p>
+              </div>
+              <button className="btn" type="button" onClick={requestLocation} disabled={isLocating}>
+                {isLocating ? "확인 중" : "내 위치로 설정"}
+              </button>
+            </div>
 
             <div className="privacy-note">
               <strong>저장 방식</strong>
-              <p className="muted small">개인 기록은 내 브라우저 기준으로 저장하고, 지역 통계는 나중에 “여의도 + 김치찌개 + 1”처럼 개인을 알 수 없는 숫자 집계로만 쌓을 계획입니다.</p>
+              <p className="muted small">개인 기록은 내 브라우저에 저장합니다. 나중에 DB를 붙이면 지역 통계는 “여의도 근처 + 김치찌개 + 1”처럼 개인을 알 수 없는 숫자 집계로만 쌓습니다.</p>
             </div>
 
             <div className="modal-actions">
-              <button className="btn" type="button" onClick={() => submitProfile("")}>
-                익명으로 시작
+              <button className="btn" type="button" onClick={submitWithoutLocation}>
+                {location ? "위치 끄기" : "위치 없이 시작"}
               </button>
               <button className="btn btn-primary" type="button" onClick={() => submitProfile()}>
                 저장하고 시작
@@ -670,6 +771,7 @@
     );
     const selectedFeedback = selectedMenu ? app.api.getFeedback(selectedMenu.id) : { verdict: "" };
     const profileName = profile?.nickname || "익명 미식가";
+    const profileLocationLabel = getProfileLocationLabel(profile);
 
     function refreshHistory() {
       setHistory(app.api.getLunchHistory?.() || []);
@@ -789,7 +891,9 @@
         selectedMoods: filters.moods,
         moodLabels: filters.moods.map(getMoodLabel),
         budgetMode: filters.budget,
-        regionName: profile?.regionName || "",
+        regionName: profileLocationLabel,
+        locationLabel: profileLocationLabel,
+        location: profile?.location || null,
       });
       refreshHistory();
       setFeedbackVersion((version) => version + 1);
@@ -903,7 +1007,7 @@
           <div className="profile-chip">
             <div>
               <strong>{profileName}</strong>
-              <span>{profile?.regionName ? `${profile.regionName} 기준` : "지역 미설정"}</span>
+              <span>{profileLocationLabel ? `${profileLocationLabel} 기준` : "위치 미설정"}</span>
             </div>
             <button className="btn btn-quiet" type="button" onClick={() => setIsProfileOpen(true)}>
               설정
@@ -1007,7 +1111,7 @@
                   </button>
                   <a
                     className={`btn ${isDeciding ? "is-disabled-link" : ""}`}
-                    href={getMenuSearchUrl(featured)}
+                    href={getMenuSearchUrl(featured, profile)}
                     target="_blank"
                     rel="noreferrer"
                     aria-disabled={isDeciding}
@@ -1098,7 +1202,7 @@
             feedback={selectedFeedback}
             reason={buildReason(selectedMenu, filters)}
             officeLine={getOfficeLine(selectedMenu, filters)}
-            searchUrl={getMenuSearchUrl(selectedMenu)}
+            searchUrl={getMenuSearchUrl(selectedMenu, profile)}
             hasActiveFilters={hasActiveFilters(filters)}
             onClose={() => setSelectedMenu(null)}
             onFeedback={handleFeedback}

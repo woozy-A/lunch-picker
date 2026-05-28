@@ -1,0 +1,92 @@
+(function attachFilterModal(global) {
+  const app = (global.LunchApp = global.LunchApp || {});
+
+  function toggleInList(list, value) {
+    return list.includes(value) ? list.filter((item) => item !== value) : [...list, value];
+  }
+
+  function FilterModal({ categories, moodOptions, filters, onChange, onClose, onApply, onReset }) {
+    const draft = filters;
+
+    function update(nextPatch) {
+      onChange({ ...draft, ...nextPatch });
+    }
+
+    return (
+      <div className="modal-backdrop" role="presentation" onMouseDown={onClose}>
+        <section className="modal compact-modal" role="dialog" aria-modal="true" aria-labelledby="filter-title" onMouseDown={(event) => event.stopPropagation()}>
+          <header className="modal-head">
+            <div>
+              <h2 id="filter-title">오늘 상태</h2>
+              <p className="muted small">메뉴를 고르는 데 필요한 것만 남겼습니다.</p>
+            </div>
+            <button className="close-btn" type="button" onClick={onClose} aria-label="닫기">
+              ×
+            </button>
+          </header>
+
+          <div className="modal-body">
+            <section className="filter-section">
+              <h3>지금 상황</h3>
+              <div className="option-grid mood-grid">
+                {moodOptions.map((option) => (
+                  <button
+                    key={option.key}
+                    className={`option-btn ${draft.moods.includes(option.key) ? "is-selected" : ""}`}
+                    type="button"
+                    onClick={() => update({ moods: toggleInList(draft.moods, option.key) })}
+                  >
+                    {option.label}
+                  </button>
+                ))}
+              </div>
+            </section>
+
+            <section className="filter-section">
+              <h3>대충 먹고 싶은 계열</h3>
+              <div className="option-grid">
+                {categories.map((category) => (
+                  <button
+                    key={category}
+                    className={`option-btn ${draft.categories.includes(category) ? "is-selected" : ""}`}
+                    type="button"
+                    onClick={() => update({ categories: toggleInList(draft.categories, category) })}
+                  >
+                    {category}
+                  </button>
+                ))}
+              </div>
+            </section>
+
+            <section className="filter-section">
+              <h3>지갑 상태</h3>
+              <div className="option-grid budget-grid">
+                {["상관없음", "월급 전", "월급날", "법카"].map((budget) => (
+                  <button
+                    key={budget}
+                    className={`option-btn ${draft.budget === budget ? "is-selected" : ""}`}
+                    type="button"
+                    onClick={() => update({ budget })}
+                  >
+                    {budget}
+                  </button>
+                ))}
+              </div>
+            </section>
+
+            <div className="modal-actions">
+              <button className="btn" type="button" onClick={onReset}>
+                다 비우기
+              </button>
+              <button className="btn btn-primary" type="button" onClick={onApply}>
+                이 상태로 판결
+              </button>
+            </div>
+          </div>
+        </section>
+      </div>
+    );
+  }
+
+  app.FilterModal = FilterModal;
+})(window);

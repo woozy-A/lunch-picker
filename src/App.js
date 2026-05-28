@@ -894,10 +894,10 @@
       <main className="app-shell">
         <header className="top-bar">
           <div className="brand">
-            <span className="brand-mark">점</span>
+            <span className="brand-mark">밥</span>
             <div className="brand-text">
-              <span className="brand-title">점심판결소</span>
-              <span className="brand-subtitle">메뉴만 정합니다. 식당은 각자 알아서.</span>
+              <span className="brand-title">밥픽</span>
+              <span className="brand-subtitle">오늘 뭐 먹을지 10초 컷.</span>
             </div>
           </div>
           <div className="profile-chip">
@@ -906,7 +906,7 @@
               <span>{profile?.regionName ? `${profile.regionName} 기준` : "지역 미설정"}</span>
             </div>
             <button className="btn btn-quiet" type="button" onClick={() => setIsProfileOpen(true)}>
-              내 정보
+              설정
             </button>
           </div>
         </header>
@@ -914,10 +914,10 @@
         <div className="decision-layout">
           <section className={`state-guide ${hasFilters ? "is-active" : ""}`} aria-label="추천 조건">
             <div className="state-copy">
-              <span className="state-eyebrow">{hasFilters ? "오늘 상태 반영 중" : "추천 정확도 올리기"}</span>
-              <h2>{hasFilters ? "이 상태로 점심을 고르는 중이에요" : "오늘 점심 상태를 알려주면 더 정확히 골라드려요"}</h2>
+              <span className="state-eyebrow">{hasFilters ? "조건 적용 중" : "오늘 점심"}</span>
+              <h2>{hasFilters ? "이 입맛으로 골라볼게요" : "입맛부터 찍고 가자"}</h2>
               <p className="muted small">
-                {hasFilters ? "조건과 내 피드백을 함께 보고 메뉴를 고릅니다." : "원하는 상태를 누르거나, 정말 모르겠으면 아무거나로 바로 고르세요."}
+                {hasFilters ? "선택한 조건에 맞는 메뉴만 더 강하게 봅니다." : "고민되면 아무거나로 바로 넘겨도 돼요."}
               </p>
               <div className="chip-row">
                 <span className="chip">{menus.length}개 메뉴</span>
@@ -939,30 +939,39 @@
                 )}
               </div>
             </div>
-            <div className="state-actions">
-              <button
-                className="btn btn-primary"
-                type="button"
-                onClick={() => {
-                  setDraftFilters(filters);
-                  setIsFilterOpen(true);
-                }}
-              >
-                오늘 상태 고르기
-              </button>
-              <button className="btn" type="button" onClick={() => recommend()} disabled={isDeciding}>
-                {isDeciding ? "판결 중" : featured ? "다른 메뉴" : "점심 판결"}
-              </button>
-              <button className="btn" type="button" onClick={resetFilters} disabled={isDeciding} aria-label="아무거나: 조건 초기화">
-                아무거나
-              </button>
+            <div className="state-panel">
+              <figure className="food-preview">
+                <img src="./assets/lunch-spread.png" alt="여러 점심 메뉴가 놓인 식탁" />
+                <figcaption>{hasFilters ? activeLabels.join(" · ") : "아무거나 모드"}</figcaption>
+              </figure>
+              <div className="state-actions">
+                <button
+                  className="btn btn-primary"
+                  type="button"
+                  onClick={() => {
+                    setDraftFilters(filters);
+                    setIsFilterOpen(true);
+                  }}
+                >
+                  오늘 상태 고르기
+                </button>
+                <button className="btn" type="button" onClick={() => recommend()} disabled={isDeciding}>
+                  {isDeciding ? "고르는 중" : featured ? "다른 메뉴" : "메뉴 뽑기"}
+                </button>
+                <button className="btn btn-ghost" type="button" onClick={resetFilters} disabled={isDeciding} aria-label="아무거나: 조건 초기화">
+                  아무거나
+                </button>
+              </div>
             </div>
           </section>
 
           {featured ? (
             <section className="verdict-card" aria-label="오늘의 추천 메뉴">
               <div className="verdict-copy">
-                <span className="recommend-pop">오늘의 판결</span>
+                <div className="verdict-card-head">
+                  <span className="recommend-pop">오늘의 픽</span>
+                  <span className="verdict-mode">{hasFilters ? `${activeLabels.length}개 조건 반영` : "아무거나 모드"}</span>
+                </div>
                 <div className={`verdict-machine ${isDeciding ? "is-deciding" : ""}`}>
                   <h1 className={`verdict-name ${getMenuNameSizeClass(isDeciding ? rollingName : featured.name)}`}>
                     {isDeciding ? rollingName : featured.name}
@@ -1026,8 +1035,8 @@
           <aside className="popular-band history-band" aria-label="내 점심 기록">
             <div className="band-title-row">
               <div>
-                <h2>내 점심 기록</h2>
-                <p className="muted small">{profileName}님이 이걸로 결정한 메뉴가 날짜별로 쌓입니다.</p>
+                <h2>최근 먹은 것</h2>
+                <p className="muted small">{profileName}님의 점심 로그</p>
               </div>
             </div>
 
@@ -1056,7 +1065,7 @@
             ) : (
               <div className="history-empty">
                 <strong>아직 기록이 없습니다</strong>
-                <p className="muted small">이걸로 결정!을 누르면 어제, 그제 먹은 메뉴까지 여기서 확인할 수 있어요.</p>
+                <p className="muted small">결정하면 오늘 메뉴가 여기 쌓입니다.</p>
               </div>
             )}
           </aside>

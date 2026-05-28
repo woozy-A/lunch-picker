@@ -29,7 +29,7 @@
         <div className="result-toolbar">
           <div>
             <h2>{featured ? `${featured.name}${getSubjectParticle(featured.name)} 싫다면` : "이 메뉴가 싫다면"}</h2>
-            <p className="muted small">이건 어떠세요?</p>
+            <p className="muted small">비슷한 메뉴 2개만 볼게요.</p>
           </div>
         </div>
 

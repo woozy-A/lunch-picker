@@ -1,7 +1,7 @@
 (function attachDetailModal(global) {
   const app = (global.LunchApp = global.LunchApp || {});
 
-  function DetailModal({ menu, feedback, reason, officeLine, searchUrl, hasActiveFilters, onClose, onFeedback }) {
+  function DetailModal({ menu, feedback, reason, officeLine, hasActiveFilters, onClose, onFeedback, onNearbySearch, isFindingNearby }) {
     if (!menu) {
       return null;
     }
@@ -75,9 +75,9 @@
                 >
                   오늘은 아님
                 </button>
-                <a className="btn" href={searchUrl} target="_blank" rel="noreferrer">
-                  근처에서 찾기
-                </a>
+                <button className="btn" type="button" onClick={onNearbySearch} disabled={isFindingNearby}>
+                  {isFindingNearby ? "위치 확인 중" : "근처에서 찾기"}
+                </button>
               </div>
             </section>
           </div>

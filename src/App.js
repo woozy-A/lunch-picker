@@ -305,7 +305,8 @@
   }
 
   function getProfileLocationLabel(profile) {
-    return profile?.locationLabel || profile?.regionName || "";
+    if (!profile?.location) return "";
+    return profile.locationLabel || "현재 위치";
   }
 
   function getMenuSearchUrl(menu, profile) {
@@ -620,64 +621,13 @@
 
   function ProfileModal({ profile, isRequired, onSave, onClose }) {
     const [nickname, setNickname] = React.useState(profile?.nickname || "");
-    const [location, setLocation] = React.useState(profile?.location || null);
-    const [locationLabel, setLocationLabel] = React.useState(getProfileLocationLabel(profile));
-    const [isLocating, setIsLocating] = React.useState(false);
-    const [locationMessage, setLocationMessage] = React.useState(
-      profile?.location ? "현재 위치가 저장되어 있습니다." : "위치 권한을 허용하면 근처 식당 검색과 지역 집계 기준으로 씁니다.",
-    );
 
     function submitProfile(nextNickname = nickname) {
       onSave({
         nickname: nextNickname.trim(),
-        regionName: locationLabel,
-        locationLabel,
-        location,
+        location: profile?.location || null,
+        locationLabel: getProfileLocationLabel(profile),
       });
-    }
-
-    function submitWithoutLocation() {
-      onSave({
-        nickname: nickname.trim(),
-        regionName: "",
-        locationLabel: "",
-        location: null,
-      });
-    }
-
-    function requestLocation() {
-      if (!global.navigator?.geolocation) {
-        setLocationMessage("이 브라우저에서는 위치 기능을 사용할 수 없습니다.");
-        return;
-      }
-
-      setIsLocating(true);
-      setLocationMessage("현재 위치를 확인하는 중입니다.");
-      global.navigator.geolocation.getCurrentPosition(
-        (position) => {
-          const nextLocation = {
-            latitude: position.coords.latitude,
-            longitude: position.coords.longitude,
-            accuracy: Math.round(position.coords.accuracy || 0),
-            capturedAt: new Date().toISOString(),
-          };
-          const nextLabel = getApproxLocationLabel(nextLocation);
-          setLocation(nextLocation);
-          setLocationLabel(nextLabel);
-          setLocationMessage(`${nextLabel}로 설정했습니다. 정확도 약 ${nextLocation.accuracy}m`);
-          setIsLocating(false);
-        },
-        (locationError) => {
-          const denied = locationError.code === locationError.PERMISSION_DENIED;
-          setLocationMessage(denied ? "위치 권한이 거부됐습니다. 위치 없이도 사용할 수 있어요." : "위치를 가져오지 못했습니다. 잠시 후 다시 시도해주세요.");
-          setIsLocating(false);
-        },
-        {
-          enableHighAccuracy: true,
-          timeout: 10000,
-          maximumAge: 1000 * 60 * 5,
-        },
-      );
     }
 
     return (
@@ -686,7 +636,7 @@
           <header className="modal-head">
             <div>
               <h2 id="profile-title">내 점심 기록 설정</h2>
-              <p className="muted small">닉네임은 내 기록에만 쓰고, 위치는 근처 식당 검색과 익명 지역 집계 기준으로 씁니다.</p>
+              <p className="muted small">닉네임은 내 기록에만 씁니다. 위치는 근처 식당을 찾을 때만 확인합니다.</p>
             </div>
             {!isRequired && (
               <button className="close-btn" type="button" onClick={onClose} aria-label="닫기">
@@ -709,23 +659,20 @@
 
             <div className="location-box">
               <div>
-                <span className="field-title">점심 먹는 위치</span>
-                <strong>{locationLabel || "위치 미설정"}</strong>
-                <p className="muted small">{locationMessage}</p>
+                <span className="field-title">위치 정보</span>
+                <strong>{getProfileLocationLabel(profile) || "필요할 때만 확인"}</strong>
+                <p className="muted small">처음 들어올 때는 묻지 않고, 근처에서 찾기를 누를 때 브라우저 위치 권한을 요청합니다.</p>
               </div>
-              <button className="btn" type="button" onClick={requestLocation} disabled={isLocating}>
-                {isLocating ? "확인 중" : "내 위치로 설정"}
-              </button>
             </div>
 
             <div className="privacy-note">
               <strong>저장 방식</strong>
-              <p className="muted small">개인 기록은 내 브라우저에 저장합니다. 나중에 DB를 붙이면 지역 통계는 “여의도 근처 + 김치찌개 + 1”처럼 개인을 알 수 없는 숫자 집계로만 쌓습니다.</p>
+              <p className="muted small">개인 기록은 내 브라우저에 저장합니다. 나중에 DB를 붙이면 지역 통계는 위치를 허용한 검색/결정만 익명 숫자로 집계합니다.</p>
             </div>
 
             <div className="modal-actions">
-              <button className="btn" type="button" onClick={submitWithoutLocation}>
-                {location ? "위치 끄기" : "위치 없이 시작"}
+              <button className="btn" type="button" onClick={() => submitProfile("")}>
+                익명으로 시작
               </button>
               <button className="btn btn-primary" type="button" onClick={() => submitProfile()}>
                 저장하고 시작
@@ -754,6 +701,7 @@
     const [selectedMenu, setSelectedMenu] = React.useState(null);
     const [toast, setToast] = React.useState("");
     const [feedbackVersion, setFeedbackVersion] = React.useState(0);
+    const [isFindingNearby, setIsFindingNearby] = React.useState(false);
     const [isLoading, setIsLoading] = React.useState(true);
     const [error, setError] = React.useState("");
     const rollTimerRef = React.useRef(null);
@@ -782,6 +730,62 @@
       setProfile(savedProfile);
       setIsProfileOpen(false);
       setToast(`${savedProfile.nickname || "익명"}님, 점심 기록 준비됐습니다.`);
+    }
+
+    function openSearchWindow(url, mapWindow) {
+      if (mapWindow) {
+        mapWindow.location.href = url;
+        return;
+      }
+      global.open(url, "_blank", "noreferrer");
+    }
+
+    function findNearby(menu = featured) {
+      if (!menu || isFindingNearby) return;
+      const fallbackUrl = getMenuSearchUrl(menu);
+
+      if (!global.navigator?.geolocation) {
+        global.open(fallbackUrl, "_blank", "noreferrer");
+        setToast("이 브라우저는 위치 확인을 지원하지 않아 메뉴명으로 검색합니다.");
+        return;
+      }
+
+      const mapWindow = global.open("", "_blank");
+      setIsFindingNearby(true);
+      setToast("현재 위치로 근처 식당을 찾는 중입니다.");
+
+      global.navigator.geolocation.getCurrentPosition(
+        (position) => {
+          const location = {
+            latitude: position.coords.latitude,
+            longitude: position.coords.longitude,
+            accuracy: Math.round(position.coords.accuracy || 0),
+            capturedAt: new Date().toISOString(),
+          };
+          const locationLabel = getApproxLocationLabel(location);
+          const savedProfile = app.api.saveProfile({
+            ...(profile || {}),
+            regionName: "",
+            locationLabel,
+            location,
+          });
+          setProfile(savedProfile);
+          openSearchWindow(getMenuSearchUrl(menu, { location }), mapWindow);
+          setToast(`${locationLabel} 기준으로 ${menu.name}을 찾습니다.`);
+          setIsFindingNearby(false);
+        },
+        (locationError) => {
+          const denied = locationError.code === locationError.PERMISSION_DENIED;
+          openSearchWindow(fallbackUrl, mapWindow);
+          setToast(denied ? "위치 권한 없이 메뉴명으로 검색합니다." : "위치를 가져오지 못해 메뉴명으로 검색합니다.");
+          setIsFindingNearby(false);
+        },
+        {
+          enableHighAccuracy: true,
+          timeout: 10000,
+          maximumAge: 1000 * 60 * 5,
+        },
+      );
     }
 
     function recommend(nextCandidates = candidates, options = {}) {
@@ -1109,18 +1113,14 @@
                   <button className="btn" type="button" onClick={() => rejectMenu(featured)} disabled={isDeciding}>
                     오늘은 아님
                   </button>
-                  <a
-                    className={`btn ${isDeciding ? "is-disabled-link" : ""}`}
-                    href={getMenuSearchUrl(featured, profile)}
-                    target="_blank"
-                    rel="noreferrer"
-                    aria-disabled={isDeciding}
-                    onClick={(event) => {
-                      if (isDeciding) event.preventDefault();
-                    }}
+                  <button
+                    className="btn"
+                    type="button"
+                    onClick={() => findNearby(featured)}
+                    disabled={isDeciding || isFindingNearby}
                   >
-                    근처에서 찾기
-                  </a>
+                    {isFindingNearby ? "위치 확인 중" : "근처에서 찾기"}
+                  </button>
                 </div>
               </div>
             </section>
@@ -1202,10 +1202,11 @@
             feedback={selectedFeedback}
             reason={buildReason(selectedMenu, filters)}
             officeLine={getOfficeLine(selectedMenu, filters)}
-            searchUrl={getMenuSearchUrl(selectedMenu, profile)}
             hasActiveFilters={hasActiveFilters(filters)}
             onClose={() => setSelectedMenu(null)}
             onFeedback={handleFeedback}
+            onNearbySearch={() => findNearby(selectedMenu)}
+            isFindingNearby={isFindingNearby}
           />
         )}
 

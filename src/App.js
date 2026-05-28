@@ -1300,9 +1300,15 @@
                     {isDeciding ? rollingName : featured.name}
                   </h1>
                   {!isDeciding && (
-                    <span className="verdict-stamp" key={stampKey}>
-                      판결 완료
-                    </span>
+                    <div className="pick-stack" key={stampKey}>
+                      <span className="verdict-stamp">PICK</span>
+                      <button className="reroll-button" type="button" onClick={() => recommend()} aria-label="다른 메뉴 돌리기">
+                        <span className="reroll-icon" aria-hidden="true">
+                          ↻
+                        </span>
+                        다른 메뉴
+                      </button>
+                    </div>
                   )}
                 </div>
                 {isDeciding ? (
@@ -1324,9 +1330,6 @@
                 <div className="button-row action-row">
                   <button className="btn btn-primary" type="button" onClick={() => decideMenu(featured)} disabled={isDeciding}>
                     이걸로 결정!
-                  </button>
-                  <button className="btn btn-accent" type="button" onClick={() => recommend()} disabled={isDeciding}>
-                    {isDeciding ? "고르는 중" : "다른 메뉴"}
                   </button>
                   <button className="btn" type="button" onClick={() => rejectMenu(featured)} disabled={isDeciding}>
                     오늘은 아님

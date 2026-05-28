@@ -17,7 +17,7 @@
         <section className="modal compact-modal" role="dialog" aria-modal="true" aria-labelledby="filter-title" onMouseDown={(event) => event.stopPropagation()}>
           <header className="modal-head">
             <div>
-              <h2 id="filter-title">오늘 상태 고르기</h2>
+              <h2 id="filter-title">입맛 맞추기</h2>
               <p className="muted small">입맛, 상황, 지갑 상태를 골라주세요.</p>
             </div>
             <button className="close-btn" type="button" onClick={onClose} aria-label="닫기">
@@ -79,7 +79,7 @@
                 아무거나
               </button>
               <button className="btn btn-primary" type="button" onClick={onApply}>
-                이 상태로 뽑기
+                이 입맛으로 뽑기
               </button>
             </div>
           </div>

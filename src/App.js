@@ -247,12 +247,36 @@
   }
 
   function getHistoryDateLabel(record) {
-    const dateKey = record.date || (record.decidedAt ? getDateKey(new Date(record.decidedAt)) : "");
+    const dateKey = getRecordDateKey(record);
     if (dateKey === getDateKey()) return "오늘";
     if (dateKey === shiftDateKey(-1)) return "어제";
     if (dateKey === shiftDateKey(-2)) return "그제";
     if (/^\d{4}-\d{2}-\d{2}$/.test(dateKey)) return dateKey.slice(5).replace("-", ".");
     return "기록";
+  }
+
+  function getRecordDateKey(record) {
+    return record.date || (record.decidedAt ? getDateKey(new Date(record.decidedAt)) : "");
+  }
+
+  function parseDateKey(dateKey) {
+    if (!/^\d{4}-\d{2}-\d{2}$/.test(dateKey)) return null;
+    const [year, month, day] = dateKey.split("-").map(Number);
+    return new Date(year, month - 1, day);
+  }
+
+  function getDayOffsetFromToday(dateKey) {
+    const targetDate = parseDateKey(dateKey);
+    if (!targetDate) return null;
+    const today = parseDateKey(getDateKey());
+    return Math.round((today.getTime() - targetDate.getTime()) / (1000 * 60 * 60 * 24));
+  }
+
+  function getHistoryOffsetLabel(record) {
+    const offset = getDayOffsetFromToday(getRecordDateKey(record));
+    if (offset === 1) return "1일 전";
+    if (offset === 2) return "2일 전";
+    return getHistoryDateLabel(record);
   }
 
   function formatHistoryTime(record) {
@@ -261,6 +285,58 @@
       hour: "2-digit",
       minute: "2-digit",
     }).format(new Date(record.decidedAt));
+  }
+
+  function getRecentAvoidRecords(history = []) {
+    const seenOffsets = new Set();
+    return history.filter((record) => {
+      const offset = getDayOffsetFromToday(getRecordDateKey(record));
+      if (offset !== 1 && offset !== 2) return false;
+      if (seenOffsets.has(offset)) return false;
+      seenOffsets.add(offset);
+      return true;
+    });
+  }
+
+  function getRecentMealIds(history = []) {
+    const recentKeys = new Set([getDateKey(), shiftDateKey(-1), shiftDateKey(-2)]);
+    return history
+      .filter((record) => recentKeys.has(getRecordDateKey(record)))
+      .map((record) => record.menuId)
+      .filter(Boolean);
+  }
+
+  function buildHistoryCalendar(history = []) {
+    const today = new Date();
+    const year = today.getFullYear();
+    const month = today.getMonth();
+    const firstDay = new Date(year, month, 1);
+    const lastDay = new Date(year, month + 1, 0);
+    const recordsByDate = new Map();
+
+    history.forEach((record) => {
+      const dateKey = getRecordDateKey(record);
+      const date = parseDateKey(dateKey);
+      if (!date || date.getFullYear() !== year || date.getMonth() !== month) return;
+      recordsByDate.set(dateKey, [...(recordsByDate.get(dateKey) || []), record]);
+    });
+
+    const cells = Array.from({ length: firstDay.getDay() }, () => null);
+    for (let day = 1; day <= lastDay.getDate(); day += 1) {
+      const dateKey = getDateKey(new Date(year, month, day));
+      const records = recordsByDate.get(dateKey) || [];
+      cells.push({
+        dateKey,
+        day,
+        records,
+        isToday: dateKey === getDateKey(),
+      });
+    }
+
+    return {
+      title: `${year}년 ${month + 1}월`,
+      cells,
+    };
   }
 
   function getMoodLabel(key) {
@@ -713,6 +789,8 @@
     const similarMenus = React.useMemo(() => getSimilarMenus(visibleMenus, featured), [visibleMenus, featured]);
     const activeLabels = React.useMemo(() => getActiveLabels(filters), [filters]);
     const hasFilters = React.useMemo(() => hasActiveFilters(filters), [filters]);
+    const recentAvoidRecords = React.useMemo(() => getRecentAvoidRecords(history), [history]);
+    const historyCalendar = React.useMemo(() => buildHistoryCalendar(history), [history]);
     const quickMoodOptions = React.useMemo(
       () => QUICK_STATE_MOOD_KEYS.map((key) => MOOD_OPTIONS.find((mood) => mood.key === key)).filter(Boolean),
       [],
@@ -800,7 +878,8 @@
         return;
       }
 
-      const blockedIds = new Set(options.ignoreHistory ? [] : recentIds);
+      const historyBlockedIds = getRecentMealIds(history);
+      const blockedIds = new Set(options.ignoreHistory ? [] : [...recentIds, ...historyBlockedIds]);
       if (!options.ignoreSkipped) skippedIds.forEach((id) => blockedIds.add(id));
       (options.extraBlockedIds || []).forEach((id) => blockedIds.add(id));
       if (featured && !options.ignoreCurrent) blockedIds.add(featured.id);
@@ -858,7 +937,7 @@
       setIsFilterOpen(false);
       window.setTimeout(() => {
         const nextCandidates = getCandidateMenus(menus, nextFilters);
-        recommend(nextCandidates, { ignoreHistory: true, ignoreCurrent: true, ignoreSkipped: true, filters: nextFilters });
+        recommend(nextCandidates, { ignoreCurrent: true, ignoreSkipped: true, filters: nextFilters });
       }, 0);
     }
 
@@ -868,7 +947,7 @@
       setRecentIds([]);
       setSkippedIds([]);
       setIsFilterOpen(false);
-      window.setTimeout(() => recommend(getCandidateMenus(menus, DEFAULT_FILTERS), { ignoreHistory: true, ignoreCurrent: true, ignoreSkipped: true, filters: DEFAULT_FILTERS }), 0);
+      window.setTimeout(() => recommend(getCandidateMenus(menus, DEFAULT_FILTERS), { ignoreCurrent: true, ignoreSkipped: true, filters: DEFAULT_FILTERS }), 0);
     }
 
     function applyQuickMood(moodKey) {
@@ -936,13 +1015,16 @@
         try {
           const menuData = await app.api.getMenus();
           if (!isMounted) return;
+          const savedHistory = app.api.getLunchHistory?.() || [];
           const initialCandidates = getCandidateMenus(menuData, DEFAULT_FILTERS);
+          const recentHistoryIds = new Set(getRecentMealIds(savedHistory));
+          const initialPool = initialCandidates.filter((menu) => !recentHistoryIds.has(menu.id));
           const savedProfile = app.api.getProfile?.();
           setMenus(menuData);
-          setHistory(app.api.getLunchHistory?.() || []);
+          setHistory(savedHistory);
           setProfile(savedProfile);
           setIsProfileOpen(!savedProfile);
-          setFeatured(pickRecommendation(initialCandidates, DEFAULT_FILTERS));
+          setFeatured(pickRecommendation(initialPool.length ? initialPool : initialCandidates, DEFAULT_FILTERS));
         } catch (loadError) {
           setError(loadError.message);
         } finally {
@@ -1022,13 +1104,12 @@
         <div className="decision-layout">
           <section className={`state-guide ${hasFilters ? "is-active" : ""}`} aria-label="추천 조건">
             <div className="state-copy">
-              <span className="state-eyebrow">{hasFilters ? "조건 적용 중" : "오늘 점심"}</span>
-              <h2>{hasFilters ? "이 입맛으로 골라볼게요" : "입맛부터 찍고 가자"}</h2>
-              <p className="muted small">
-                {hasFilters ? "선택한 조건에 맞는 메뉴만 더 강하게 봅니다." : "고민되면 아무거나로 바로 넘겨도 돼요."}
-              </p>
+              <div className="state-heading">
+                <span className="state-eyebrow">{hasFilters ? "조건 적용 중" : "아무거나 모드"}</span>
+                <span className="state-count">{menus.length}개 메뉴</span>
+              </div>
+              <h2>{hasFilters ? "입맛 적용 중" : "입맛 세팅"}</h2>
               <div className="chip-row">
-                <span className="chip">{menus.length}개 메뉴</span>
                 {activeLabels.length ? (
                   activeLabels.map((label) => (
                     <span className="chip is-active" key={label}>
@@ -1048,10 +1129,6 @@
               </div>
             </div>
             <div className="state-panel">
-              <figure className="food-preview">
-                <img src="./assets/lunch-spread.png" alt="여러 점심 메뉴가 놓인 식탁" />
-                <figcaption>{hasFilters ? activeLabels.join(" · ") : "아무거나 모드"}</figcaption>
-              </figure>
               <div className="state-actions">
                 <button
                   className="btn btn-primary"
@@ -1061,10 +1138,7 @@
                     setIsFilterOpen(true);
                   }}
                 >
-                  오늘 상태 고르기
-                </button>
-                <button className="btn" type="button" onClick={() => recommend()} disabled={isDeciding}>
-                  {isDeciding ? "고르는 중" : featured ? "다른 메뉴" : "메뉴 뽑기"}
+                  입맛 맞추기
                 </button>
                 <button className="btn btn-ghost" type="button" onClick={resetFilters} disabled={isDeciding} aria-label="아무거나: 조건 초기화">
                   아무거나
@@ -1110,6 +1184,9 @@
                   <button className="btn btn-primary" type="button" onClick={() => decideMenu(featured)} disabled={isDeciding}>
                     이걸로 결정!
                   </button>
+                  <button className="btn btn-accent" type="button" onClick={() => recommend()} disabled={isDeciding}>
+                    {isDeciding ? "고르는 중" : "다른 메뉴"}
+                  </button>
                   <button className="btn" type="button" onClick={() => rejectMenu(featured)} disabled={isDeciding}>
                     오늘은 아님
                   </button>
@@ -1139,33 +1216,77 @@
           <aside className="popular-band history-band" aria-label="내 점심 기록">
             <div className="band-title-row">
               <div>
-                <h2>최근 먹은 것</h2>
-                <p className="muted small">{profileName}님의 점심 로그</p>
+                <h2>점심 기록</h2>
+                <p className="muted small">최근 2일은 추천에서 피합니다.</p>
               </div>
             </div>
 
             {history.length ? (
-              <ol className="popular-list history-list">
-                {history.slice(0, 8).map((record) => {
-                  const savedMenu = menus.find((menu) => menu.id === record.menuId || menu.name === record.name);
-                  return (
-                    <li className="popular-item" key={record.id}>
-                      <span className="rank history-date">{getHistoryDateLabel(record)}</span>
-                      <button
-                        className="popular-name"
-                        type="button"
-                        onClick={() => {
-                          if (savedMenu) pickSpecificMenu(savedMenu);
-                        }}
-                        disabled={!savedMenu}
-                      >
-                        {record.name}
-                      </button>
-                      <span className="popular-vibe">{record.category || formatHistoryTime(record)}</span>
-                    </li>
-                  );
-                })}
-              </ol>
+              <React.Fragment>
+                <section className="recent-avoid">
+                  <h3>최근 피하기</h3>
+                  {recentAvoidRecords.length ? (
+                    <ol className="popular-list history-list">
+                      {recentAvoidRecords.map((record) => {
+                        const savedMenu = menus.find((menu) => menu.id === record.menuId || menu.name === record.name);
+                        return (
+                          <li className="popular-item" key={record.id}>
+                            <span className="rank history-date">{getHistoryOffsetLabel(record)}</span>
+                            <button
+                              className="popular-name"
+                              type="button"
+                              onClick={() => {
+                                if (savedMenu) pickSpecificMenu(savedMenu);
+                              }}
+                              disabled={!savedMenu}
+                            >
+                              {record.name}
+                            </button>
+                            <span className="popular-vibe">{record.category || formatHistoryTime(record)}</span>
+                          </li>
+                        );
+                      })}
+                    </ol>
+                  ) : (
+                    <p className="muted small">어제와 그제 기록이 아직 없습니다.</p>
+                  )}
+                </section>
+
+                <section className="history-calendar" aria-label={`${historyCalendar.title} 점심 캘린더`}>
+                  <div className="calendar-head">
+                    <h3>{historyCalendar.title}</h3>
+                    <span className="muted small">{profileName}</span>
+                  </div>
+                  <div className="calendar-weekdays" aria-hidden="true">
+                    {["일", "월", "화", "수", "목", "금", "토"].map((day) => (
+                      <span key={day}>{day}</span>
+                    ))}
+                  </div>
+                  <div className="calendar-grid">
+                    {historyCalendar.cells.map((cell, index) => {
+                      if (!cell) return <span className="calendar-cell is-empty" key={`empty-${index}`} />;
+                      const firstRecord = cell.records[0];
+                      const savedMenu = firstRecord ? menus.find((menu) => menu.id === firstRecord.menuId || menu.name === firstRecord.name) : null;
+                      return (
+                        <button
+                          className={`calendar-cell ${cell.records.length ? "has-record" : ""} ${cell.isToday ? "is-today" : ""}`}
+                          type="button"
+                          key={cell.dateKey}
+                          onClick={() => {
+                            if (savedMenu) pickSpecificMenu(savedMenu);
+                          }}
+                          disabled={!savedMenu}
+                          aria-label={firstRecord ? `${cell.day}일 ${firstRecord.name}` : `${cell.day}일 기록 없음`}
+                        >
+                          <span className="calendar-day">{cell.day}</span>
+                          {firstRecord && <span className="calendar-menu">{firstRecord.name}</span>}
+                          {cell.records.length > 1 && <span className="calendar-more">+{cell.records.length - 1}</span>}
+                        </button>
+                      );
+                    })}
+                  </div>
+                </section>
+              </React.Fragment>
             ) : (
               <div className="history-empty">
                 <strong>아직 기록이 없습니다</strong>

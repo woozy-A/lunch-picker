@@ -2,16 +2,6 @@
   const app = (global.LunchApp = global.LunchApp || {});
   const { MenuCard } = app;
 
-  function getSubjectParticle(text) {
-    const lastChar = [...(text || "")].pop();
-    const code = lastChar ? lastChar.charCodeAt(0) : 0;
-    const hangulStart = 0xac00;
-    const hangulEnd = 0xd7a3;
-
-    if (code < hangulStart || code > hangulEnd) return "가";
-    return (code - hangulStart) % 28 === 0 ? "가" : "이";
-  }
-
   function ResultList({ featured, menus, onOpen, onPick, getReason }) {
     if (!menus.length) {
       return (
@@ -28,8 +18,8 @@
       <section className="results-band" id="results">
         <div className="result-toolbar">
           <div>
-            <h2>{featured ? `${featured.name}${getSubjectParticle(featured.name)} 싫다면` : "이 메뉴가 싫다면"}</h2>
-            <p className="muted small">비슷한 메뉴 2개만 볼게요.</p>
+            <h2>{featured ? `${featured.name} 말고 다른 느낌` : "다른 후보도 있어요"}</h2>
+            <p className="muted small">비슷한 결로 2개만 조용히 골라봤어요.</p>
           </div>
         </div>
 

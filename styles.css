@@ -4,10 +4,12 @@
   --bg-2: #ebe4d8;
   --surface: #fffdf8;
   --surface-muted: #f8f4ec;
+  --surface-glass: rgba(255, 253, 248, 0.78);
   --ink: #171512;
   --ink-soft: #2b2925;
   --muted: #716b61;
   --muted-2: #9b9488;
+  --line-soft: rgba(40, 33, 24, 0.09);
   --line: rgba(40, 33, 24, 0.14);
   --line-strong: rgba(40, 33, 24, 0.24);
   --primary: #226f61;
@@ -25,6 +27,7 @@
   --yellow-soft: #fff3b8;
   --shadow: 0 22px 64px rgba(45, 37, 27, 0.16);
   --shadow-soft: 0 12px 32px rgba(45, 37, 27, 0.1);
+  --shadow-luxe: 0 28px 78px rgba(17, 42, 36, 0.2);
   --radius-card: 8px;
   --radius-control: 999px;
 }
@@ -38,18 +41,31 @@ html {
 }
 
 body {
+  position: relative;
   margin: 0;
   min-width: 320px;
   background:
-    linear-gradient(180deg, rgba(255, 253, 248, 0.76) 0%, rgba(246, 241, 232, 0.98) 320px),
-    linear-gradient(115deg, rgba(34, 111, 97, 0.14) 0%, rgba(34, 111, 97, 0) 38%),
-    linear-gradient(245deg, rgba(255, 118, 64, 0.05) 0%, rgba(255, 118, 64, 0) 42%),
+    linear-gradient(180deg, rgba(255, 253, 248, 0.86) 0%, rgba(246, 241, 232, 0.98) 340px),
+    linear-gradient(115deg, rgba(34, 111, 97, 0.1) 0%, rgba(34, 111, 97, 0) 42%),
+    linear-gradient(245deg, rgba(255, 118, 64, 0.035) 0%, rgba(255, 118, 64, 0) 44%),
     var(--bg);
   color: var(--ink);
   font-family:
     Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
     sans-serif;
   -webkit-font-smoothing: antialiased;
+}
+
+body::before {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  background:
+    repeating-linear-gradient(90deg, rgba(23, 21, 18, 0.018) 0 1px, transparent 1px 6px),
+    repeating-linear-gradient(0deg, rgba(255, 255, 255, 0.22) 0 1px, transparent 1px 7px);
+  content: "";
+  opacity: 0.18;
+  pointer-events: none;
 }
 
 button,
@@ -84,6 +100,8 @@ figure {
 }
 
 .app-shell {
+  position: relative;
+  z-index: 1;
   width: min(1180px, calc(100% - 36px));
   margin: 0 auto;
   padding: 18px 0 42px;
@@ -110,10 +128,14 @@ figure {
   height: 44px;
   place-items: center;
   border-radius: var(--radius-card);
-  background: var(--brand-deep);
+  background:
+    linear-gradient(145deg, rgba(255, 255, 255, 0.12), rgba(255, 255, 255, 0) 42%),
+    var(--brand-deep);
   color: #fff;
-  font-weight: 950;
-  box-shadow: 0 10px 24px rgba(23, 21, 18, 0.18);
+  font-weight: 930;
+  box-shadow:
+    inset 0 0 0 1px rgba(255, 255, 255, 0.1),
+    0 12px 28px rgba(20, 59, 52, 0.2);
 }
 
 .brand-text {
@@ -125,7 +147,7 @@ figure {
 .brand-title {
   color: var(--ink);
   font-size: 1.35rem;
-  font-weight: 950;
+  font-weight: 930;
   line-height: 1.05;
 }
 
@@ -144,11 +166,11 @@ figure {
   gap: 12px;
   max-width: min(100%, 360px);
   padding: 7px 7px 7px 14px;
-  border: 1px solid var(--line);
+  border: 1px solid var(--line-soft);
   border-radius: var(--radius-control);
-  background: rgba(255, 253, 248, 0.86);
-  box-shadow: var(--shadow-soft);
-  backdrop-filter: blur(10px);
+  background: rgba(255, 253, 248, 0.72);
+  box-shadow: 0 10px 26px rgba(45, 37, 27, 0.08);
+  backdrop-filter: blur(14px);
 }
 
 .profile-chip div {
@@ -160,7 +182,7 @@ figure {
 .profile-chip strong {
   overflow: hidden;
   font-size: 0.94rem;
-  font-weight: 920;
+  font-weight: 880;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
@@ -169,7 +191,7 @@ figure {
   overflow: hidden;
   color: var(--muted);
   font-size: 0.78rem;
-  font-weight: 740;
+  font-weight: 700;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
@@ -189,7 +211,7 @@ figure {
 .state-guide,
 .verdict-card,
 .popular-band {
-  border: 1px solid var(--line);
+  border: 1px solid var(--line-soft);
   border-radius: var(--radius-card);
   box-shadow: var(--shadow);
 }
@@ -201,8 +223,11 @@ figure {
   gap: 12px;
   align-items: center;
   padding: 12px 14px;
-  background: rgba(255, 253, 248, 0.78);
-  box-shadow: 0 14px 34px rgba(45, 37, 27, 0.08);
+  background: var(--surface-glass);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.72),
+    0 14px 34px rgba(45, 37, 27, 0.07);
+  backdrop-filter: blur(14px);
 }
 
 .state-guide.is-active {
@@ -233,7 +258,7 @@ figure {
   background: var(--green-soft);
   color: var(--primary-strong);
   font-size: 0.74rem;
-  font-weight: 950;
+  font-weight: 860;
 }
 
 .state-count {
@@ -246,7 +271,7 @@ figure {
   background: #fff;
   color: var(--muted);
   font-size: 0.74rem;
-  font-weight: 900;
+  font-weight: 820;
 }
 
 .state-guide h2 {
@@ -254,6 +279,7 @@ figure {
   font-size: clamp(1.1rem, 1.7vw, 1.42rem);
   line-height: 1.12;
   letter-spacing: 0;
+  font-weight: 880;
 }
 
 .state-guide p {
@@ -302,7 +328,7 @@ figure {
   background: #fff;
   color: var(--ink);
   font-size: 0.88rem;
-  font-weight: 780;
+  font-weight: 760;
   white-space: nowrap;
 }
 
@@ -378,7 +404,7 @@ button.chip {
   background: rgba(237, 246, 239, 0.72);
   color: var(--primary-strong);
   font-size: 0.84rem;
-  font-weight: 900;
+  font-weight: 820;
   white-space: nowrap;
   box-shadow: inset 0 -1px 0 rgba(34, 111, 97, 0.08);
   transition:
@@ -396,7 +422,7 @@ button.chip {
   border-color: rgba(34, 111, 97, 0.34);
   background: var(--primary);
   color: #fff;
-  font-weight: 900;
+  font-weight: 850;
 }
 
 .btn {
@@ -409,7 +435,7 @@ button.chip {
   border-radius: var(--radius-control);
   background: #fff;
   color: var(--ink);
-  font-weight: 880;
+  font-weight: 820;
   line-height: 1.12;
   text-align: center;
   box-shadow: inset 0 0 0 1px var(--line);
@@ -486,12 +512,24 @@ button.chip {
   overflow: hidden;
   min-height: 360px;
   padding: 22px;
+  border-color: rgba(227, 242, 234, 0.16);
   background:
-    radial-gradient(circle at 18% 12%, rgba(255, 243, 184, 0.09), rgba(255, 243, 184, 0) 28%),
-    linear-gradient(135deg, rgba(34, 111, 97, 0.24), rgba(16, 47, 42, 0) 48%),
-    linear-gradient(210deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0) 38%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0) 26%),
+    radial-gradient(circle at 18% 8%, rgba(255, 243, 184, 0.08), rgba(255, 243, 184, 0) 30%),
+    linear-gradient(135deg, rgba(34, 111, 97, 0.26), rgba(16, 47, 42, 0) 54%),
+    linear-gradient(210deg, rgba(255, 255, 255, 0.07), rgba(255, 255, 255, 0) 38%),
     var(--brand-night);
+  box-shadow: var(--shadow-luxe);
   color: #fff;
+}
+
+.verdict-card::before {
+  position: absolute;
+  inset: 1px 1px auto;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.28), transparent);
+  content: "";
+  pointer-events: none;
 }
 
 .verdict-copy {
@@ -516,10 +554,11 @@ button.chip {
   align-items: center;
   padding: 7px 10px;
   border-radius: var(--radius-control);
-  background: var(--yellow-soft);
-  color: var(--ink);
+  border: 1px solid rgba(255, 243, 184, 0.48);
+  background: rgba(255, 243, 184, 0.18);
+  color: #fff7cc;
   font-size: 0.88rem;
-  font-weight: 950;
+  font-weight: 850;
 }
 
 .verdict-mode {
@@ -544,7 +583,7 @@ button.chip {
   max-width: 100%;
   margin-bottom: 0;
   font-size: clamp(3.7rem, 7vw, 5.45rem);
-  font-weight: 950;
+  font-weight: 930;
   line-height: 0.9;
   letter-spacing: 0;
   word-break: keep-all;
@@ -577,7 +616,7 @@ button.chip {
   color: #fff;
   content: "고르는 중";
   font-size: 0.84rem;
-  font-weight: 920;
+  font-weight: 820;
 }
 
 .pick-stack {
@@ -597,7 +636,7 @@ button.chip {
   padding: 7px 11px;
   border-radius: var(--radius-control);
   font-size: 0.84rem;
-  font-weight: 940;
+  font-weight: 850;
 }
 
 .verdict-stamp {
@@ -639,7 +678,7 @@ button.chip {
   margin: 10px 0 0;
   color: rgba(255, 255, 255, 0.94);
   font-size: clamp(1.12rem, 2vw, 1.35rem);
-  font-weight: 780;
+  font-weight: 740;
   line-height: 1.55;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
@@ -670,10 +709,11 @@ button.chip {
   align-items: center;
   padding: 6px 10px;
   border-radius: var(--radius-control);
-  background: rgba(255, 255, 255, 0.12);
-  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.92);
   font-size: 0.84rem;
-  font-weight: 850;
+  font-weight: 780;
 }
 
 .top-actions,
@@ -692,9 +732,9 @@ button.chip {
 }
 
 .verdict-card .btn {
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.08);
   color: #fff;
-  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.18);
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.14);
 }
 
 .verdict-card .btn:hover {
@@ -706,7 +746,9 @@ button.chip {
 .verdict-card .btn-primary {
   background: var(--accent);
   color: var(--ink);
-  box-shadow: none;
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.28),
+    0 12px 26px rgba(255, 118, 64, 0.18);
 }
 
 .verdict-card .btn-primary:hover {
@@ -731,8 +773,9 @@ button.chip {
 .band-title-row h2 {
   margin-bottom: 4px;
   color: var(--ink);
-  font-size: 1.2rem;
+  font-size: 1.14rem;
   line-height: 1.2;
+  font-weight: 880;
 }
 
 .muted {
@@ -745,7 +788,7 @@ button.chip {
 
 .candidate-list {
   display: grid;
-  gap: 10px;
+  gap: 9px;
 }
 
 .candidate-item {
@@ -754,11 +797,15 @@ button.chip {
   gap: 12px;
   align-items: center;
   min-height: 86px;
-  padding: 13px;
-  border: 1px solid var(--line);
+  padding: 14px;
+  border: 1px solid var(--line-soft);
   border-radius: var(--radius-card);
-  background: rgba(255, 253, 248, 0.9);
-  box-shadow: 0 8px 22px rgba(45, 37, 27, 0.06);
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.62), rgba(255, 253, 248, 0.88)),
+    rgba(255, 253, 248, 0.9);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.74),
+    0 8px 22px rgba(45, 37, 27, 0.045);
   transition:
     border-color 160ms ease,
     transform 160ms ease,
@@ -785,7 +832,7 @@ button.chip {
   overflow: hidden;
   color: var(--ink);
   font-size: 1.08rem;
-  font-weight: 930;
+  font-weight: 870;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
@@ -812,10 +859,11 @@ button.chip {
   align-items: center;
   padding: 6px 9px;
   border-radius: var(--radius-control);
-  background: var(--blue-soft);
-  color: #24405f;
+  border: 1px solid rgba(34, 111, 97, 0.1);
+  background: var(--green-soft);
+  color: var(--primary-strong);
   font-size: 0.8rem;
-  font-weight: 880;
+  font-weight: 790;
   white-space: nowrap;
 }
 
@@ -823,10 +871,11 @@ button.chip {
   min-height: 30px;
   padding: 6px 9px;
   border-radius: var(--radius-control);
-  background: var(--surface-muted);
+  border: 1px solid var(--line-soft);
+  background: rgba(255, 255, 255, 0.64);
   color: var(--ink);
   font-size: 0.84rem;
-  font-weight: 850;
+  font-weight: 780;
 }
 
 .popular-band {
@@ -835,14 +884,17 @@ button.chip {
   position: sticky;
   top: 18px;
   padding: 17px;
-  background: rgba(255, 253, 248, 0.9);
+  background: rgba(255, 253, 248, 0.82);
+  backdrop-filter: blur(14px);
 }
 
 .history-band {
   background:
-    linear-gradient(180deg, rgba(227, 242, 234, 0.28), rgba(255, 253, 248, 0.88) 42%),
-    rgba(255, 253, 248, 0.92);
-  box-shadow: var(--shadow-soft);
+    linear-gradient(180deg, rgba(227, 242, 234, 0.2), rgba(255, 253, 248, 0.84) 42%),
+    rgba(255, 253, 248, 0.86);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.72),
+    var(--shadow-soft);
 }
 
 .history-band .band-title-row h2 {
@@ -864,9 +916,9 @@ button.chip {
   align-items: center;
   min-height: 58px;
   padding: 9px;
-  border: 1px solid var(--line);
+  border: 1px solid var(--line-soft);
   border-radius: var(--radius-card);
-  background: #fff;
+  background: rgba(255, 255, 255, 0.76);
 }
 
 .rank {
@@ -878,7 +930,7 @@ button.chip {
   background: var(--primary-soft);
   color: var(--primary-strong);
   font-size: 0.78rem;
-  font-weight: 920;
+  font-weight: 820;
 }
 
 .popular-name {
@@ -886,7 +938,7 @@ button.chip {
   padding: 0;
   background: transparent;
   color: var(--ink);
-  font-weight: 900;
+  font-weight: 850;
   text-align: left;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -899,7 +951,7 @@ button.chip {
 .popular-vibe {
   color: var(--primary-strong);
   font-size: 0.8rem;
-  font-weight: 900;
+  font-weight: 820;
   white-space: nowrap;
 }
 
@@ -930,7 +982,7 @@ button.chip {
   margin: 0;
   color: var(--ink);
   font-size: 0.98rem;
-  font-weight: 930;
+  font-weight: 850;
 }
 
 .calendar-head {
@@ -981,7 +1033,7 @@ button.chip {
   padding: 6px 5px;
   border: 1px solid transparent;
   border-radius: var(--radius-card);
-  background: rgba(255, 255, 255, 0.62);
+  background: rgba(255, 255, 255, 0.48);
   color: var(--muted);
   text-align: left;
 }
@@ -997,7 +1049,7 @@ button.chip {
 
 .calendar-cell.has-record {
   border-color: rgba(34, 111, 97, 0.2);
-  background: var(--primary-soft);
+  background: rgba(227, 242, 234, 0.68);
   color: var(--ink);
 }
 
@@ -1020,7 +1072,7 @@ button.chip {
 
 .calendar-day {
   font-size: 0.78rem;
-  font-weight: 900;
+  font-weight: 820;
   line-height: 1;
 }
 
@@ -1028,7 +1080,7 @@ button.chip {
   overflow: hidden;
   color: var(--primary-strong);
   font-size: 0.64rem;
-  font-weight: 860;
+  font-weight: 760;
   line-height: 1.16;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -1048,9 +1100,9 @@ button.chip {
   gap: 10px;
   margin-top: 14px;
   padding: 12px;
-  border: 1px solid var(--line);
+  border: 1px solid var(--line-soft);
   border-radius: var(--radius-card);
-  background: rgba(255, 255, 255, 0.78);
+  background: rgba(255, 255, 255, 0.62);
 }
 
 .calendar-detail-head {
@@ -1062,7 +1114,7 @@ button.chip {
 
 .calendar-detail-head strong {
   color: var(--ink);
-  font-weight: 930;
+  font-weight: 850;
 }
 
 .calendar-record-list {
@@ -1077,20 +1129,20 @@ button.chip {
   gap: 8px;
   padding: 8px 9px;
   border-radius: var(--radius-card);
-  background: var(--primary-soft);
+  background: rgba(227, 242, 234, 0.68);
 }
 
 .calendar-record span {
   overflow: hidden;
   color: var(--ink);
-  font-weight: 900;
+  font-weight: 830;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
 
 .calendar-record small {
   color: var(--primary-strong);
-  font-weight: 850;
+  font-weight: 780;
   white-space: nowrap;
 }
 

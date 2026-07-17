@@ -2,7 +2,7 @@
   const app = (global.LunchApp = global.LunchApp || {});
   const { MenuCard } = app;
 
-  function ResultList({ featured, menus, onOpen, onPick, getReason }) {
+  function ResultList({ featured, menus, onOpen, onPick, getReason, imageSeed = "" }) {
     if (!menus.length) {
       return (
         <section className="results-band">
@@ -26,7 +26,7 @@
         <div className="candidate-list">
           {menus.map((menu) => (
             <div className="candidate-wrap" key={menu.id}>
-              <MenuCard menu={menu} reason={getReason(menu)} onOpen={onOpen} onPick={onPick} />
+              <MenuCard menu={menu} reason={getReason(menu)} onOpen={onOpen} onPick={onPick} imageSeed={`${imageSeed}:${menu.id}`} />
             </div>
           ))}
         </div>

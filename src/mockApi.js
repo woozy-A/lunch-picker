@@ -5,6 +5,8 @@
   const HISTORY_KEY = "lunch-solver-history-v1";
   const PROFILE_KEY = "lunch-solver-profile-v1";
   const LOCAL_STATS_KEY = "lunch-solver-local-stats-v1";
+  const RESTAURANT_STATS_KEY = "lunch-solver-restaurant-stats-v1";
+  const MENU_DATA_URL = new URL("./data/menus.json", import.meta.url);
 
   let menuCache = null;
   let popularCache = null;
@@ -45,7 +47,7 @@
       return menuCache;
     }
 
-    const response = await fetch("./src/data/menus.json", { cache: "no-store" });
+    const response = await fetch(MENU_DATA_URL, { cache: "no-store" });
     if (!response.ok) {
       throw new Error("메뉴 데이터를 불러오지 못했습니다.");
     }
@@ -194,18 +196,59 @@
     return stats[key];
   }
 
+  function normalizeRestaurantName(name) {
+    return String(name || "").replace(/\s+/g, " ").trim();
+  }
+
+  function getRestaurantStats() {
+    try {
+      return JSON.parse(global.localStorage.getItem(RESTAURANT_STATS_KEY)) || {};
+    } catch (error) {
+      return {};
+    }
+  }
+
+  function saveRestaurantStat(record) {
+    const restaurantName = normalizeRestaurantName(record.restaurantName);
+    if (!restaurantName) return null;
+
+    const regionName = record.location ? record.locationLabel || "현재 위치" : record.regionName || "지역 미설정";
+    const menuName = record.name || "메뉴 미정";
+    const key = [regionName, menuName, restaurantName].join("|");
+    const stats = getRestaurantStats();
+    const previous = stats[key] || {};
+    const decidedDates = new Set(previous.decidedDates || []);
+    if (record.date) decidedDates.add(record.date);
+
+    stats[key] = {
+      regionName,
+      menuName,
+      restaurantName,
+      category: record.category || "",
+      count: decidedDates.size || (previous.count || 0) + 1,
+      decidedDates: [...decidedDates].sort(),
+      firstSelectedAt: previous.firstSelectedAt || record.restaurantSelectedAt || record.decidedAt || new Date().toISOString(),
+      lastSelectedAt: record.restaurantSelectedAt || record.decidedAt || new Date().toISOString(),
+      updatedAt: new Date().toISOString(),
+    };
+    global.localStorage.setItem(RESTAURANT_STATS_KEY, JSON.stringify(stats));
+    return stats[key];
+  }
+
   function saveLunchDecision(menu, context = {}) {
     const history = getLunchHistory();
     const profile = context.profile || getProfile();
     const dateKey = context.date || getLocalDateKey();
     const location = context.location || profile?.location || null;
     const previousRecord = history.find((record) => record.date === dateKey);
+    const isSameMenuAsPrevious = previousRecord && (previousRecord.menuId === menu.id || previousRecord.name === menu.name);
+    const restaurantName = normalizeRestaurantName(context.restaurantName || (isSameMenuAsPrevious ? previousRecord?.restaurantName : ""));
     const nextRecord = {
       id: previousRecord?.id || `${dateKey}-${menu.id}-${Date.now()}`,
       anonymousId: profile?.anonymousId || "",
       nickname: profile?.nickname || "",
-      regionName: context.regionName || "",
-      locationLabel: location ? profile?.locationLabel || context.locationLabel || "현재 위치" : "",
+      regionName: context.regionName || previousRecord?.regionName || "",
+      locationLabel: location ? context.locationLabel || profile?.locationLabel || previousRecord?.locationLabel || "현재 위치" : "",
       location: location
         ? {
             latitude: location.latitude,
@@ -220,6 +263,8 @@
       selectedMoods: context.selectedMoods || [],
       moodLabels: context.moodLabels || [],
       budgetMode: context.budgetMode || "상관없음",
+      restaurantName,
+      restaurantSelectedAt: restaurantName ? context.restaurantSelectedAt || (isSameMenuAsPrevious ? previousRecord?.restaurantSelectedAt : "") || new Date().toISOString() : "",
       decidedAt: new Date().toISOString(),
       date: dateKey,
       source: context.source || "decision",
@@ -230,6 +275,20 @@
     return nextRecord;
   }
 
+  function saveRestaurantSelection(menu, context = {}) {
+    const restaurantName = normalizeRestaurantName(context.restaurantName);
+    if (!restaurantName) return null;
+
+    const record = saveLunchDecision(menu, {
+      ...context,
+      restaurantName,
+      restaurantSelectedAt: new Date().toISOString(),
+      source: context.source || "restaurant",
+    });
+    saveRestaurantStat(record);
+    return record;
+  }
+
   app.api = {
     getMenus,
     getPopularMenus,
@@ -238,7 +297,9 @@
     getProfile,
     saveProfile,
     saveLunchDecision,
+    saveRestaurantSelection,
     getLunchHistory,
     getLocalStats,
+    getRestaurantStats,
   };
 })(window);

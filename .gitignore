@@ -4,3 +4,8 @@ dist/
 build/
 .env
 .env.local
+assets/vendor/
+assets/review/
+docs/worker-reports/
+docs/worker-requests/
+docs/menu-data-audit-*.md

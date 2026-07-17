@@ -1,0 +1,85 @@
+const fs = require("fs");
+const path = require("path");
+
+const projectRoot = path.resolve(__dirname, "..");
+const menuPath = path.join(projectRoot, "src/data/menus.json");
+const filterDatasetPath = path.join(projectRoot, "src/data/menu-filter-dataset.json");
+const menus = JSON.parse(fs.readFileSync(menuPath, "utf8"));
+const filterDataset = JSON.parse(fs.readFileSync(filterDatasetPath, "utf8"));
+const errors = [];
+const seenIds = new Set();
+const seenNames = new Set();
+const numericRanges = {
+  spiceLevel: [0, 3],
+  soupLevel: [0, 2],
+  heaviness: [0, 3],
+  speed: [0, 4],
+  soloFit: [0, 5],
+  teamFit: [0, 5],
+  meetingSafe: [0, 4],
+  hangoverFit: [0, 4],
+  confidence: [0, 1],
+};
+
+function getImageUrl(entry) {
+  if (typeof entry === "string") return entry;
+  return entry?.url || entry?.imageUrl || entry?.localUrl || "";
+}
+
+function isLocalImage(url) {
+  return url.startsWith("./assets/") || url.startsWith("assets/");
+}
+
+function report(menu, message) {
+  errors.push(`${menu.id || "unknown"} ${menu.name || "이름 없음"}: ${message}`);
+}
+
+menus.forEach((menu) => {
+  ["id", "name", "category", "description", "imageUrl"].forEach((field) => {
+    if (!menu[field]) report(menu, `${field} 값이 없습니다.`);
+  });
+
+  if (seenIds.has(menu.id)) report(menu, "id가 중복됩니다.");
+  if (seenNames.has(menu.name)) report(menu, "메뉴 이름이 중복됩니다.");
+  seenIds.add(menu.id);
+  seenNames.add(menu.name);
+
+  Object.entries(numericRanges).forEach(([field, [min, max]]) => {
+    const value = menu[field];
+    if (!Number.isFinite(value) || value < min || value > max) {
+      report(menu, `${field}=${value} 값이 ${min}~${max} 범위를 벗어났습니다.`);
+    }
+  });
+
+  const recommended = new Set(menu.recommendedMoods || []);
+  const moodConflicts = (menu.blockedMoods || []).filter((mood) => recommended.has(mood));
+  if (moodConflicts.length) report(menu, `추천/차단 무드가 겹칩니다: ${moodConflicts.join(", ")}`);
+
+  const imageEntries = [...(Array.isArray(menu.imageUrls) ? menu.imageUrls : []), menu.imageUrl];
+  imageEntries.map(getImageUrl).filter(isLocalImage).forEach((url) => {
+    const assetPath = path.join(projectRoot, url.replace(/^\.\//, ""));
+    if (!fs.existsSync(assetPath)) report(menu, `로컬 이미지가 없습니다: ${url}`);
+  });
+});
+
+if (filterDataset.length !== menus.length) {
+  errors.push(`필터 데이터 ${filterDataset.length}개와 메뉴 데이터 ${menus.length}개의 개수가 다릅니다.`);
+}
+
+filterDataset.forEach((item, index) => {
+  if (item.name !== menus[index]?.name) {
+    errors.push(`필터 데이터 ${index + 1}번 메뉴 순서가 menus.json과 다릅니다.`);
+  }
+});
+
+if (errors.length) {
+  console.error(`메뉴 데이터 검사 실패 (${errors.length}건)`);
+  errors.slice(0, 50).forEach((error) => console.error(`- ${error}`));
+  process.exitCode = 1;
+} else {
+  const localImageMenus = menus.filter((menu) => {
+    const entries = [...(Array.isArray(menu.imageUrls) ? menu.imageUrls : []), menu.imageUrl];
+    return entries.map(getImageUrl).some(isLocalImage);
+  }).length;
+  console.log(`메뉴 데이터 검사 완료: ${menus.length}개, 로컬 사진 보유 ${localImageMenus}개`);
+}

@@ -7,6 +7,7 @@
 
   function FilterModal({ categories, moodOptions, filters, onChange, onClose, onApply, onReset }) {
     const draft = filters;
+    const modalRef = app.modal.useModalFocus({ onClose });
 
     function update(nextPatch) {
       onChange({ ...draft, ...nextPatch });
@@ -14,7 +15,15 @@
 
     return (
       <div className="modal-backdrop" role="presentation" onMouseDown={onClose}>
-        <section className="modal compact-modal" role="dialog" aria-modal="true" aria-labelledby="filter-title" onMouseDown={(event) => event.stopPropagation()}>
+        <section
+          ref={modalRef}
+          className="modal compact-modal"
+          role="dialog"
+          aria-modal="true"
+          aria-labelledby="filter-title"
+          tabIndex="-1"
+          onMouseDown={(event) => event.stopPropagation()}
+        >
           <header className="modal-head">
             <div>
               <h2 id="filter-title">입맛 맞추기</h2>
@@ -74,7 +83,7 @@
               </div>
             </section>
 
-            <div className="modal-actions">
+            <div className="modal-actions filter-modal-actions">
               <button className="btn" type="button" onClick={onReset}>
                 아무거나
               </button>

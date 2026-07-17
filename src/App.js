@@ -77,14 +77,14 @@
     육개장: "대파 향 나는 얼큰한 국물로 오후의 잠을 밀어냅니다.",
     감자탕: "등뼈와 감자가 푸짐하게 버티는 든든한 국물 판결.",
     떡갈비정식: "부드러운 떡갈비 한 입이면 정식의 품격이 올라갑니다.",
-    고등어구이: "노릇한 고등어와 흰밥, 담백한 점심의 정석입니다.",
+    생선구이: "생구는 결국 생선구이. 노릇한 생선과 흰밥이면 점심이 단정해집니다.",
     갈치조림: "양념 밴 무와 갈치살, 밥 위에서 조림의 힘이 납니다.",
     차돌된장밥: "차돌의 고소함과 된장의 구수함이 한 그릇에서 만납니다.",
     짜장면: "춘장 코팅된 면발을 비비면 점심 고민도 까맣게 정리됩니다.",
     짬뽕: "빨간 국물 한 숟갈이면 속이 확 풀리는 중식 구조대.",
-    탕수육덮밥: "바삭함과 새콤달콤 소스가 밥 위에서 사이좋게 합석.",
+    탕수육: "바삭한 고기에 새콤달콤 소스, 중식집 합의안은 이쪽입니다.",
     마파두부밥: "부드러운 두부에 얼얼한 소스, 밥이 알아서 따라옵니다.",
-    중화볶음밥: "웍 향 달걀 볶음밥, 빠르게 먹어도 기분은 제대로.",
+    볶음밥: "계란과 밥을 빠르게 볶아낸 기본기. 고민 길 때 숟가락이 먼저 갑니다.",
     고추잡채밥: "아삭한 피망과 고기볶음, 꽃빵 없이도 밥 위에서 충분합니다.",
     유산슬덮밥: "부드러운 해산물 소스가 오늘 점심을 살짝 고급지게 만듭니다.",
     잡채밥: "당면의 탱글함과 밥의 든든함, 탄수화물이 사이좋은 날.",
@@ -92,7 +92,6 @@
     마라탕: "얼얼한 국물에 재료를 고르는 순간, 취향 회의는 끝.",
     마라샹궈: "국물 없이 강하게 볶아내는 마라의 직진형 점심.",
     우육면: "진한 소고기 국물과 면발, 한 그릇 안에 여행 기분.",
-    크림새우덮밥: "바삭한 새우에 부드러운 크림, 점심에 살짝 기분 전환.",
     중화비빔밥: "불맛 재료와 매콤 양념을 비비면 숟가락 속도가 붙습니다.",
     초밥세트: "한 점씩 고르는 재미로 점심이 조용히 특별해집니다.",
     사케동: "연어가 밥 위에 누우면 깔끔한 행복이 됩니다.",
@@ -112,13 +111,12 @@
     토마토파스타: "상큼한 토마토 소스에 면발을 감아 산뜻하게 갑니다.",
     크림파스타: "부드러운 크림이 면을 감싸면 오늘은 포근한 쪽입니다.",
     라자냐: "겹겹이 쌓인 치즈와 소스, 포크가 들어갈 때 이미 승리.",
-    버섯리조또: "버섯 향 머금은 쌀알이 차분한 점심을 만들어줍니다.",
+    리조또: "크리미한 쌀알 한 숟갈이면 점심이 부드럽게 정리됩니다.",
     스테이크덮밥: "고기 한 점과 밥 한 숟갈, 점심에 힘이 붙습니다.",
     함박스테이크: "소스 머금은 함박 한 조각이면 어린 시절 기분까지 옵니다.",
     치킨스테이크: "닭고기를 담백하게 구워 오후를 무겁지 않게 넘깁니다.",
     마르게리타피자: "토마토, 바질, 치즈. 단순해서 더 강한 피자 공식.",
     감바스정식: "마늘 오일 속 새우를 건지면 점심이 살짝 휴양지입니다.",
-    그라탕: "치즈가 노릇하게 덮이면 숟가락이 먼저 움직입니다.",
     오므라이스: "폭신한 달걀 이불 아래 볶음밥이 얌전히 기다립니다.",
     미트볼스파게티: "미트볼 하나, 면 한 포크. 익숙한 즐거움이 강합니다.",
     클럽샌드위치: "겹겹이 쌓은 샌드위치처럼 점심 만족도도 층층이.",
@@ -131,7 +129,6 @@
     브리또: "한 손에 말아 든 든든함, 바쁜 점심에 강한 선택.",
     핫도그: "소시지와 빵의 직선 승부, 빨리 먹기엔 이만한 게 없습니다.",
     치킨랩: "닭고기와 채소를 또띠아에 감아 깔끔하게 들고 갑니다.",
-    감자튀김세트: "바삭한 감자와 사이드의 유혹, 오늘은 가볍게 삐끗.",
     피쉬버거: "담백한 생선 패티가 버거판에 조용히 다른 맛을 냅니다.",
     햄치즈샌드위치: "햄과 치즈의 오래된 콤비, 급한 점심도 안정적으로.",
     떡볶이: "빨간 떡 하나 집는 순간, 분식의 심장이 뜁니다.",
@@ -169,7 +166,6 @@
     곤약면샐러드: "가벼운 면발로 점심은 먹되 졸음은 덜 데려옵니다.",
     렌틸수프: "렌틸콩이 잔잔하게 포만감을 채워주는 따뜻한 선택.",
     아보카도샌드위치: "부드러운 아보카도가 빵 사이에서 여유를 만듭니다.",
-    오트밀리조또: "오트밀도 리조또가 되면 꽤 그럴듯한 점심입니다.",
     백반정식: "국, 밥, 반찬이 차려지면 점심의 기본기가 살아납니다.",
     가정식백반: "오늘은 엄마 손맛 쪽으로 마음이 기우는 백반입니다.",
     청국장: "진한 구수함이 호불호를 뚫고 밥을 부릅니다.",
@@ -190,8 +186,6 @@
     잡탕밥: "해산물과 채소가 걸쭉하게 모여 밥 위를 덮습니다.",
     난자완스밥: "부드러운 고기완자와 소스가 밥을 고급스럽게 감쌉니다.",
     사천탕면: "얼큰하고 향긋한 국물 면으로 점심에 불을 켭니다.",
-    군만두정식: "노릇한 군만두와 밥, 바삭한 소리가 점심을 살립니다.",
-    칠리새우덮밥: "새우와 칠리소스가 밥 위에서 달콤매콤하게 튑니다.",
     치킨가라아게동: "바삭한 가라아게가 밥 위에 앉으면 젓가락이 빨라집니다.",
     에비동: "통통한 새우튀김이 덮밥 위에서 바삭하게 주장합니다.",
     연어구이정식: "노릇하게 구운 연어와 밥, 깔끔한 정식의 안정감.",
@@ -207,7 +201,6 @@
     머쉬룸샌드위치: "버섯 향과 빵의 조합으로 조용히 든든한 한 끼.",
     치킨퀘사디아: "치즈 늘어나는 또띠아 속 치킨, 손이 먼저 갑니다.",
     더블치즈버거: "치즈도 패티도 두껍게, 오늘은 단순하게 강합니다.",
-    샐러드버거: "버거는 먹고 싶고 양상추도 챙기고 싶은 절충안.",
     치킨텐더세트: "바삭한 텐더와 감자, 찍어 먹는 재미까지 포함.",
     베이글샌드위치: "쫀득한 베이글 사이에 점심을 단단히 끼워 넣습니다.",
     유부초밥: "달큰한 유부 속 밥 한입, 가볍게 먹어도 기분 좋습니다.",
@@ -230,14 +223,10 @@
     병아리콩샐러드: "고소한 병아리콩이 조용히 배를 채워주는 건강한 한 그릇.",
     샐러드랩: "채소를 또띠아에 감아 바쁜 점심도 깔끔하게.",
     통밀참치샌드위치: "통밀빵과 참치로 빠르게 먹어도 속은 든든하게.",
-    현미도시락: "현미밥과 반찬으로 오후 졸림을 조금 멀리 둡니다.",
-    구운야채볼: "구운 채소의 단맛이 볼 하나를 차분하게 채웁니다.",
     치킨마요덮밥: "치킨과 마요의 짭짤고소한 합작, 숟가락이 멈추기 어렵습니다.",
     참치마요덮밥: "참치마요는 편안합니다. 빠르고 익숙하고 배신이 적습니다.",
-    제육도시락: "빨간 제육과 반찬 칸칸이, 회사 점심의 든든한 정석.",
     소불고기도시락: "달큰한 소불고기로 도시락도 꽤 근사해집니다.",
     돈까스도시락: "바삭한 메인 하나면 도시락 뚜껑 열 때 기분이 납니다.",
-    생선구이도시락: "생선구이와 밥, 도시락이어도 단정한 한 끼.",
     카레도시락: "카레가 밥을 덮으면 도시락도 숟가락 하나로 정리됩니다.",
     햄버그도시락: "함박 소스가 밥에 스며들면 빠른 점심도 만족스럽습니다.",
     컵밥: "컵 하나에 밥과 토핑, 시간이 없을수록 강해지는 메뉴.",
@@ -247,7 +236,6 @@
     대게정식: "대게살을 발라 먹는 순간, 점심이 작은 회식이 됩니다.",
     스페셜초밥: "초밥 한 점씩 올리면 오후의 기분도 정갈해집니다.",
     참치회덮밥: "참치와 채소를 비비면 산뜻하지만 꽤 든든한 한 그릇.",
-    생구: "침착맨 추천메뉴 생구. 검색은 생선구이로, 점심은 단정하게 갑니다.",
   };
 
   function getDateKey(date = new Date()) {
@@ -389,6 +377,15 @@
     return text;
   }
 
+  function escapeHtml(value) {
+    return String(value == null ? "" : value)
+      .replace(/&/g, "&amp;")
+      .replace(/</g, "&lt;")
+      .replace(/>/g, "&gt;")
+      .replace(/"/g, "&quot;")
+      .replace(/'/g, "&#39;");
+  }
+
   function getMoodLabel(key) {
     return MOOD_OPTIONS.find((mood) => mood.key === key)?.label || key;
   }
@@ -476,6 +473,19 @@
     return true;
   }
 
+  function getBudgetRelaxationNotice(menus, filters) {
+    if (filters.budget === "상관없음") return "";
+
+    const categoryFiltered = filters.categories.length
+      ? menus.filter((menu) => filters.categories.includes(menu.category))
+      : menus;
+    const hasBudgetMatch = categoryFiltered.some((menu) => matchesBudgetFilter(menu, filters.budget));
+    if (hasBudgetMatch) return "";
+
+    const categoryLabel = filters.categories.length ? filters.categories.join(" · ") : "현재 조건";
+    return `${categoryLabel}에는 ${filters.budget} 지갑 조건에 맞는 메뉴가 없어, 지갑 조건만 풀고 골랐어요.`;
+  }
+
   function getBudgetScore(budget, budgetTag) {
     if (budget === "월급 전") {
       if (budgetTag === "가볍게") return 110;
@@ -515,6 +525,7 @@
   }
 
   function matchesStrongMood(menu, mood) {
+    if (menu.blockedMoods?.includes(mood)) return false;
     if (mood === "spicy") return menu.spiceLevel >= 2 || menu.tags.includes("spicy");
     if (mood === "soup") return menu.soupLevel >= 1 || isSoupish(menu);
     if (mood === "hangover") return menu.hangoverFit >= 3 || menu.soupLevel >= 2;
@@ -534,13 +545,16 @@
     let score = menu.baseLikes / 25 + getFeedbackAdjustment(menu);
     const budgetTag = getMenuBudgetTag(menu);
 
-    if (["감자튀김세트", "튀김세트"].includes(menu.name)) score -= 90;
+    if (menu.name === "튀김세트") score -= 90;
 
     if (filters.categories.includes(menu.category)) score += 90;
     score += getBudgetScore(filters.budget, budgetTag);
 
     filters.moods.forEach((mood) => {
-      if (menu.avoidMoods?.includes(mood)) score -= 35;
+      const confidence = Number.isFinite(menu.confidence) ? menu.confidence : 0.75;
+      if (menu.recommendedMoods?.includes(mood)) score += 48 * confidence;
+      if (menu.blockedMoods?.includes(mood)) score -= 120 * confidence;
+      else if (menu.avoidMoods?.includes(mood)) score -= 42;
       if (mood === "spicy") score += menu.spiceLevel >= 2 ? 110 + menu.spiceLevel * 10 : -240;
       if (mood === "soup") score += menu.soupLevel >= 1 ? 80 + menu.soupLevel * 18 : -160;
       if (mood === "hangover") score += menu.hangoverFit * 34 + menu.soupLevel * 12 + (hasTag(menu, ["noodle", "rice"]) ? 12 : 0);
@@ -560,6 +574,10 @@
 
   function hasActiveFilters(filters) {
     return filters.categories.length > 0 || filters.moods.length > 0 || filters.budget !== "상관없음";
+  }
+
+  function hasLocalMenuImage(menu) {
+    return app.images?.getImageCandidates(menu).some((image) => image.isLocal) || false;
   }
 
   function hasHardMoodFilter(filters) {
@@ -584,11 +602,13 @@
   function pickRecommendation(candidates, activeFilters = DEFAULT_FILTERS) {
     if (!candidates.length) return null;
     const poolSize = hasActiveFilters(activeFilters) ? 8 : 30;
-    const recommendationPool = candidates.slice(0, Math.min(poolSize, candidates.length));
+    const initialPool = candidates.slice(0, Math.min(poolSize, candidates.length));
+    const localImagePool = initialPool.filter(hasLocalMenuImage);
+    const recommendationPool = !hasActiveFilters(activeFilters) && localImagePool.length >= 5 ? localImagePool : initialPool;
     const minScore = Math.min(...recommendationPool.map((menu) => menu.decisionScore || 0));
     const weightedMenus = recommendationPool.map((menu) => ({
       menu,
-      weight: Math.max(4, (menu.decisionScore || 0) - minScore + 12),
+      weight: Math.max(4, (menu.decisionScore || 0) - minScore + 12 + (!hasActiveFilters(activeFilters) && hasLocalMenuImage(menu) ? 36 : 0)),
     }));
     const totalWeight = weightedMenus.reduce((sum, item) => sum + item.weight, 0);
     let cursor = Math.random() * totalWeight;
@@ -664,15 +684,62 @@
     return [...new Set([...(menu.keywords || []), ...fallbackKeywords].filter(Boolean))].slice(0, limit);
   }
 
+  function getMenuImage(menu) {
+    return app.images?.getMenuImageInfo(menu)?.url || "./assets/lunch-spread.png";
+  }
+
+  function getImageCredit(imageInfo) {
+    if (!imageInfo) return "";
+    return app.images?.getImageCreditLabel(imageInfo) || "";
+  }
+
+  function getFlowGuideCopy(flowStep, hasFilters) {
+    if (flowStep === "done") {
+      return {
+        eyebrow: "기록 완료",
+        heading: "오늘 점심은 저장됐어요",
+        reason: "다른 메뉴로 바꾸면 오늘 기록도 새 메뉴로 덮어쓸 수 있습니다.",
+      };
+    }
+
+    if (flowStep === "restaurant") {
+      return {
+        eyebrow: "식당 기록",
+        heading: "마지막으로 어디로 정했는지만 남겨주세요",
+        reason: "식당 이름을 남기면 내 점심로그와 지역별 맛집 후보 데이터가 같이 쌓입니다.",
+      };
+    }
+
+    if (flowStep === "nearby") {
+      return {
+        eyebrow: "메뉴 결정됨",
+        heading: "이제 근처 식당을 찾으면 돼요",
+        reason: "오늘 먹을 메뉴는 기록됐어요. 필요하면 현재 위치 기준으로 식당을 찾아보세요.",
+      };
+    }
+
+    if (flowStep === "decision") {
+      return {
+        eyebrow: hasFilters ? "조건 적용 중" : "아무거나 준비됨",
+        heading: hasFilters ? "지금 조건으로 골랐어요. 마음에 들면 결정하세요" : "아무거나로 골랐어요. 마음에 들면 결정하세요",
+        reason: "다른 게 좋으면 오늘은 아님이나 다른 메뉴로 바로 다시 돌릴 수 있습니다.",
+      };
+    }
+
+    return {
+      eyebrow: hasFilters ? "조건 적용 중" : "아무거나 모드",
+      heading: hasFilters ? "지금 조건으로 오늘의 픽을 좁혔어요" : "먼저 입맛을 맞추면 추천이 더 선명해져요",
+      reason: hasFilters
+        ? "마음에 안 들면 오늘은 아님으로 빼고, 다른 메뉴로 바로 다시 고르면 됩니다."
+        : "입맛, 상황, 지갑을 누르면 후보가 좁아지고 결정한 메뉴는 점심로그에 남아요.",
+    };
+  }
+
   function buildReason(menu, filters) {
     if (!menu) return "";
 
     if (!hasActiveFilters(filters)) {
       return "지금은 조건이 없어 넓게 섞은 랜덤 추천입니다. 오늘 상태를 넣으면 그 조건에 맞춰 더 분명하게 고릅니다.";
-    }
-
-    if (menu.tags.includes("meme")) {
-      return "침착맨의 추천메뉴, 생구. 오늘은 밈이 점심을 이깁니다.";
     }
 
     if (filters.budget === "월급 전" && getMenuBudgetTag(menu) === "가볍게") {
@@ -724,7 +791,6 @@
 
   function getOfficeLine(menu, filters) {
     if (!menu) return "";
-    if (menu.tags.includes("meme")) return "오늘은 생구. 검색은 생선구이로 보내드릴게요.";
     if (filters.moods.includes("diet")) return `오늘은 가볍게 ${menu.name}으로 갑시다.`;
     if (filters.moods.includes("safe")) return `${menu.name}이면 적어도 회의실에서 불만은 덜 나옵니다.`;
     if (filters.moods.includes("noTime")) return `멀리 가지 말고 ${menu.name}으로 점심 시간을 지켜봅시다.`;
@@ -745,8 +811,10 @@
     );
   }
 
-  function ProfileModal({ profile, isRequired, onSave, onClose }) {
+  function ProfileModal({ profile, promptContext = "", onSave, onClose }) {
     const [nickname, setNickname] = React.useState(profile?.nickname || "");
+    const isAfterDecision = promptContext === "afterDecision";
+    const modalRef = app.modal.useModalFocus({ onClose });
 
     function submitProfile(nextNickname = nickname) {
       onSave({
@@ -757,18 +825,28 @@
     }
 
     return (
-      <div className="modal-backdrop" role="presentation" onMouseDown={isRequired ? undefined : onClose}>
-        <section className="modal profile-modal" role="dialog" aria-modal="true" aria-labelledby="profile-title" onMouseDown={(event) => event.stopPropagation()}>
+      <div className="modal-backdrop" role="presentation" onMouseDown={onClose}>
+        <section
+          ref={modalRef}
+          className="modal profile-modal"
+          role="dialog"
+          aria-modal="true"
+          aria-labelledby="profile-title"
+          tabIndex="-1"
+          onMouseDown={(event) => event.stopPropagation()}
+        >
           <header className="modal-head">
             <div>
-              <h2 id="profile-title">내 점심 기록 설정</h2>
-              <p className="muted small">닉네임은 내 기록에만 씁니다. 위치는 근처 식당을 찾을 때만 확인합니다.</p>
+              <h2 id="profile-title">{isAfterDecision ? "점심로그 이름 정하기" : "내 점심 기록 설정"}</h2>
+              <p className="muted small">
+                {isAfterDecision
+                  ? "방금 고른 메뉴는 저장됐어요. 이름을 정해두면 내 점심로그가 더 알아보기 쉬워집니다."
+                  : "닉네임은 내 기록에만 씁니다. 위치는 근처 식당을 찾을 때만 확인합니다."}
+              </p>
             </div>
-            {!isRequired && (
-              <button className="close-btn" type="button" onClick={onClose} aria-label="닫기">
-                ×
-              </button>
-            )}
+            <button className="close-btn" type="button" onClick={onClose} aria-label="닫기">
+              ×
+            </button>
           </header>
 
           <div className="modal-body">
@@ -797,11 +875,11 @@
             </div>
 
             <div className="modal-actions">
-              <button className="btn" type="button" onClick={() => submitProfile("")}>
-                익명으로 시작
+              <button className="btn" type="button" onClick={onClose}>
+                {isAfterDecision ? "나중에" : "닫기"}
               </button>
               <button className="btn btn-primary" type="button" onClick={() => submitProfile()}>
-                저장하고 시작
+                {profile ? "저장" : "닉네임 저장"}
               </button>
             </div>
           </div>
@@ -815,6 +893,8 @@
     const [history, setHistory] = React.useState([]);
     const [profile, setProfile] = React.useState(null);
     const [isProfileOpen, setIsProfileOpen] = React.useState(false);
+    const [profilePromptContext, setProfilePromptContext] = React.useState("");
+    const [showProfileNudge, setShowProfileNudge] = React.useState(false);
     const [filters, setFilters] = React.useState(DEFAULT_FILTERS);
     const [draftFilters, setDraftFilters] = React.useState(DEFAULT_FILTERS);
     const [isFilterOpen, setIsFilterOpen] = React.useState(false);
@@ -827,7 +907,11 @@
     const [selectedMenu, setSelectedMenu] = React.useState(null);
     const [toast, setToast] = React.useState("");
     const [feedbackVersion, setFeedbackVersion] = React.useState(0);
+    const [flowStep, setFlowStep] = React.useState("taste");
     const [isFindingNearby, setIsFindingNearby] = React.useState(false);
+    const [nearbyStatus, setNearbyStatus] = React.useState("");
+    const [restaurantPrompt, setRestaurantPrompt] = React.useState(null);
+    const [restaurantName, setRestaurantName] = React.useState("");
     const [isLoading, setIsLoading] = React.useState(true);
     const [error, setError] = React.useState("");
     const [calendarCursor, setCalendarCursor] = React.useState(() => new Date());
@@ -842,6 +926,7 @@
     const similarMenus = React.useMemo(() => getSimilarMenus(visibleMenus, featured), [visibleMenus, featured]);
     const activeLabels = React.useMemo(() => getActiveLabels(filters), [filters]);
     const hasFilters = React.useMemo(() => hasActiveFilters(filters), [filters]);
+    const budgetRelaxationNotice = React.useMemo(() => getBudgetRelaxationNotice(menus, filters), [menus, filters]);
     const recentAvoidRecords = React.useMemo(() => getRecentAvoidRecords(history), [history]);
     const historyCalendar = React.useMemo(() => buildHistoryCalendar(history, calendarCursor), [history, calendarCursor]);
     const presetOptions = React.useMemo(() => getPresetOptions(6), []);
@@ -856,6 +941,13 @@
     const selectedFeedback = selectedMenu ? app.api.getFeedback(selectedMenu.id) : { verdict: "" };
     const profileName = profile?.nickname || "익명 미식가";
     const profileLocationLabel = getProfileLocationLabel(profile);
+    const featuredImage = featured ? app.images?.getMenuImageInfo(featured, stampKey) : null;
+    const featuredImageCredit = getImageCredit(featuredImage);
+    const flowCopy = React.useMemo(() => getFlowGuideCopy(flowStep, hasFilters), [flowStep, hasFilters]);
+    const isTasteStep = flowStep === "taste";
+    const isDecisionStep = flowStep === "decision";
+    const isNearbyStep = flowStep === "nearby";
+    const isRestaurantStep = flowStep === "restaurant" && restaurantPrompt;
 
     function refreshHistory() {
       setHistory(app.api.getLunchHistory?.() || []);
@@ -865,15 +957,102 @@
       const savedProfile = app.api.saveProfile(nextProfile);
       setProfile(savedProfile);
       setIsProfileOpen(false);
+      setProfilePromptContext("");
+      setShowProfileNudge(false);
       setToast(`${savedProfile.nickname || "익명"}님, 점심 기록 준비됐습니다.`);
     }
 
+    function openProfileSettings(promptContext = "") {
+      setShowProfileNudge(false);
+      setProfilePromptContext(promptContext);
+      setIsProfileOpen(true);
+    }
+
+    function closeProfileSettings() {
+      setIsProfileOpen(false);
+      setProfilePromptContext("");
+    }
+
     function openSearchWindow(url, mapWindow) {
-      if (mapWindow) {
+      if (mapWindow && !mapWindow.closed) {
+        try {
+          mapWindow.opener = null;
+        } catch (error) {
+          // Some browsers block opener changes. Navigation is still the important part.
+        }
         mapWindow.location.href = url;
         return;
       }
       global.open(url, "_blank", "noreferrer");
+    }
+
+    function writeNearbyWaitingPage(mapWindow, menu) {
+      if (!mapWindow?.document || mapWindow.closed) return;
+      const menuName = escapeHtml(menu.name);
+      try {
+        mapWindow.document.open();
+        mapWindow.document.write(`<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>${menuName} 근처 식당 찾는 중</title>
+    <style>
+      :root { color-scheme: light; font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Noto Sans KR", sans-serif; }
+      body { margin: 0; min-height: 100vh; display: grid; place-items: center; background: #fffaf2; color: #171512; }
+      main { width: min(420px, calc(100% - 40px)); padding: 28px; border: 1px solid #e9ddce; border-radius: 28px; background: #fffdf8; box-shadow: 0 20px 60px rgba(45, 37, 27, 0.12); }
+      span { display: inline-block; margin-bottom: 12px; padding: 7px 12px; border-radius: 999px; background: #e5f3ee; color: #196253; font-weight: 900; }
+      h1 { margin: 0 0 12px; font-size: 26px; line-height: 1.2; }
+      p { margin: 0; color: #6d665f; line-height: 1.55; font-size: 15px; }
+    </style>
+  </head>
+  <body>
+    <main>
+      <span>위치 확인 중</span>
+      <h1>${menuName} 근처 식당을 찾고 있어요</h1>
+      <p>브라우저에서 위치 권한을 허용하면 현재 위치 기준으로 검색 결과가 열립니다. 권한을 거절하면 메뉴명으로만 검색합니다.</p>
+    </main>
+  </body>
+</html>`);
+        mapWindow.document.close();
+      } catch (error) {
+        // Cross-window write can fail in some browser privacy modes. The search fallback still works.
+      }
+    }
+
+    function setTemporaryNearbyStatus(message, duration = 3200) {
+      setNearbyStatus(message);
+      window.setTimeout(() => {
+        setNearbyStatus((currentMessage) => (currentMessage === message ? "" : currentMessage));
+      }, duration);
+    }
+
+    function openRestaurantPrompt(menu, context = {}) {
+      if (!menu) return;
+      const promptProfile = context.profile || profile;
+      const location = context.location || promptProfile?.location || null;
+      const locationLabel = context.locationLabel || getProfileLocationLabel(promptProfile) || "";
+      setRestaurantPrompt({
+        menuId: menu.id,
+        menuName: menu.name,
+        category: menu.category,
+        regionName: context.regionName || locationLabel,
+        locationLabel,
+        location,
+        openedAt: new Date().toISOString(),
+      });
+      setRestaurantName("");
+      setFlowStep("restaurant");
+    }
+
+    function closeRestaurantPrompt(nextStep = "") {
+      setRestaurantPrompt(null);
+      setRestaurantName("");
+      if (nextStep) {
+        setFlowStep(nextStep);
+      } else if (flowStep === "restaurant") {
+        setFlowStep("done");
+      }
     }
 
     function findNearby(menu = featured) {
@@ -883,12 +1062,20 @@
       if (!global.navigator?.geolocation) {
         global.open(fallbackUrl, "_blank", "noreferrer");
         setToast("이 브라우저는 위치 확인을 지원하지 않아 메뉴명으로 검색합니다.");
+        setTemporaryNearbyStatus("위치 확인을 지원하지 않아 메뉴명으로만 검색을 엽니다.");
+        openRestaurantPrompt(menu, {
+          regionName: profileLocationLabel,
+          locationLabel: profileLocationLabel,
+          location: profile?.location || null,
+        });
         return;
       }
 
       const mapWindow = global.open("", "_blank");
+      writeNearbyWaitingPage(mapWindow, menu);
       setIsFindingNearby(true);
-      setToast("현재 위치로 근처 식당을 찾는 중입니다.");
+      setNearbyStatus(`${menu.name} 근처 식당을 찾기 위해 위치 권한을 확인하고 있습니다.`);
+      setToast("위치 권한을 확인해주세요. 허용하면 현재 위치 기준으로 찾습니다.");
 
       global.navigator.geolocation.getCurrentPosition(
         (position) => {
@@ -907,13 +1094,27 @@
           });
           setProfile(savedProfile);
           openSearchWindow(getMenuSearchUrl(menu, { location }), mapWindow);
+          openRestaurantPrompt(menu, {
+            profile: savedProfile,
+            regionName: locationLabel,
+            locationLabel,
+            location,
+          });
           setToast(`${locationLabel} 기준으로 ${menu.name}을 찾습니다.`);
+          setTemporaryNearbyStatus(`${locationLabel} 기준으로 ${menu.name} 검색을 열었습니다.`);
           setIsFindingNearby(false);
         },
         (locationError) => {
           const denied = locationError.code === locationError.PERMISSION_DENIED;
+          const fallbackMessage = denied ? "위치 권한 없이 메뉴명으로 검색을 엽니다." : "위치를 가져오지 못해 메뉴명으로 검색을 엽니다.";
           openSearchWindow(fallbackUrl, mapWindow);
+          openRestaurantPrompt(menu, {
+            regionName: profileLocationLabel,
+            locationLabel: profileLocationLabel,
+            location: profile?.location || null,
+          });
           setToast(denied ? "위치 권한 없이 메뉴명으로 검색합니다." : "위치를 가져오지 못해 메뉴명으로 검색합니다.");
+          setTemporaryNearbyStatus(fallbackMessage);
           setIsFindingNearby(false);
         },
         {
@@ -963,7 +1164,8 @@
 
       const rollNames = buildRollNames(availableCandidates, nextFeatured);
       let rollIndex = 0;
-      setToast("");
+      setToast(options.startToast || "");
+      closeRestaurantPrompt("decision");
       setIsDeciding(true);
       setRollingName(rollNames[rollIndex] || nextFeatured.name);
 
@@ -979,7 +1181,8 @@
         setIsDeciding(false);
         setStampKey((key) => key + 1);
         setRecentIds((previousIds) => [nextFeatured.id, ...previousIds.filter((id) => id !== nextFeatured.id)].slice(0, 18));
-        setToast(`오늘 점심 판결: ${nextFeatured.name}`);
+        const doneToast = typeof options.doneToast === "function" ? options.doneToast(nextFeatured) : options.doneToast;
+        setToast(doneToast || `오늘 점심 판결: ${nextFeatured.name}`);
       }, 780);
     }
 
@@ -988,6 +1191,7 @@
     }
 
     function applyFiltersAndRecommend(nextFilters) {
+      setFlowStep("decision");
       setDraftFilters(nextFilters);
       setFilters(nextFilters);
       setRecentIds([]);
@@ -1000,6 +1204,7 @@
     }
 
     function resetFilters() {
+      setFlowStep("decision");
       setDraftFilters(DEFAULT_FILTERS);
       setFilters(DEFAULT_FILTERS);
       setRecentIds([]);
@@ -1071,12 +1276,13 @@
       }
 
       const rows = [
-        ["date", "menu", "category", "budget", "moods", "location", "decidedAt", "source"],
+        ["date", "menu", "restaurant", "category", "budget", "moods", "location", "decidedAt", "source"],
         ...[...history]
           .sort((a, b) => getRecordDateKey(a).localeCompare(getRecordDateKey(b)) || (a.decidedAt || "").localeCompare(b.decidedAt || ""))
           .map((record) => [
             getRecordDateKey(record),
             record.name,
+            record.restaurantName || "",
             record.category,
             record.budgetMode,
             (record.moodLabels || []).join(" / "),
@@ -1106,7 +1312,8 @@
       setIsDeciding(false);
       setStampKey((key) => key + 1);
       setRecentIds((previousIds) => [menu.id, ...previousIds.filter((id) => id !== menu.id)].slice(0, 18));
-      setToast(`${menu.name}으로 결론 냈습니다.`);
+      closeRestaurantPrompt("decision");
+      setToast(`오늘의 픽을 ${menu.name}으로 바꿨어요.`);
     }
 
     function decideMenu(menu = featured) {
@@ -1125,21 +1332,63 @@
       refreshHistory();
       setFeedbackVersion((version) => version + 1);
       if (selectedMenu?.id === menu.id) setSelectedMenu(null);
+      setFlowStep("nearby");
       setToast(`${menu.name}, 오늘 점심으로 기록했습니다.`);
+      if (!profile) {
+        setShowProfileNudge(true);
+      }
+    }
+
+    function saveRestaurantChoice() {
+      const trimmedRestaurantName = restaurantName.trim();
+      if (!trimmedRestaurantName) {
+        setToast("식당 이름을 적어주면 맛집 후보로 저장할 수 있어요.");
+        return;
+      }
+      if (!restaurantPrompt) return;
+
+      const promptMenu =
+        menus.find((menu) => menu.id === restaurantPrompt.menuId) ||
+        (featured?.id === restaurantPrompt.menuId ? featured : null) || {
+          id: restaurantPrompt.menuId,
+          name: restaurantPrompt.menuName,
+          category: restaurantPrompt.category || "직접 입력",
+        };
+
+      const record = app.api.saveRestaurantSelection?.(promptMenu, {
+        profile,
+        restaurantName: trimmedRestaurantName,
+        selectedCategories: filters.categories,
+        selectedMoods: filters.moods,
+        moodLabels: filters.moods.map(getMoodLabel),
+        budgetMode: filters.budget,
+        regionName: restaurantPrompt.regionName || restaurantPrompt.locationLabel || profileLocationLabel,
+        locationLabel: restaurantPrompt.locationLabel || profileLocationLabel,
+        location: restaurantPrompt.location || profile?.location || null,
+      });
+
+      refreshHistory();
+      if (record?.date) setSelectedCalendarDate(record.date);
+      setFeedbackVersion((version) => version + 1);
+      closeRestaurantPrompt("done");
+      setToast(`${trimmedRestaurantName}, ${promptMenu.name} 맛집 후보로 기록했습니다.`);
     }
 
     function rejectMenu(menu = featured) {
       if (!menu || isDeciding) return;
+      app.api.saveFeedback(menu.id, { verdict: "rejected" });
       const nextSkippedIds = [menu.id, ...skippedIds.filter((id) => id !== menu.id)].slice(0, 24);
       setSkippedIds(nextSkippedIds);
       if (selectedMenu?.id === menu.id) setSelectedMenu(null);
-      setToast(`${menu.name}은 오늘 후보에서 뺐습니다.`);
+      setFeedbackVersion((version) => version + 1);
 
       const nextCandidates = getCandidateMenus(menus, filters).filter((candidate) => !nextSkippedIds.includes(candidate.id));
       recommend(nextCandidates, {
         ignoreCurrent: true,
         filters,
         extraBlockedIds: nextSkippedIds,
+        startToast: `${menu.name}은 오늘 후보에서 빼고 다시 고르는 중입니다.`,
+        doneToast: (nextMenu) => `${menu.name}은 빼고 ${nextMenu.name}으로 다시 골랐습니다.`,
       });
     }
 
@@ -1167,7 +1416,7 @@
           setMenus(menuData);
           setHistory(savedHistory);
           setProfile(savedProfile);
-          setIsProfileOpen(!savedProfile);
+          setIsProfileOpen(false);
           setFeatured(pickRecommendation(initialPool.length ? initialPool : initialCandidates, DEFAULT_FILTERS));
         } catch (loadError) {
           setError(loadError.message);
@@ -1231,7 +1480,7 @@
             <span className="brand-mark">밥</span>
             <div className="brand-text">
               <span className="brand-title">밥픽</span>
-              <span className="brand-subtitle">오늘 뭐 먹을지 10초 컷.</span>
+              <span className="brand-subtitle">상태 보고 10초 컷. 먹은 건 기억.</span>
             </div>
           </div>
           <div className="profile-chip">
@@ -1239,20 +1488,42 @@
               <strong>{profileName}</strong>
               <span>{profileLocationLabel ? `${profileLocationLabel} 기준` : "위치 미설정"}</span>
             </div>
-            <button className="btn btn-quiet" type="button" onClick={() => setIsProfileOpen(true)}>
+            <button className="btn btn-quiet" type="button" onClick={() => openProfileSettings()}>
               설정
             </button>
           </div>
         </header>
 
         <div className="decision-layout">
-          <section className={`state-guide ${hasFilters ? "is-active" : ""}`} aria-label="추천 조건">
+          <section className={`state-guide ${hasFilters ? "is-active" : ""} ${isTasteStep ? "is-current-step" : "is-past-step"}`} aria-label="추천 조건">
             <div className="state-copy">
               <div className="state-heading">
-                <span className="state-eyebrow">{hasFilters ? "조건 적용 중" : "아무거나 모드"}</span>
+                <span className="state-eyebrow">{flowCopy.eyebrow}</span>
                 <span className="state-count">{menus.length}개 메뉴</span>
               </div>
-              <h2>{hasFilters ? "입맛 적용 중" : "입맛 세팅"}</h2>
+              <h2>{flowCopy.heading}</h2>
+              <p className="state-reason">{flowCopy.reason}</p>
+              {budgetRelaxationNotice && (
+                <p className="filter-relaxation-note" role="status">
+                  {budgetRelaxationNotice}
+                </p>
+              )}
+              {!hasFilters && (
+                <div className="value-strip" aria-label="밥픽을 쓰는 이유">
+                  <span className="value-item">
+                    <strong>상태 반영</strong>
+                    <small>오늘 컨디션 기준</small>
+                  </span>
+                  <span className="value-item">
+                    <strong>반복 회피</strong>
+                    <small>최근 메뉴는 살짝 피함</small>
+                  </span>
+                  <span className="value-item">
+                    <strong>점심로그</strong>
+                    <small>먹은 기록 저장</small>
+                  </span>
+                </div>
+              )}
               {activeLabels.length ? (
                 <div className="chip-row selected-chip-row">
                   {activeLabels.map((label) => (
@@ -1278,14 +1549,14 @@
             <div className="state-panel">
               <div className="state-actions">
                 <button
-                  className="btn btn-primary"
+                  className={`btn ${isTasteStep ? "btn-primary btn-next-action" : "btn-step-muted"}`}
                   type="button"
                   onClick={() => {
                     setDraftFilters(filters);
                     setIsFilterOpen(true);
                   }}
                 >
-                  입맛 맞추기
+                  {isTasteStep ? "입맛 맞추기" : "입맛 바꾸기"}
                 </button>
                 <button className="btn btn-ghost" type="button" onClick={resetFilters} disabled={isDeciding} aria-label="아무거나: 조건 초기화">
                   아무거나
@@ -1295,7 +1566,29 @@
           </section>
 
           {featured ? (
-            <section className="verdict-card" aria-label="오늘의 추천 메뉴">
+            <section className={`verdict-card ${isDecisionStep ? "is-current-step" : ""} ${isTasteStep ? "is-waiting-step" : ""}`} aria-label="오늘의 추천 메뉴">
+              <figure className="verdict-photo">
+                <img
+                  src={featuredImage?.url || getMenuImage(featured)}
+                  alt={`${featured.name} 사진`}
+                  loading="eager"
+                  onLoad={() => app.images?.recordImageUse(featured, featuredImage)}
+                  onError={(event) => {
+                    event.currentTarget.src = app.images?.FALLBACK_IMAGE || "./assets/lunch-spread.png";
+                  }}
+                />
+                <figcaption>
+                  <span>{featured.category}</span>
+                  {featuredImageCredit && featuredImage?.sourceUrl ? (
+                    <a href={featuredImage.sourceUrl} target="_blank" rel="noreferrer">
+                      사진: {featuredImageCredit}
+                    </a>
+                  ) : (
+                    <span>메뉴 사진</span>
+                  )}
+                  {featuredImage?.variantCount > 1 && <span className="image-count">{featuredImage.variantCount}장 중 선택</span>}
+                </figcaption>
+              </figure>
               <div className="verdict-copy">
                 <div className="verdict-card-head">
                   <span className="recommend-pop">오늘의 픽</span>
@@ -1329,26 +1622,82 @@
                           {keyword}
                         </span>
                       ))}
-                      {featured.tags.includes("meme") && <span className="meta-pill">밈</span>}
                     </div>
                   </React.Fragment>
                 )}
                 <div className="button-row action-row">
-                  <button className="btn btn-primary" type="button" onClick={() => decideMenu(featured)} disabled={isDeciding}>
-                    이걸로 결정!
+                  <button
+                    className={`btn ${isDecisionStep ? "btn-accent btn-next-action" : "btn-waiting-action"}`}
+                    type="button"
+                    onClick={() => decideMenu(featured)}
+                    disabled={isDeciding || isNearbyStep || flowStep === "done"}
+                  >
+                    {isNearbyStep || flowStep === "done" ? "기록 완료" : "이걸로 결정!"}
                   </button>
                   <button className="btn" type="button" onClick={() => rejectMenu(featured)} disabled={isDeciding}>
                     오늘은 아님
                   </button>
                   <button
-                    className="btn"
+                    className={`btn ${isNearbyStep ? "btn-primary btn-route-action" : ""}`}
                     type="button"
                     onClick={() => findNearby(featured)}
                     disabled={isDeciding || isFindingNearby}
                   >
-                    {isFindingNearby ? "위치 확인 중" : "근처에서 찾기"}
+                    {isFindingNearby ? "위치 확인 중" : isNearbyStep ? "근처 식당 찾기" : "근처에서 찾기"}
                   </button>
                 </div>
+                {showProfileNudge && !profile && (
+                  <aside className="profile-nudge" aria-label="점심로그 이름 설정 안내">
+                    <div>
+                      <strong>내 점심로그로 남겨둘까요?</strong>
+                      <span>닉네임을 정하면 이 브라우저에서 내 기록을 구분해 볼 수 있어요.</span>
+                    </div>
+                    <div className="profile-nudge-actions">
+                      <button className="btn btn-primary" type="button" onClick={() => openProfileSettings("afterDecision")}>
+                        이름 정하기
+                      </button>
+                      <button className="btn" type="button" onClick={() => setShowProfileNudge(false)}>
+                        나중에
+                      </button>
+                    </div>
+                  </aside>
+                )}
+                {nearbyStatus && (
+                  <p className="nearby-status" role="status">
+                    {nearbyStatus}
+                  </p>
+                )}
+                {restaurantPrompt && (
+                  <section className={`restaurant-prompt ${isRestaurantStep ? "is-current-step" : ""}`} aria-label="식당 기록">
+                    <div className="restaurant-prompt-copy">
+                      <span>맛집 데이터 쌓기</span>
+                      <h3>어디로 정했나요?</h3>
+                      <p>
+                        {restaurantPrompt.locationLabel
+                          ? `${restaurantPrompt.locationLabel}에서 ${restaurantPrompt.menuName} 먹을 식당 이름을 남겨두면 나중에 지역별 맛집 후보가 됩니다.`
+                          : `${restaurantPrompt.menuName} 먹을 식당 이름을 남겨두면 나중에 맛집 후보가 됩니다.`}
+                      </p>
+                    </div>
+                    <div className="restaurant-record-row">
+                      <input
+                        type="text"
+                        value={restaurantName}
+                        placeholder="예: 회사 앞 김치찜집"
+                        aria-label="오늘 먹을 식당 이름"
+                        onChange={(event) => setRestaurantName(event.target.value)}
+                        onKeyDown={(event) => {
+                          if (event.key === "Enter") saveRestaurantChoice();
+                        }}
+                      />
+                      <button className="btn btn-accent btn-next-action" type="button" onClick={saveRestaurantChoice}>
+                        기록
+                      </button>
+                      <button className="btn" type="button" onClick={closeRestaurantPrompt}>
+                        건너뛰기
+                      </button>
+                    </div>
+                  </section>
+                )}
               </div>
             </section>
           ) : (
@@ -1361,6 +1710,7 @@
             onOpen={setSelectedMenu}
             onPick={pickSpecificMenu}
             getReason={getMenuCatchphrase}
+            imageSeed={stampKey}
           />
 
           <aside className="popular-band history-band" aria-label="내 점심 기록">
@@ -1439,7 +1789,7 @@
                   {selectedCalendarRecords.map((record) => (
                     <div className="calendar-record" key={record.id}>
                       <span>{record.name}</span>
-                      <small>{record.category || formatHistoryTime(record)}</small>
+                      <small>{record.restaurantName ? `${record.restaurantName} · ${record.category || formatHistoryTime(record)}` : record.category || formatHistoryTime(record)}</small>
                     </div>
                   ))}
                 </div>
@@ -1486,9 +1836,9 @@
         {isProfileOpen && (
           <ProfileModal
             profile={profile}
-            isRequired={!profile}
+            promptContext={profilePromptContext}
             onSave={saveProfile}
-            onClose={() => setIsProfileOpen(false)}
+            onClose={closeProfileSettings}
           />
         )}
 
@@ -1503,6 +1853,8 @@
             onFeedback={handleFeedback}
             onNearbySearch={() => findNearby(selectedMenu)}
             isFindingNearby={isFindingNearby}
+            nearbyStatus={nearbyStatus}
+            imageSeed={stampKey}
           />
         )}
 

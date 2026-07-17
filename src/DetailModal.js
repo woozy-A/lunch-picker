@@ -1,14 +1,26 @@
 (function attachDetailModal(global) {
   const app = (global.LunchApp = global.LunchApp || {});
 
-  function DetailModal({ menu, feedback, reason, officeLine, hasActiveFilters, onClose, onFeedback, onNearbySearch, isFindingNearby }) {
+  function DetailModal({ menu, feedback, reason, officeLine, hasActiveFilters, onClose, onFeedback, onNearbySearch, isFindingNearby, nearbyStatus = "", imageSeed = "" }) {
     if (!menu) {
       return null;
     }
 
+    const imageInfo = app.images?.getMenuImageInfo(menu, imageSeed) || { url: "./assets/lunch-spread.png", variantCount: 0 };
+    const creditLabel = app.images?.getImageCreditLabel(imageInfo) || "";
+    const modalRef = app.modal.useModalFocus({ onClose });
+
     return (
       <div className="modal-backdrop" role="presentation" onMouseDown={onClose}>
-        <section className="modal compact-modal" role="dialog" aria-modal="true" aria-labelledby="detail-title" onMouseDown={(event) => event.stopPropagation()}>
+        <section
+          ref={modalRef}
+          className="modal compact-modal"
+          role="dialog"
+          aria-modal="true"
+          aria-labelledby="detail-title"
+          tabIndex="-1"
+          onMouseDown={(event) => event.stopPropagation()}
+        >
           <header className="modal-head">
             <div>
               <h2 id="detail-title">{hasActiveFilters ? "메뉴 메모" : "조건을 넣으면 더 정확해요"}</h2>
@@ -22,6 +34,26 @@
           </header>
 
           <div className="modal-body">
+            <figure className="detail-photo">
+              <img
+                src={imageInfo.url}
+                alt={`${menu.name} 사진`}
+                loading="lazy"
+                onLoad={() => app.images?.recordImageUse(menu, imageInfo)}
+                onError={(event) => {
+                  event.currentTarget.src = app.images?.FALLBACK_IMAGE || "./assets/lunch-spread.png";
+                }}
+              />
+              {creditLabel && imageInfo.sourceUrl && (
+                <figcaption>
+                  <a href={imageInfo.sourceUrl} target="_blank" rel="noreferrer">
+                    사진: {creditLabel}
+                  </a>
+                  {imageInfo.variantCount > 1 && <span>사진 {imageInfo.variantCount}장</span>}
+                </figcaption>
+              )}
+            </figure>
+
             <section className="decision-note">
               <span className="recommend-pop">점심 선언</span>
               <h3>{menu.name}</h3>
@@ -79,6 +111,11 @@
                   {isFindingNearby ? "위치 확인 중" : "근처에서 찾기"}
                 </button>
               </div>
+              {nearbyStatus && (
+                <p className="nearby-status" role="status">
+                  {nearbyStatus}
+                </p>
+              )}
             </section>
           </div>
         </section>

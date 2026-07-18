@@ -4,6 +4,8 @@ const path = require("path");
 const rootDir = path.resolve(__dirname, "..");
 const sourcePath = path.join(rootDir, "src/data/menus.json");
 const filterDatasetPath = path.join(rootDir, "src/data/menu-filter-dataset.json");
+const recommendationRulesPath = path.join(rootDir, "src/data/recommendationRules.json");
+const recommendationRules = JSON.parse(fs.readFileSync(recommendationRulesPath, "utf8"));
 
 const VALID_SITUATION_TAGS = [
   "시간 없음",
@@ -22,6 +24,7 @@ const VALID_SITUATION_TAGS = [
 
 const VALID_CATEGORIES = ["한식", "중식", "일식", "양식", "분식", "아시안", "건강식"];
 const VALID_BUDGET_TAGS = ["가볍게", "평범하게", "오늘은 써도 됨"];
+const COMPANY_CARD_MENUS = new Set(recommendationRules.companyCardMenus || []);
 
 const newMenus = [
   {
@@ -1130,6 +1133,10 @@ function hasTag(menu, values) {
   return values.some((value) => menu.tags?.includes(value));
 }
 
+function hasFastSignals(menu) {
+  return menu.speed >= 3 || menu.prepMinutes <= 8 || hasTag(menu, ["fast", "quick", "portable", "sandwich", "burger", "wrap", "kimbap"]);
+}
+
 function hasKeyword(menu, values) {
   return values.some((value) => menu.keywords?.includes(value));
 }
@@ -1272,8 +1279,9 @@ function normalizeKeywords(keywords = []) {
   return [...new Set(keywords.map((keyword) => (keyword === "이동 최소화" ? "빠름" : keyword)))];
 }
 
-function normalizeAvoidMoods(avoidMoods = []) {
-  return [...new Set(avoidMoods.filter((mood) => mood !== "paydayBefore"))];
+function normalizeAvoidMoods(avoidMoods = [], recommendedMoods = [], blockedMoods = []) {
+  const excluded = new Set([...recommendedMoods, ...blockedMoods]);
+  return [...new Set(avoidMoods.filter((mood) => mood !== "paydayBefore" && !excluded.has(mood)))];
 }
 
 function getBudgetTag(menu) {
@@ -1288,12 +1296,18 @@ function getBudgetTag(menu) {
   return "상관없음";
 }
 
+function deriveWalletTags(menu, budgetTag) {
+  const tags = [budgetTag === "가볍게" ? "월급 전" : "월급날"];
+  if (COMPANY_CARD_MENUS.has(menu.name) || menu.keywords?.includes("법카")) tags.push("법카");
+  return tags;
+}
+
 function deriveSituationTags(menu) {
   const tags = [];
   const add = (tag, condition) => {
     if (condition) tags.push(tag);
   };
-  const isFast = menu.speed >= 3 || menu.prepMinutes <= 8 || hasTag(menu, ["fast", "quick", "portable", "sandwich", "burger", "wrap", "kimbap"]);
+  const isFast = hasFastSignals(menu);
 
   add("시간 없음", isFast);
   add("해장 필요", menu.hangoverFit >= 3 || (menu.soupLevel >= 2 && menu.spiceLevel >= 1));
@@ -1357,14 +1371,23 @@ const normalizedMenus = mergedMenus.map((menu) => {
   const normalizedMenu = { ...menu, category: normalizeCategory(menu) };
   validateMenu(normalizedMenu);
   const { top_situation_tags: topSituationTags, ...menuFields } = normalizedMenu;
+  const budgetTag = getBudgetTag(normalizedMenu);
+  const recommendedMoods = menuFields.recommendedMoods || [];
+  const blockedMoods = menuFields.blockedMoods || [];
   return {
     ...menuFields,
+    quick: hasFastSignals(menuFields),
     keywords: normalizeKeywords(menuFields.keywords),
-    avoidMoods: normalizeAvoidMoods(menuFields.avoidMoods),
+    avoidMoods: normalizeAvoidMoods(menuFields.avoidMoods, recommendedMoods, blockedMoods),
     situation_tags: mergeSituationTags(deriveSituationTags(normalizedMenu), topSituationTags),
-    budget_tag: getBudgetTag(normalizedMenu),
+    budget_tag: budgetTag,
+    walletTags: deriveWalletTags(menuFields, budgetTag),
   };
 });
+
+for (const name of COMPANY_CARD_MENUS) {
+  if (!normalizedMenus.some((menu) => menu.name === name)) throw new Error(`법카 메뉴를 찾지 못했습니다: ${name}`);
+}
 
 const filterDataset = normalizedMenus.map((menu, index) => ({
   id: index + 1,
@@ -1373,10 +1396,14 @@ const filterDataset = normalizedMenus.map((menu, index) => ({
   description: menu.description,
   situation_tags: menu.situation_tags,
   budget_tag: menu.budget_tag,
+  walletTags: menu.walletTags,
 }));
 
 fs.writeFileSync(sourcePath, `${JSON.stringify(normalizedMenus, null, 2)}\n`);
 fs.writeFileSync(filterDatasetPath, `${JSON.stringify(filterDataset, null, 2)}\n`);
+
+// Reapply curated recommendation rules after any bulk dataset rebuild.
+require("./normalizeRecommendationData.js");
 
 console.log(`updated menus: ${sourceMenus.length} -> ${normalizedMenus.length}`);
 console.log(`added menus: ${additions.length}`);

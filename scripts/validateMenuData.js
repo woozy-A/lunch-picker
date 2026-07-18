@@ -4,8 +4,10 @@ const path = require("path");
 const projectRoot = path.resolve(__dirname, "..");
 const menuPath = path.join(projectRoot, "src/data/menus.json");
 const filterDatasetPath = path.join(projectRoot, "src/data/menu-filter-dataset.json");
+const recommendationRulesPath = path.join(projectRoot, "src/data/recommendationRules.json");
 const menus = JSON.parse(fs.readFileSync(menuPath, "utf8"));
 const filterDataset = JSON.parse(fs.readFileSync(filterDatasetPath, "utf8"));
+const recommendationRules = JSON.parse(fs.readFileSync(recommendationRulesPath, "utf8"));
 const errors = [];
 const seenIds = new Set();
 const seenNames = new Set();
@@ -35,6 +37,8 @@ const moodKeys = new Set([
   "rainy",
 ]);
 const strongMoodKeys = new Set(["spicy", "soup", "hangover", "noTime", "diet"]);
+const budgetTags = new Set(["가볍게", "평범하게", "오늘은 써도 됨"]);
+const walletTags = new Set(["월급 전", "월급날", "법카"]);
 
 function getImageUrl(entry) {
   if (typeof entry === "string") return entry;
@@ -90,8 +94,14 @@ menus.forEach((menu) => {
   });
 
   const recommended = new Set(menu.recommendedMoods || []);
-  const moodConflicts = (menu.blockedMoods || []).filter((mood) => recommended.has(mood));
-  if (moodConflicts.length) report(menu, `추천/차단 무드가 겹칩니다: ${moodConflicts.join(", ")}`);
+  const blocked = new Set(menu.blockedMoods || []);
+  const avoid = new Set(menu.avoidMoods || []);
+  const recommendedBlockedConflicts = [...blocked].filter((mood) => recommended.has(mood));
+  const recommendedAvoidConflicts = [...avoid].filter((mood) => recommended.has(mood));
+  const blockedAvoidConflicts = [...avoid].filter((mood) => blocked.has(mood));
+  if (recommendedBlockedConflicts.length) report(menu, `추천/차단 무드가 겹칩니다: ${recommendedBlockedConflicts.join(", ")}`);
+  if (recommendedAvoidConflicts.length) report(menu, `추천/피하기 무드가 겹칩니다: ${recommendedAvoidConflicts.join(", ")}`);
+  if (blockedAvoidConflicts.length) report(menu, `차단/피하기 무드가 겹칩니다: ${blockedAvoidConflicts.join(", ")}`);
 
   ["recommendedMoods", "blockedMoods", "avoidMoods"].forEach((field) => {
     (menu[field] || []).forEach((mood) => {
@@ -104,6 +114,21 @@ menus.forEach((menu) => {
       report(menu, `${mood} 추천 무드와 음식 수치가 맞지 않습니다.`);
     }
   });
+
+  if (!budgetTags.has(menu.budget_tag)) report(menu, `알 수 없는 가격대입니다: ${menu.budget_tag}`);
+  if (!Array.isArray(menu.walletTags) || !menu.walletTags.length) {
+    report(menu, "walletTags가 없거나 비어 있습니다.");
+  } else {
+    const duplicatedWalletTags = menu.walletTags.filter((tag, index) => menu.walletTags.indexOf(tag) !== index);
+    if (duplicatedWalletTags.length) report(menu, `지갑 태그가 중복됩니다: ${duplicatedWalletTags.join(", ")}`);
+    menu.walletTags.forEach((tag) => {
+      if (!walletTags.has(tag)) report(menu, `알 수 없는 지갑 태그입니다: ${tag}`);
+    });
+  }
+
+  if (menu.quick !== isFastMenu(menu)) {
+    report(menu, `quick=${menu.quick} 값이 speed/prepMinutes/tags와 맞지 않습니다.`);
+  }
 
   const imageEntries = [...(Array.isArray(menu.imageUrls) ? menu.imageUrls : []), menu.imageUrl];
   imageEntries.map(getImageUrl).filter(isLocalImage).forEach((url) => {
@@ -119,6 +144,24 @@ if (filterDataset.length !== menus.length) {
 filterDataset.forEach((item, index) => {
   if (item.name !== menus[index]?.name) {
     errors.push(`필터 데이터 ${index + 1}번 메뉴 순서가 menus.json과 다릅니다.`);
+  }
+  if (JSON.stringify(item.walletTags || []) !== JSON.stringify(menus[index]?.walletTags || [])) {
+    errors.push(`필터 데이터 ${index + 1}번 메뉴의 walletTags가 menus.json과 다릅니다.`);
+  }
+  if (item.budget_tag !== menus[index]?.budget_tag) {
+    errors.push(`필터 데이터 ${index + 1}번 메뉴의 budget_tag가 menus.json과 다릅니다.`);
+  }
+  if (JSON.stringify(item.situation_tags || []) !== JSON.stringify(menus[index]?.situation_tags || [])) {
+    errors.push(`필터 데이터 ${index + 1}번 메뉴의 situation_tags가 menus.json과 다릅니다.`);
+  }
+});
+
+(recommendationRules.companyCardMenus || []).forEach((name) => {
+  const menu = menus.find((item) => item.name === name);
+  if (!menu) {
+    errors.push(`법카 규칙 메뉴가 menus.json에 없습니다: ${name}`);
+  } else if (!menu.walletTags?.includes("법카")) {
+    errors.push(`${name}: 법카 규칙 메뉴인데 walletTags에 법카가 없습니다.`);
   }
 });
 

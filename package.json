@@ -6,7 +6,10 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "check:data": "node scripts/validateMenuData.js"
+    "normalize:recommendations": "node scripts/normalizeRecommendationData.js",
+    "check:menus": "node scripts/validateMenuData.js",
+    "check:recommendations": "node scripts/checkRecommendationLogic.mjs",
+    "check:data": "npm run check:menus && npm run check:recommendations"
   },
   "dependencies": {
     "gsap": "^3.13.0",

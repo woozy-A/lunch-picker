@@ -1,3 +1,15 @@
+import {
+  getCandidateMenus as buildCandidateMenus,
+  getMenuBudgetTag,
+  hasActiveFilters,
+  hasTag,
+  isColdMenu,
+  isFastMenu,
+  matchesBudgetFilter,
+  pickRecommendation,
+  scoreMenu as calculateMenuScore,
+} from "./recommendationEngine.mjs";
+
 (function attachApp(global) {
   const app = (global.LunchApp = global.LunchApp || {});
   const { FilterModal, ResultList, DetailModal } = app;
@@ -23,7 +35,6 @@
     { key: "rainy", label: "비 오는 날" },
   ];
 
-  const STRONG_MOOD_KEYS = ["spicy", "soup", "hangover", "noTime", "diet"];
   const PRESET_OPTIONS = [
     { id: "preset-spicy", question: "매운 게 땡기세요?", filters: { ...DEFAULT_FILTERS, moods: ["spicy"] } },
     { id: "preset-hangover", question: "어제 과음하셨나요?", filters: { ...DEFAULT_FILTERS, moods: ["hangover", "soup"] } },
@@ -441,38 +452,6 @@
     return `https://map.naver.com/p/search/${query}`;
   }
 
-  function hasTag(menu, tags) {
-    return tags.some((tag) => menu.tags.includes(tag));
-  }
-
-  function isSoupish(menu) {
-    return menu.soupLevel > 0 || hasTag(menu, ["soup"]) || ["짬뽕", "삼선짬뽕", "차돌짬뽕", "우육면", "마라탕", "칼국수", "만두국", "떡만둣국", "사천탕면", "락사"].includes(menu.name);
-  }
-
-  function isFastMenu(menu) {
-    return menu.speed >= 3 || menu.prepMinutes <= 8 || hasTag(menu, ["fast", "quick", "portable", "sandwich", "burger", "wrap", "kimbap"]);
-  }
-
-  function getMenuBudgetTag(menu) {
-    if (menu.budget_tag) return menu.budget_tag;
-    if (typeof menu.price === "number") {
-      if (menu.price < 10000) return "가볍게";
-      if (menu.price >= 15000) return "오늘은 써도 됨";
-      return "평범하게";
-    }
-    if (menu.priceLevel === "저렴" || menu.priceTier === 1) return "가볍게";
-    if (menu.priceLevel === "프리미엄" || menu.priceTier === 3) return "오늘은 써도 됨";
-    return "평범하게";
-  }
-
-  function matchesBudgetFilter(menu, budget) {
-    const budgetTag = getMenuBudgetTag(menu);
-    if (budget === "월급 전") return budgetTag === "가볍게";
-    if (budget === "월급날") return budgetTag === "평범하게" || budgetTag === "오늘은 써도 됨";
-    if (budget === "법카") return budgetTag === "오늘은 써도 됨";
-    return true;
-  }
-
   function getBudgetRelaxationNotice(menus, filters) {
     if (filters.budget === "상관없음") return "";
 
@@ -484,25 +463,6 @@
 
     const categoryLabel = filters.categories.length ? filters.categories.join(" · ") : "현재 조건";
     return `${categoryLabel}에는 ${filters.budget} 지갑 조건에 맞는 메뉴가 없어, 지갑 조건만 풀고 골랐어요.`;
-  }
-
-  function getBudgetScore(budget, budgetTag) {
-    if (budget === "월급 전") {
-      if (budgetTag === "가볍게") return 110;
-      if (budgetTag === "평범하게") return -45;
-      return -220;
-    }
-    if (budget === "월급날") {
-      if (budgetTag === "오늘은 써도 됨") return 86;
-      if (budgetTag === "평범하게") return 58;
-      return -24;
-    }
-    if (budget === "법카") {
-      if (budgetTag === "오늘은 써도 됨") return 150;
-      if (budgetTag === "평범하게") return -80;
-      return -170;
-    }
-    return 0;
   }
 
   function getFeedbackAdjustment(menu) {
@@ -524,100 +484,16 @@
     return 0;
   }
 
-  function matchesStrongMood(menu, mood) {
-    if (menu.blockedMoods?.includes(mood)) return false;
-    if (mood === "spicy") return menu.spiceLevel >= 2 || menu.tags.includes("spicy");
-    if (mood === "soup") return menu.soupLevel >= 1 || isSoupish(menu);
-    if (mood === "hangover") return menu.hangoverFit >= 3 || menu.soupLevel >= 2;
-    if (mood === "noTime") return isFastMenu(menu);
-    if (mood === "diet") return menu.healthy || menu.category === "건강식" || (menu.heaviness <= 1 && (menu.calories || 999) <= 650);
-    return true;
-  }
-
-  function applyHardMoodFilters(menus, filters) {
-    return filters.moods.reduce((currentMenus, mood) => {
-      if (!STRONG_MOOD_KEYS.includes(mood)) return currentMenus;
-      return currentMenus.filter((menu) => matchesStrongMood(menu, mood));
-    }, menus);
-  }
-
   function scoreMenu(menu, filters) {
-    let score = menu.baseLikes / 25 + getFeedbackAdjustment(menu);
-    const budgetTag = getMenuBudgetTag(menu);
-
-    if (menu.name === "튀김세트") score -= 90;
-
-    if (filters.categories.includes(menu.category)) score += 90;
-    score += getBudgetScore(filters.budget, budgetTag);
-
-    filters.moods.forEach((mood) => {
-      const confidence = Number.isFinite(menu.confidence) ? menu.confidence : 0.75;
-      if (menu.recommendedMoods?.includes(mood)) score += 48 * confidence;
-      if (menu.blockedMoods?.includes(mood)) score -= 120 * confidence;
-      else if (menu.avoidMoods?.includes(mood)) score -= 42;
-      if (mood === "spicy") score += menu.spiceLevel >= 2 ? 110 + menu.spiceLevel * 10 : -240;
-      if (mood === "soup") score += menu.soupLevel >= 1 ? 80 + menu.soupLevel * 18 : -160;
-      if (mood === "hangover") score += menu.hangoverFit * 34 + menu.soupLevel * 12 + (hasTag(menu, ["noodle", "rice"]) ? 12 : 0);
-      if (mood === "noTime") score += menu.speed * 34 + (isFastMenu(menu) ? 36 : -80);
-      if (mood === "solo") score += menu.soloFit * 18 + (menu.quick ? 8 : 0);
-      if (mood === "team") score += menu.teamFit * 18 + (hasTag(menu, ["set", "pizza", "team"]) ? 18 : 0);
-      if (mood === "comfort") score += menu.meetingSafe * 14 + (menu.heaviness <= 1 ? 36 : 0) + (menu.healthy ? 18 : 0) - menu.spiceLevel * 36 - (hasTag(menu, ["fried"]) ? 34 : 0);
-      if (mood === "safe") score += menu.baseLikes / 9 + (menu.keywords?.includes("실패 낮음") ? 36 : 0) + menu.meetingSafe * 7;
-      if (mood === "meeting") score += menu.meetingSafe * 28 - menu.spiceLevel * 24 - menu.heaviness * 12 - (hasTag(menu, ["fish", "fried"]) ? 24 : 0);
-      if (mood === "diet") score += (menu.healthy ? 74 : 0) + (menu.category === "건강식" ? 60 : 0) + (menu.heaviness <= 1 ? 48 : -62) + ((menu.calories || 999) <= 650 ? 38 : -42) - (hasTag(menu, ["fried"]) ? 64 : 0) - (menu.heaviness >= 3 ? 80 : 0);
-      if (mood === "sleepy") score += menu.spiceLevel * 16 + (hasTag(menu, ["curry", "fresh"]) ? 26 : 0) + (menu.keywords?.includes("가벼움") ? 14 : 0);
-      if (mood === "rainy") score += menu.soupLevel * 28 + (hasTag(menu, ["noodle"]) ? 18 : 0) + (menu.spiceLevel >= 2 ? 8 : 0);
+    return calculateMenuScore(menu, filters, {
+      feedbackAdjustment: getFeedbackAdjustment(menu),
     });
-
-    return score;
-  }
-
-  function hasActiveFilters(filters) {
-    return filters.categories.length > 0 || filters.moods.length > 0 || filters.budget !== "상관없음";
-  }
-
-  function hasLocalMenuImage(menu) {
-    return app.images?.getImageCandidates(menu).some((image) => image.isLocal) || false;
-  }
-
-  function hasHardMoodFilter(filters) {
-    return filters.moods.some((mood) => STRONG_MOOD_KEYS.includes(mood));
   }
 
   function getCandidateMenus(menus, filters) {
-    const categoryFiltered = filters.categories.length
-      ? menus.filter((menu) => filters.categories.includes(menu.category))
-      : menus;
-    const budgetFiltered = categoryFiltered.filter((menu) => {
-      return matchesBudgetFilter(menu, filters.budget);
+    return buildCandidateMenus(menus, filters, {
+      scoreMenu: (menu) => scoreMenu(menu, filters),
     });
-    const filteredByMood = applyHardMoodFilters(budgetFiltered.length ? budgetFiltered : categoryFiltered, filters);
-    const pool = hasHardMoodFilter(filters) ? filteredByMood : filteredByMood.length ? filteredByMood : budgetFiltered.length ? budgetFiltered : categoryFiltered;
-
-    return pool
-      .map((menu) => ({ ...menu, decisionScore: scoreMenu(menu, filters) }))
-      .sort((a, b) => b.decisionScore - a.decisionScore);
-  }
-
-  function pickRecommendation(candidates, activeFilters = DEFAULT_FILTERS) {
-    if (!candidates.length) return null;
-    const poolSize = hasActiveFilters(activeFilters) ? 8 : 30;
-    const initialPool = candidates.slice(0, Math.min(poolSize, candidates.length));
-    const localImagePool = initialPool.filter(hasLocalMenuImage);
-    const recommendationPool = !hasActiveFilters(activeFilters) && localImagePool.length >= 5 ? localImagePool : initialPool;
-    const minScore = Math.min(...recommendationPool.map((menu) => menu.decisionScore || 0));
-    const weightedMenus = recommendationPool.map((menu) => ({
-      menu,
-      weight: Math.max(4, (menu.decisionScore || 0) - minScore + 12 + (!hasActiveFilters(activeFilters) && hasLocalMenuImage(menu) ? 36 : 0)),
-    }));
-    const totalWeight = weightedMenus.reduce((sum, item) => sum + item.weight, 0);
-    let cursor = Math.random() * totalWeight;
-
-    for (const item of weightedMenus) {
-      cursor -= item.weight;
-      if (cursor <= 0) return item.menu;
-    }
-    return recommendationPool[0];
   }
 
   function countSharedValues(left = [], right = []) {
@@ -742,14 +618,14 @@
       return "지금은 조건이 없어 넓게 섞은 랜덤 추천입니다. 오늘 상태를 넣으면 그 조건에 맞춰 더 분명하게 고릅니다.";
     }
 
-    if (filters.budget === "월급 전" && getMenuBudgetTag(menu) === "가볍게") {
+    if (filters.budget === "월급 전" && matchesBudgetFilter(menu, "월급 전")) {
       return "월급 전 방어전에는 가성비가 먼저입니다.";
     }
-    if (filters.budget === "월급날" && ["평범하게", "오늘은 써도 됨"].includes(getMenuBudgetTag(menu))) {
+    if (filters.budget === "월급날" && matchesBudgetFilter(menu, "월급날")) {
       return "월급날에는 너무 아끼지 말고 점심 만족도도 같이 봤습니다.";
     }
-    if (filters.budget === "법카" && getMenuBudgetTag(menu) === "오늘은 써도 됨") {
-      return "법카 모드라 평소보다 확실히 좋은 메뉴를 우선했습니다.";
+    if (filters.budget === "법카" && matchesBudgetFilter(menu, "법카")) {
+      return "법카로 먹기 좋은 메뉴 중에서 평소보다 확실한 선택을 우선했습니다.";
     }
     if (filters.moods.includes("diet") && (menu.healthy || menu.category === "건강식" || menu.heaviness <= 1)) {
       return "다이어트 상태라 가볍고 부담 적은 메뉴를 우선했습니다.";
@@ -761,7 +637,9 @@
       return "해장에 맞는 국물감과 속을 풀어주는 든든함을 우선했습니다.";
     }
     if (filters.moods.includes("soup") && menu.soupLevel >= 1) {
-      return "국물이 필요한 상태라 따뜻하게 떠먹을 수 있는 쪽으로 골랐습니다.";
+      return isColdMenu(menu)
+        ? "국물이 필요한 상태라 시원한 육수까지 포함해 골랐습니다."
+        : "국물이 필요한 상태라 따뜻하게 떠먹을 수 있는 쪽으로 골랐습니다.";
     }
     if (filters.moods.includes("spicy") && menu.spiceLevel >= 2) {
       return "매운 걸로 고른 만큼 확실히 자극 있는 메뉴만 후보에 남겼습니다.";
@@ -773,7 +651,9 @@
       return "미팅 전에는 냄새와 부담을 줄이는 쪽이 이깁니다.";
     }
     if (filters.moods.includes("rainy") && (menu.soupLevel >= 1 || hasTag(menu, ["noodle"]))) {
-      return "비 오는 날에는 따뜻한 쪽으로 마음이 기웁니다.";
+      return isColdMenu(menu)
+        ? "비 오는 날 조건에서도 지금 선택한 계열 안에서 국물 있는 메뉴를 골랐습니다."
+        : "비 오는 날에는 따뜻한 쪽으로 마음이 기웁니다.";
     }
     if (filters.moods.includes("sleepy") && (menu.spiceLevel >= 2 || hasTag(menu, ["curry", "fresh"]))) {
       return "입맛이 죽었을 때도 한 숟갈 뜨기 좋은 자극과 향을 우선했습니다.";

@@ -10,7 +10,7 @@
     "calories": 620,
     "healthy": false,
     "meat": true,
-    "quick": true,
+    "quick": false,
     "spicy": true,
     "ingredients": [
       "김치",
@@ -92,6 +92,9 @@
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:Korean_stew-Kimchi_jjigae-01.jpg",
         "title": "Korean stew-Kimchi jjigae-01.jpg"
       }
+    ],
+    "walletTags": [
+      "월급 전"
     ]
   },
   {
@@ -105,7 +108,7 @@
     "calories": 540,
     "healthy": true,
     "meat": false,
-    "quick": true,
+    "quick": false,
     "spicy": false,
     "ingredients": [
       "된장",
@@ -157,9 +160,7 @@
       "혼밥 좋음",
       "부담 적음"
     ],
-    "avoidMoods": [
-      "spicy"
-    ],
+    "avoidMoods": [],
     "situation_tags": [
       "해장 필요",
       "혼밥",
@@ -191,6 +192,9 @@
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:Korean_cuisine-Doenjang_jjigae_and_banchan.jpg",
         "title": "Korean cuisine-Doenjang jjigae and banchan.jpg"
       }
+    ],
+    "walletTags": [
+      "월급 전"
     ]
   },
   {
@@ -204,7 +208,7 @@
     "calories": 560,
     "healthy": true,
     "meat": false,
-    "quick": true,
+    "quick": false,
     "spicy": true,
     "ingredients": [
       "순두부",
@@ -257,10 +261,7 @@
       "가벼움",
       "혼밥 좋음"
     ],
-    "avoidMoods": [
-      "comfort",
-      "meeting"
-    ],
+    "avoidMoods": [],
     "situation_tags": [
       "해장 필요",
       "혼밥",
@@ -292,6 +293,9 @@
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:Korean_stew-Sundubu-07.jpg",
         "title": "Korean stew-Sundubu-07.jpg"
       }
+    ],
+    "walletTags": [
+      "월급 전"
     ]
   },
   {
@@ -359,10 +363,7 @@
       "든든함",
       "팀점심"
     ],
-    "avoidMoods": [
-      "comfort",
-      "meeting"
-    ],
+    "avoidMoods": [],
     "situation_tags": [
       "시간 없음",
       "해장 필요",
@@ -394,6 +395,9 @@
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:Korean_stew-Budae_jjigae-01.jpg",
         "title": "Korean stew-Budae jjigae-01.jpg"
       }
+    ],
+    "walletTags": [
+      "월급날"
     ]
   },
   {
@@ -407,7 +411,7 @@
     "calories": 760,
     "healthy": false,
     "meat": true,
-    "quick": true,
+    "quick": false,
     "spicy": true,
     "ingredients": [
       "돼지고기",
@@ -460,12 +464,7 @@
       "밥심",
       "직장인 정석"
     ],
-    "avoidMoods": [
-      "soup",
-      "hangover",
-      "comfort",
-      "meeting"
-    ],
+    "avoidMoods": [],
     "situation_tags": [
       "혼밥",
       "매운 걸로",
@@ -494,6 +493,9 @@
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pork_bulgogi.jpg",
         "title": "Pork bulgogi.jpg"
       }
+    ],
+    "walletTags": [
+      "월급 전"
     ]
   },
   {
@@ -557,11 +559,7 @@
       "실패 낮음",
       "밥심"
     ],
-    "avoidMoods": [
-      "spicy",
-      "soup",
-      "hangover"
-    ],
+    "avoidMoods": [],
     "situation_tags": [
       "시간 없음",
       "혼밥",
@@ -590,6 +588,9 @@
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:Korean_Beef_Bulgogi_Rice_Bowl_(34817154336).jpg",
         "title": "Korean Beef Bulgogi Rice Bowl (34817154336).jpg"
       }
+    ],
+    "walletTags": [
+      "월급날"
     ]
   },
   {
@@ -603,7 +604,7 @@
     "calories": 630,
     "healthy": true,
     "meat": false,
-    "quick": true,
+    "quick": false,
     "spicy": true,
     "ingredients": [
       "나물",
@@ -655,10 +656,7 @@
       "밥심"
     ],
     "avoidMoods": [
-      "soup",
-      "hangover",
-      "comfort",
-      "meeting"
+      "hangover"
     ],
     "situation_tags": [
       "혼밥",
@@ -689,6 +687,9 @@
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:Korean.food-Bibimbap-02.jpg",
         "title": "Korean.food-Bibimbap-02.jpg"
       }
+    ],
+    "walletTags": [
+      "월급 전"
     ]
   },
   {
@@ -749,11 +750,8 @@
       "밥심"
     ],
     "avoidMoods": [
-      "soup",
-      "hangover",
       "noTime",
-      "comfort",
-      "meeting"
+      "comfort"
     ],
     "situation_tags": [
       "매운 걸로",
@@ -782,6 +780,9 @@
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:Korean_cuisine-BBQ_Chicken_Dolsot_Bibimbap.jpg",
         "title": "Korean cuisine-BBQ Chicken Dolsot Bibimbap.jpg"
       }
+    ],
+    "walletTags": [
+      "월급날"
     ]
   },
   {
@@ -843,12 +844,10 @@
       "국물",
       "해장",
       "든든함",
-      "실패 낮음"
+      "실패 낮음",
+      "법카"
     ],
-    "avoidMoods": [
-      "spicy",
-      "noTime"
-    ],
+    "avoidMoods": [],
     "situation_tags": [
       "해장 필요",
       "국물 필요",
@@ -878,6 +877,10 @@
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:Galbitang_%EA%B0%88%EB%B9%84%ED%83%95_beeniru.jpg",
         "title": "Galbitang 갈비탕 beeniru.jpg"
       }
+    ],
+    "walletTags": [
+      "월급날",
+      "법카"
     ]
   },
   {
@@ -942,9 +945,7 @@
       "혼밥 좋음",
       "실패 낮음"
     ],
-    "avoidMoods": [
-      "spicy"
-    ],
+    "avoidMoods": [],
     "situation_tags": [
       "시간 없음",
       "해장 필요",
@@ -976,6 +977,9 @@
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:Seolleongtang_%EC%84%A4%EB%A0%81%ED%83%95_(5617999897).jpg",
         "title": "Seolleongtang 설렁탕 (5617999897).jpg"
       }
+    ],
+    "walletTags": [
+      "월급날"
     ]
   },
   {
@@ -1038,14 +1042,10 @@
     "keywords": [
       "국물",
       "해장",
-      "든든함"
+      "든든함",
+      "법카"
     ],
-    "avoidMoods": [
-      "spicy",
-      "noTime",
-      "comfort",
-      "meeting"
-    ],
+    "avoidMoods": [],
     "situation_tags": [
       "해장 필요",
       "국물 필요",
@@ -1074,6 +1074,10 @@
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:Korean_chicken_soup-Samgyetang-01.jpg",
         "title": "Korean chicken soup-Samgyetang-01.jpg"
       }
+    ],
+    "walletTags": [
+      "월급날",
+      "법카"
     ]
   },
   {
@@ -1139,9 +1143,7 @@
       "혼밥 좋음",
       "실패 낮음"
     ],
-    "avoidMoods": [
-      "spicy"
-    ],
+    "avoidMoods": [],
     "situation_tags": [
       "시간 없음",
       "해장 필요",
@@ -1174,6 +1176,9 @@
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:%EC%A7%84%EC%A3%BC%EB%83%89%EB%A9%B4%EC%9D%98_%EC%82%AC%EC%A7%84.jpg",
         "title": "진주냉면의 사진.jpg"
       }
+    ],
+    "walletTags": [
+      "월급날"
     ]
   },
   {
@@ -1238,9 +1243,7 @@
       "가벼움",
       "혼밥 좋음"
     ],
-    "avoidMoods": [
-      "spicy"
-    ],
+    "avoidMoods": [],
     "situation_tags": [
       "시간 없음",
       "해장 필요",
@@ -1274,6 +1277,9 @@
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:20240728_%EC%BD%A9%EB%82%98%EB%AC%BC%EA%B5%AD%EB%B0%A501.jpg",
         "title": "20240728 콩나물국밥01.jpg"
       }
+    ],
+    "walletTags": [
+      "월급 전"
     ]
   },
   {
@@ -1337,10 +1343,7 @@
       "실패 낮음"
     ],
     "avoidMoods": [
-      "spicy",
-      "soup",
-      "hangover",
-      "noTime"
+      "hangover"
     ],
     "situation_tags": [
       "팀점심",
@@ -1370,6 +1373,9 @@
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:Korean.food-Bossam-02.jpg",
         "title": "Korean.food-Bossam-02.jpg"
       }
+    ],
+    "walletTags": [
+      "월급날"
     ]
   },
   {
@@ -1434,11 +1440,7 @@
       "팀점심"
     ],
     "avoidMoods": [
-      "soup",
-      "hangover",
-      "noTime",
-      "comfort",
-      "meeting"
+      "hangover"
     ],
     "situation_tags": [
       "팀점심",
@@ -1468,6 +1470,9 @@
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:Dakgalbi_%EB%8B%AD%EA%B0%88%EB%B9%84_beeniru.jpg",
         "title": "Dakgalbi 닭갈비 beeniru.jpg"
       }
+    ],
+    "walletTags": [
+      "월급날"
     ]
   },
   {
@@ -1481,7 +1486,7 @@
     "calories": 650,
     "healthy": false,
     "meat": false,
-    "quick": true,
+    "quick": false,
     "spicy": true,
     "ingredients": [
       "오징어",
@@ -1532,10 +1537,7 @@
       "밥심"
     ],
     "avoidMoods": [
-      "soup",
-      "hangover",
-      "comfort",
-      "meeting"
+      "hangover"
     ],
     "situation_tags": [
       "혼밥",
@@ -1564,6 +1566,9 @@
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:Korean_spicy_stir-fried_squid_(6880030177).jpg",
         "title": "Korean spicy stir-fried squid (6880030177).jpg"
       }
+    ],
+    "walletTags": [
+      "월급날"
     ]
   },
   {
@@ -1577,7 +1582,7 @@
     "calories": 640,
     "healthy": true,
     "meat": false,
-    "quick": true,
+    "quick": false,
     "spicy": false,
     "ingredients": [
       "쌈채소",
@@ -1630,8 +1635,6 @@
       "밥심"
     ],
     "avoidMoods": [
-      "spicy",
-      "soup",
       "hangover"
     ],
     "situation_tags": [
@@ -1664,6 +1667,9 @@
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:Korean_cuisine-Ssambap-01.jpg",
         "title": "Korean cuisine-Ssambap-01.jpg"
       }
+    ],
+    "walletTags": [
+      "월급날"
     ]
   },
   {
@@ -1728,11 +1734,7 @@
       "실패 낮음",
       "밥심"
     ],
-    "avoidMoods": [
-      "spicy",
-      "soup",
-      "hangover"
-    ],
+    "avoidMoods": [],
     "situation_tags": [
       "시간 없음",
       "혼밥",
@@ -1761,6 +1763,9 @@
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:Korean_BBQ_pork.jpg",
         "title": "Korean BBQ pork.jpg"
       }
+    ],
+    "walletTags": [
+      "월급날"
     ]
   },
   {
@@ -1774,7 +1779,7 @@
     "calories": 690,
     "healthy": false,
     "meat": true,
-    "quick": true,
+    "quick": false,
     "spicy": true,
     "ingredients": [
       "소고기",
@@ -1826,10 +1831,7 @@
       "든든함",
       "혼밥 좋음"
     ],
-    "avoidMoods": [
-      "comfort",
-      "meeting"
-    ],
+    "avoidMoods": [],
     "situation_tags": [
       "해장 필요",
       "혼밥",
@@ -1861,6 +1863,9 @@
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:1%EB%AF%B8-%EC%9C%A1%EA%B0%9C%EC%9E%A5.jpg",
         "title": "1미-육개장.jpg"
       }
+    ],
+    "walletTags": [
+      "월급날"
     ]
   },
   {
@@ -1930,11 +1935,7 @@
       "사리추가",
       "볶음밥"
     ],
-    "avoidMoods": [
-      "noTime",
-      "comfort",
-      "meeting"
-    ],
+    "avoidMoods": [],
     "situation_tags": [
       "해장 필요",
       "팀점심",
@@ -1965,6 +1966,9 @@
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gamja-tang_with_ramyeon-sari.jpg",
         "title": "Gamja-tang with ramyeon-sari.jpg"
       }
+    ],
+    "walletTags": [
+      "월급날"
     ]
   },
   {
@@ -1978,7 +1982,7 @@
     "calories": 790,
     "healthy": false,
     "meat": true,
-    "quick": true,
+    "quick": false,
     "spicy": false,
     "ingredients": [
       "소고기",
@@ -2028,11 +2032,7 @@
       "팀점심",
       "실패 낮음"
     ],
-    "avoidMoods": [
-      "spicy",
-      "soup",
-      "hangover"
-    ],
+    "avoidMoods": [],
     "situation_tags": [
       "혼밥",
       "팀점심",
@@ -2061,6 +2061,9 @@
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:Korean.cuisine-Tteokgalbi-01.jpg",
         "title": "Korean.cuisine-Tteokgalbi-01.jpg"
       }
+    ],
+    "walletTags": [
+      "월급날"
     ]
   },
   {
@@ -2074,7 +2077,7 @@
     "calories": 670,
     "healthy": true,
     "meat": false,
-    "quick": true,
+    "quick": false,
     "spicy": false,
     "ingredients": [
       "생선구이",
@@ -2125,12 +2128,7 @@
       "집밥 느낌",
       "침착맨 픽"
     ],
-    "avoidMoods": [
-      "spicy",
-      "soup",
-      "hangover",
-      "noTime"
-    ],
+    "avoidMoods": [],
     "situation_tags": [
       "혼밥",
       "속 편하게",
@@ -2159,6 +2157,9 @@
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:Korean.cuisine-Saengseon_gui-01.jpg",
         "title": "Korean.cuisine-Saengseon gui-01.jpg"
       }
+    ],
+    "walletTags": [
+      "월급날"
     ]
   },
   {
@@ -2221,13 +2222,7 @@
       "든든함",
       "밥심"
     ],
-    "avoidMoods": [
-      "soup",
-      "hangover",
-      "noTime",
-      "comfort",
-      "meeting"
-    ],
+    "avoidMoods": [],
     "situation_tags": [
       "매운 걸로",
       "입맛 깨우기"
@@ -2254,6 +2249,9 @@
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:Galchi-jorim_1.jpg",
         "title": "Galchi-jorim 1.jpg"
       }
+    ],
+    "walletTags": [
+      "월급날"
     ]
   },
   {
@@ -2317,11 +2315,7 @@
       "실패 낮음",
       "밥심"
     ],
-    "avoidMoods": [
-      "spicy",
-      "soup",
-      "hangover"
-    ],
+    "avoidMoods": [],
     "situation_tags": [
       "시간 없음",
       "혼밥",
@@ -2334,7 +2328,10 @@
     "imageTitle": "Korean cuisine-Doenjang jjigae and banchan.jpg",
     "imageAuthor": "egg (Hong, Yun Seon)",
     "imageLicense": "CC BY 2.0",
-    "imageBorrowedFrom": "된장찌개"
+    "imageBorrowedFrom": "된장찌개",
+    "walletTags": [
+      "월급날"
+    ]
   },
   {
     "id": "cn-001",
@@ -2400,10 +2397,7 @@
       "실패 낮음",
       "직장인 정석"
     ],
-    "avoidMoods": [
-      "spicy",
-      "hangover"
-    ],
+    "avoidMoods": [],
     "situation_tags": [
       "시간 없음",
       "혼밥",
@@ -2434,6 +2428,9 @@
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:Jajangmyeon_%EC%A7%9C%EC%9E%A5%EB%A9%B4.jpg",
         "title": "Jajangmyeon 짜장면.jpg"
       }
+    ],
+    "walletTags": [
+      "월급 전"
     ]
   },
   {
@@ -2447,7 +2444,7 @@
     "calories": 720,
     "healthy": false,
     "meat": false,
-    "quick": true,
+    "quick": false,
     "spicy": true,
     "ingredients": [
       "중화면",
@@ -2501,10 +2498,7 @@
       "얼큰한 국물",
       "해장"
     ],
-    "avoidMoods": [
-      "comfort",
-      "meeting"
-    ],
+    "avoidMoods": [],
     "situation_tags": [
       "해장 필요",
       "혼밥",
@@ -2536,6 +2530,9 @@
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:%EC%B6%A9%EC%B2%AD%EB%82%A8%EB%8F%84_%EB%B6%80%EC%97%AC_%EA%B3%A0%EA%B8%B0%EC%A7%AC%EB%BD%95.jpg",
         "title": "충청남도 부여 고기짬뽕.jpg"
       }
+    ],
+    "walletTags": [
+      "월급 전"
     ]
   },
   {
@@ -2599,9 +2596,6 @@
       "중식"
     ],
     "avoidMoods": [
-      "spicy",
-      "soup",
-      "hangover",
       "diet"
     ],
     "situation_tags": [
@@ -2630,6 +2624,9 @@
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:Korean_Chinese_cuisine-sweet_and_sour_pork-Tangsuyuk.jpg",
         "title": "Korean Chinese cuisine-sweet and sour pork-Tangsuyuk.jpg"
       }
+    ],
+    "walletTags": [
+      "월급날"
     ]
   },
   {
@@ -2643,7 +2640,7 @@
     "calories": 640,
     "healthy": true,
     "meat": false,
-    "quick": true,
+    "quick": false,
     "spicy": true,
     "ingredients": [
       "두부",
@@ -2694,10 +2691,7 @@
       "밥심"
     ],
     "avoidMoods": [
-      "soup",
-      "hangover",
-      "comfort",
-      "meeting"
+      "hangover"
     ],
     "situation_tags": [
       "혼밥",
@@ -2727,6 +2721,9 @@
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:Authentic_Mapo_Tofu.jpg",
         "title": "Authentic Mapo Tofu.jpg"
       }
+    ],
+    "walletTags": [
+      "월급 전"
     ]
   },
   {
@@ -2800,11 +2797,7 @@
       "혼밥 좋음",
       "밥심"
     ],
-    "avoidMoods": [
-      "spicy",
-      "soup",
-      "hangover"
-    ],
+    "avoidMoods": [],
     "situation_tags": [
       "시간 없음",
       "혼밥",
@@ -2815,7 +2808,10 @@
     "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Korean_Chinese_fried_rice.jpg",
     "imageTitle": "Korean Chinese fried rice.jpg",
     "imageAuthor": "chomjong",
-    "imageLicense": "CC BY 2.0"
+    "imageLicense": "CC BY 2.0",
+    "walletTags": [
+      "월급 전"
+    ]
   },
   {
     "id": "cn-006",
@@ -2828,7 +2824,7 @@
     "calories": 730,
     "healthy": false,
     "meat": true,
-    "quick": true,
+    "quick": false,
     "spicy": false,
     "ingredients": [
       "피망",
@@ -2877,12 +2873,11 @@
       "혼밥 좋음",
       "실패 낮음",
       "밥심",
-      "미팅 전"
+      "미팅 전",
+      "법카"
     ],
     "avoidMoods": [
-      "spicy",
-      "soup",
-      "hangover"
+      "spicy"
     ],
     "situation_tags": [
       "혼밥",
@@ -2911,6 +2906,10 @@
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pepper_steak.jpg",
         "title": "Pepper steak.jpg"
       }
+    ],
+    "walletTags": [
+      "월급날",
+      "법카"
     ]
   },
   {
@@ -2924,7 +2923,7 @@
     "calories": 660,
     "healthy": true,
     "meat": false,
-    "quick": true,
+    "quick": false,
     "spicy": false,
     "ingredients": [
       "해산물",
@@ -2975,8 +2974,6 @@
       "밥심"
     ],
     "avoidMoods": [
-      "spicy",
-      "soup",
       "hangover"
     ],
     "situation_tags": [
@@ -3006,6 +3003,9 @@
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:Yusanseul.jpg",
         "title": "Yusanseul.jpg"
       }
+    ],
+    "walletTags": [
+      "월급날"
     ]
   },
   {
@@ -3072,8 +3072,6 @@
       "밥심"
     ],
     "avoidMoods": [
-      "spicy",
-      "soup",
       "hangover"
     ],
     "situation_tags": [
@@ -3088,7 +3086,10 @@
     "imageSourceName": "Wikimedia Commons",
     "imageTitle": "Japchae-bap 2.jpg",
     "imageAuthor": "Wikimedia Commons contributor",
-    "imageLicense": "Wikimedia Commons"
+    "imageLicense": "Wikimedia Commons",
+    "walletTags": [
+      "월급 전"
+    ]
   },
   {
     "id": "cn-009",
@@ -3153,11 +3154,7 @@
       "바삭함"
     ],
     "avoidMoods": [
-      "soup",
-      "hangover",
-      "noTime",
-      "comfort",
-      "meeting"
+      "noTime"
     ],
     "situation_tags": [
       "팀점심",
@@ -3187,6 +3184,9 @@
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chinese_fried_chicken_(6822571449).jpg",
         "title": "Chinese fried chicken (6822571449).jpg"
       }
+    ],
+    "walletTags": [
+      "월급날"
     ]
   },
   {
@@ -3252,11 +3252,7 @@
       "해장",
       "든든함"
     ],
-    "avoidMoods": [
-      "noTime",
-      "comfort",
-      "meeting"
-    ],
+    "avoidMoods": [],
     "situation_tags": [
       "해장 필요",
       "매운 걸로",
@@ -3287,6 +3283,9 @@
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ma_La_Tang_Malatang_Chinese_hot_soup_noodle_Shinjuku_Tokyo_%E9%BA%BB%E8%BE%A3%E7%83%AB.jpg",
         "title": "Ma La Tang Malatang Chinese hot soup noodle Shinjuku Tokyo 麻辣烫.jpg"
       }
+    ],
+    "walletTags": [
+      "월급날"
     ]
   },
   {
@@ -3348,13 +3347,7 @@
       "강한 매운맛",
       "가벼움"
     ],
-    "avoidMoods": [
-      "soup",
-      "hangover",
-      "noTime",
-      "comfort",
-      "meeting"
-    ],
+    "avoidMoods": [],
     "situation_tags": [
       "매운 걸로",
       "실패 금지",
@@ -3382,6 +3375,9 @@
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:%EB%A7%88%EB%9D%BC%EC%83%B9%EA%B6%88_3.jpg",
         "title": "마라샹궈 3.jpg"
       }
+    ],
+    "walletTags": [
+      "월급날"
     ]
   },
   {
@@ -3395,7 +3391,7 @@
     "calories": 760,
     "healthy": false,
     "meat": true,
-    "quick": true,
+    "quick": false,
     "spicy": false,
     "ingredients": [
       "소고기",
@@ -3446,9 +3442,7 @@
       "혼밥 좋음",
       "실패 낮음"
     ],
-    "avoidMoods": [
-      "spicy"
-    ],
+    "avoidMoods": [],
     "situation_tags": [
       "해장 필요",
       "혼밥",
@@ -3479,6 +3473,9 @@
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:Beef_noodle_soup(Lanzhou).jpg",
         "title": "Beef noodle soup(Lanzhou).jpg"
       }
+    ],
+    "walletTags": [
+      "월급날"
     ]
   },
   {
@@ -3543,12 +3540,7 @@
       "밥심",
       "입맛 전환"
     ],
-    "avoidMoods": [
-      "soup",
-      "hangover",
-      "comfort",
-      "meeting"
-    ],
+    "avoidMoods": [],
     "situation_tags": [
       "시간 없음",
       "혼밥",
@@ -3561,7 +3553,10 @@
     "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Jjamppong-deopbap.jpg",
     "imageTitle": "Jjamppong-deopbap.jpg",
     "imageAuthor": "대경라이프",
-    "imageLicense": "CC BY-SA 4.0"
+    "imageLicense": "CC BY-SA 4.0",
+    "walletTags": [
+      "월급 전"
+    ]
   },
   {
     "id": "jp-001",
@@ -3574,7 +3569,7 @@
     "calories": 620,
     "healthy": true,
     "meat": false,
-    "quick": true,
+    "quick": false,
     "spicy": false,
     "ingredients": [
       "초밥밥",
@@ -3625,11 +3620,10 @@
       "팀점심",
       "부담 적음",
       "실패 낮음",
-      "밥심"
+      "밥심",
+      "법카"
     ],
     "avoidMoods": [
-      "spicy",
-      "soup",
       "hangover"
     ],
     "situation_tags": [
@@ -3662,6 +3656,10 @@
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:Various_sushi,_beautiful_October_night_at_midnight.jpg",
         "title": "Various sushi, beautiful October night at midnight.jpg"
       }
+    ],
+    "walletTags": [
+      "월급날",
+      "법카"
     ]
   },
   {
@@ -3675,7 +3673,7 @@
     "calories": 690,
     "healthy": true,
     "meat": false,
-    "quick": true,
+    "quick": false,
     "spicy": false,
     "ingredients": [
       "연어",
@@ -3726,11 +3724,7 @@
       "실패 낮음",
       "밥심"
     ],
-    "avoidMoods": [
-      "spicy",
-      "soup",
-      "hangover"
-    ],
+    "avoidMoods": [],
     "situation_tags": [
       "혼밥",
       "실패 금지",
@@ -3758,6 +3752,9 @@
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:Salmon_caviar_donburi;_2011.jpg",
         "title": "Salmon caviar donburi; 2011.jpg"
       }
+    ],
+    "walletTags": [
+      "월급날"
     ]
   },
   {
@@ -3823,11 +3820,7 @@
       "실패 낮음",
       "밥심"
     ],
-    "avoidMoods": [
-      "spicy",
-      "soup",
-      "hangover"
-    ],
+    "avoidMoods": [],
     "situation_tags": [
       "시간 없음",
       "혼밥",
@@ -3856,6 +3849,9 @@
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gyudon_by_jetalone_in_Higashi-Ginza,_Tokyo.jpg",
         "title": "Gyudon by jetalone in Higashi-Ginza, Tokyo.jpg"
       }
+    ],
+    "walletTags": [
+      "월급 전"
     ]
   },
   {
@@ -3869,7 +3865,7 @@
     "calories": 860,
     "healthy": false,
     "meat": true,
-    "quick": true,
+    "quick": false,
     "spicy": false,
     "ingredients": [
       "돈카츠",
@@ -3918,13 +3914,7 @@
       "바삭함",
       "밥심"
     ],
-    "avoidMoods": [
-      "spicy",
-      "soup",
-      "hangover",
-      "comfort",
-      "meeting"
-    ],
+    "avoidMoods": [],
     "situation_tags": [
       "혼밥",
       "실패 금지"
@@ -3951,6 +3941,9 @@
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:Yofu_Katsudon,_Renga-tei,_Nagaoka.jpg",
         "title": "Yofu Katsudon, Renga-tei, Nagaoka.jpg"
       }
+    ],
+    "walletTags": [
+      "월급날"
     ]
   },
   {
@@ -3964,7 +3957,7 @@
     "calories": 850,
     "healthy": false,
     "meat": true,
-    "quick": true,
+    "quick": false,
     "spicy": false,
     "ingredients": [
       "라멘면",
@@ -4016,11 +4009,7 @@
       "든든함",
       "혼밥 좋음"
     ],
-    "avoidMoods": [
-      "spicy",
-      "comfort",
-      "meeting"
-    ],
+    "avoidMoods": [],
     "situation_tags": [
       "해장 필요",
       "혼밥",
@@ -4050,6 +4039,9 @@
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:Shoyu_Tonkotsu_Ramen_from_Yuki-Kun_Japanese_Food_at_SM_J_Mall_(2025-05-27).jpg",
         "title": "Shoyu Tonkotsu Ramen from Yuki-Kun Japanese Food at SM J Mall (2025-05-27).jpg"
       }
+    ],
+    "walletTags": [
+      "월급날"
     ]
   },
   {
@@ -4114,9 +4106,7 @@
       "혼밥 좋음",
       "실패 낮음"
     ],
-    "avoidMoods": [
-      "spicy"
-    ],
+    "avoidMoods": [],
     "situation_tags": [
       "시간 없음",
       "해장 필요",
@@ -4148,6 +4138,9 @@
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:Miso_corn_ramen_01.jpg",
         "title": "Miso corn ramen 01.jpg"
       }
+    ],
+    "walletTags": [
+      "월급날"
     ]
   },
   {
@@ -4213,9 +4206,7 @@
       "가벼움",
       "혼밥 좋음"
     ],
-    "avoidMoods": [
-      "spicy"
-    ],
+    "avoidMoods": [],
     "situation_tags": [
       "시간 없음",
       "해장 필요",
@@ -4248,6 +4239,9 @@
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:Onigiri_udon_(41001742365).jpg",
         "title": "Onigiri udon (41001742365).jpg"
       }
+    ],
+    "walletTags": [
+      "월급 전"
     ]
   },
   {
@@ -4314,7 +4308,6 @@
       "실패 낮음"
     ],
     "avoidMoods": [
-      "spicy",
       "hangover"
     ],
     "situation_tags": [
@@ -4332,7 +4325,10 @@
     "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Ten_zaru_soba_by_akira_yamada_in_Yokohama.jpg",
     "imageTitle": "Ten zaru soba by akira yamada in Yokohama.jpg",
     "imageAuthor": "akira yamada from Yokohama",
-    "imageLicense": "CC BY-SA 2.0"
+    "imageLicense": "CC BY-SA 2.0",
+    "walletTags": [
+      "월급 전"
+    ]
   },
   {
     "id": "jp-009",
@@ -4345,7 +4341,7 @@
     "calories": 890,
     "healthy": false,
     "meat": true,
-    "quick": true,
+    "quick": false,
     "spicy": false,
     "ingredients": [
       "돼지고기",
@@ -4397,13 +4393,7 @@
       "바삭함",
       "실패 낮음"
     ],
-    "avoidMoods": [
-      "spicy",
-      "soup",
-      "hangover",
-      "comfort",
-      "meeting"
-    ],
+    "avoidMoods": [],
     "situation_tags": [
       "시간 없음",
       "혼밥",
@@ -4415,7 +4405,10 @@
     "imageSourceName": "Wikimedia Commons",
     "imageTitle": "Japanese set meal with tonkatsu.jpg",
     "imageAuthor": "Betsylavolette",
-    "imageLicense": "CC BY-SA 4.0"
+    "imageLicense": "CC BY-SA 4.0",
+    "walletTags": [
+      "월급날"
+    ]
   },
   {
     "id": "jp-010",
@@ -4477,12 +4470,7 @@
       "팀점심",
       "실패 낮음"
     ],
-    "avoidMoods": [
-      "spicy",
-      "soup",
-      "hangover",
-      "noTime"
-    ],
+    "avoidMoods": [],
     "situation_tags": [
       "팀점심",
       "실패 금지",
@@ -4493,7 +4481,10 @@
     "imageSourceName": "Wikimedia Commons",
     "imageTitle": "Okonomiyaki with tomato and cheeze (4716607523).jpg",
     "imageAuthor": "pelican from Tokyo, Japan",
-    "imageLicense": "CC BY-SA 2.0"
+    "imageLicense": "CC BY-SA 2.0",
+    "walletTags": [
+      "월급날"
+    ]
   },
   {
     "id": "jp-011",
@@ -4558,7 +4549,6 @@
       "실패 낮음"
     ],
     "avoidMoods": [
-      "spicy",
       "hangover"
     ],
     "situation_tags": [
@@ -4575,7 +4565,10 @@
     "imageSourceName": "Wikimedia Commons",
     "imageTitle": "Yakisoba-Japanese-food.jpg",
     "imageAuthor": "Boonlert Aroonpiboon",
-    "imageLicense": "CC0"
+    "imageLicense": "CC0",
+    "walletTags": [
+      "월급 전"
+    ]
   },
   {
     "id": "jp-012",
@@ -4640,9 +4633,7 @@
       "밥심"
     ],
     "avoidMoods": [
-      "spicy",
-      "soup",
-      "hangover"
+      "spicy"
     ],
     "situation_tags": [
       "시간 없음",
@@ -4655,7 +4646,10 @@
     "imageSourceName": "Wikimedia Commons",
     "imageTitle": "Tonkatsu Curry.jpg",
     "imageAuthor": "Minseong Kim",
-    "imageLicense": "CC BY-SA 4.0"
+    "imageLicense": "CC BY-SA 4.0",
+    "walletTags": [
+      "월급 전"
+    ]
   },
   {
     "id": "jp-013",
@@ -4668,7 +4662,7 @@
     "calories": 840,
     "healthy": false,
     "meat": false,
-    "quick": true,
+    "quick": false,
     "spicy": false,
     "ingredients": [
       "튀김",
@@ -4717,13 +4711,7 @@
       "바삭함",
       "밥심"
     ],
-    "avoidMoods": [
-      "spicy",
-      "soup",
-      "hangover",
-      "comfort",
-      "meeting"
-    ],
+    "avoidMoods": [],
     "situation_tags": [
       "혼밥",
       "실패 금지"
@@ -4733,7 +4721,10 @@
     "imageSourceName": "Wikimedia Commons",
     "imageTitle": "Prawn Tendon.jpg",
     "imageAuthor": "Ceeseven",
-    "imageLicense": "CC BY-SA 4.0"
+    "imageLicense": "CC BY-SA 4.0",
+    "walletTags": [
+      "월급날"
+    ]
   },
   {
     "id": "jp-014",
@@ -4799,10 +4790,7 @@
       "부담 적음",
       "실패 낮음"
     ],
-    "avoidMoods": [
-      "spicy",
-      "noTime"
-    ],
+    "avoidMoods": [],
     "situation_tags": [
       "해장 필요",
       "팀점심",
@@ -4817,7 +4805,10 @@
     "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Japanese_cuisine;_steamboat_dishes,_hot_pot,_duck_meat;_Kamo_nabe;_%E9%B4%A8%E9%8D%8B.jpg",
     "imageTitle": "Japanese cuisine; steamboat dishes, hot pot, duck meat; Kamo nabe; 鴨鍋.jpg",
     "imageAuthor": "Nullumayulife",
-    "imageLicense": "CC BY 2.0"
+    "imageLicense": "CC BY 2.0",
+    "walletTags": [
+      "월급날"
+    ]
   },
   {
     "id": "ws-001",
@@ -4879,11 +4870,7 @@
       "혼밥 좋음",
       "실패 낮음"
     ],
-    "avoidMoods": [
-      "spicy",
-      "soup",
-      "hangover"
-    ],
+    "avoidMoods": [],
     "situation_tags": [
       "시간 없음",
       "혼밥",
@@ -4895,7 +4882,10 @@
     "imageSourceName": "Wikimedia Commons",
     "imageTitle": "Aglio e olio.jpg",
     "imageAuthor": "Spaghetti_aglio_olio_e_peperoncino_by_matsuyuki_retouched.jpg derivative work: Jbarta (talk)",
-    "imageLicense": "CC BY-SA 2.0"
+    "imageLicense": "CC BY-SA 2.0",
+    "walletTags": [
+      "월급날"
+    ]
   },
   {
     "id": "ws-002",
@@ -4957,11 +4947,7 @@
       "혼밥 좋음",
       "실패 낮음"
     ],
-    "avoidMoods": [
-      "spicy",
-      "soup",
-      "hangover"
-    ],
+    "avoidMoods": [],
     "situation_tags": [
       "시간 없음",
       "혼밥",
@@ -4973,7 +4959,10 @@
     "imageSourceName": "Wikimedia Commons",
     "imageTitle": "Pasta, Tomato Sauce, Parmesan (4365946820).jpg",
     "imageAuthor": "Katrin Gilger",
-    "imageLicense": "CC BY-SA 2.0"
+    "imageLicense": "CC BY-SA 2.0",
+    "walletTags": [
+      "월급날"
+    ]
   },
   {
     "id": "ws-003",
@@ -5035,12 +5024,7 @@
       "혼밥 좋음"
     ],
     "avoidMoods": [
-      "spicy",
-      "soup",
-      "hangover",
-      "noTime",
-      "comfort",
-      "meeting"
+      "noTime"
     ],
     "situation_tags": [
       "혼밥",
@@ -5051,7 +5035,10 @@
     "imageSourceName": "Wikimedia Commons",
     "imageTitle": "Lemon cream pasta (3056103239).jpg",
     "imageAuthor": "Karen and Brad Emerson",
-    "imageLicense": "CC BY 2.0"
+    "imageLicense": "CC BY 2.0",
+    "walletTags": [
+      "월급날"
+    ]
   },
   {
     "id": "ws-004",
@@ -5111,14 +5098,7 @@
       "든든함",
       "혼밥 좋음"
     ],
-    "avoidMoods": [
-      "spicy",
-      "soup",
-      "hangover",
-      "noTime",
-      "comfort",
-      "meeting"
-    ],
+    "avoidMoods": [],
     "situation_tags": [
       "혼밥"
     ],
@@ -5127,7 +5107,10 @@
     "imageSourceName": "Wikimedia Commons",
     "imageTitle": "Meaty Lasagna 8of8 (8736299782).jpg",
     "imageAuthor": "Breville USA",
-    "imageLicense": "CC BY 2.0"
+    "imageLicense": "CC BY 2.0",
+    "walletTags": [
+      "월급날"
+    ]
   },
   {
     "id": "ws-005",
@@ -5190,11 +5173,7 @@
       "기분전환",
       "든든함"
     ],
-    "avoidMoods": [
-      "spicy",
-      "soup",
-      "hangover"
-    ],
+    "avoidMoods": [],
     "situation_tags": [
       "속 편하게",
       "혼밥",
@@ -5205,7 +5184,10 @@
     "imageSourceName": "Wikimedia Commons",
     "imageTitle": "Bowl of mushroom and scallion risotto.jpg",
     "imageAuthor": "Elfer at English Wikipedia",
-    "imageLicense": "CC BY-SA 3.0"
+    "imageLicense": "CC BY-SA 3.0",
+    "walletTags": [
+      "월급날"
+    ]
   },
   {
     "id": "ws-006",
@@ -5218,7 +5200,7 @@
     "calories": 820,
     "healthy": false,
     "meat": true,
-    "quick": true,
+    "quick": false,
     "spicy": false,
     "ingredients": [
       "소고기",
@@ -5266,15 +5248,10 @@
       "고기",
       "든든함",
       "밥심",
-      "프리미엄"
+      "프리미엄",
+      "법카"
     ],
-    "avoidMoods": [
-      "spicy",
-      "soup",
-      "hangover",
-      "comfort",
-      "meeting"
-    ],
+    "avoidMoods": [],
     "situation_tags": [
       "혼밥",
       "실패 금지"
@@ -5284,7 +5261,11 @@
     "imageSourceName": "Wikimedia Commons",
     "imageTitle": "SteakDonburi.jpg",
     "imageAuthor": "Kykk wiki",
-    "imageLicense": "CC0"
+    "imageLicense": "CC0",
+    "walletTags": [
+      "월급날",
+      "법카"
+    ]
   },
   {
     "id": "ws-007",
@@ -5346,12 +5327,7 @@
       "팀점심"
     ],
     "avoidMoods": [
-      "spicy",
-      "soup",
-      "hangover",
-      "noTime",
-      "comfort",
-      "meeting"
+      "noTime"
     ],
     "situation_tags": [
       "팀점심",
@@ -5362,7 +5338,10 @@
     "imageSourceName": "Wikimedia Commons",
     "imageTitle": "Japanese style hamburg steak (4735910468).jpg",
     "imageAuthor": "pelican from Tokyo, Japan",
-    "imageLicense": "CC BY-SA 2.0"
+    "imageLicense": "CC BY-SA 2.0",
+    "walletTags": [
+      "월급날"
+    ]
   },
   {
     "id": "ws-008",
@@ -5375,7 +5354,7 @@
     "calories": 720,
     "healthy": true,
     "meat": true,
-    "quick": true,
+    "quick": false,
     "spicy": false,
     "ingredients": [
       "닭고기",
@@ -5427,11 +5406,7 @@
       "부담 적음",
       "실패 낮음"
     ],
-    "avoidMoods": [
-      "spicy",
-      "soup",
-      "hangover"
-    ],
+    "avoidMoods": [],
     "situation_tags": [
       "혼밥",
       "팀점심",
@@ -5444,7 +5419,10 @@
     "imageSourceName": "Wikimedia Commons",
     "imageTitle": "Chicken steak with pepper sauce.jpg",
     "imageAuthor": "Russelak1976",
-    "imageLicense": "CC BY-SA 4.0"
+    "imageLicense": "CC BY-SA 4.0",
+    "walletTags": [
+      "월급날"
+    ]
   },
   {
     "id": "ws-009",
@@ -5505,11 +5483,6 @@
       "팀점심"
     ],
     "avoidMoods": [
-      "spicy",
-      "soup",
-      "hangover",
-      "noTime",
-      "comfort",
       "meeting"
     ],
     "situation_tags": [
@@ -5520,7 +5493,10 @@
     "imageSourceName": "Wikimedia Commons",
     "imageTitle": "Eq it-na pizza-margherita sep2005 sml.jpg",
     "imageAuthor": "Valerio Capello at English Wikipedia",
-    "imageLicense": "CC BY-SA 3.0"
+    "imageLicense": "CC BY-SA 3.0",
+    "walletTags": [
+      "월급날"
+    ]
   },
   {
     "id": "ws-010",
@@ -5582,12 +5558,7 @@
       "팀점심",
       "실패 낮음"
     ],
-    "avoidMoods": [
-      "spicy",
-      "soup",
-      "hangover",
-      "noTime"
-    ],
+    "avoidMoods": [],
     "situation_tags": [
       "팀점심",
       "실패 금지"
@@ -5597,7 +5568,10 @@
     "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Gambas_al_ajillo.jpg",
     "imageTitle": "Gambas al ajillo.jpg",
     "imageAuthor": "Javier Lastras from España/Spain",
-    "imageLicense": "CC BY 2.0"
+    "imageLicense": "CC BY 2.0",
+    "walletTags": [
+      "월급날"
+    ]
   },
   {
     "id": "ws-012",
@@ -5661,11 +5635,7 @@
       "실패 낮음",
       "밥심"
     ],
-    "avoidMoods": [
-      "spicy",
-      "soup",
-      "hangover"
-    ],
+    "avoidMoods": [],
     "situation_tags": [
       "시간 없음",
       "혼밥",
@@ -5677,7 +5647,10 @@
     "imageSourceName": "Wikimedia Commons",
     "imageTitle": "2020-08-16 빠레뜨 한남 오므라이스 IMG 0212.jpg",
     "imageAuthor": "Choi Kwang-mo",
-    "imageLicense": "CC0"
+    "imageLicense": "CC0",
+    "walletTags": [
+      "월급날"
+    ]
   },
   {
     "id": "ws-013",
@@ -5738,12 +5711,8 @@
       "혼밥 좋음"
     ],
     "avoidMoods": [
-      "spicy",
-      "soup",
-      "hangover",
       "noTime",
-      "comfort",
-      "meeting"
+      "comfort"
     ],
     "situation_tags": [
       "혼밥"
@@ -5753,7 +5722,10 @@
     "imageSourceName": "Wikimedia Commons",
     "imageTitle": "Spaghetti and meatballs 1.jpg",
     "imageAuthor": "jeffreyw",
-    "imageLicense": "CC BY 2.0"
+    "imageLicense": "CC BY 2.0",
+    "walletTags": [
+      "월급날"
+    ]
   },
   {
     "id": "ws-014",
@@ -5819,8 +5791,6 @@
       "실패 낮음"
     ],
     "avoidMoods": [
-      "spicy",
-      "soup",
       "hangover"
     ],
     "situation_tags": [
@@ -5836,7 +5806,10 @@
     "imageSourceName": "Wikimedia Commons",
     "imageTitle": "Club-sandwich.jpg",
     "imageAuthor": "Memm",
-    "imageLicense": "CC BY 3.0"
+    "imageLicense": "CC BY 3.0",
+    "walletTags": [
+      "월급날"
+    ]
   },
   {
     "id": "ff-001",
@@ -5899,13 +5872,7 @@
       "든든함",
       "혼밥 좋음"
     ],
-    "avoidMoods": [
-      "spicy",
-      "soup",
-      "hangover",
-      "comfort",
-      "meeting"
-    ],
+    "avoidMoods": [],
     "situation_tags": [
       "시간 없음",
       "혼밥"
@@ -5915,7 +5882,10 @@
     "imageSourceName": "Wikimedia Commons",
     "imageTitle": "Cheeseburger.jpg",
     "imageAuthor": "Renee Comet (photographer)",
-    "imageLicense": "Public domain"
+    "imageLicense": "Public domain",
+    "walletTags": [
+      "월급 전"
+    ]
   },
   {
     "id": "ff-002",
@@ -5979,11 +5949,7 @@
       "혼밥 좋음"
     ],
     "avoidMoods": [
-      "spicy",
-      "soup",
-      "hangover",
-      "comfort",
-      "meeting"
+      "comfort"
     ],
     "situation_tags": [
       "시간 없음",
@@ -5994,7 +5960,10 @@
     "imageSourceName": "Wikimedia Commons",
     "imageTitle": "Bulgogi burger 2.jpg",
     "imageAuthor": "star5112",
-    "imageLicense": "CC BY-SA 2.0"
+    "imageLicense": "CC BY-SA 2.0",
+    "walletTags": [
+      "월급 전"
+    ]
   },
   {
     "id": "ff-003",
@@ -6057,13 +6026,7 @@
       "든든함",
       "혼밥 좋음"
     ],
-    "avoidMoods": [
-      "spicy",
-      "soup",
-      "hangover",
-      "comfort",
-      "meeting"
-    ],
+    "avoidMoods": [],
     "situation_tags": [
       "시간 없음",
       "혼밥"
@@ -6073,7 +6036,10 @@
     "imageSourceName": "Wikimedia Commons",
     "imageTitle": "Fried chicken burger .jpg",
     "imageAuthor": "Kurt Kaiser",
-    "imageLicense": "CC0"
+    "imageLicense": "CC0",
+    "walletTags": [
+      "월급 전"
+    ]
   },
   {
     "id": "ff-004",
@@ -6136,13 +6102,7 @@
       "든든함",
       "혼밥 좋음"
     ],
-    "avoidMoods": [
-      "spicy",
-      "soup",
-      "hangover",
-      "comfort",
-      "meeting"
-    ],
+    "avoidMoods": [],
     "situation_tags": [
       "시간 없음",
       "혼밥"
@@ -6152,7 +6112,10 @@
     "imageSourceName": "Wikimedia Commons",
     "imageTitle": "KFC Shrimp Burger 2007.jpg",
     "imageAuthor": "Kham Tran - www.khamtran.com",
-    "imageLicense": "CC BY 3.0"
+    "imageLicense": "CC BY 3.0",
+    "walletTags": [
+      "월급 전"
+    ]
   },
   {
     "id": "ff-005",
@@ -6214,13 +6177,7 @@
       "든든함",
       "혼밥 좋음"
     ],
-    "avoidMoods": [
-      "spicy",
-      "soup",
-      "hangover",
-      "comfort",
-      "meeting"
-    ],
+    "avoidMoods": [],
     "situation_tags": [
       "시간 없음",
       "혼밥"
@@ -6230,7 +6187,10 @@
     "imageSourceName": "Wikimedia Commons",
     "imageTitle": "Burger King Double Bacon Cheeseburger close up (30596371153).jpg",
     "imageAuthor": "Willis Lam",
-    "imageLicense": "CC BY-SA 2.0"
+    "imageLicense": "CC BY-SA 2.0",
+    "walletTags": [
+      "월급 전"
+    ]
   },
   {
     "id": "ff-006",
@@ -6295,7 +6255,6 @@
       "실패 낮음"
     ],
     "avoidMoods": [
-      "soup",
       "hangover"
     ],
     "situation_tags": [
@@ -6309,7 +6268,10 @@
     "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:001_Tacos_de_carnitas,_carne_asada_y_al_pastor.jpg",
     "imageTitle": "001 Tacos de carnitas, carne asada y al pastor.jpg",
     "imageAuthor": "Larry Miller",
-    "imageLicense": "CC BY-SA 2.0"
+    "imageLicense": "CC BY-SA 2.0",
+    "walletTags": [
+      "월급 전"
+    ]
   },
   {
     "id": "ff-007",
@@ -6373,10 +6335,7 @@
       "실패 낮음",
       "밥심"
     ],
-    "avoidMoods": [
-      "soup",
-      "hangover"
-    ],
+    "avoidMoods": [],
     "situation_tags": [
       "시간 없음",
       "혼밥",
@@ -6388,7 +6347,10 @@
     "imageSourceName": "Wikimedia Commons",
     "imageTitle": "Burrito al pastor - Bacalar QR.jpg",
     "imageAuthor": "Bernard DUPONT",
-    "imageLicense": "CC BY-SA 2.0"
+    "imageLicense": "CC BY-SA 2.0",
+    "walletTags": [
+      "월급날"
+    ]
   },
   {
     "id": "ff-008",
@@ -6452,11 +6414,7 @@
       "혼밥 좋음",
       "실패 낮음"
     ],
-    "avoidMoods": [
-      "spicy",
-      "soup",
-      "hangover"
-    ],
+    "avoidMoods": [],
     "situation_tags": [
       "시간 없음",
       "혼밥",
@@ -6468,7 +6426,10 @@
     "imageSourceName": "Wikimedia Commons",
     "imageTitle": "Hotdog - Evan Swigart.jpg",
     "imageAuthor": "Evan Swigart from Chicago, USA",
-    "imageLicense": "CC BY 2.0"
+    "imageLicense": "CC BY 2.0",
+    "walletTags": [
+      "월급 전"
+    ]
   },
   {
     "id": "ff-009",
@@ -6534,8 +6495,6 @@
       "실패 낮음"
     ],
     "avoidMoods": [
-      "spicy",
-      "soup",
       "hangover"
     ],
     "situation_tags": [
@@ -6551,7 +6510,10 @@
     "imageSourceName": "Wikimedia Commons",
     "imageTitle": "Smoked chicken and avocado wrap.jpg",
     "imageAuthor": "Takeaway",
-    "imageLicense": "CC BY-SA 3.0"
+    "imageLicense": "CC BY-SA 3.0",
+    "walletTags": [
+      "월급 전"
+    ]
   },
   {
     "id": "ff-011",
@@ -6614,13 +6576,7 @@
       "든든함",
       "혼밥 좋음"
     ],
-    "avoidMoods": [
-      "spicy",
-      "soup",
-      "hangover",
-      "comfort",
-      "meeting"
-    ],
+    "avoidMoods": [],
     "situation_tags": [
       "시간 없음",
       "혼밥"
@@ -6630,7 +6586,10 @@
     "imageSourceName": "Wikimedia Commons",
     "imageTitle": "Burger King BK Big Fish sandwich.jpg",
     "imageAuthor": "theimpulsivebuy",
-    "imageLicense": "CC BY-SA 2.0"
+    "imageLicense": "CC BY-SA 2.0",
+    "walletTags": [
+      "월급 전"
+    ]
   },
   {
     "id": "ff-012",
@@ -6696,8 +6655,6 @@
       "실패 낮음"
     ],
     "avoidMoods": [
-      "spicy",
-      "soup",
       "hangover"
     ],
     "situation_tags": [
@@ -6712,7 +6669,10 @@
     "imageSourceName": "Wikimedia Commons",
     "imageTitle": "BK Ham and Cheese Sandwich.JPG",
     "imageAuthor": "Jerem43",
-    "imageLicense": "CC BY-SA 3.0"
+    "imageLicense": "CC BY-SA 3.0",
+    "walletTags": [
+      "월급 전"
+    ]
   },
   {
     "id": "bs-001",
@@ -6779,12 +6739,7 @@
       "혼밥 좋음",
       "분식"
     ],
-    "avoidMoods": [
-      "soup",
-      "hangover",
-      "comfort",
-      "meeting"
-    ],
+    "avoidMoods": [],
     "situation_tags": [
       "시간 없음",
       "혼밥",
@@ -6797,7 +6752,10 @@
     "imageSourceName": "Wikimedia Commons",
     "imageTitle": "Tteokbokki 떡볶이 cheese1.jpg",
     "imageAuthor": "",
-    "imageLicense": "CC BY-SA 4.0"
+    "imageLicense": "CC BY-SA 4.0",
+    "walletTags": [
+      "월급 전"
+    ]
   },
   {
     "id": "bs-002",
@@ -6865,12 +6823,7 @@
       "혼밥 좋음",
       "분식"
     ],
-    "avoidMoods": [
-      "soup",
-      "hangover",
-      "comfort",
-      "meeting"
-    ],
+    "avoidMoods": [],
     "situation_tags": [
       "시간 없음",
       "혼밥",
@@ -6883,7 +6836,10 @@
     "imageSourceName": "Wikimedia Commons",
     "imageTitle": "마복림할머니 막내아들네 라볶이 1.jpg",
     "imageAuthor": "눌팡",
-    "imageLicense": "CC BY 4.0"
+    "imageLicense": "CC BY 4.0",
+    "walletTags": [
+      "월급 전"
+    ]
   },
   {
     "id": "bs-003",
@@ -6949,12 +6905,7 @@
       "혼밥 좋음",
       "분식"
     ],
-    "avoidMoods": [
-      "soup",
-      "hangover",
-      "comfort",
-      "meeting"
-    ],
+    "avoidMoods": [],
     "situation_tags": [
       "시간 없음",
       "혼밥",
@@ -6966,7 +6917,10 @@
     "imageSourceName": "Wikimedia Commons",
     "imageTitle": "Korean.food-Sundae-01.jpg",
     "imageAuthor": "ayustety (a flickr user)",
-    "imageLicense": "CC BY-SA 2.0"
+    "imageLicense": "CC BY-SA 2.0",
+    "walletTags": [
+      "월급 전"
+    ]
   },
   {
     "id": "bs-004",
@@ -7031,9 +6985,7 @@
       "나눠먹기"
     ],
     "avoidMoods": [
-      "comfort",
-      "diet",
-      "hangover"
+      "diet"
     ],
     "situation_tags": [
       "시간 없음",
@@ -7045,7 +6997,10 @@
     "imageSourceName": "Wikimedia Commons",
     "imageTitle": "Bunsik stall.jpg",
     "imageAuthor": "Jens Ohlig",
-    "imageLicense": "CC BY-SA 2.0"
+    "imageLicense": "CC BY-SA 2.0",
+    "walletTags": [
+      "월급 전"
+    ]
   },
   {
     "id": "bs-005",
@@ -7111,8 +7066,6 @@
       "실패 낮음"
     ],
     "avoidMoods": [
-      "spicy",
-      "soup",
       "hangover"
     ],
     "situation_tags": [
@@ -7128,7 +7081,10 @@
     "imageSourceName": "Wikimedia Commons",
     "imageTitle": "키토 김밥.jpg",
     "imageAuthor": "Kcjsew",
-    "imageLicense": "CC BY-SA 4.0"
+    "imageLicense": "CC BY-SA 4.0",
+    "walletTags": [
+      "월급 전"
+    ]
   },
   {
     "id": "bs-006",
@@ -7194,8 +7150,6 @@
       "밥심"
     ],
     "avoidMoods": [
-      "spicy",
-      "soup",
       "hangover"
     ],
     "situation_tags": [
@@ -7210,7 +7164,10 @@
     "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Chamchigimbap_at_Hana_Restaurant,_Milan,_2023.jpg",
     "imageTitle": "Chamchigimbap at Hana Restaurant, Milan, 2023.jpg",
     "imageAuthor": "Chiyako92",
-    "imageLicense": "CC BY-SA 4.0"
+    "imageLicense": "CC BY-SA 4.0",
+    "walletTags": [
+      "월급 전"
+    ]
   },
   {
     "id": "bs-007",
@@ -7274,9 +7231,7 @@
       "혼밥 좋음",
       "분식"
     ],
-    "avoidMoods": [
-      "hangover"
-    ],
+    "avoidMoods": [],
     "situation_tags": [
       "시간 없음",
       "혼밥",
@@ -7288,7 +7243,10 @@
     "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:2014_%EB%86%8D%EC%8B%AC_%EC%8B%A0%EB%9D%BC%EB%A9%B4.jpg",
     "imageTitle": "2014 농심 신라면.jpg",
     "imageAuthor": "Beboldtlsfkaus",
-    "imageLicense": "CC BY-SA 4.0"
+    "imageLicense": "CC BY-SA 4.0",
+    "walletTags": [
+      "월급 전"
+    ]
   },
   {
     "id": "bs-008",
@@ -7356,9 +7314,7 @@
       "분식"
     ],
     "avoidMoods": [
-      "hangover",
-      "comfort",
-      "meeting"
+      "hangover"
     ],
     "situation_tags": [
       "시간 없음",
@@ -7373,7 +7329,10 @@
     "imageSourceName": "Wikimedia Commons",
     "imageTitle": "Jjolmyeon.jpg",
     "imageAuthor": "Wikimedia Commons contributor",
-    "imageLicense": "Wikimedia Commons"
+    "imageLicense": "Wikimedia Commons",
+    "walletTags": [
+      "월급 전"
+    ]
   },
   {
     "id": "bs-009",
@@ -7441,10 +7400,7 @@
       "가성비",
       "가벼움"
     ],
-    "avoidMoods": [
-      "comfort",
-      "meeting"
-    ],
+    "avoidMoods": [],
     "situation_tags": [
       "시간 없음",
       "해장 필요",
@@ -7459,7 +7415,10 @@
     "imageSourceName": "Wikimedia Commons",
     "imageTitle": "Korean noodles-Bibim guksu-01.jpg",
     "imageAuthor": "Jun",
-    "imageLicense": "CC BY 2.0"
+    "imageLicense": "CC BY 2.0",
+    "walletTags": [
+      "월급 전"
+    ]
   },
   {
     "id": "bs-010",
@@ -7472,7 +7431,7 @@
     "calories": 610,
     "healthy": false,
     "meat": false,
-    "quick": true,
+    "quick": false,
     "spicy": false,
     "ingredients": [
       "칼국수면",
@@ -7524,9 +7483,7 @@
       "혼밥 좋음",
       "실패 낮음"
     ],
-    "avoidMoods": [
-      "spicy"
-    ],
+    "avoidMoods": [],
     "situation_tags": [
       "해장 필요",
       "혼밥",
@@ -7541,7 +7498,10 @@
     "imageSourceName": "Wikimedia Commons",
     "imageTitle": "Kalguksu 20230430 002.jpg",
     "imageAuthor": "Mobius6",
-    "imageLicense": "CC BY-SA 4.0"
+    "imageLicense": "CC BY-SA 4.0",
+    "walletTags": [
+      "월급 전"
+    ]
   },
   {
     "id": "bs-011",
@@ -7606,9 +7566,7 @@
       "혼밥 좋음",
       "실패 낮음"
     ],
-    "avoidMoods": [
-      "spicy"
-    ],
+    "avoidMoods": [],
     "situation_tags": [
       "시간 없음",
       "해장 필요",
@@ -7623,7 +7581,10 @@
     "imageSourceName": "Wikimedia Commons",
     "imageTitle": "A dumpling soup from Yuen Long.jpg",
     "imageAuthor": "Peachyeung316",
-    "imageLicense": "CC BY-SA 4.0"
+    "imageLicense": "CC BY-SA 4.0",
+    "walletTags": [
+      "월급 전"
+    ]
   },
   {
     "id": "bs-012",
@@ -7636,7 +7597,7 @@
     "calories": 720,
     "healthy": false,
     "meat": true,
-    "quick": true,
+    "quick": false,
     "spicy": false,
     "ingredients": [
       "떡",
@@ -7688,9 +7649,7 @@
       "혼밥 좋음",
       "실패 낮음"
     ],
-    "avoidMoods": [
-      "spicy"
-    ],
+    "avoidMoods": [],
     "situation_tags": [
       "해장 필요",
       "혼밥",
@@ -7704,7 +7663,10 @@
     "imageSourceName": "Wikimedia Commons",
     "imageTitle": "Tteok-mandu-guk.jpg",
     "imageAuthor": "Melsj",
-    "imageLicense": "CC0"
+    "imageLicense": "CC0",
+    "walletTags": [
+      "월급 전"
+    ]
   },
   {
     "id": "as-001",
@@ -7769,9 +7731,7 @@
       "부담 적음",
       "실패 낮음"
     ],
-    "avoidMoods": [
-      "spicy"
-    ],
+    "avoidMoods": [],
     "situation_tags": [
       "해장 필요",
       "혼밥",
@@ -7787,7 +7747,10 @@
     "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Vietnamese_Pho.jpg",
     "imageTitle": "Vietnamese Pho.jpg",
     "imageAuthor": "Nowforever",
-    "imageLicense": "CC BY-SA 4.0"
+    "imageLicense": "CC BY-SA 4.0",
+    "walletTags": [
+      "월급날"
+    ]
   },
   {
     "id": "as-002",
@@ -7800,7 +7763,7 @@
     "calories": 680,
     "healthy": true,
     "meat": true,
-    "quick": true,
+    "quick": false,
     "spicy": false,
     "ingredients": [
       "쌀국수",
@@ -7850,11 +7813,7 @@
       "혼밥 좋음",
       "실패 낮음"
     ],
-    "avoidMoods": [
-      "spicy",
-      "soup",
-      "hangover"
-    ],
+    "avoidMoods": [],
     "situation_tags": [
       "혼밥",
       "실패 금지",
@@ -7866,7 +7825,10 @@
     "imageSourceName": "Wikimedia Commons",
     "imageTitle": "Bun-cha-hanoi.jpg",
     "imageAuthor": "Valentin Orange",
-    "imageLicense": "CC BY-SA 4.0"
+    "imageLicense": "CC BY-SA 4.0",
+    "walletTags": [
+      "월급날"
+    ]
   },
   {
     "id": "as-003",
@@ -7929,11 +7891,7 @@
       "혼밥 좋음",
       "실패 낮음"
     ],
-    "avoidMoods": [
-      "spicy",
-      "soup",
-      "hangover"
-    ],
+    "avoidMoods": [],
     "situation_tags": [
       "시간 없음",
       "혼밥",
@@ -7945,7 +7903,10 @@
     "imageSourceName": "Wikimedia Commons",
     "imageTitle": "Pad Thai with Pork - Unithai.jpg",
     "imageAuthor": "Andy Li",
-    "imageLicense": "CC0"
+    "imageLicense": "CC0",
+    "walletTags": [
+      "월급날"
+    ]
   },
   {
     "id": "as-004",
@@ -8005,12 +7966,7 @@
       "든든함"
     ],
     "avoidMoods": [
-      "spicy",
-      "soup",
-      "hangover",
-      "noTime",
-      "comfort",
-      "meeting"
+      "spicy"
     ],
     "situation_tags": [
       "입맛 깨우기"
@@ -8020,7 +7976,10 @@
     "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Phuket_Style_Crab_Curry_Kanomjean_Vermicelli_rice_noodle_with_blue_crab,_crab_meat_curry,_served_with_hard_boiled_egg,_pickle_carrot_and_papaya_(25069887921).jpg",
     "imageTitle": "Phuket Style Crab Curry Kanomjean Vermicelli rice noodle with blue crab, crab meat curry, served with hard boiled egg, pickle carrot and papaya (25069887921).jpg",
     "imageAuthor": "T.Tseng",
-    "imageLicense": "CC BY 2.0"
+    "imageLicense": "CC BY 2.0",
+    "walletTags": [
+      "월급날"
+    ]
   },
   {
     "id": "as-005",
@@ -8084,12 +8043,7 @@
       "혼밥 좋음",
       "밥심"
     ],
-    "avoidMoods": [
-      "soup",
-      "hangover",
-      "comfort",
-      "meeting"
-    ],
+    "avoidMoods": [],
     "situation_tags": [
       "시간 없음",
       "혼밥",
@@ -8101,7 +8055,10 @@
     "imageSourceName": "Wikimedia Commons",
     "imageTitle": "Nasi Goreng Ikan Asin.jpg",
     "imageAuthor": "Rizka Budiati from Leicester, United Kingdom",
-    "imageLicense": "CC BY 2.0"
+    "imageLicense": "CC BY 2.0",
+    "walletTags": [
+      "월급날"
+    ]
   },
   {
     "id": "as-006",
@@ -8166,7 +8123,6 @@
       "실패 낮음"
     ],
     "avoidMoods": [
-      "soup",
       "hangover"
     ],
     "situation_tags": [
@@ -8180,7 +8136,10 @@
     "imageSourceName": "Wikimedia Commons",
     "imageTitle": "Mie Goreng in Bali.jpg",
     "imageAuthor": "jeff~",
-    "imageLicense": "CC BY 2.0"
+    "imageLicense": "CC BY 2.0",
+    "walletTags": [
+      "월급날"
+    ]
   },
   {
     "id": "as-007",
@@ -8244,11 +8203,7 @@
       "실패 낮음",
       "밥심"
     ],
-    "avoidMoods": [
-      "spicy",
-      "soup",
-      "hangover"
-    ],
+    "avoidMoods": [],
     "situation_tags": [
       "시간 없음",
       "혼밥",
@@ -8260,7 +8215,10 @@
     "imageSourceName": "Wikimedia Commons",
     "imageTitle": "Thai-style Fried Rice in Pineapple.jpg",
     "imageAuthor": "Ceeseven",
-    "imageLicense": "CC BY-SA 3.0"
+    "imageLicense": "CC BY-SA 3.0",
+    "walletTags": [
+      "월급날"
+    ]
   },
   {
     "id": "as-008",
@@ -8324,10 +8282,7 @@
       "해장",
       "혼밥 좋음"
     ],
-    "avoidMoods": [
-      "comfort",
-      "meeting"
-    ],
+    "avoidMoods": [],
     "situation_tags": [
       "해장 필요",
       "혼밥",
@@ -8341,7 +8296,10 @@
     "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Tom_Yum_Goong_Noodle_Soup_-_Nok_Nok_Kitchen_at_The_Cow_2024-03-28.jpg",
     "imageTitle": "Tom Yum Goong Noodle Soup - Nok Nok Kitchen at The Cow 2024-03-28.jpg",
     "imageAuthor": "Andy Li",
-    "imageLicense": "CC0"
+    "imageLicense": "CC0",
+    "walletTags": [
+      "월급날"
+    ]
   },
   {
     "id": "as-009",
@@ -8407,8 +8365,6 @@
       "실패 낮음"
     ],
     "avoidMoods": [
-      "spicy",
-      "soup",
       "hangover"
     ],
     "situation_tags": [
@@ -8425,7 +8381,10 @@
     "imageSourceName": "Wikimedia Commons",
     "imageTitle": "엔제리너스 아이스 아메리카노 + 에그 마요 반미 샌드위치랑, 한라봉 에이드.jpg",
     "imageAuthor": "김바삭 (Kim Ba-sak)",
-    "imageLicense": "CC BY 4.0"
+    "imageLicense": "CC BY 4.0",
+    "walletTags": [
+      "월급 전"
+    ]
   },
   {
     "id": "as-010",
@@ -8438,7 +8397,7 @@
     "calories": 820,
     "healthy": false,
     "meat": true,
-    "quick": true,
+    "quick": false,
     "spicy": true,
     "ingredients": [
       "커리",
@@ -8489,12 +8448,7 @@
       "혼밥 좋음",
       "팀점심"
     ],
-    "avoidMoods": [
-      "soup",
-      "hangover",
-      "comfort",
-      "meeting"
-    ],
+    "avoidMoods": [],
     "situation_tags": [
       "혼밥",
       "팀점심",
@@ -8507,7 +8461,10 @@
     "imageSourceName": "Wikimedia Commons",
     "imageTitle": "Indian curry in Korea 35.jpg",
     "imageAuthor": "User:Piotrus",
-    "imageLicense": "CC BY-SA 3.0"
+    "imageLicense": "CC BY-SA 3.0",
+    "walletTags": [
+      "월급날"
+    ]
   },
   {
     "id": "as-011",
@@ -8568,7 +8525,6 @@
       "실패 낮음"
     ],
     "avoidMoods": [
-      "soup",
       "hangover",
       "noTime"
     ],
@@ -8581,7 +8537,10 @@
     "imageSourceName": "Wikimedia Commons",
     "imageTitle": "Tandoori Chicken-2.jpg",
     "imageAuthor": "User:Quadell",
-    "imageLicense": "CC BY-SA 3.0"
+    "imageLicense": "CC BY-SA 3.0",
+    "walletTags": [
+      "월급날"
+    ]
   },
   {
     "id": "as-012",
@@ -8646,11 +8605,7 @@
       "실패 낮음",
       "밥심"
     ],
-    "avoidMoods": [
-      "spicy",
-      "soup",
-      "hangover"
-    ],
+    "avoidMoods": [],
     "situation_tags": [
       "시간 없음",
       "혼밥",
@@ -8663,7 +8618,10 @@
     "imageSourceName": "Wikimedia Commons",
     "imageTitle": "Kebab Rice from the Shawarma Shack at Puso Village (2025-07-26).jpg",
     "imageAuthor": "Wide Awake!",
-    "imageLicense": "CC BY 4.0"
+    "imageLicense": "CC BY 4.0",
+    "walletTags": [
+      "월급날"
+    ]
   },
   {
     "id": "hl-001",
@@ -8729,8 +8687,6 @@
       "식단관리"
     ],
     "avoidMoods": [
-      "spicy",
-      "soup",
       "hangover"
     ],
     "situation_tags": [
@@ -8746,7 +8702,10 @@
     "imageSourceName": "Wikimedia Commons",
     "imageTitle": "Salad with chicken and avocado.jpg",
     "imageAuthor": "Pauloleong2002",
-    "imageLicense": "CC BY-SA 4.0"
+    "imageLicense": "CC BY-SA 4.0",
+    "walletTags": [
+      "월급날"
+    ]
   },
   {
     "id": "hl-002",
@@ -8812,8 +8771,6 @@
       "식단관리"
     ],
     "avoidMoods": [
-      "spicy",
-      "soup",
       "hangover"
     ],
     "situation_tags": [
@@ -8828,7 +8785,10 @@
     "imageSourceName": "Wikimedia Commons",
     "imageTitle": "Salmon nicoise salad - London, UK.jpg",
     "imageAuthor": "Daderot",
-    "imageLicense": "CC0"
+    "imageLicense": "CC0",
+    "walletTags": [
+      "월급날"
+    ]
   },
   {
     "id": "hl-003",
@@ -8894,8 +8854,6 @@
       "실패 낮음"
     ],
     "avoidMoods": [
-      "spicy",
-      "soup",
       "hangover"
     ],
     "situation_tags": [
@@ -8911,7 +8869,10 @@
     "imageSourceName": "Wikimedia Commons",
     "imageTitle": "Tofu Egg Salad (3532877222).jpg",
     "imageAuthor": "Vegan Feast Catering",
-    "imageLicense": "CC BY 2.0"
+    "imageLicense": "CC BY 2.0",
+    "walletTags": [
+      "월급 전"
+    ]
   },
   {
     "id": "hl-004",
@@ -8978,8 +8939,6 @@
       "식단관리"
     ],
     "avoidMoods": [
-      "spicy",
-      "soup",
       "hangover"
     ],
     "situation_tags": [
@@ -8995,7 +8954,10 @@
     "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Yogurt,_fruit,_granola_bowl_(34999358091).jpg",
     "imageTitle": "Yogurt, fruit, granola bowl (34999358091).jpg",
     "imageAuthor": "T.Tseng",
-    "imageLicense": "CC BY 2.0"
+    "imageLicense": "CC BY 2.0",
+    "walletTags": [
+      "월급 전"
+    ]
   },
   {
     "id": "hl-005",
@@ -9061,8 +9023,6 @@
       "식단관리"
     ],
     "avoidMoods": [
-      "spicy",
-      "soup",
       "hangover"
     ],
     "situation_tags": [
@@ -9077,7 +9037,10 @@
     "imageSourceName": "Wikimedia Commons",
     "imageTitle": "Poke Bowl Losos Zlaty Klas 2025.jpg",
     "imageAuthor": "Mojmir Churavy",
-    "imageLicense": "CC0"
+    "imageLicense": "CC0",
+    "walletTags": [
+      "월급날"
+    ]
   },
   {
     "id": "hl-006",
@@ -9143,8 +9106,6 @@
       "식단관리"
     ],
     "avoidMoods": [
-      "spicy",
-      "soup",
       "hangover"
     ],
     "situation_tags": [
@@ -9159,7 +9120,10 @@
     "imageSourceName": "Wikimedia Commons",
     "imageTitle": "Ahi tuna Poke.jpeg",
     "imageAuthor": "Openmalware.exe",
-    "imageLicense": "CC BY-SA 4.0"
+    "imageLicense": "CC BY-SA 4.0",
+    "walletTags": [
+      "월급날"
+    ]
   },
   {
     "id": "hl-007",
@@ -9225,8 +9189,6 @@
       "식단관리"
     ],
     "avoidMoods": [
-      "spicy",
-      "soup",
       "hangover"
     ],
     "situation_tags": [
@@ -9242,7 +9204,10 @@
     "imageSourceName": "Wikimedia Commons",
     "imageTitle": "Pasta salad closeup.JPG",
     "imageAuthor": "Brynn",
-    "imageLicense": "CC BY-SA 3.0"
+    "imageLicense": "CC BY-SA 3.0",
+    "walletTags": [
+      "월급날"
+    ]
   },
   {
     "id": "hl-008",
@@ -9307,10 +9272,7 @@
       "밥심"
     ],
     "avoidMoods": [
-      "soup",
-      "hangover",
-      "comfort",
-      "meeting"
+      "hangover"
     ],
     "situation_tags": [
       "시간 없음",
@@ -9324,7 +9286,10 @@
     "imageSourceName": "Wikimedia Commons",
     "imageTitle": "Vegetable Dolsot Bibimbap - unmixed - Goshen (4844719173).jpg",
     "imageAuthor": "Alpha from Melbourne, Australia",
-    "imageLicense": "CC BY-SA 2.0"
+    "imageLicense": "CC BY-SA 2.0",
+    "walletTags": [
+      "월급 전"
+    ]
   },
   {
     "id": "hl-009",
@@ -9389,7 +9354,6 @@
       "혼밥 좋음"
     ],
     "avoidMoods": [
-      "spicy",
       "hangover"
     ],
     "situation_tags": [
@@ -9404,7 +9368,10 @@
     "imageSourceName": "Wikimedia Commons",
     "imageTitle": "Shirataki noodle dish.jpg",
     "imageAuthor": "Wikimedia Commons contributor",
-    "imageLicense": "Wikimedia Commons"
+    "imageLicense": "Wikimedia Commons",
+    "walletTags": [
+      "월급날"
+    ]
   },
   {
     "id": "hl-010",
@@ -9417,7 +9384,7 @@
     "calories": 410,
     "healthy": true,
     "meat": false,
-    "quick": true,
+    "quick": false,
     "spicy": false,
     "ingredients": [
       "렌틸콩",
@@ -9468,9 +9435,7 @@
       "혼밥 좋음",
       "부담 적음"
     ],
-    "avoidMoods": [
-      "spicy"
-    ],
+    "avoidMoods": [],
     "situation_tags": [
       "해장 필요",
       "혼밥",
@@ -9486,7 +9451,10 @@
     "imageSourceName": "Wikimedia Commons",
     "imageTitle": "Bowl of lentil soup with green and red lentils.jpg",
     "imageAuthor": "Whoisjohngalt",
-    "imageLicense": "CC BY-SA 4.0"
+    "imageLicense": "CC BY-SA 4.0",
+    "walletTags": [
+      "월급 전"
+    ]
   },
   {
     "id": "hl-011",
@@ -9553,8 +9521,6 @@
       "식단관리"
     ],
     "avoidMoods": [
-      "spicy",
-      "soup",
       "hangover"
     ],
     "situation_tags": [
@@ -9570,7 +9536,10 @@
     "imageSourceName": "Wikimedia Commons",
     "imageTitle": "Avocado sandwich light.jpg",
     "imageAuthor": "Kjokkenutstyr",
-    "imageLicense": "CC BY-SA 4.0"
+    "imageLicense": "CC BY-SA 4.0",
+    "walletTags": [
+      "월급날"
+    ]
   },
   {
     "id": "kr-025",
@@ -9583,7 +9552,7 @@
     "calories": 680,
     "healthy": true,
     "meat": false,
-    "quick": true,
+    "quick": false,
     "spicy": false,
     "ingredients": [
       "밥",
@@ -9636,7 +9605,6 @@
       "직장인 정석"
     ],
     "avoidMoods": [
-      "spicy",
       "soup",
       "hangover"
     ],
@@ -9650,7 +9618,10 @@
     "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Korean.cuisine-baekban-01.jpg",
     "imageTitle": "Korean.cuisine-baekban-01.jpg",
     "imageAuthor": "by LWY",
-    "imageLicense": "CC BY 2.0"
+    "imageLicense": "CC BY 2.0",
+    "walletTags": [
+      "월급 전"
+    ]
   },
   {
     "id": "kr-026",
@@ -9663,7 +9634,7 @@
     "calories": 690,
     "healthy": true,
     "meat": false,
-    "quick": true,
+    "quick": false,
     "spicy": false,
     "ingredients": [
       "밥",
@@ -9716,7 +9687,6 @@
       "밥심"
     ],
     "avoidMoods": [
-      "spicy",
       "soup",
       "hangover"
     ],
@@ -9731,7 +9701,10 @@
     "imageSourceName": "Wikimedia Commons",
     "imageTitle": "가정식백반.jpg",
     "imageAuthor": "Hyerimwon",
-    "imageLicense": "CC BY-SA 4.0"
+    "imageLicense": "CC BY-SA 4.0",
+    "walletTags": [
+      "월급 전"
+    ]
   },
   {
     "id": "kr-027",
@@ -9744,7 +9717,7 @@
     "calories": 590,
     "healthy": true,
     "meat": false,
-    "quick": true,
+    "quick": false,
     "spicy": false,
     "ingredients": [
       "청국장",
@@ -9797,9 +9770,7 @@
       "혼밥 좋음",
       "부담 적음"
     ],
-    "avoidMoods": [
-      "spicy"
-    ],
+    "avoidMoods": [],
     "situation_tags": [
       "해장 필요",
       "혼밥",
@@ -9812,7 +9783,10 @@
     "imageSourceName": "Wikimedia Commons",
     "imageTitle": "2015년 2월 11일 효소원 청국장.jpg",
     "imageAuthor": "최광모",
-    "imageLicense": "CC BY-SA 4.0"
+    "imageLicense": "CC BY-SA 4.0",
+    "walletTags": [
+      "월급 전"
+    ]
   },
   {
     "id": "kr-028",
@@ -9825,7 +9799,7 @@
     "calories": 780,
     "healthy": false,
     "meat": true,
-    "quick": true,
+    "quick": false,
     "spicy": true,
     "ingredients": [
       "돼지등뼈",
@@ -9909,6 +9883,9 @@
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:KOCIS_Gamjatang,_pork-on-the-bone_soup_with_potatoes_(5029033934).jpg",
         "title": "KOCIS Gamjatang, pork-on-the-bone soup with potatoes (5029033934).jpg"
       }
+    ],
+    "walletTags": [
+      "월급날"
     ]
   },
   {
@@ -9977,10 +9954,7 @@
       "든든함",
       "혼밥 좋음"
     ],
-    "avoidMoods": [
-      "spicy",
-      "meeting"
-    ],
+    "avoidMoods": [],
     "situation_tags": [
       "시간 없음",
       "해장 필요",
@@ -9994,7 +9968,10 @@
     "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Korean_soup-Sundae_gukbap-01.jpg",
     "imageTitle": "Korean soup-Sundae gukbap-01.jpg",
     "imageAuthor": "pcamp",
-    "imageLicense": "CC BY 2.0"
+    "imageLicense": "CC BY 2.0",
+    "walletTags": [
+      "월급 전"
+    ]
   },
   {
     "id": "kr-030",
@@ -10062,9 +10039,7 @@
       "든든함",
       "혼밥 좋음"
     ],
-    "avoidMoods": [
-      "spicy"
-    ],
+    "avoidMoods": [],
     "situation_tags": [
       "시간 없음",
       "해장 필요",
@@ -10079,7 +10054,10 @@
     "imageSourceName": "Wikimedia Commons",
     "imageTitle": "돼지국밥.jpg",
     "imageAuthor": "Leefect",
-    "imageLicense": "CC BY-SA 3.0"
+    "imageLicense": "CC BY-SA 3.0",
+    "walletTags": [
+      "월급 전"
+    ]
   },
   {
     "id": "kr-031",
@@ -10092,7 +10070,7 @@
     "calories": 620,
     "healthy": true,
     "meat": true,
-    "quick": true,
+    "quick": false,
     "spicy": false,
     "ingredients": [
       "닭고기",
@@ -10142,9 +10120,7 @@
       "해장",
       "든든함"
     ],
-    "avoidMoods": [
-      "spicy"
-    ],
+    "avoidMoods": [],
     "situation_tags": [
       "해장 필요",
       "혼밥",
@@ -10158,7 +10134,10 @@
     "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:%ED%94%84%EB%A0%88%ED%8D%BC%EC%8A%A4_%EB%8B%A4%EC%9D%B4%EC%96%B4%ED%8A%B8_%ED%91%B8%EB%93%9C_%EC%84%B1%EC%8B%A0%EC%97%AC%EB%8C%80%EC%A0%90_%EB%8B%AD%EA%B0%80%EC%8A%B4%EC%82%B4_%EA%B3%B0%ED%83%95.jpg",
     "imageTitle": "프레퍼스 다이어트 푸드 성신여대점 닭가슴살 곰탕.jpg",
     "imageAuthor": "Wikimedia Commons contributor",
-    "imageLicense": "Wikimedia Commons"
+    "imageLicense": "Wikimedia Commons",
+    "walletTags": [
+      "월급 전"
+    ]
   },
   {
     "id": "kr-032",
@@ -10171,7 +10150,7 @@
     "calories": 690,
     "healthy": false,
     "meat": true,
-    "quick": true,
+    "quick": false,
     "spicy": true,
     "ingredients": [
       "소고기",
@@ -10224,10 +10203,7 @@
       "든든함",
       "혼밥 좋음"
     ],
-    "avoidMoods": [
-      "comfort",
-      "meeting"
-    ],
+    "avoidMoods": [],
     "situation_tags": [
       "해장 필요",
       "혼밥",
@@ -10241,7 +10217,10 @@
     "imageSourceUrl": "",
     "imageTitle": "장터국밥 대표 이미지",
     "imageAuthor": "OpenAI",
-    "imageLicense": "Generated asset"
+    "imageLicense": "Generated asset",
+    "walletTags": [
+      "월급 전"
+    ]
   },
   {
     "id": "kr-033",
@@ -10308,10 +10287,7 @@
       "실패 낮음",
       "밥심"
     ],
-    "avoidMoods": [
-      "soup",
-      "hangover"
-    ],
+    "avoidMoods": [],
     "situation_tags": [
       "시간 없음",
       "혼밥",
@@ -10323,7 +10299,10 @@
     "imageSourceName": "Wikimedia Commons",
     "imageTitle": "Kimchi fried rice kimchi-bokkeum-bap 김치볶음밥 Fresh International Buffet Solaire Resort NorthA.jpg",
     "imageAuthor": "",
-    "imageLicense": "CC BY-SA 4.0"
+    "imageLicense": "CC BY-SA 4.0",
+    "walletTags": [
+      "월급 전"
+    ]
   },
   {
     "id": "kr-034",
@@ -10387,10 +10366,7 @@
       "밥심",
       "혼밥 좋음"
     ],
-    "avoidMoods": [
-      "soup",
-      "hangover"
-    ],
+    "avoidMoods": [],
     "situation_tags": [
       "시간 없음",
       "혼밥",
@@ -10402,7 +10378,10 @@
     "imageSourceUrl": "https://www.10000recipe.com/recipe/7026008",
     "imageTitle": "스팸김치덮밥",
     "imageAuthor": "10000recipe",
-    "imageLicense": "External food photo"
+    "imageLicense": "External food photo",
+    "walletTags": [
+      "월급 전"
+    ]
   },
   {
     "id": "kr-035",
@@ -10467,10 +10446,7 @@
       "밥심"
     ],
     "avoidMoods": [
-      "soup",
-      "hangover",
-      "comfort",
-      "meeting"
+      "hangover"
     ],
     "situation_tags": [
       "시간 없음",
@@ -10484,7 +10460,10 @@
     "imageSourceName": "Wikimedia Commons",
     "imageTitle": "Spicy tuna rice bowl (35032450572).jpg",
     "imageAuthor": "pelican from Tokyo, Japan",
-    "imageLicense": "CC BY-SA 2.0"
+    "imageLicense": "CC BY-SA 2.0",
+    "walletTags": [
+      "월급 전"
+    ]
   },
   {
     "id": "kr-036",
@@ -10549,12 +10528,7 @@
       "혼밥 좋음",
       "밥심"
     ],
-    "avoidMoods": [
-      "soup",
-      "hangover",
-      "comfort",
-      "meeting"
-    ],
+    "avoidMoods": [],
     "situation_tags": [
       "혼밥",
       "매운 걸로",
@@ -10565,7 +10539,10 @@
     "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Nakji-jeongol-bokkeum-bap_3.jpg",
     "imageTitle": "Nakji-jeongol-bokkeum-bap 3.jpg",
     "imageAuthor": "대경라이프",
-    "imageLicense": "CC BY-SA 4.0"
+    "imageLicense": "CC BY-SA 4.0",
+    "walletTags": [
+      "월급날"
+    ]
   },
   {
     "id": "kr-037",
@@ -10626,14 +10603,7 @@
       "든든함",
       "팀점심"
     ],
-    "avoidMoods": [
-      "spicy",
-      "soup",
-      "hangover",
-      "noTime",
-      "comfort",
-      "meeting"
-    ],
+    "avoidMoods": [],
     "situation_tags": [
       "팀점심",
       "실패 금지"
@@ -10643,7 +10613,10 @@
     "imageSourceName": "Wikimedia Commons",
     "imageTitle": "Braised chicken.jpg",
     "imageAuthor": "ZZArch",
-    "imageLicense": "CC BY-SA 3.0"
+    "imageLicense": "CC BY-SA 3.0",
+    "walletTags": [
+      "월급날"
+    ]
   },
   {
     "id": "kr-038",
@@ -10656,7 +10629,7 @@
     "calories": 760,
     "healthy": false,
     "meat": true,
-    "quick": true,
+    "quick": false,
     "spicy": true,
     "ingredients": [
       "돼지고기",
@@ -10707,12 +10680,7 @@
       "혼밥 좋음",
       "밥심"
     ],
-    "avoidMoods": [
-      "soup",
-      "hangover",
-      "comfort",
-      "meeting"
-    ],
+    "avoidMoods": [],
     "situation_tags": [
       "혼밥",
       "매운 걸로",
@@ -10724,7 +10692,10 @@
     "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Spicy_Pork_Bulgogi,_L%27Arbre_de_Sel,_Montparnasse,_Paris_003.jpg",
     "imageTitle": "Spicy Pork Bulgogi, L'Arbre de Sel, Montparnasse, Paris 003.jpg",
     "imageAuthor": "Guilhem Vellut from Paris, France",
-    "imageLicense": "CC BY 2.0"
+    "imageLicense": "CC BY 2.0",
+    "walletTags": [
+      "월급날"
+    ]
   },
   {
     "id": "kr-039",
@@ -10737,7 +10708,7 @@
     "calories": 620,
     "healthy": true,
     "meat": false,
-    "quick": true,
+    "quick": false,
     "spicy": false,
     "ingredients": [
       "우렁된장",
@@ -10789,8 +10760,6 @@
       "밥심"
     ],
     "avoidMoods": [
-      "spicy",
-      "soup",
       "hangover"
     ],
     "situation_tags": [
@@ -10805,7 +10774,10 @@
     "imageSourceName": "Tistory",
     "imageTitle": "우렁쌈밥",
     "imageAuthor": "Tistory",
-    "imageLicense": "External food photo"
+    "imageLicense": "External food photo",
+    "walletTags": [
+      "월급날"
+    ]
   },
   {
     "id": "cn-015",
@@ -10818,7 +10790,7 @@
     "calories": 760,
     "healthy": false,
     "meat": false,
-    "quick": true,
+    "quick": false,
     "spicy": true,
     "ingredients": [
       "해산물",
@@ -10871,10 +10843,7 @@
       "혼밥 좋음",
       "직장인 정석"
     ],
-    "avoidMoods": [
-      "comfort",
-      "meeting"
-    ],
+    "avoidMoods": [],
     "situation_tags": [
       "해장 필요",
       "혼밥",
@@ -10889,7 +10858,10 @@
     "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Korean_seafood_soup_(_Jjamppong).jpg",
     "imageTitle": "Korean seafood soup ( Jjamppong).jpg",
     "imageAuthor": "ProjectManhattan",
-    "imageLicense": "CC BY-SA 3.0"
+    "imageLicense": "CC BY-SA 3.0",
+    "walletTags": [
+      "월급날"
+    ]
   },
   {
     "id": "cn-016",
@@ -10902,7 +10874,7 @@
     "calories": 820,
     "healthy": false,
     "meat": true,
-    "quick": true,
+    "quick": false,
     "spicy": true,
     "ingredients": [
       "차돌박이",
@@ -10957,10 +10929,7 @@
       "혼밥 좋음",
       "직장인 정석"
     ],
-    "avoidMoods": [
-      "comfort",
-      "meeting"
-    ],
+    "avoidMoods": [],
     "situation_tags": [
       "해장 필요",
       "혼밥",
@@ -10975,7 +10944,10 @@
     "imageSourceName": "Wikimedia Commons",
     "imageTitle": "Spicy Noodle Soup with Beef, Saveurs de Chine, Paris 001.jpg",
     "imageAuthor": "Guilhem Vellut from Paris, France",
-    "imageLicense": "CC BY 2.0"
+    "imageLicense": "CC BY 2.0",
+    "walletTags": [
+      "월급날"
+    ]
   },
   {
     "id": "cn-017",
@@ -10988,7 +10960,7 @@
     "calories": 690,
     "healthy": true,
     "meat": false,
-    "quick": true,
+    "quick": false,
     "spicy": false,
     "ingredients": [
       "해산물",
@@ -11041,9 +11013,7 @@
       "부담 적음",
       "실패 낮음"
     ],
-    "avoidMoods": [
-      "spicy"
-    ],
+    "avoidMoods": [],
     "situation_tags": [
       "해장 필요",
       "혼밥",
@@ -11057,7 +11027,10 @@
     "imageSourceName": "Wikimedia Commons",
     "imageTitle": "Crispy Rice Cakes in Chinese-style Seafood Stir-fry - Horoki (924521466).jpg",
     "imageAuthor": "Alpha from Melbourne, Australia",
-    "imageLicense": "CC BY-SA 2.0"
+    "imageLicense": "CC BY-SA 2.0",
+    "walletTags": [
+      "월급날"
+    ]
   },
   {
     "id": "cn-018",
@@ -11070,7 +11043,7 @@
     "calories": 780,
     "healthy": false,
     "meat": true,
-    "quick": true,
+    "quick": false,
     "spicy": false,
     "ingredients": [
       "고기완자",
@@ -11120,8 +11093,6 @@
       "밥심"
     ],
     "avoidMoods": [
-      "spicy",
-      "soup",
       "hangover"
     ],
     "situation_tags": [
@@ -11135,7 +11106,10 @@
     "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Oriental_meatballs_-_stonesoup.jpg",
     "imageTitle": "Oriental meatballs - stonesoup.jpg",
     "imageAuthor": "jules / stonesoup",
-    "imageLicense": "CC BY 2.0"
+    "imageLicense": "CC BY 2.0",
+    "walletTags": [
+      "월급날"
+    ]
   },
   {
     "id": "cn-019",
@@ -11148,7 +11122,7 @@
     "calories": 710,
     "healthy": false,
     "meat": false,
-    "quick": true,
+    "quick": false,
     "spicy": true,
     "ingredients": [
       "중화면",
@@ -11199,10 +11173,7 @@
       "해장",
       "혼밥 좋음"
     ],
-    "avoidMoods": [
-      "comfort",
-      "meeting"
-    ],
+    "avoidMoods": [],
     "situation_tags": [
       "해장 필요",
       "혼밥",
@@ -11216,7 +11187,10 @@
     "imageSourceName": "Wikimedia Commons",
     "imageTitle": "201908 Sichuan Beef Noodle Soup in Jinjiang, Panzhihua.jpg",
     "imageAuthor": "MNXANL",
-    "imageLicense": "CC BY-SA 4.0"
+    "imageLicense": "CC BY-SA 4.0",
+    "walletTags": [
+      "월급날"
+    ]
   },
   {
     "id": "jp-015",
@@ -11280,11 +11254,7 @@
       "밥심"
     ],
     "avoidMoods": [
-      "spicy",
-      "soup",
-      "hangover",
-      "comfort",
-      "meeting"
+      "comfort"
     ],
     "situation_tags": [
       "시간 없음",
@@ -11295,7 +11265,10 @@
     "imageSourceName": "Wikimedia Commons",
     "imageTitle": "Tori Karaage Don With Onsen Tamago by Banej.jpg",
     "imageAuthor": "Banej",
-    "imageLicense": "CC BY-SA 3.0"
+    "imageLicense": "CC BY-SA 3.0",
+    "walletTags": [
+      "월급날"
+    ]
   },
   {
     "id": "jp-016",
@@ -11308,7 +11281,7 @@
     "calories": 790,
     "healthy": false,
     "meat": false,
-    "quick": true,
+    "quick": false,
     "spicy": false,
     "ingredients": [
       "새우튀김",
@@ -11357,13 +11330,7 @@
       "바삭함",
       "밥심"
     ],
-    "avoidMoods": [
-      "spicy",
-      "soup",
-      "hangover",
-      "comfort",
-      "meeting"
-    ],
+    "avoidMoods": [],
     "situation_tags": [
       "혼밥"
     ],
@@ -11372,7 +11339,10 @@
     "imageSourceName": "Wikimedia Commons",
     "imageTitle": "Ebidon.JPG",
     "imageAuthor": "100yen",
-    "imageLicense": "CC BY-SA 3.0"
+    "imageLicense": "CC BY-SA 3.0",
+    "walletTags": [
+      "월급날"
+    ]
   },
   {
     "id": "jp-017",
@@ -11434,11 +11404,10 @@
       "혼밥 좋음",
       "팀점심",
       "부담 적음",
-      "실패 낮음"
+      "실패 낮음",
+      "법카"
     ],
     "avoidMoods": [
-      "spicy",
-      "soup",
       "hangover"
     ],
     "situation_tags": [
@@ -11453,7 +11422,11 @@
     "imageSourceName": "Wikimedia Commons",
     "imageTitle": "Grilled Salmon and Ochazuke Set in Melbourne.jpg",
     "imageAuthor": "avlxyz from Melbourne",
-    "imageLicense": "CC BY-SA 2.0"
+    "imageLicense": "CC BY-SA 2.0",
+    "walletTags": [
+      "월급날",
+      "법카"
+    ]
   },
   {
     "id": "jp-018",
@@ -11519,7 +11492,6 @@
       "실패 낮음"
     ],
     "avoidMoods": [
-      "spicy",
       "hangover"
     ],
     "situation_tags": [
@@ -11538,7 +11510,10 @@
     "imageSourceName": "Wikimedia Commons",
     "imageTitle": "Ebinoya tenmori and Japanese Soba set.jpg",
     "imageAuthor": "Tokumeigakarinoaoshima",
-    "imageLicense": "CC BY-SA 4.0"
+    "imageLicense": "CC BY-SA 4.0",
+    "walletTags": [
+      "월급날"
+    ]
   },
   {
     "id": "jp-019",
@@ -11551,7 +11526,7 @@
     "calories": 920,
     "healthy": false,
     "meat": true,
-    "quick": true,
+    "quick": false,
     "spicy": false,
     "ingredients": [
       "카레",
@@ -11601,11 +11576,7 @@
       "밥심"
     ],
     "avoidMoods": [
-      "spicy",
-      "soup",
-      "hangover",
-      "comfort",
-      "meeting"
+      "spicy"
     ],
     "situation_tags": [
       "혼밥",
@@ -11616,7 +11587,10 @@
     "imageSourceName": "Wikimedia Commons",
     "imageTitle": "Japanese Katsu Curry 02.jpg",
     "imageAuthor": "ノボホショコロトソ",
-    "imageLicense": "CC BY 4.0"
+    "imageLicense": "CC BY 4.0",
+    "walletTags": [
+      "월급날"
+    ]
   },
   {
     "id": "jp-020",
@@ -11681,9 +11655,7 @@
       "혼밥 좋음",
       "실패 낮음"
     ],
-    "avoidMoods": [
-      "spicy"
-    ],
+    "avoidMoods": [],
     "situation_tags": [
       "시간 없음",
       "해장 필요",
@@ -11698,7 +11670,10 @@
     "imageSourceName": "Wikimedia Commons",
     "imageTitle": "Beef Udon - Pompoko.jpg",
     "imageAuthor": "Andy Li",
-    "imageLicense": "CC0"
+    "imageLicense": "CC0",
+    "walletTags": [
+      "월급날"
+    ]
   },
   {
     "id": "jp-021",
@@ -11763,11 +11738,7 @@
       "실패 낮음",
       "밥심"
     ],
-    "avoidMoods": [
-      "spicy",
-      "soup",
-      "hangover"
-    ],
+    "avoidMoods": [],
     "situation_tags": [
       "시간 없음",
       "혼밥",
@@ -11779,7 +11750,10 @@
     "imageSourceName": "Wikimedia Commons",
     "imageTitle": "Oyakodon 003.jpg",
     "imageAuthor": "Ocdp",
-    "imageLicense": "CC0"
+    "imageLicense": "CC0",
+    "walletTags": [
+      "월급날"
+    ]
   },
   {
     "id": "ws-015",
@@ -11843,11 +11817,7 @@
       "기분전환",
       "미팅 전"
     ],
-    "avoidMoods": [
-      "spicy",
-      "soup",
-      "hangover"
-    ],
+    "avoidMoods": [],
     "situation_tags": [
       "시간 없음",
       "혼밥",
@@ -11860,7 +11830,10 @@
     "imageSourceName": "Wikimedia Commons",
     "imageTitle": "Spaghetti con pesto alla genovese.jpg",
     "imageAuthor": "Wikimedia Commons contributor",
-    "imageLicense": "Wikimedia Commons"
+    "imageLicense": "Wikimedia Commons",
+    "walletTags": [
+      "월급날"
+    ]
   },
   {
     "id": "ws-016",
@@ -11922,11 +11895,7 @@
       "혼밥 좋음"
     ],
     "avoidMoods": [
-      "spicy",
-      "soup",
-      "hangover",
-      "comfort",
-      "meeting"
+      "comfort"
     ],
     "situation_tags": [
       "시간 없음",
@@ -11937,7 +11906,10 @@
     "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Rose_Pasta.jpg",
     "imageTitle": "Rose Pasta.jpg",
     "imageAuthor": "SHIN MIN KYEONG",
-    "imageLicense": "CC BY-SA 4.0"
+    "imageLicense": "CC BY-SA 4.0",
+    "walletTags": [
+      "월급날"
+    ]
   },
   {
     "id": "ws-017",
@@ -11950,7 +11922,7 @@
     "calories": 700,
     "healthy": false,
     "meat": false,
-    "quick": true,
+    "quick": false,
     "spicy": false,
     "ingredients": [
       "쌀",
@@ -11999,11 +11971,7 @@
       "밥심"
     ],
     "avoidMoods": [
-      "spicy",
-      "soup",
-      "hangover",
-      "comfort",
-      "meeting"
+      "comfort"
     ],
     "situation_tags": [
       "혼밥"
@@ -12013,7 +11981,10 @@
     "imageSourceName": "Wikimedia Commons",
     "imageTitle": "Sundried Tomato Asparagus Risotto (3953677022).jpg",
     "imageAuthor": "Vegan Feast Catering",
-    "imageLicense": "CC BY 2.0"
+    "imageLicense": "CC BY 2.0",
+    "walletTags": [
+      "월급날"
+    ]
   },
   {
     "id": "ws-018",
@@ -12074,11 +12045,6 @@
       "팀점심"
     ],
     "avoidMoods": [
-      "spicy",
-      "soup",
-      "hangover",
-      "noTime",
-      "comfort",
       "meeting"
     ],
     "situation_tags": [
@@ -12089,7 +12055,10 @@
     "imageSourceName": "Wikimedia Commons",
     "imageTitle": "Pepperoni pizza- boella co. 2024-02-17.jpg",
     "imageAuthor": "Andy Li",
-    "imageLicense": "CC0"
+    "imageLicense": "CC0",
+    "walletTags": [
+      "월급날"
+    ]
   },
   {
     "id": "ws-019",
@@ -12153,8 +12122,6 @@
       "부담 적음"
     ],
     "avoidMoods": [
-      "spicy",
-      "soup",
       "hangover"
     ],
     "situation_tags": [
@@ -12170,7 +12137,10 @@
     "imageSourceName": "Wikimedia Commons",
     "imageTitle": "Caesar Salad & Grilled Chicken (30548011308).jpg",
     "imageAuthor": "Wikimedia Commons contributor",
-    "imageLicense": "Wikimedia Commons"
+    "imageLicense": "Wikimedia Commons",
+    "walletTags": [
+      "월급날"
+    ]
   },
   {
     "id": "ws-020",
@@ -12237,8 +12207,6 @@
       "실패 낮음"
     ],
     "avoidMoods": [
-      "spicy",
-      "soup",
       "hangover"
     ],
     "situation_tags": [
@@ -12254,7 +12222,10 @@
     "imageSourceName": "Wikimedia Commons",
     "imageTitle": "Mushroom sandwich (30297522438).jpg",
     "imageAuthor": "Ella Olsson from Stockholm, Sweden",
-    "imageLicense": "CC BY 2.0"
+    "imageLicense": "CC BY 2.0",
+    "walletTags": [
+      "월급 전"
+    ]
   },
   {
     "id": "ws-021",
@@ -12317,11 +12288,7 @@
       "혼밥 좋음"
     ],
     "avoidMoods": [
-      "spicy",
-      "soup",
-      "hangover",
-      "comfort",
-      "meeting"
+      "comfort"
     ],
     "situation_tags": [
       "시간 없음",
@@ -12332,7 +12299,10 @@
     "imageSourceName": "Wikimedia Commons",
     "imageTitle": "Chicken quesadilla 1.jpg",
     "imageAuthor": "Skylark g",
-    "imageLicense": "CC BY-SA 3.0"
+    "imageLicense": "CC BY-SA 3.0",
+    "walletTags": [
+      "월급날"
+    ]
   },
   {
     "id": "ff-013",
@@ -12394,13 +12364,7 @@
       "든든함",
       "혼밥 좋음"
     ],
-    "avoidMoods": [
-      "spicy",
-      "soup",
-      "hangover",
-      "comfort",
-      "meeting"
-    ],
+    "avoidMoods": [],
     "situation_tags": [
       "시간 없음",
       "혼밥"
@@ -12410,7 +12374,10 @@
     "imageSourceName": "Wikimedia Commons",
     "imageTitle": "Burger King Double Bacon Cheeseburger (30596371113).jpg",
     "imageAuthor": "Willis Lam",
-    "imageLicense": "CC BY-SA 2.0"
+    "imageLicense": "CC BY-SA 2.0",
+    "walletTags": [
+      "월급날"
+    ]
   },
   {
     "id": "ff-015",
@@ -12476,13 +12443,7 @@
       "팀점심",
       "바삭함"
     ],
-    "avoidMoods": [
-      "spicy",
-      "soup",
-      "hangover",
-      "comfort",
-      "meeting"
-    ],
+    "avoidMoods": [],
     "situation_tags": [
       "시간 없음",
       "혼밥",
@@ -12493,7 +12454,10 @@
     "imageSourceName": "Wikimedia Commons",
     "imageTitle": "Chicken tenders (8884884960).jpg",
     "imageAuthor": "jeffreyw",
-    "imageLicense": "CC BY 2.0"
+    "imageLicense": "CC BY 2.0",
+    "walletTags": [
+      "월급 전"
+    ]
   },
   {
     "id": "ff-016",
@@ -12559,8 +12523,6 @@
       "실패 낮음"
     ],
     "avoidMoods": [
-      "spicy",
-      "soup",
       "hangover"
     ],
     "situation_tags": [
@@ -12575,7 +12537,10 @@
     "imageSourceName": "Wikimedia Commons",
     "imageTitle": "Bagel sandwich meal prep.jpg",
     "imageAuthor": "Revital Salomon",
-    "imageLicense": "CC BY-SA 4.0"
+    "imageLicense": "CC BY-SA 4.0",
+    "walletTags": [
+      "월급 전"
+    ]
   },
   {
     "id": "bs-013",
@@ -12641,8 +12606,6 @@
       "밥심"
     ],
     "avoidMoods": [
-      "spicy",
-      "soup",
       "hangover"
     ],
     "situation_tags": [
@@ -12657,7 +12620,10 @@
     "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Edo_Inari_sushi_02.JPG",
     "imageTitle": "Edo Inari sushi 02.JPG",
     "imageAuthor": "DryPot",
-    "imageLicense": "CC BY 2.5"
+    "imageLicense": "CC BY 2.5",
+    "walletTags": [
+      "월급 전"
+    ]
   },
   {
     "id": "bs-014",
@@ -12722,13 +12688,7 @@
       "든든함",
       "혼밥 좋음"
     ],
-    "avoidMoods": [
-      "spicy",
-      "soup",
-      "hangover",
-      "comfort",
-      "meeting"
-    ],
+    "avoidMoods": [],
     "situation_tags": [
       "시간 없음",
       "혼밥"
@@ -12738,7 +12698,10 @@
     "imageSourceName": "Tistory",
     "imageTitle": "돈까스김밥",
     "imageAuthor": "Tistory",
-    "imageLicense": "External food photo"
+    "imageLicense": "External food photo",
+    "walletTags": [
+      "월급 전"
+    ]
   },
   {
     "id": "bs-015",
@@ -12804,10 +12767,7 @@
       "든든함",
       "혼밥 좋음"
     ],
-    "avoidMoods": [
-      "comfort",
-      "meeting"
-    ],
+    "avoidMoods": [],
     "situation_tags": [
       "시간 없음",
       "해장 필요",
@@ -12820,7 +12780,10 @@
     "imageSourceName": "Wikimedia Commons",
     "imageTitle": "Tomato cheese ramen 001.jpg",
     "imageAuthor": "Ocdp",
-    "imageLicense": "CC0"
+    "imageLicense": "CC0",
+    "walletTags": [
+      "월급 전"
+    ]
   },
   {
     "id": "bs-016",
@@ -12885,9 +12848,7 @@
       "가벼움",
       "혼밥 좋음"
     ],
-    "avoidMoods": [
-      "spicy"
-    ],
+    "avoidMoods": [],
     "situation_tags": [
       "시간 없음",
       "해장 필요",
@@ -12903,7 +12864,10 @@
     "imageSourceName": "Wikimedia Commons",
     "imageTitle": "Janchiguksu잔치국수IMG 0714.jpg",
     "imageAuthor": "Choikwangmo9",
-    "imageLicense": "CC0"
+    "imageLicense": "CC0",
+    "walletTags": [
+      "월급 전"
+    ]
   },
   {
     "id": "bs-017",
@@ -12968,9 +12932,7 @@
       "가벼움",
       "혼밥 좋음"
     ],
-    "avoidMoods": [
-      "spicy"
-    ],
+    "avoidMoods": [],
     "situation_tags": [
       "시간 없음",
       "해장 필요",
@@ -12986,7 +12948,10 @@
     "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Chicken_and_burdock_tempura_udon_and_Oden_in_Sukesan_Udon_Maebashi-Nishi.jpg",
     "imageTitle": "Chicken and burdock tempura udon and Oden in Sukesan Udon Maebashi-Nishi.jpg",
     "imageAuthor": "IXTA9839 Sony ILCE-7M3",
-    "imageLicense": "CC BY-SA 4.0"
+    "imageLicense": "CC BY-SA 4.0",
+    "walletTags": [
+      "월급 전"
+    ]
   },
   {
     "id": "bs-018",
@@ -13049,11 +13014,7 @@
       "만두",
       "실패 낮음"
     ],
-    "avoidMoods": [
-      "spicy",
-      "soup",
-      "hangover"
-    ],
+    "avoidMoods": [],
     "situation_tags": [
       "시간 없음",
       "혼밥",
@@ -13065,7 +13026,10 @@
     "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Korean_mandu_dumplings.jpg",
     "imageTitle": "Korean mandu dumplings.jpg",
     "imageAuthor": "Wikimedia Commons contributor",
-    "imageLicense": "Wikimedia Commons"
+    "imageLicense": "Wikimedia Commons",
+    "walletTags": [
+      "월급 전"
+    ]
   },
   {
     "id": "bs-019",
@@ -13131,10 +13095,7 @@
       "분식"
     ],
     "avoidMoods": [
-      "soup",
-      "hangover",
-      "comfort",
-      "meeting"
+      "hangover"
     ],
     "situation_tags": [
       "시간 없음",
@@ -13147,7 +13108,10 @@
     "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Bibim-mandu.jpg",
     "imageTitle": "Bibim-mandu.jpg",
     "imageAuthor": "Jens Ohlig",
-    "imageLicense": "CC BY-SA 2.0"
+    "imageLicense": "CC BY-SA 2.0",
+    "walletTags": [
+      "월급 전"
+    ]
   },
   {
     "id": "bs-020",
@@ -13213,10 +13177,7 @@
       "입맛 전환",
       "비 오는 날"
     ],
-    "avoidMoods": [
-      "comfort",
-      "meeting"
-    ],
+    "avoidMoods": [],
     "situation_tags": [
       "시간 없음",
       "해장 필요",
@@ -13231,7 +13192,10 @@
     "imageSourceUrl": "https://cookpick.kr/gukmul-tteokbokki-recipe/",
     "imageTitle": "국물떡볶이",
     "imageAuthor": "Cookpick",
-    "imageLicense": "External food photo"
+    "imageLicense": "External food photo",
+    "walletTags": [
+      "월급 전"
+    ]
   },
   {
     "id": "as-013",
@@ -13244,7 +13208,7 @@
     "calories": 760,
     "healthy": false,
     "meat": true,
-    "quick": true,
+    "quick": false,
     "spicy": true,
     "ingredients": [
       "커리",
@@ -13294,12 +13258,7 @@
       "혼밥 좋음",
       "밥심"
     ],
-    "avoidMoods": [
-      "soup",
-      "hangover",
-      "comfort",
-      "meeting"
-    ],
+    "avoidMoods": [],
     "situation_tags": [
       "혼밥",
       "매운 걸로",
@@ -13310,7 +13269,10 @@
     "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Thai_Green_Curry_with_Rice.jpg",
     "imageTitle": "Thai Green Curry with Rice.jpg",
     "imageAuthor": "Kenamparo",
-    "imageLicense": "CC BY-SA 4.0"
+    "imageLicense": "CC BY-SA 4.0",
+    "walletTags": [
+      "월급날"
+    ]
   },
   {
     "id": "as-014",
@@ -13323,7 +13285,7 @@
     "calories": 760,
     "healthy": false,
     "meat": true,
-    "quick": true,
+    "quick": false,
     "spicy": true,
     "ingredients": [
       "커리",
@@ -13373,12 +13335,7 @@
       "혼밥 좋음",
       "밥심"
     ],
-    "avoidMoods": [
-      "soup",
-      "hangover",
-      "comfort",
-      "meeting"
-    ],
+    "avoidMoods": [],
     "situation_tags": [
       "혼밥",
       "매운 걸로",
@@ -13389,7 +13346,10 @@
     "imageSourceName": "Wikimedia Commons",
     "imageTitle": "Thai red curry (49692016398).jpg",
     "imageAuthor": "spurekar",
-    "imageLicense": "CC BY 2.0"
+    "imageLicense": "CC BY 2.0",
+    "walletTags": [
+      "월급날"
+    ]
   },
   {
     "id": "as-015",
@@ -13402,7 +13362,7 @@
     "calories": 680,
     "healthy": true,
     "meat": true,
-    "quick": true,
+    "quick": false,
     "spicy": false,
     "ingredients": [
       "닭고기",
@@ -13451,11 +13411,7 @@
       "실패 낮음",
       "밥심"
     ],
-    "avoidMoods": [
-      "spicy",
-      "soup",
-      "hangover"
-    ],
+    "avoidMoods": [],
     "situation_tags": [
       "혼밥",
       "실패 금지",
@@ -13466,7 +13422,10 @@
     "imageSourceName": "Wikimedia Commons",
     "imageTitle": "Hainanese Chicken Rice.jpg",
     "imageAuthor": "No machine-readable author provided. Terence assumed (based on copyright claims).",
-    "imageLicense": "CC BY 2.5"
+    "imageLicense": "CC BY 2.5",
+    "walletTags": [
+      "월급날"
+    ]
   },
   {
     "id": "as-016",
@@ -13479,7 +13438,7 @@
     "calories": 670,
     "healthy": true,
     "meat": true,
-    "quick": true,
+    "quick": false,
     "spicy": false,
     "ingredients": [
       "닭고기",
@@ -13528,11 +13487,7 @@
       "실패 낮음",
       "밥심"
     ],
-    "avoidMoods": [
-      "spicy",
-      "soup",
-      "hangover"
-    ],
+    "avoidMoods": [],
     "situation_tags": [
       "혼밥",
       "실패 금지",
@@ -13543,7 +13498,10 @@
     "imageSourceName": "Wikimedia Commons",
     "imageTitle": "Chicken and rice, Thai, 2024 (01).jpg",
     "imageAuthor": "Bahnfrend",
-    "imageLicense": "CC BY-SA 4.0"
+    "imageLicense": "CC BY-SA 4.0",
+    "walletTags": [
+      "월급날"
+    ]
   },
   {
     "id": "as-017",
@@ -13556,7 +13514,7 @@
     "calories": 780,
     "healthy": false,
     "meat": false,
-    "quick": true,
+    "quick": false,
     "spicy": true,
     "ingredients": [
       "쌀국수",
@@ -13608,10 +13566,7 @@
       "든든함",
       "혼밥 좋음"
     ],
-    "avoidMoods": [
-      "comfort",
-      "meeting"
-    ],
+    "avoidMoods": [],
     "situation_tags": [
       "해장 필요",
       "혼밥",
@@ -13625,7 +13580,10 @@
     "imageSourceName": "Wikimedia Commons",
     "imageTitle": "Thai laksa dish at Yim Thai Yeronga, Queensland.jpg",
     "imageAuthor": "Chris Olszewski",
-    "imageLicense": "CC BY-SA 4.0"
+    "imageLicense": "CC BY-SA 4.0",
+    "walletTags": [
+      "월급날"
+    ]
   },
   {
     "id": "as-018",
@@ -13689,10 +13647,7 @@
       "실패 낮음"
     ],
     "avoidMoods": [
-      "spicy",
-      "soup",
-      "hangover",
-      "noTime"
+      "hangover"
     ],
     "situation_tags": [
       "팀점심",
@@ -13706,7 +13661,10 @@
     "imageSourceName": "Wikimedia Commons",
     "imageTitle": "Gỏi Cuốn Chay Vietnamese Fresh Vegetarian Spring Roll 2019-1599.jpg",
     "imageAuthor": "Paul R. Burley",
-    "imageLicense": "CC BY-SA 4.0"
+    "imageLicense": "CC BY-SA 4.0",
+    "walletTags": [
+      "월급날"
+    ]
   },
   {
     "id": "as-019",
@@ -13719,7 +13677,7 @@
     "calories": 820,
     "healthy": false,
     "meat": true,
-    "quick": true,
+    "quick": false,
     "spicy": true,
     "ingredients": [
       "닭고기",
@@ -13770,12 +13728,7 @@
       "혼밥 좋음",
       "밥심"
     ],
-    "avoidMoods": [
-      "soup",
-      "hangover",
-      "comfort",
-      "meeting"
-    ],
+    "avoidMoods": [],
     "situation_tags": [
       "혼밥",
       "매운 걸로",
@@ -13786,7 +13739,10 @@
     "imageSourceName": "Wikimedia Commons",
     "imageTitle": "Chicken tikka masala.jpg",
     "imageAuthor": "Michael Hays",
-    "imageLicense": "CC BY 2.0"
+    "imageLicense": "CC BY 2.0",
+    "walletTags": [
+      "월급날"
+    ]
   },
   {
     "id": "hl-013",
@@ -13852,8 +13808,6 @@
       "식단관리"
     ],
     "avoidMoods": [
-      "spicy",
-      "soup",
       "hangover"
     ],
     "situation_tags": [
@@ -13869,7 +13823,10 @@
     "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Poke_Bowl_Kureci_Maso_Zlaty_Klas_2025.jpg",
     "imageTitle": "Poke Bowl Kureci Maso Zlaty Klas 2025.jpg",
     "imageAuthor": "Mojmir Churavy",
-    "imageLicense": "CC0"
+    "imageLicense": "CC0",
+    "walletTags": [
+      "월급날"
+    ]
   },
   {
     "id": "hl-014",
@@ -13933,8 +13890,6 @@
       "부담 적음"
     ],
     "avoidMoods": [
-      "spicy",
-      "soup",
       "hangover"
     ],
     "situation_tags": [
@@ -13950,7 +13905,10 @@
     "imageSourceName": "Wikimedia Commons",
     "imageTitle": "Beef Salad (9152377186).jpg",
     "imageAuthor": "Charles Haynes",
-    "imageLicense": "CC BY-SA 2.0"
+    "imageLicense": "CC BY-SA 2.0",
+    "walletTags": [
+      "월급날"
+    ]
   },
   {
     "id": "hl-015",
@@ -14016,8 +13974,6 @@
       "실패 낮음"
     ],
     "avoidMoods": [
-      "spicy",
-      "soup",
       "hangover"
     ],
     "situation_tags": [
@@ -14033,7 +13989,10 @@
     "imageSourceName": "Wikimedia Commons",
     "imageTitle": "Chickpea Chop Salad (9484308160).jpg",
     "imageAuthor": "Cajsa Lilliehook from Portland",
-    "imageLicense": "CC BY-SA 2.0"
+    "imageLicense": "CC BY-SA 2.0",
+    "walletTags": [
+      "월급 전"
+    ]
   },
   {
     "id": "hl-016",
@@ -14099,8 +14058,6 @@
       "실패 낮음"
     ],
     "avoidMoods": [
-      "spicy",
-      "soup",
       "hangover"
     ],
     "situation_tags": [
@@ -14116,7 +14073,10 @@
     "imageSourceName": "Wikimedia Commons",
     "imageTitle": "Veggie Salad and Low Carb Wrap (5180411342).jpg",
     "imageAuthor": "Elizabeth from Lansing, MI, USA",
-    "imageLicense": "CC BY 2.0"
+    "imageLicense": "CC BY 2.0",
+    "walletTags": [
+      "월급 전"
+    ]
   },
   {
     "id": "hl-017",
@@ -14183,8 +14143,6 @@
       "실패 낮음"
     ],
     "avoidMoods": [
-      "spicy",
-      "soup",
       "hangover"
     ],
     "situation_tags": [
@@ -14200,7 +14158,10 @@
     "imageSourceName": "Wikimedia Commons",
     "imageTitle": "Open faced tuna sandwich with cherry tomato and guacamole spread.jpg",
     "imageAuthor": "stef yau",
-    "imageLicense": "CC BY 2.0"
+    "imageLicense": "CC BY 2.0",
+    "walletTags": [
+      "월급 전"
+    ]
   },
   {
     "id": "lb-001",
@@ -14266,11 +14227,7 @@
       "실패 낮음",
       "밥심"
     ],
-    "avoidMoods": [
-      "spicy",
-      "soup",
-      "hangover"
-    ],
+    "avoidMoods": [],
     "situation_tags": [
       "시간 없음",
       "혼밥",
@@ -14282,7 +14239,10 @@
     "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Crispy_kara-age_don_-_Goemon_Ramen_Bar_2023-08-16.jpg",
     "imageTitle": "Crispy kara-age don - Goemon Ramen Bar 2023-08-16.jpg",
     "imageAuthor": "Andy Li",
-    "imageLicense": "CC0"
+    "imageLicense": "CC0",
+    "walletTags": [
+      "월급 전"
+    ]
   },
   {
     "id": "lb-002",
@@ -14347,11 +14307,7 @@
       "혼밥 좋음",
       "실패 낮음"
     ],
-    "avoidMoods": [
-      "spicy",
-      "soup",
-      "hangover"
-    ],
+    "avoidMoods": [],
     "situation_tags": [
       "시간 없음",
       "혼밥",
@@ -14363,7 +14319,10 @@
     "imageSourceUrl": "https://amyzzung.tistory.com/590",
     "imageTitle": "참치마요덮밥",
     "imageAuthor": "Tistory",
-    "imageLicense": "External food photo"
+    "imageLicense": "External food photo",
+    "walletTags": [
+      "월급 전"
+    ]
   },
   {
     "id": "lb-004",
@@ -14427,11 +14386,7 @@
       "실패 낮음",
       "밥심"
     ],
-    "avoidMoods": [
-      "spicy",
-      "soup",
-      "hangover"
-    ],
+    "avoidMoods": [],
     "situation_tags": [
       "시간 없음",
       "혼밥",
@@ -14444,7 +14399,10 @@
     "imageTitle": "Korean Beef Bulgogi Rice Bowl (34817154336).jpg",
     "imageAuthor": "A Healthier Michigan from Detroit, United States",
     "imageLicense": "CC BY-SA 2.0",
-    "imageBorrowedFrom": "불고기덮밥"
+    "imageBorrowedFrom": "불고기덮밥",
+    "walletTags": [
+      "월급 전"
+    ]
   },
   {
     "id": "lb-005",
@@ -14509,13 +14467,7 @@
       "바삭함",
       "밥심"
     ],
-    "avoidMoods": [
-      "spicy",
-      "soup",
-      "hangover",
-      "comfort",
-      "meeting"
-    ],
+    "avoidMoods": [],
     "situation_tags": [
       "시간 없음",
       "혼밥"
@@ -14525,7 +14477,10 @@
     "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Tonkatsu_bento_by_jetalone.jpg",
     "imageTitle": "Tonkatsu bento by jetalone.jpg",
     "imageAuthor": "jetalone",
-    "imageLicense": "CC BY 2.0"
+    "imageLicense": "CC BY 2.0",
+    "walletTags": [
+      "월급 전"
+    ]
   },
   {
     "id": "lb-007",
@@ -14590,9 +14545,7 @@
       "밥심"
     ],
     "avoidMoods": [
-      "spicy",
-      "soup",
-      "hangover"
+      "spicy"
     ],
     "situation_tags": [
       "시간 없음",
@@ -14605,7 +14558,10 @@
     "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Curry_katsu.jpg",
     "imageTitle": "Curry katsu.jpg",
     "imageAuthor": "GiveMeMollusks",
-    "imageLicense": "CC0"
+    "imageLicense": "CC0",
+    "walletTags": [
+      "월급 전"
+    ]
   },
   {
     "id": "lb-008",
@@ -14670,11 +14626,7 @@
       "실패 낮음",
       "밥심"
     ],
-    "avoidMoods": [
-      "spicy",
-      "soup",
-      "hangover"
-    ],
+    "avoidMoods": [],
     "situation_tags": [
       "시간 없음",
       "혼밥",
@@ -14686,7 +14638,10 @@
     "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Omi_Beef_Rice_%26_Matsusaka_Beef_Hamburg_Steak_Bento.jpg",
     "imageTitle": "Omi Beef Rice & Matsusaka Beef Hamburg Steak Bento.jpg",
     "imageAuthor": "Miyuki Meinaka",
-    "imageLicense": "CC BY-SA 4.0"
+    "imageLicense": "CC BY-SA 4.0",
+    "walletTags": [
+      "월급 전"
+    ]
   },
   {
     "id": "lb-009",
@@ -14753,11 +14708,7 @@
       "실패 낮음",
       "밥심"
     ],
-    "avoidMoods": [
-      "spicy",
-      "soup",
-      "hangover"
-    ],
+    "avoidMoods": [],
     "situation_tags": [
       "시간 없음",
       "혼밥",
@@ -14770,7 +14721,10 @@
     "imageTitle": "Crispy kara-age don - Goemon Ramen Bar 2023-08-16.jpg",
     "imageAuthor": "Andy Li",
     "imageLicense": "CC0",
-    "imageBorrowedFrom": "치킨마요덮밥"
+    "imageBorrowedFrom": "치킨마요덮밥",
+    "walletTags": [
+      "월급 전"
+    ]
   },
   {
     "id": "lb-010",
@@ -14836,11 +14790,7 @@
       "실패 낮음",
       "밥심"
     ],
-    "avoidMoods": [
-      "spicy",
-      "soup",
-      "hangover"
-    ],
+    "avoidMoods": [],
     "situation_tags": [
       "시간 없음",
       "혼밥",
@@ -14852,7 +14802,10 @@
     "imageSourceName": "Wikimedia Commons",
     "imageTitle": "Convenience Store LunchBox 01.jpg",
     "imageAuthor": "Korea.net / Korean Culture and Information Service (Jeon Han)",
-    "imageLicense": "CC BY-SA 2.0"
+    "imageLicense": "CC BY-SA 2.0",
+    "walletTags": [
+      "월급 전"
+    ]
   },
   {
     "id": "kr-041",
@@ -14865,7 +14818,7 @@
     "calories": 650,
     "healthy": false,
     "meat": false,
-    "quick": true,
+    "quick": false,
     "spicy": true,
     "ingredients": [
       "명란",
@@ -14917,10 +14870,7 @@
       "매콤",
       "혼밥 좋음"
     ],
-    "avoidMoods": [
-      "comfort",
-      "meeting"
-    ],
+    "avoidMoods": [],
     "situation_tags": [
       "해장 필요",
       "혼밥",
@@ -14934,7 +14884,10 @@
     "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Korean_soup-Maeuntang-01.jpg",
     "imageTitle": "Korean soup-Maeuntang-01.jpg",
     "imageAuthor": "David Peterson",
-    "imageLicense": "CC BY 2.0"
+    "imageLicense": "CC BY 2.0",
+    "walletTags": [
+      "월급날"
+    ]
   },
   {
     "id": "kr-042",
@@ -14947,7 +14900,7 @@
     "calories": 520,
     "healthy": true,
     "meat": false,
-    "quick": true,
+    "quick": false,
     "spicy": false,
     "ingredients": [
       "대구",
@@ -14997,9 +14950,7 @@
       "가벼움",
       "부담 적음"
     ],
-    "avoidMoods": [
-      "spicy"
-    ],
+    "avoidMoods": [],
     "situation_tags": [
       "해장 필요",
       "혼밥",
@@ -15013,7 +14964,10 @@
     "imageSourceName": "Wikimedia Commons",
     "imageTitle": "대구탕.jpg",
     "imageAuthor": "Jocelyndurrey",
-    "imageLicense": "CC BY-SA 4.0"
+    "imageLicense": "CC BY-SA 4.0",
+    "walletTags": [
+      "월급날"
+    ]
   },
   {
     "id": "kr-043",
@@ -15026,7 +14980,7 @@
     "calories": 620,
     "healthy": false,
     "meat": true,
-    "quick": true,
+    "quick": false,
     "spicy": true,
     "ingredients": [
       "고추장",
@@ -15077,10 +15031,7 @@
       "가성비",
       "밥심"
     ],
-    "avoidMoods": [
-      "comfort",
-      "meeting"
-    ],
+    "avoidMoods": [],
     "situation_tags": [
       "해장 필요",
       "혼밥",
@@ -15094,7 +15045,10 @@
     "imageSourceName": "Wikimedia Commons",
     "imageTitle": "Korean stew-Spicy jjigae-01.jpg",
     "imageAuthor": "megan",
-    "imageLicense": "CC BY 2.0"
+    "imageLicense": "CC BY 2.0",
+    "walletTags": [
+      "월급 전"
+    ]
   },
   {
     "id": "kr-044",
@@ -15162,11 +15116,7 @@
       "밥심",
       "비 오는 날"
     ],
-    "avoidMoods": [
-      "noTime",
-      "comfort",
-      "meeting"
-    ],
+    "avoidMoods": [],
     "situation_tags": [
       "팀점심",
       "매운 걸로",
@@ -15180,7 +15130,10 @@
     "imageSourceName": "Wikimedia Commons",
     "imageTitle": "Korean.food-Dakbokemtang-01.jpg",
     "imageAuthor": "Wikimedia Commons contributor",
-    "imageLicense": "Wikimedia Commons"
+    "imageLicense": "Wikimedia Commons",
+    "walletTags": [
+      "월급날"
+    ]
   },
   {
     "id": "kr-045",
@@ -15193,7 +15146,7 @@
     "calories": 560,
     "healthy": true,
     "meat": false,
-    "quick": true,
+    "quick": false,
     "spicy": true,
     "ingredients": [
       "회",
@@ -15245,8 +15198,6 @@
       "졸림 방지"
     ],
     "avoidMoods": [
-      "comfort",
-      "meeting",
       "rainy"
     ],
     "situation_tags": [
@@ -15263,7 +15214,10 @@
     "imageSourceName": "Wikimedia Commons",
     "imageTitle": "Korean cuisine-Hanchi mulhoe-Sliced raw mitra squid and vegetables in cold and spicy soup-01.jpg",
     "imageAuthor": "SEEMS to be at Flickr",
-    "imageLicense": "CC BY-SA 3.0"
+    "imageLicense": "CC BY-SA 3.0",
+    "walletTags": [
+      "월급날"
+    ]
   },
   {
     "id": "kr-046",
@@ -15329,9 +15283,7 @@
       "든든함",
       "빠름"
     ],
-    "avoidMoods": [
-      "spicy"
-    ],
+    "avoidMoods": [],
     "situation_tags": [
       "시간 없음",
       "해장 필요",
@@ -15345,7 +15297,10 @@
     "imageSourceName": "Wikimedia Commons",
     "imageTitle": "이연수 소머리국밥(홍천군 홍천읍)IMG 3838.jpg",
     "imageAuthor": "최광모 (Choe Kwangmo)",
-    "imageLicense": "CC0"
+    "imageLicense": "CC0",
+    "walletTags": [
+      "월급날"
+    ]
   },
   {
     "id": "cn-022",
@@ -15358,7 +15313,7 @@
     "calories": 760,
     "healthy": false,
     "meat": true,
-    "quick": true,
+    "quick": false,
     "spicy": true,
     "ingredients": [
       "중화면",
@@ -15409,10 +15364,7 @@
       "혼밥 좋음",
       "고소함"
     ],
-    "avoidMoods": [
-      "comfort",
-      "meeting"
-    ],
+    "avoidMoods": [],
     "situation_tags": [
       "혼밥",
       "매운 걸로",
@@ -15425,7 +15377,10 @@
     "imageSourceName": "Wikimedia Commons",
     "imageTitle": "Dandannoodles.jpg",
     "imageAuthor": "Alpha from Melbourne, Australia",
-    "imageLicense": "CC BY-SA 2.0"
+    "imageLicense": "CC BY-SA 2.0",
+    "walletTags": [
+      "월급날"
+    ]
   },
   {
     "id": "cn-023",
@@ -15438,7 +15393,7 @@
     "calories": 680,
     "healthy": false,
     "meat": false,
-    "quick": true,
+    "quick": false,
     "spicy": false,
     "ingredients": [
       "굴",
@@ -15453,7 +15408,7 @@
     "rating": 4.4,
     "baseLikes": 248,
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/%E9%9B%AA%E8%8F%9C%E6%B5%B7%E9%B2%9C%E7%B1%B3%E7%BA%BF_Preserved_Mustard_and_Seafood_Rice_Noodle_Soup_-_Soup%2C_Box_Hill_%282171031233%29.jpg/960px-%E9%9B%AA%E8%8F%9C%E6%B5%B7%E9%B2%9C%E7%B1%B3%E7%BA%BF_Preserved_Mustard_and_Seafood_Rice_Noodle_Soup_-_Soup%2C_Box_Hill_%282171031233%29.jpg",
-    "spiceLevel": 2,
+    "spiceLevel": 1,
     "soupLevel": 2,
     "heaviness": 2,
     "speed": 2,
@@ -15465,7 +15420,6 @@
     "recommendedMoods": [
       "hangover",
       "solo",
-      "spicy",
       "soup",
       "sleepy",
       "rainy"
@@ -15491,8 +15445,7 @@
       "혼밥 좋음"
     ],
     "avoidMoods": [
-      "spicy",
-      "meeting"
+      "spicy"
     ],
     "situation_tags": [
       "해장 필요",
@@ -15505,7 +15458,10 @@
     "imageSourceName": "Wikimedia Commons",
     "imageTitle": "雪菜海鲜米线 Preserved Mustard and Seafood Rice Noodle Soup - Soup, Box Hill (2171031233).jpg",
     "imageAuthor": "Alpha from Melbourne, Australia",
-    "imageLicense": "CC BY-SA 2.0"
+    "imageLicense": "CC BY-SA 2.0",
+    "walletTags": [
+      "월급날"
+    ]
   },
   {
     "id": "cn-024",
@@ -15568,11 +15524,7 @@
       "혼밥 좋음",
       "무난함"
     ],
-    "avoidMoods": [
-      "spicy",
-      "soup",
-      "hangover"
-    ],
+    "avoidMoods": [],
     "situation_tags": [
       "시간 없음",
       "혼밥",
@@ -15584,7 +15536,10 @@
     "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Jajang_rice.jpg",
     "imageTitle": "Jajang rice.jpg",
     "imageAuthor": "샤르르샤벳",
-    "imageLicense": "CC BY 4.0"
+    "imageLicense": "CC BY 4.0",
+    "walletTags": [
+      "월급 전"
+    ]
   },
   {
     "id": "cn-025",
@@ -15645,13 +15600,11 @@
       "팀점심",
       "가벼움",
       "프리미엄",
-      "실패 낮음"
+      "실패 낮음",
+      "법카"
     ],
     "avoidMoods": [
-      "spicy",
-      "soup",
-      "hangover",
-      "noTime"
+      "hangover"
     ],
     "situation_tags": [
       "팀점심",
@@ -15664,7 +15617,11 @@
     "imageSourceName": "Wikimedia Commons",
     "imageTitle": "Dim Sum Breakfast.jpg",
     "imageAuthor": "afterdog",
-    "imageLicense": "CC0"
+    "imageLicense": "CC0",
+    "walletTags": [
+      "월급날",
+      "법카"
+    ]
   },
   {
     "id": "jp-022",
@@ -15677,7 +15634,7 @@
     "calories": 780,
     "healthy": false,
     "meat": true,
-    "quick": true,
+    "quick": false,
     "spicy": true,
     "ingredients": [
       "면",
@@ -15729,12 +15686,7 @@
       "기분전환",
       "든든함"
     ],
-    "avoidMoods": [
-      "soup",
-      "hangover",
-      "comfort",
-      "meeting"
-    ],
+    "avoidMoods": [],
     "situation_tags": [
       "혼밥",
       "매운 걸로",
@@ -15745,7 +15697,10 @@
     "imageSourceName": "Wikimedia Commons",
     "imageTitle": "Sugakiya's Taiwan Mazesoba (2015-09-24) 02.JPG",
     "imageAuthor": "Lombroso",
-    "imageLicense": "CC BY-SA 4.0"
+    "imageLicense": "CC BY-SA 4.0",
+    "walletTags": [
+      "월급날"
+    ]
   },
   {
     "id": "jp-023",
@@ -15807,13 +15762,10 @@
       "프리미엄",
       "든든함",
       "기분전환",
-      "실패 낮음"
+      "실패 낮음",
+      "법카"
     ],
-    "avoidMoods": [
-      "spicy",
-      "hangover",
-      "noTime"
-    ],
+    "avoidMoods": [],
     "situation_tags": [
       "혼밥",
       "팀점심",
@@ -15827,7 +15779,11 @@
     "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Gyukatsu_(46075415774).jpg",
     "imageTitle": "Gyukatsu (46075415774).jpg",
     "imageAuthor": "Raita Futo from Tokyo, Japan",
-    "imageLicense": "CC BY 2.0"
+    "imageLicense": "CC BY 2.0",
+    "walletTags": [
+      "월급날",
+      "법카"
+    ]
   },
   {
     "id": "jp-024",
@@ -15840,7 +15796,7 @@
     "calories": 690,
     "healthy": true,
     "meat": false,
-    "quick": true,
+    "quick": false,
     "spicy": false,
     "ingredients": [
       "고등어",
@@ -15889,9 +15845,7 @@
       "정식"
     ],
     "avoidMoods": [
-      "spicy",
-      "hangover",
-      "meeting"
+      "hangover"
     ],
     "situation_tags": [
       "혼밥",
@@ -15905,7 +15859,10 @@
     "imageSourceName": "Wikimedia Commons",
     "imageTitle": "Grilled Japanese spanish mackerel (16175447598).jpg",
     "imageAuthor": "pelican from Tokyo, Japan",
-    "imageLicense": "CC BY-SA 2.0"
+    "imageLicense": "CC BY-SA 2.0",
+    "walletTags": [
+      "월급날"
+    ]
   },
   {
     "id": "ws-022",
@@ -15918,7 +15875,7 @@
     "calories": 650,
     "healthy": false,
     "meat": false,
-    "quick": true,
+    "quick": false,
     "spicy": false,
     "ingredients": [
       "바지락",
@@ -15970,8 +15927,6 @@
       "미팅 전"
     ],
     "avoidMoods": [
-      "spicy",
-      "soup",
       "hangover"
     ],
     "situation_tags": [
@@ -15986,7 +15941,10 @@
     "imageSourceName": "Wikimedia Commons",
     "imageTitle": "Spaghetti vongole 2.jpg",
     "imageAuthor": "Popo le Chien",
-    "imageLicense": "CC BY-SA 4.0"
+    "imageLicense": "CC BY-SA 4.0",
+    "walletTags": [
+      "월급날"
+    ]
   },
   {
     "id": "ws-023",
@@ -16049,11 +16007,7 @@
       "든든함",
       "무난함"
     ],
-    "avoidMoods": [
-      "spicy",
-      "soup",
-      "hangover"
-    ],
+    "avoidMoods": [],
     "situation_tags": [
       "시간 없음",
       "혼밥",
@@ -16065,7 +16019,10 @@
     "imageSourceName": "Wikimedia Commons",
     "imageTitle": "Pilaf with chicken.jpg",
     "imageAuthor": "Юкатан",
-    "imageLicense": "CC BY-SA 3.0"
+    "imageLicense": "CC BY-SA 3.0",
+    "walletTags": [
+      "월급날"
+    ]
   },
   {
     "id": "ws-024",
@@ -16128,8 +16085,6 @@
       "가벼움"
     ],
     "avoidMoods": [
-      "spicy",
-      "soup",
       "hangover"
     ],
     "situation_tags": [
@@ -16144,7 +16099,10 @@
     "imageSourceName": "Wikimedia Commons",
     "imageTitle": "Sandwich jambon-beurre.jpg",
     "imageAuthor": "Boulanger: Nat / Photographer: Nat",
-    "imageLicense": "CC BY-SA 4.0"
+    "imageLicense": "CC BY-SA 4.0",
+    "walletTags": [
+      "월급날"
+    ]
   },
   {
     "id": "ff-017",
@@ -16207,12 +16165,7 @@
       "가성비",
       "혼밥 좋음"
     ],
-    "avoidMoods": [
-      "spicy",
-      "soup",
-      "hangover",
-      "comfort"
-    ],
+    "avoidMoods": [],
     "situation_tags": [
       "시간 없음",
       "혼밥"
@@ -16222,7 +16175,10 @@
     "imageSourceName": "Wikimedia Commons",
     "imageTitle": "Chicken Nuggets.jpg",
     "imageAuthor": "James Palinsad",
-    "imageLicense": "CC BY-SA 2.0"
+    "imageLicense": "CC BY-SA 2.0",
+    "walletTags": [
+      "월급 전"
+    ]
   },
   {
     "id": "ff-018",
@@ -16284,12 +16240,7 @@
       "배달",
       "무난함"
     ],
-    "avoidMoods": [
-      "spicy",
-      "soup",
-      "hangover",
-      "noTime"
-    ],
+    "avoidMoods": [],
     "situation_tags": [
       "팀점심",
       "실패 금지"
@@ -16299,7 +16250,10 @@
     "imageSourceName": "Wikimedia Commons",
     "imageTitle": "Bulgogi pizza 3.jpg",
     "imageAuthor": "japan_style",
-    "imageLicense": "CC BY 2.0"
+    "imageLicense": "CC BY 2.0",
+    "walletTags": [
+      "월급날"
+    ]
   },
   {
     "id": "bs-021",
@@ -16363,9 +16317,7 @@
       "국물",
       "산뜻함"
     ],
-    "avoidMoods": [
-      "meeting"
-    ],
+    "avoidMoods": [],
     "situation_tags": [
       "시간 없음",
       "혼밥",
@@ -16380,7 +16332,10 @@
     "imageTitle": "진주냉면의 사진.jpg",
     "imageAuthor": "신애리",
     "imageLicense": "CC BY 2.0 kr",
-    "imageBorrowedFrom": "냉면"
+    "imageBorrowedFrom": "냉면",
+    "walletTags": [
+      "월급 전"
+    ]
   },
   {
     "id": "bs-022",
@@ -16443,8 +16398,6 @@
       "혼밥 좋음"
     ],
     "avoidMoods": [
-      "spicy",
-      "soup",
       "hangover"
     ],
     "situation_tags": [
@@ -16459,7 +16412,10 @@
     "imageSourceName": "Wikimedia Commons",
     "imageTitle": "Fishcake Kimbap -koreanfood (16827948540).jpg",
     "imageAuthor": "Arnold Gatilao from Oakland, CA, USA",
-    "imageLicense": "CC BY 2.0"
+    "imageLicense": "CC BY 2.0",
+    "walletTags": [
+      "월급 전"
+    ]
   },
   {
     "id": "as-020",
@@ -16472,7 +16428,7 @@
     "calories": 690,
     "healthy": false,
     "meat": true,
-    "quick": true,
+    "quick": false,
     "spicy": true,
     "ingredients": [
       "쌀국수",
@@ -16523,10 +16479,7 @@
       "매콤",
       "혼밥 좋음"
     ],
-    "avoidMoods": [
-      "comfort",
-      "meeting"
-    ],
+    "avoidMoods": [],
     "situation_tags": [
       "해장 필요",
       "혼밥",
@@ -16540,7 +16493,10 @@
     "imageSourceName": "Wikimedia Commons",
     "imageTitle": "Bun Bo Hue 1.jpg",
     "imageAuthor": "SauceSupreme",
-    "imageLicense": "CC BY 2.0"
+    "imageLicense": "CC BY 2.0",
+    "walletTags": [
+      "월급날"
+    ]
   },
   {
     "id": "as-021",
@@ -16553,7 +16509,7 @@
     "calories": 760,
     "healthy": false,
     "meat": true,
-    "quick": true,
+    "quick": false,
     "spicy": false,
     "ingredients": [
       "돼지고기",
@@ -16602,11 +16558,7 @@
       "무난함",
       "든든함"
     ],
-    "avoidMoods": [
-      "spicy",
-      "soup",
-      "hangover"
-    ],
+    "avoidMoods": [],
     "situation_tags": [
       "혼밥",
       "실패 금지",
@@ -16617,7 +16569,10 @@
     "imageSourceName": "Wikimedia Commons",
     "imageTitle": "Khao kha moo thailand.jpg",
     "imageAuthor": "Amin",
-    "imageLicense": "CC BY-SA 4.0"
+    "imageLicense": "CC BY-SA 4.0",
+    "walletTags": [
+      "월급날"
+    ]
   },
   {
     "id": "hl-020",
@@ -16680,9 +16635,7 @@
       "빠름",
       "국물"
     ],
-    "avoidMoods": [
-      "spicy"
-    ],
+    "avoidMoods": [],
     "situation_tags": [
       "시간 없음",
       "혼밥",
@@ -16698,7 +16651,10 @@
     "imageSourceName": "Wikimedia Commons",
     "imageTitle": "Pumpkin soup preparation.jpg",
     "imageAuthor": "MOs810",
-    "imageLicense": "CC BY-SA 4.0"
+    "imageLicense": "CC BY-SA 4.0",
+    "walletTags": [
+      "월급 전"
+    ]
   },
   {
     "id": "hl-021",
@@ -16711,7 +16667,7 @@
     "calories": 420,
     "healthy": true,
     "meat": false,
-    "quick": true,
+    "quick": false,
     "spicy": false,
     "ingredients": [
       "두부면",
@@ -16762,8 +16718,6 @@
       "미팅 전"
     ],
     "avoidMoods": [
-      "spicy",
-      "soup",
       "hangover"
     ],
     "situation_tags": [
@@ -16779,7 +16733,10 @@
     "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Lemon_Dill_Feta_Tofu_Pasta.jpg",
     "imageTitle": "Lemon Dill Feta Tofu Pasta.jpg",
     "imageAuthor": "Ian Norman from Los Angeles, CA",
-    "imageLicense": "CC BY-SA 2.0"
+    "imageLicense": "CC BY-SA 2.0",
+    "walletTags": [
+      "월급날"
+    ]
   },
   {
     "id": "lb-011",
@@ -16843,8 +16800,6 @@
       "식단관리"
     ],
     "avoidMoods": [
-      "spicy",
-      "soup",
       "hangover"
     ],
     "situation_tags": [
@@ -16860,7 +16815,10 @@
     "imageSourceName": "Wikimedia Commons",
     "imageTitle": "Wiki Salad lunchbox.jpg",
     "imageAuthor": "Junjigye40",
-    "imageLicense": "CC0"
+    "imageLicense": "CC0",
+    "walletTags": [
+      "월급 전"
+    ]
   },
   {
     "id": "lb-012",
@@ -16925,12 +16883,7 @@
       "빠름",
       "가성비"
     ],
-    "avoidMoods": [
-      "soup",
-      "hangover",
-      "comfort",
-      "meeting"
-    ],
+    "avoidMoods": [],
     "situation_tags": [
       "시간 없음",
       "혼밥",
@@ -16942,7 +16895,10 @@
     "imageSourceName": "Wikimedia Commons",
     "imageTitle": "Spicy Chicken Rice Bowl from @chilantro has become a must order for me! Hope you are having a delicious Sunday as well! (30819418635).jpg",
     "imageAuthor": "Sharon Chen from Austin, United States",
-    "imageLicense": "CC BY 2.0"
+    "imageLicense": "CC BY 2.0",
+    "walletTags": [
+      "월급 전"
+    ]
   },
   {
     "id": "lb-013",
@@ -17006,8 +16962,6 @@
       "혼밥 좋음"
     ],
     "avoidMoods": [
-      "spicy",
-      "soup",
       "hangover"
     ],
     "situation_tags": [
@@ -17022,7 +16976,10 @@
     "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Mentai-don.jpg",
     "imageTitle": "Mentai-don.jpg",
     "imageAuthor": "Masahiko OHKUBO",
-    "imageLicense": "CC BY 2.0"
+    "imageLicense": "CC BY 2.0",
+    "walletTags": [
+      "월급 전"
+    ]
   },
   {
     "id": "top-001",
@@ -17085,9 +17042,7 @@
       "국물",
       "미팅 전"
     ],
-    "avoidMoods": [
-      "spicy"
-    ],
+    "avoidMoods": [],
     "situation_tags": [
       "혼밥",
       "속 편하게",
@@ -17101,7 +17056,10 @@
     "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Ttukbaegi-bulgogi.jpg",
     "imageTitle": "Ttukbaegi-bulgogi.jpg",
     "imageAuthor": "hyun chun kim",
-    "imageLicense": "CC0"
+    "imageLicense": "CC0",
+    "walletTags": [
+      "월급날"
+    ]
   },
   {
     "id": "top-002",
@@ -17162,9 +17120,7 @@
       "부담 적음",
       "국물"
     ],
-    "avoidMoods": [
-      "spicy"
-    ],
+    "avoidMoods": [],
     "situation_tags": [
       "해장 필요",
       "속 편하게",
@@ -17178,7 +17134,10 @@
     "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Chueotang.JPG",
     "imageTitle": "Chueotang.JPG",
     "imageAuthor": "Dalgial",
-    "imageLicense": "CC BY-SA 3.0"
+    "imageLicense": "CC BY-SA 3.0",
+    "walletTags": [
+      "월급날"
+    ]
   },
   {
     "id": "top-003",
@@ -17253,7 +17212,10 @@
     "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Dongtae_jjigae_(pollock_stew).jpg",
     "imageTitle": "Dongtae jjigae (pollock stew).jpg",
     "imageAuthor": "cryb9191",
-    "imageLicense": "CC BY 4.0"
+    "imageLicense": "CC BY 4.0",
+    "walletTags": [
+      "월급날"
+    ]
   },
   {
     "id": "top-004",
@@ -17316,10 +17278,7 @@
       "기분전환"
     ],
     "avoidMoods": [
-      "soup",
-      "hangover",
-      "comfort",
-      "meeting"
+      "hangover"
     ],
     "situation_tags": [
       "혼밥",
@@ -17332,7 +17291,10 @@
     "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Korean_cuisine-Nakji_bibimbap-01.jpg",
     "imageTitle": "Korean cuisine-Nakji bibimbap-01.jpg",
     "imageAuthor": "by cube300 at Flickr",
-    "imageLicense": "CC BY-SA 2.0"
+    "imageLicense": "CC BY-SA 2.0",
+    "walletTags": [
+      "월급날"
+    ]
   },
   {
     "id": "top-005",
@@ -17345,7 +17307,7 @@
     "calories": 820,
     "healthy": false,
     "meat": false,
-    "quick": false,
+    "quick": true,
     "spicy": false,
     "ingredients": [
       "한식뷔페",
@@ -17393,11 +17355,7 @@
       "팀점심",
       "실패 낮음"
     ],
-    "avoidMoods": [
-      "spicy",
-      "soup",
-      "hangover"
-    ],
+    "avoidMoods": [],
     "situation_tags": [
       "혼밥",
       "팀점심",
@@ -17409,7 +17367,10 @@
     "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:KOREAN_BUFFET_AT_MOUNT_CHILBO_DPRK_NORTH_KOREA_OCT_2012_(8647543485).jpg",
     "imageTitle": "KOREAN BUFFET AT MOUNT CHILBO DPRK NORTH KOREA OCT 2012 (8647543485).jpg",
     "imageAuthor": "calflier001",
-    "imageLicense": "CC BY-SA 2.0"
+    "imageLicense": "CC BY-SA 2.0",
+    "walletTags": [
+      "월급 전"
+    ]
   },
   {
     "id": "top-006",
@@ -17474,11 +17435,10 @@
       "팀점심",
       "국물",
       "실패 낮음",
-      "미팅 전"
+      "미팅 전",
+      "법카"
     ],
-    "avoidMoods": [
-      "spicy"
-    ],
+    "avoidMoods": [],
     "situation_tags": [
       "팀점심",
       "국물 필요",
@@ -17491,7 +17451,11 @@
     "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Bulgogi-jeongol_1.jpg",
     "imageTitle": "Bulgogi-jeongol 1.jpg",
     "imageAuthor": "hyun chun kim",
-    "imageLicense": "CC0"
+    "imageLicense": "CC0",
+    "walletTags": [
+      "월급날",
+      "법카"
+    ]
   },
   {
     "id": "top-007",
@@ -17555,12 +17519,7 @@
       "매콤",
       "기분전환"
     ],
-    "avoidMoods": [
-      "soup",
-      "hangover",
-      "comfort",
-      "meeting"
-    ],
+    "avoidMoods": [],
     "situation_tags": [
       "팀점심",
       "매운 걸로",
@@ -17571,7 +17530,10 @@
     "imageSourceName": "Wikimedia Commons",
     "imageTitle": "매운갈비찜 원주 10 4 13.JPG",
     "imageAuthor": "Dalgial",
-    "imageLicense": "CC BY-SA 3.0"
+    "imageLicense": "CC BY-SA 3.0",
+    "walletTags": [
+      "월급날"
+    ]
   },
   {
     "id": "top-008",
@@ -17633,8 +17595,6 @@
       "실패 낮음"
     ],
     "avoidMoods": [
-      "spicy",
-      "soup",
       "hangover"
     ],
     "situation_tags": [
@@ -17648,7 +17608,10 @@
     "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Boribap.JPG",
     "imageTitle": "Boribap.JPG",
     "imageAuthor": "Dalgial",
-    "imageLicense": "CC BY-SA 3.0"
+    "imageLicense": "CC BY-SA 3.0",
+    "walletTags": [
+      "월급 전"
+    ]
   },
   {
     "id": "top-009",
@@ -17707,8 +17670,6 @@
       "실패 낮음"
     ],
     "avoidMoods": [
-      "spicy",
-      "soup",
       "hangover"
     ],
     "situation_tags": [
@@ -17723,7 +17684,10 @@
     "imageTitle": "Jajangmyeon 짜장면.jpg",
     "imageAuthor": "사랑",
     "imageLicense": "Public domain",
-    "imageBorrowedFrom": "짜장면"
+    "imageBorrowedFrom": "짜장면",
+    "walletTags": [
+      "월급날"
+    ]
   },
   {
     "id": "top-010",
@@ -17786,9 +17750,7 @@
       "중식"
     ],
     "avoidMoods": [
-      "diet",
-      "soup",
-      "hangover"
+      "diet"
     ],
     "situation_tags": [
       "팀점심",
@@ -17799,7 +17761,10 @@
     "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Liaoning-style_Guobaorou_at_Handsome_Cooking_Guys,_Hopson_One_(20230306162321).jpg",
     "imageTitle": "Liaoning-style Guobaorou at Handsome Cooking Guys, Hopson One (20230306162321).jpg",
     "imageAuthor": "N509FZ",
-    "imageLicense": "CC BY-SA 4.0"
+    "imageLicense": "CC BY-SA 4.0",
+    "walletTags": [
+      "월급날"
+    ]
   },
   {
     "id": "top-011",
@@ -17861,9 +17826,7 @@
       "중식 면",
       "속 편함"
     ],
-    "avoidMoods": [
-      "spicy"
-    ],
+    "avoidMoods": [],
     "situation_tags": [
       "해장 필요",
       "속 편하게",
@@ -17878,7 +17841,10 @@
     "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Ulmyeon.jpg",
     "imageTitle": "Ulmyeon.jpg",
     "imageAuthor": "Galaxea",
-    "imageLicense": "CC BY 4.0"
+    "imageLicense": "CC BY 4.0",
+    "walletTags": [
+      "월급날"
+    ]
   },
   {
     "id": "top-012",
@@ -17941,10 +17907,7 @@
       "국물",
       "비 오는 날"
     ],
-    "avoidMoods": [
-      "comfort",
-      "meeting"
-    ],
+    "avoidMoods": [],
     "situation_tags": [
       "해장 필요",
       "매운 걸로",
@@ -17957,7 +17920,10 @@
     "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Jjamppong-deopbap.jpg",
     "imageTitle": "Jjamppong-deopbap.jpg",
     "imageAuthor": "대경라이프",
-    "imageLicense": "CC BY-SA 4.0"
+    "imageLicense": "CC BY-SA 4.0",
+    "walletTags": [
+      "월급날"
+    ]
   },
   {
     "id": "top-013",
@@ -17978,9 +17944,10 @@
       "채소"
     ],
     "tags": [
-      "rice",
       "quick",
-      "light"
+      "light",
+      "noodle",
+      "cold"
     ],
     "rating": 4.4,
     "baseLikes": 240,
@@ -18019,11 +17986,7 @@
       "혼밥 좋음",
       "부담 적음"
     ],
-    "avoidMoods": [
-      "spicy",
-      "soup",
-      "hangover"
-    ],
+    "avoidMoods": [],
     "situation_tags": [
       "시간 없음",
       "혼밥",
@@ -18036,7 +17999,10 @@
     "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Korean_Chinese_cold_noodles.jpg",
     "imageTitle": "Korean Chinese cold noodles.jpg",
     "imageAuthor": "사이팔사",
-    "imageLicense": "CC BY 2.0 kr"
+    "imageLicense": "CC BY 2.0 kr",
+    "walletTags": [
+      "월급날"
+    ]
   },
   {
     "id": "top-014",
@@ -18097,9 +18063,7 @@
       "국물",
       "비 오는 날"
     ],
-    "avoidMoods": [
-      "spicy"
-    ],
+    "avoidMoods": [],
     "situation_tags": [
       "혼밥",
       "속 편하게",
@@ -18113,7 +18077,10 @@
     "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Shoyu_Ramen,_Sakura_Ramen,_Montparnasse,_Paris_2_March_2016.jpg",
     "imageTitle": "Shoyu Ramen, Sakura Ramen, Montparnasse, Paris 2 March 2016.jpg",
     "imageAuthor": "Guilhem Vellut from Paris, France",
-    "imageLicense": "CC BY 2.0"
+    "imageLicense": "CC BY 2.0",
+    "walletTags": [
+      "월급날"
+    ]
   },
   {
     "id": "top-015",
@@ -18126,7 +18093,7 @@
     "calories": 680,
     "healthy": false,
     "meat": true,
-    "quick": false,
+    "quick": true,
     "spicy": false,
     "ingredients": [
       "회덮밥",
@@ -18140,7 +18107,7 @@
     "rating": 4.4,
     "baseLikes": 240,
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/5/5a/Korean_cuisine-Hoedeopbap-01.jpg",
-    "spiceLevel": 2,
+    "spiceLevel": 1,
     "soupLevel": 0,
     "heaviness": 1,
     "speed": 3,
@@ -18152,7 +18119,6 @@
     "recommendedMoods": [
       "noTime",
       "solo",
-      "spicy",
       "sleepy"
     ],
     "blockedMoods": [
@@ -18177,8 +18143,6 @@
       "기분전환"
     ],
     "avoidMoods": [
-      "spicy",
-      "soup",
       "hangover"
     ],
     "situation_tags": [
@@ -18193,7 +18157,10 @@
     "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Korean_cuisine-Hoedeopbap-01.jpg",
     "imageTitle": "Korean cuisine-Hoedeopbap-01.jpg",
     "imageAuthor": "irrational cat",
-    "imageLicense": "CC BY-SA 2.0"
+    "imageLicense": "CC BY-SA 2.0",
+    "walletTags": [
+      "월급날"
+    ]
   },
   {
     "id": "top-016",
@@ -18260,10 +18227,7 @@
       "비 오는 날",
       "든든함"
     ],
-    "avoidMoods": [
-      "comfort",
-      "meeting"
-    ],
+    "avoidMoods": [],
     "situation_tags": [
       "매운 걸로",
       "국물 필요",
@@ -18275,7 +18239,10 @@
     "imageSourceUrl": "https://shinwoongs.tistory.com/807",
     "imageTitle": "김치나베돈카츠",
     "imageAuthor": "Tistory",
-    "imageLicense": "External food photo"
+    "imageLicense": "External food photo",
+    "walletTags": [
+      "월급날"
+    ]
   },
   {
     "id": "top-017",
@@ -18336,8 +18303,6 @@
       "혼밥 좋음"
     ],
     "avoidMoods": [
-      "spicy",
-      "soup",
       "hangover"
     ],
     "situation_tags": [
@@ -18352,7 +18317,10 @@
     "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Korean_cuisine-Albap-01.jpg",
     "imageTitle": "Korean cuisine-Albap-01.jpg",
     "imageAuthor": "egg (Hong, Yun Seon) from Seoul, Korea",
-    "imageLicense": "CC BY 2.0"
+    "imageLicense": "CC BY 2.0",
+    "walletTags": [
+      "월급 전"
+    ]
   },
   {
     "id": "top-018",
@@ -18365,7 +18333,7 @@
     "calories": 680,
     "healthy": false,
     "meat": true,
-    "quick": false,
+    "quick": true,
     "spicy": false,
     "ingredients": [
       "수제버거",
@@ -18412,8 +18380,6 @@
       "실패 낮음"
     ],
     "avoidMoods": [
-      "spicy",
-      "soup",
       "hangover"
     ],
     "situation_tags": [
@@ -18427,7 +18393,10 @@
     "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Gourmet_Burger_Kitchen_hamburger.jpg",
     "imageTitle": "Gourmet Burger Kitchen hamburger.jpg",
     "imageAuthor": "Khedara Ariyaratne from London, UK",
-    "imageLicense": "CC BY 2.0"
+    "imageLicense": "CC BY 2.0",
+    "walletTags": [
+      "월급날"
+    ]
   },
   {
     "id": "top-019",
@@ -18486,11 +18455,7 @@
       "팀점심",
       "실패 낮음"
     ],
-    "avoidMoods": [
-      "spicy",
-      "soup",
-      "hangover"
-    ],
+    "avoidMoods": [],
     "situation_tags": [
       "팀점심",
       "실패 금지",
@@ -18501,7 +18466,10 @@
     "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Dongaseu_5.jpg",
     "imageTitle": "Dongaseu 5.jpg",
     "imageAuthor": "chomjong",
-    "imageLicense": "CC BY 2.0"
+    "imageLicense": "CC BY 2.0",
+    "walletTags": [
+      "월급 전"
+    ]
   },
   {
     "id": "top-020",
@@ -18562,11 +18530,7 @@
       "팀점심",
       "부담 적음"
     ],
-    "avoidMoods": [
-      "spicy",
-      "soup",
-      "hangover"
-    ],
+    "avoidMoods": [],
     "situation_tags": [
       "팀점심",
       "속 편하게",
@@ -18578,7 +18542,10 @@
     "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Eq_it-na_pizza-margherita_sep2005_sml.jpg",
     "imageTitle": "Eq it-na pizza-margherita sep2005 sml.jpg",
     "imageAuthor": "Valerio Capello at English Wikipedia",
-    "imageLicense": "CC BY-SA 3.0"
+    "imageLicense": "CC BY-SA 3.0",
+    "walletTags": [
+      "월급날"
+    ]
   },
   {
     "id": "top-021",
@@ -18640,7 +18607,6 @@
       "부담 적음"
     ],
     "avoidMoods": [
-      "spicy",
       "soup",
       "hangover"
     ],
@@ -18657,7 +18623,10 @@
     "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Grilled_cheese_sandwich_with_roasted_tomato_soup.jpg",
     "imageTitle": "Grilled cheese sandwich with roasted tomato soup.jpg",
     "imageAuthor": "jeffreyw",
-    "imageLicense": "CC BY 2.0"
+    "imageLicense": "CC BY 2.0",
+    "walletTags": [
+      "월급 전"
+    ]
   },
   {
     "id": "top-022",
@@ -18721,12 +18690,7 @@
       "팀점심",
       "가성비"
     ],
-    "avoidMoods": [
-      "soup",
-      "hangover",
-      "comfort",
-      "meeting"
-    ],
+    "avoidMoods": [],
     "situation_tags": [
       "시간 없음",
       "혼밥",
@@ -18740,7 +18704,10 @@
     "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Bunsik_stall.jpg",
     "imageTitle": "Bunsik stall.jpg",
     "imageAuthor": "Jens Ohlig",
-    "imageLicense": "CC BY-SA 2.0"
+    "imageLicense": "CC BY-SA 2.0",
+    "walletTags": [
+      "월급 전"
+    ]
   },
   {
     "id": "top-023",
@@ -18802,11 +18769,7 @@
       "혼밥 좋음",
       "실패 낮음"
     ],
-    "avoidMoods": [
-      "spicy",
-      "soup",
-      "hangover"
-    ],
+    "avoidMoods": [],
     "situation_tags": [
       "시간 없음",
       "혼밥",
@@ -18817,7 +18780,10 @@
     "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Teriyaki_Burger_Set,_at_Lotteria.jpg",
     "imageTitle": "Teriyaki Burger Set, at Lotteria.jpg",
     "imageAuthor": "Lombroso",
-    "imageLicense": "Public domain"
+    "imageLicense": "Public domain",
+    "walletTags": [
+      "월급 전"
+    ]
   },
   {
     "id": "top-024",
@@ -18830,7 +18796,7 @@
     "calories": 620,
     "healthy": false,
     "meat": false,
-    "quick": false,
+    "quick": true,
     "spicy": false,
     "ingredients": [
       "수제비",
@@ -18879,9 +18845,7 @@
       "국물",
       "비 오는 날"
     ],
-    "avoidMoods": [
-      "spicy"
-    ],
+    "avoidMoods": [],
     "situation_tags": [
       "시간 없음",
       "혼밥",
@@ -18896,7 +18860,10 @@
     "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Korean.cuisine-Sujebi-01.jpg",
     "imageTitle": "Korean.cuisine-Sujebi-01.jpg",
     "imageAuthor": "Steve Longus",
-    "imageLicense": "CC BY 2.0"
+    "imageLicense": "CC BY 2.0",
+    "walletTags": [
+      "월급 전"
+    ]
   },
   {
     "id": "top-025",
@@ -18957,8 +18924,6 @@
       "혼밥 좋음"
     ],
     "avoidMoods": [
-      "spicy",
-      "soup",
       "hangover"
     ],
     "situation_tags": [
@@ -18974,7 +18939,10 @@
     "imageTitle": "Convenience Store LunchBox 03 (33427954622).jpg",
     "imageAuthor": "Republic of Korea from Seoul, Republic of Korea",
     "imageLicense": "CC BY-SA 2.0",
-    "imageBorrowedFrom": "편의점도시락"
+    "imageBorrowedFrom": "편의점도시락",
+    "walletTags": [
+      "월급 전"
+    ]
   },
   {
     "id": "top-026",
@@ -19037,8 +19005,6 @@
       "부담 적음"
     ],
     "avoidMoods": [
-      "spicy",
-      "soup",
       "hangover"
     ],
     "situation_tags": [
@@ -19054,7 +19020,10 @@
     "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Chicken_Fried_rice.jpg",
     "imageTitle": "Chicken Fried rice.jpg",
     "imageAuthor": "Deepak Official Id",
-    "imageLicense": "CC BY-SA 4.0"
+    "imageLicense": "CC BY-SA 4.0",
+    "walletTags": [
+      "월급 전"
+    ]
   },
   {
     "id": "top-027",
@@ -19117,9 +19086,7 @@
       "부담 적음",
       "국물"
     ],
-    "avoidMoods": [
-      "spicy"
-    ],
+    "avoidMoods": [],
     "situation_tags": [
       "팀점심",
       "속 편하게",
@@ -19134,7 +19101,10 @@
     "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Cool_Shabu-Shabu.jpg",
     "imageTitle": "Cool Shabu-Shabu.jpg",
     "imageAuthor": "MASA",
-    "imageLicense": "CC BY-SA 3.0"
+    "imageLicense": "CC BY-SA 3.0",
+    "walletTags": [
+      "월급날"
+    ]
   },
   {
     "id": "top-028",
@@ -19197,9 +19167,7 @@
       "부담 적음",
       "국물"
     ],
-    "avoidMoods": [
-      "spicy"
-    ],
+    "avoidMoods": [],
     "situation_tags": [
       "혼밥",
       "속 편하게",
@@ -19213,7 +19181,10 @@
     "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Korean_rice_porridge_Vegetable_juk.jpg",
     "imageTitle": "Korean rice porridge Vegetable juk.jpg",
     "imageAuthor": "Mar del Este",
-    "imageLicense": "CC BY-SA 4.0"
+    "imageLicense": "CC BY-SA 4.0",
+    "walletTags": [
+      "월급날"
+    ]
   },
   {
     "id": "top-029",
@@ -19235,7 +19206,9 @@
     ],
     "tags": [
       "healthy",
-      "light"
+      "light",
+      "soup",
+      "cold"
     ],
     "rating": 4.4,
     "baseLikes": 240,
@@ -19273,11 +19246,7 @@
       "부담 적음",
       "식단관리"
     ],
-    "avoidMoods": [
-      "spicy",
-      "soup",
-      "hangover"
-    ],
+    "avoidMoods": [],
     "situation_tags": [
       "혼밥",
       "속 편하게",
@@ -19290,7 +19259,10 @@
     "imageSourceName": "Wikimedia Commons",
     "imageTitle": "도토리 묵밥 flick.jpg",
     "imageAuthor": "Ryan Bodenstein",
-    "imageLicense": "CC BY 2.0"
+    "imageLicense": "CC BY 2.0",
+    "walletTags": [
+      "월급 전"
+    ]
   },
   {
     "id": "top-030",
@@ -19349,13 +19321,10 @@
     "keywords": [
       "혼밥 좋음",
       "실패 낮음",
-      "미팅 전"
+      "미팅 전",
+      "법카"
     ],
-    "avoidMoods": [
-      "spicy",
-      "soup",
-      "hangover"
-    ],
+    "avoidMoods": [],
     "situation_tags": [
       "혼밥",
       "실패 금지",
@@ -19366,7 +19335,11 @@
     "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Unagi_don_(3249793932).jpg",
     "imageTitle": "Unagi don (3249793932).jpg",
     "imageAuthor": "Geoff Peters from Vancouver, BC, Canada",
-    "imageLicense": "CC BY 2.0"
+    "imageLicense": "CC BY 2.0",
+    "walletTags": [
+      "월급날",
+      "법카"
+    ]
   },
   {
     "id": "top-031",
@@ -19429,22 +19402,22 @@
       "미팅 전",
       "법카"
     ],
-    "avoidMoods": [
-      "spicy",
-      "soup",
-      "hangover"
-    ],
+    "avoidMoods": [],
     "situation_tags": [
       "팀점심",
       "실패 금지",
       "미팅 전"
     ],
-    "budget_tag": "법카",
+    "budget_tag": "오늘은 써도 됨",
     "imageSourceName": "Wikimedia Commons",
     "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Korean_beef_barbecue.jpg",
     "imageTitle": "Korean beef barbecue.jpg",
     "imageAuthor": "Yujinbaek",
-    "imageLicense": "CC BY-SA 4.0"
+    "imageLicense": "CC BY-SA 4.0",
+    "walletTags": [
+      "월급날",
+      "법카"
+    ]
   },
   {
     "id": "top-032",
@@ -19502,13 +19475,10 @@
     ],
     "keywords": [
       "팀점심",
-      "실패 낮음"
+      "실패 낮음",
+      "법카"
     ],
-    "avoidMoods": [
-      "spicy",
-      "soup",
-      "hangover"
-    ],
+    "avoidMoods": [],
     "situation_tags": [
       "팀점심",
       "실패 금지",
@@ -19519,7 +19489,11 @@
     "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Boiled_Echizen_crab_(snow_crab)_male_and_female.jpg",
     "imageTitle": "Boiled Echizen crab (snow crab) male and female.jpg",
     "imageAuthor": "さかおり",
-    "imageLicense": "CC BY-SA 4.0"
+    "imageLicense": "CC BY-SA 4.0",
+    "walletTags": [
+      "월급날",
+      "법카"
+    ]
   },
   {
     "id": "top-033",
@@ -19578,11 +19552,10 @@
     "keywords": [
       "부담 적음",
       "실패 낮음",
-      "미팅 전"
+      "미팅 전",
+      "법카"
     ],
     "avoidMoods": [
-      "spicy",
-      "soup",
       "hangover"
     ],
     "situation_tags": [
@@ -19595,7 +19568,11 @@
     "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Sushi_platter.jpg",
     "imageTitle": "Sushi platter.jpg",
     "imageAuthor": "chidorian from Japan",
-    "imageLicense": "CC BY-SA 2.0"
+    "imageLicense": "CC BY-SA 2.0",
+    "walletTags": [
+      "월급날",
+      "법카"
+    ]
   },
   {
     "id": "top-034",
@@ -19655,11 +19632,10 @@
     "keywords": [
       "혼밥 좋음",
       "부담 적음",
-      "식단관리"
+      "식단관리",
+      "법카"
     ],
     "avoidMoods": [
-      "spicy",
-      "soup",
       "hangover"
     ],
     "situation_tags": [
@@ -19674,7 +19650,11 @@
     "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Tekka_don,_tuna_over_sushi_rice_-_Massachusetts.jpg",
     "imageTitle": "Tekka don, tuna over sushi rice - Massachusetts.jpg",
     "imageAuthor": "Daderot",
-    "imageLicense": "CC0"
+    "imageLicense": "CC0",
+    "walletTags": [
+      "월급날",
+      "법카"
+    ]
   },
   {
     "id": "kr-047",
@@ -19687,7 +19667,7 @@
     "calories": 620,
     "healthy": true,
     "meat": false,
-    "quick": true,
+    "quick": false,
     "spicy": false,
     "ingredients": [
       "콩국물",
@@ -19744,15 +19724,15 @@
       "실패 금지",
       "다이어트"
     ],
-    "avoidMoods": [
-      "spicy",
-      "soup"
-    ],
+    "avoidMoods": [],
     "imageSourceName": "Wikimedia Commons",
     "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Kongguksu_(soybean_cold_noodle).jpg",
     "imageTitle": "Kongguksu (soybean cold noodle).jpg",
     "imageAuthor": "vedanti",
-    "imageLicense": "CC0 1.0"
+    "imageLicense": "CC0 1.0",
+    "walletTags": [
+      "월급날"
+    ]
   },
   {
     "id": "kr-048",
@@ -19765,7 +19745,7 @@
     "calories": 580,
     "healthy": true,
     "meat": false,
-    "quick": true,
+    "quick": false,
     "spicy": false,
     "ingredients": [
       "메밀면",
@@ -19821,14 +19801,15 @@
       "실패 금지",
       "입맛 깨우기"
     ],
-    "avoidMoods": [
-      "soup"
-    ],
+    "avoidMoods": [],
     "imageSourceName": "Wikimedia Commons",
     "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Korean.food-Makguksu-01.jpg",
     "imageTitle": "Korean.food-Makguksu-01.jpg",
     "imageAuthor": "pcamp",
-    "imageLicense": "CC BY 2.0"
+    "imageLicense": "CC BY 2.0",
+    "walletTags": [
+      "월급날"
+    ]
   },
   {
     "id": "kr-049",
@@ -19899,15 +19880,15 @@
       "실패 금지",
       "비 오는 날"
     ],
-    "avoidMoods": [
-      "noTime",
-      "diet"
-    ],
+    "avoidMoods": [],
     "imageSourceName": "Wikimedia Commons",
     "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Mugeun-ji-jjim_1.jpg",
     "imageTitle": "Mugeun-ji-jjim 1.jpg",
     "imageAuthor": "대경라이프",
-    "imageLicense": "CC BY-SA 4.0"
+    "imageLicense": "CC BY-SA 4.0",
+    "walletTags": [
+      "월급날"
+    ]
   },
   {
     "id": "kr-050",
@@ -19976,16 +19957,15 @@
       "매운 걸로",
       "입맛 깨우기"
     ],
-    "avoidMoods": [
-      "comfort",
-      "meeting",
-      "diet"
-    ],
+    "avoidMoods": [],
     "imageSourceName": "밥픽 제작",
     "imageSourceUrl": "",
     "imageTitle": "쭈꾸미볶음 대표 이미지",
     "imageAuthor": "OpenAI",
-    "imageLicense": "Generated asset"
+    "imageLicense": "Generated asset",
+    "walletTags": [
+      "월급날"
+    ]
   },
   {
     "id": "hl-022",
@@ -20055,14 +20035,14 @@
       "다이어트",
       "실패 금지"
     ],
-    "avoidMoods": [
-      "soup",
-      "hangover"
-    ],
+    "avoidMoods": [],
     "imageSourceName": "밥픽 제작",
     "imageSourceUrl": "",
     "imageTitle": "키토김밥 대표 이미지",
     "imageAuthor": "OpenAI",
-    "imageLicense": "Generated asset"
+    "imageLicense": "Generated asset",
+    "walletTags": [
+      "월급날"
+    ]
   }
 ]

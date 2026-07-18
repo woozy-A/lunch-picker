@@ -20,6 +20,21 @@ const numericRanges = {
   hangoverFit: [0, 4],
   confidence: [0, 1],
 };
+const moodKeys = new Set([
+  "noTime",
+  "hangover",
+  "solo",
+  "team",
+  "comfort",
+  "spicy",
+  "soup",
+  "safe",
+  "meeting",
+  "diet",
+  "sleepy",
+  "rainy",
+]);
+const strongMoodKeys = new Set(["spicy", "soup", "hangover", "noTime", "diet"]);
 
 function getImageUrl(entry) {
   if (typeof entry === "string") return entry;
@@ -32,6 +47,29 @@ function isLocalImage(url) {
 
 function report(menu, message) {
   errors.push(`${menu.id || "unknown"} ${menu.name || "이름 없음"}: ${message}`);
+}
+
+function hasAnyTag(menu, tags) {
+  return (menu.tags || []).some((tag) => tags.includes(tag));
+}
+
+function isFastMenu(menu) {
+  return menu.speed >= 3
+    || menu.prepMinutes <= 8
+    || hasAnyTag(menu, ["fast", "quick", "portable", "sandwich", "burger", "wrap", "kimbap"]);
+}
+
+function matchesStrongMood(menu, mood) {
+  if (mood === "spicy") return menu.spiceLevel >= 2 || hasAnyTag(menu, ["spicy"]);
+  if (mood === "soup") return menu.soupLevel >= 1 || hasAnyTag(menu, ["soup"]);
+  if (mood === "hangover") return menu.hangoverFit >= 3 || menu.soupLevel >= 2;
+  if (mood === "noTime") return isFastMenu(menu);
+  if (mood === "diet") {
+    return menu.healthy
+      || menu.category === "건강식"
+      || (menu.heaviness <= 1 && (menu.calories || 999) <= 650);
+  }
+  return true;
 }
 
 menus.forEach((menu) => {
@@ -54,6 +92,18 @@ menus.forEach((menu) => {
   const recommended = new Set(menu.recommendedMoods || []);
   const moodConflicts = (menu.blockedMoods || []).filter((mood) => recommended.has(mood));
   if (moodConflicts.length) report(menu, `추천/차단 무드가 겹칩니다: ${moodConflicts.join(", ")}`);
+
+  ["recommendedMoods", "blockedMoods", "avoidMoods"].forEach((field) => {
+    (menu[field] || []).forEach((mood) => {
+      if (!moodKeys.has(mood)) report(menu, `${field}에 알 수 없는 무드가 있습니다: ${mood}`);
+    });
+  });
+
+  (menu.recommendedMoods || []).forEach((mood) => {
+    if (strongMoodKeys.has(mood) && !matchesStrongMood(menu, mood)) {
+      report(menu, `${mood} 추천 무드와 음식 수치가 맞지 않습니다.`);
+    }
+  });
 
   const imageEntries = [...(Array.isArray(menu.imageUrls) ? menu.imageUrls : []), menu.imageUrl];
   imageEntries.map(getImageUrl).filter(isLocalImage).forEach((url) => {

@@ -5232,7 +5232,7 @@
     ],
     "rating": 4.7,
     "baseLikes": 362,
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/KFC%E2%80%99s_Tokyo_Pepper_Steak_Rice_Bowl_%28cropped%29.jpg/960px-KFC%E2%80%99s_Tokyo_Pepper_Steak_Rice_Bowl_%28cropped%29.jpg",
+    "imageUrl": "./assets/menu-cache/ws-006-steak-donburi/steak-donburi.jpg",
     "spiceLevel": 0,
     "soupLevel": 0,
     "heaviness": 3,
@@ -5280,11 +5280,11 @@
       "실패 금지"
     ],
     "budget_tag": "오늘은 써도 됨",
-    "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:KFC%E2%80%99s_Tokyo_Pepper_Steak_Rice_Bowl_(cropped).jpg",
+    "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:SteakDonburi.jpg",
     "imageSourceName": "Wikimedia Commons",
-    "imageTitle": "KFC’s Tokyo Pepper Steak Rice Bowl (cropped).jpg",
-    "imageAuthor": "Wikimedia Commons contributor",
-    "imageLicense": "Wikimedia Commons"
+    "imageTitle": "SteakDonburi.jpg",
+    "imageAuthor": "Kykk wiki",
+    "imageLicense": "CC0"
   },
   {
     "id": "ws-007",
@@ -13896,7 +13896,7 @@
     ],
     "rating": 4.4,
     "baseLikes": 238,
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Beef_Cesar_Salad_at_Larrys_Deli_1.jpg/960px-Beef_Cesar_Salad_at_Larrys_Deli_1.jpg",
+    "imageUrl": "./assets/menu-cache/hl-014-beef-salad/beef-salad.jpg",
     "spiceLevel": 0,
     "soupLevel": 0,
     "heaviness": 1,
@@ -13946,11 +13946,11 @@
       "다이어트"
     ],
     "budget_tag": "평범하게",
-    "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Beef_Cesar_Salad_at_Larrys_Deli_1.jpg",
+    "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Beef_Salad_(9152377186).jpg",
     "imageSourceName": "Wikimedia Commons",
-    "imageTitle": "Beef Cesar Salad at Larrys Deli 1.jpg",
-    "imageAuthor": "Wikimedia Commons contributor",
-    "imageLicense": "Wikimedia Commons"
+    "imageTitle": "Beef Salad (9152377186).jpg",
+    "imageAuthor": "Charles Haynes",
+    "imageLicense": "CC BY-SA 2.0"
   },
   {
     "id": "hl-015",

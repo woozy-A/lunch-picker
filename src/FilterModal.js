@@ -43,6 +43,7 @@
                     key={option.key}
                     className={`option-btn ${draft.moods.includes(option.key) ? "is-selected" : ""}`}
                     type="button"
+                    aria-pressed={draft.moods.includes(option.key)}
                     onClick={() => update({ moods: toggleInList(draft.moods, option.key) })}
                   >
                     {option.label}
@@ -59,6 +60,7 @@
                     key={category}
                     className={`option-btn ${draft.categories.includes(category) ? "is-selected" : ""}`}
                     type="button"
+                    aria-pressed={draft.categories.includes(category)}
                     onClick={() => update({ categories: toggleInList(draft.categories, category) })}
                   >
                     {category}
@@ -75,6 +77,7 @@
                     key={budget}
                     className={`option-btn ${draft.budget === budget ? "is-selected" : ""}`}
                     type="button"
+                    aria-pressed={draft.budget === budget}
                     onClick={() => update({ budget })}
                   >
                     {budget}

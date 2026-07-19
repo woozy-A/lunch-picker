@@ -6,7 +6,12 @@
   const IMAGE_USE_MAX_AGE_MS = 1000 * 60 * 60 * 24 * 30;
 
   function isLocalImage(url = "") {
-    return url.startsWith("./assets/menu/") || url.startsWith("./assets/menu-cache/") || url.startsWith("assets/menu/") || url.startsWith("assets/menu-cache/");
+    return url.startsWith("./assets/menu/")
+      || url.startsWith("./assets/menu-cache/")
+      || url.startsWith("./assets/menu-reviewed/")
+      || url.startsWith("assets/menu/")
+      || url.startsWith("assets/menu-cache/")
+      || url.startsWith("assets/menu-reviewed/");
   }
 
   function stableHash(value = "") {

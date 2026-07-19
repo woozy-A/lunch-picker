@@ -1,0 +1,74 @@
+[
+  {
+    "id": "jp-004",
+    "name": "가츠동",
+    "priority": "medium",
+    "status": "quality-improvement",
+    "reason": "돈카츠 접시에 가까워 밥 위에 얹는 가츠동 형태가 약합니다.",
+    "replacementBrief": "밥 위에 달걀과 양파로 조린 돈카츠가 올라간 일본식 가츠동"
+  },
+  {
+    "id": "ws-006",
+    "name": "스테이크덮밥",
+    "priority": "medium",
+    "status": "quality-improvement",
+    "reason": "스테이크는 보이지만 밥과 덮밥 구성이 분명하지 않습니다.",
+    "replacementBrief": "밥 위에 먹기 좋게 썬 스테이크와 채소, 소스가 올라간 덮밥"
+  },
+  {
+    "id": "ws-008",
+    "name": "치킨스테이크",
+    "priority": "medium",
+    "status": "quality-improvement",
+    "reason": "고기 종류가 닭고기로 명확하게 읽히지 않습니다.",
+    "replacementBrief": "노릇하게 구운 닭다리살 스테이크와 구운 채소가 접시에 담긴 사진"
+  },
+  {
+    "id": "as-012",
+    "name": "케밥라이스",
+    "priority": "medium",
+    "status": "quality-improvement",
+    "reason": "포장 용기 중심이라 음식의 풍성함과 재료가 잘 보이지 않습니다.",
+    "replacementBrief": "밥 위에 케밥 고기, 샐러드, 흰 소스가 풍성하게 담긴 한 그릇"
+  },
+  {
+    "id": "hl-009",
+    "name": "곤약면샐러드",
+    "priority": "medium",
+    "status": "quality-improvement",
+    "reason": "화질과 구도가 약해 곤약면과 채소를 구분하기 어렵습니다.",
+    "replacementBrief": "투명한 곤약면과 다채로운 채소가 깨끗한 볼에 담긴 가벼운 샐러드"
+  },
+  {
+    "id": "jp-017",
+    "name": "연어구이정식",
+    "priority": "medium",
+    "status": "quality-improvement",
+    "reason": "조명이 어둡고 구도가 멀어 연어구이 정식이 돋보이지 않습니다.",
+    "replacementBrief": "노릇한 연어구이와 밥, 미소국, 반찬이 밝게 보이는 일본식 정식"
+  },
+  {
+    "id": "hl-016",
+    "name": "샐러드랩",
+    "priority": "medium",
+    "status": "quality-improvement",
+    "reason": "랩의 단면과 신선한 속재료가 충분히 보이지 않습니다.",
+    "replacementBrief": "채소와 닭고기가 가득한 랩을 반으로 잘라 단면이 보이는 사진"
+  },
+  {
+    "id": "top-025",
+    "name": "한솥도시락",
+    "priority": "medium",
+    "status": "quality-improvement",
+    "reason": "편의점 도시락과 라면이 함께 보여 메뉴명과 브랜드 인상이 흐립니다.",
+    "replacementBrief": "따뜻한 밥과 고기 반찬, 튀김, 김치가 칸별로 담긴 프랜차이즈 도시락"
+  },
+  {
+    "id": "top-030",
+    "name": "장어덮밥",
+    "priority": "medium",
+    "status": "quality-improvement",
+    "reason": "조명이 어둡고 장어의 윤기와 구운 결이 잘 드러나지 않습니다.",
+    "replacementBrief": "윤기 있는 양념 장어구이가 밥 위를 가득 덮은 밝고 정갈한 장어덮밥"
+  }
+]

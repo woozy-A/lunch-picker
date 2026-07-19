@@ -323,7 +323,7 @@
     ],
     "rating": 4.8,
     "baseLikes": 421,
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Korean_stew-Budae_jjigae-01.jpg/960px-Korean_stew-Budae_jjigae-01.jpg",
+    "imageUrl": "./assets/menu-reviewed/budae-jjigae.jpg",
     "spiceLevel": 2,
     "soupLevel": 2,
     "heaviness": 3,
@@ -353,8 +353,7 @@
     "imageSearchKeywords": [
       "부대찌개",
       "부대찌개 음식 사진",
-      "부대찌개 점심 메뉴",
-      "Korean lunch food"
+      "부대찌개 점심 메뉴"
     ],
     "keywords": [
       "국물",
@@ -374,31 +373,28 @@
       "비 오는 날"
     ],
     "budget_tag": "평범하게",
-    "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Korean_stew-Budae_jjigae-01.jpg",
-    "imageSourceName": "Wikimedia Commons",
-    "imageTitle": "Korean stew-Budae jjigae-01.jpg",
-    "imageAuthor": "by stuart_spivack (flickr)",
-    "imageLicense": "CC BY-SA 2.0",
+    "imageSourceUrl": "",
+    "imageSourceName": "밥픽 제작 이미지",
+    "imageTitle": "부대찌개 대표 이미지",
+    "imageAuthor": "밥픽",
+    "imageLicense": "프로젝트 제작 이미지",
     "imageUrls": [
       {
-        "url": "./assets/menu-cache/kr-004-부대찌개/a7oe9p.jpg",
-        "sourceName": "Wikimedia Commons",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Korean_stew-Budae_jjigae-01.jpg",
-        "title": "Korean stew-Budae jjigae-01.jpg",
-        "license": "CC BY-SA 2.0",
-        "cachedFrom": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Korean_stew-Budae_jjigae-01.jpg/960px-Korean_stew-Budae_jjigae-01.jpg",
-        "cachedAt": "2026-06-06T06:32:28.904Z"
-      },
-      {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Korean_stew-Budae_jjigae-01.jpg/960px-Korean_stew-Budae_jjigae-01.jpg",
-        "sourceName": "Wikimedia Commons",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Korean_stew-Budae_jjigae-01.jpg",
-        "title": "Korean stew-Budae jjigae-01.jpg"
+        "url": "./assets/menu-reviewed/budae-jjigae.jpg",
+        "sourceName": "밥픽 제작 이미지",
+        "sourceUrl": "",
+        "title": "부대찌개 대표 이미지",
+        "license": "프로젝트 제작 이미지"
       }
     ],
     "walletTags": [
       "월급날"
-    ]
+    ],
+    "imageReview": {
+      "status": "approved",
+      "reviewedAt": "2026-07-18",
+      "reason": "햄과 소시지, 두부, 라면 사리가 밝게 보이는 부대찌개 대표 사진"
+    }
   },
   {
     "id": "kr-005",
@@ -2654,7 +2650,7 @@
     ],
     "rating": 4.5,
     "baseLikes": 266,
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Authentic_Mapo_Tofu.jpg/960px-Authentic_Mapo_Tofu.jpg",
+    "imageUrl": "./assets/menu-reviewed/mapo-tofu-rice.jpg",
     "spiceLevel": 2,
     "soupLevel": 0,
     "heaviness": 1,
@@ -2680,8 +2676,7 @@
     "imageSearchKeywords": [
       "마파두부밥",
       "마파두부밥 음식 사진",
-      "마파두부밥 점심 메뉴",
-      "Korean Chinese food lunch"
+      "마파두부밥 점심 메뉴"
     ],
     "keywords": [
       "매콤",
@@ -2700,31 +2695,28 @@
       "입맛 깨우기"
     ],
     "budget_tag": "가볍게",
-    "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Authentic_Mapo_Tofu.jpg",
-    "imageSourceName": "Wikimedia Commons",
-    "imageTitle": "Authentic Mapo Tofu.jpg",
-    "imageAuthor": "Sichuanfoodlover",
-    "imageLicense": "CC BY-SA 4.0",
+    "imageSourceUrl": "",
+    "imageSourceName": "밥픽 제작 이미지",
+    "imageTitle": "마파두부밥 대표 이미지",
+    "imageAuthor": "밥픽",
+    "imageLicense": "프로젝트 제작 이미지",
     "imageUrls": [
       {
-        "url": "./assets/menu-cache/cn-004-마파두부밥/7j6x9p.jpg",
-        "sourceName": "Wikimedia Commons",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Authentic_Mapo_Tofu.jpg",
-        "title": "Authentic Mapo Tofu.jpg",
-        "license": "CC BY-SA 4.0",
-        "cachedFrom": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Authentic_Mapo_Tofu.jpg/960px-Authentic_Mapo_Tofu.jpg",
-        "cachedAt": "2026-06-06T06:33:07.519Z"
-      },
-      {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Authentic_Mapo_Tofu.jpg/960px-Authentic_Mapo_Tofu.jpg",
-        "sourceName": "Wikimedia Commons",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Authentic_Mapo_Tofu.jpg",
-        "title": "Authentic Mapo Tofu.jpg"
+        "url": "./assets/menu-reviewed/mapo-tofu-rice.jpg",
+        "sourceName": "밥픽 제작 이미지",
+        "sourceUrl": "",
+        "title": "마파두부밥 대표 이미지",
+        "license": "프로젝트 제작 이미지"
       }
     ],
     "walletTags": [
       "월급 전"
-    ]
+    ],
+    "imageReview": {
+      "status": "approved",
+      "reviewedAt": "2026-07-19",
+      "reason": "메뉴명, 구성, 음식 중심 구도와 식욕도를 대조해 승인한 밥픽 제작 이미지"
+    }
   },
   {
     "id": "cn-005",
@@ -2937,7 +2929,7 @@
     ],
     "rating": 4.4,
     "baseLikes": 211,
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Yusanseul.jpg/960px-Yusanseul.jpg",
+    "imageUrl": "./assets/menu-reviewed/yusanseul-rice.jpg",
     "spiceLevel": 0,
     "soupLevel": 0,
     "heaviness": 1,
@@ -2963,8 +2955,7 @@
     "imageSearchKeywords": [
       "유산슬덮밥",
       "유산슬덮밥 음식 사진",
-      "유산슬덮밥 점심 메뉴",
-      "Korean Chinese food lunch"
+      "유산슬덮밥 점심 메뉴"
     ],
     "keywords": [
       "가벼움",
@@ -2982,31 +2973,28 @@
       "실패 금지"
     ],
     "budget_tag": "평범하게",
-    "imageSourceName": "Wikimedia Commons",
-    "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Yusanseul.jpg",
-    "imageTitle": "Yusanseul.jpg",
-    "imageAuthor": "최광모",
-    "imageLicense": "CC0",
+    "imageSourceName": "밥픽 제작 이미지",
+    "imageSourceUrl": "",
+    "imageTitle": "유산슬덮밥 대표 이미지",
+    "imageAuthor": "밥픽",
+    "imageLicense": "프로젝트 제작 이미지",
     "imageUrls": [
       {
-        "url": "./assets/menu-cache/cn-007-유산슬덮밥/2w4bdo.jpg",
-        "sourceName": "Wikimedia Commons",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Yusanseul.jpg",
-        "title": "Yusanseul.jpg",
-        "license": "CC0",
-        "cachedFrom": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Yusanseul.jpg/960px-Yusanseul.jpg",
-        "cachedAt": "2026-06-06T06:33:08.575Z"
-      },
-      {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Yusanseul.jpg/960px-Yusanseul.jpg",
-        "sourceName": "Wikimedia Commons",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Yusanseul.jpg",
-        "title": "Yusanseul.jpg"
+        "url": "./assets/menu-reviewed/yusanseul-rice.jpg",
+        "sourceName": "밥픽 제작 이미지",
+        "sourceUrl": "",
+        "title": "유산슬덮밥 대표 이미지",
+        "license": "프로젝트 제작 이미지"
       }
     ],
     "walletTags": [
       "월급날"
-    ]
+    ],
+    "imageReview": {
+      "status": "approved",
+      "reviewedAt": "2026-07-19",
+      "reason": "메뉴명, 구성, 음식 중심 구도와 식욕도를 대조해 승인한 밥픽 제작 이미지"
+    }
   },
   {
     "id": "cn-008",
@@ -3116,7 +3104,7 @@
     ],
     "rating": 4.6,
     "baseLikes": 292,
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Chinese_fried_chicken_%286822571449%29.jpg/960px-Chinese_fried_chicken_%286822571449%29.jpg",
+    "imageUrl": "./assets/menu-reviewed/ganpunggi-set.jpg",
     "spiceLevel": 2,
     "soupLevel": 0,
     "heaviness": 3,
@@ -3144,8 +3132,7 @@
     "imageSearchKeywords": [
       "깐풍기정식",
       "깐풍기정식 음식 사진",
-      "깐풍기정식 점심 메뉴",
-      "Korean Chinese food lunch"
+      "깐풍기정식 점심 메뉴"
     ],
     "keywords": [
       "매콤",
@@ -3163,31 +3150,28 @@
       "입맛 깨우기"
     ],
     "budget_tag": "평범하게",
-    "imageSourceName": "Wikimedia Commons",
-    "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Chinese_fried_chicken_(6822571449).jpg",
-    "imageTitle": "Chinese fried chicken (6822571449).jpg",
-    "imageAuthor": "pelican from Tokyo, Japan",
-    "imageLicense": "CC BY-SA 2.0",
+    "imageSourceName": "밥픽 제작 이미지",
+    "imageSourceUrl": "",
+    "imageTitle": "깐풍기정식 대표 이미지",
+    "imageAuthor": "밥픽",
+    "imageLicense": "프로젝트 제작 이미지",
     "imageUrls": [
       {
-        "url": "./assets/menu-cache/cn-009-깐풍기정식/z7cj34.jpg",
-        "sourceName": "Wikimedia Commons",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chinese_fried_chicken_(6822571449).jpg",
-        "title": "Chinese fried chicken (6822571449).jpg",
-        "license": "CC BY-SA 2.0",
-        "cachedFrom": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Chinese_fried_chicken_%286822571449%29.jpg/960px-Chinese_fried_chicken_%286822571449%29.jpg",
-        "cachedAt": "2026-06-06T06:33:09.143Z"
-      },
-      {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Chinese_fried_chicken_%286822571449%29.jpg/960px-Chinese_fried_chicken_%286822571449%29.jpg",
-        "sourceName": "Wikimedia Commons",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chinese_fried_chicken_(6822571449).jpg",
-        "title": "Chinese fried chicken (6822571449).jpg"
+        "url": "./assets/menu-reviewed/ganpunggi-set.jpg",
+        "sourceName": "밥픽 제작 이미지",
+        "sourceUrl": "",
+        "title": "깐풍기정식 대표 이미지",
+        "license": "프로젝트 제작 이미지"
       }
     ],
     "walletTags": [
       "월급날"
-    ]
+    ],
+    "imageReview": {
+      "status": "approved",
+      "reviewedAt": "2026-07-19",
+      "reason": "메뉴명, 구성, 음식 중심 구도와 식욕도를 대조해 승인한 밥픽 제작 이미지"
+    }
   },
   {
     "id": "cn-010",
@@ -3687,7 +3671,7 @@
     ],
     "rating": 4.7,
     "baseLikes": 351,
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Salmon_caviar_donburi%3B_2011.jpg/960px-Salmon_caviar_donburi%3B_2011.jpg",
+    "imageUrl": "./assets/menu-reviewed/sake-don.jpg",
     "spiceLevel": 0,
     "soupLevel": 0,
     "heaviness": 2,
@@ -3715,8 +3699,7 @@
     "imageSearchKeywords": [
       "사케동",
       "사케동 음식 사진",
-      "사케동 점심 메뉴",
-      "Japanese lunch food"
+      "사케동 점심 메뉴"
     ],
     "keywords": [
       "든든함",
@@ -3731,31 +3714,28 @@
       "입맛 깨우기"
     ],
     "budget_tag": "오늘은 써도 됨",
-    "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Salmon_caviar_donburi;_2011.jpg",
-    "imageSourceName": "Wikimedia Commons",
-    "imageTitle": "Salmon caviar donburi; 2011.jpg",
-    "imageAuthor": "whity",
-    "imageLicense": "CC BY 2.0",
+    "imageSourceUrl": "",
+    "imageSourceName": "밥픽 제작 이미지",
+    "imageTitle": "사케동 대표 이미지",
+    "imageAuthor": "밥픽",
+    "imageLicense": "프로젝트 제작 이미지",
     "imageUrls": [
       {
-        "url": "./assets/menu-cache/jp-002-사케동/wnyp5z.jpg",
-        "sourceName": "Wikimedia Commons",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Salmon_caviar_donburi;_2011.jpg",
-        "title": "Salmon caviar donburi; 2011.jpg",
-        "license": "CC BY 2.0",
-        "cachedFrom": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Salmon_caviar_donburi%3B_2011.jpg/960px-Salmon_caviar_donburi%3B_2011.jpg",
-        "cachedAt": "2026-06-06T06:33:11.847Z"
-      },
-      {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Salmon_caviar_donburi%3B_2011.jpg/960px-Salmon_caviar_donburi%3B_2011.jpg",
-        "sourceName": "Wikimedia Commons",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Salmon_caviar_donburi;_2011.jpg",
-        "title": "Salmon caviar donburi; 2011.jpg"
+        "url": "./assets/menu-reviewed/sake-don.jpg",
+        "sourceName": "밥픽 제작 이미지",
+        "sourceUrl": "",
+        "title": "사케동 대표 이미지",
+        "license": "프로젝트 제작 이미지"
       }
     ],
     "walletTags": [
       "월급날"
-    ]
+    ],
+    "imageReview": {
+      "status": "approved",
+      "reviewedAt": "2026-07-19",
+      "reason": "메뉴명, 구성, 음식 중심 구도와 식욕도를 대조해 승인한 밥픽 제작 이미지"
+    }
   },
   {
     "id": "jp-003",
@@ -4912,7 +4892,7 @@
     ],
     "rating": 4.5,
     "baseLikes": 294,
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Pasta%2C_Tomato_Sauce%2C_Parmesan_%284365946820%29.jpg/960px-Pasta%2C_Tomato_Sauce%2C_Parmesan_%284365946820%29.jpg",
+    "imageUrl": "./assets/menu-reviewed/tomato-pasta.jpg",
     "spiceLevel": 0,
     "soupLevel": 0,
     "heaviness": 2,
@@ -4939,8 +4919,7 @@
     "imageSearchKeywords": [
       "토마토파스타",
       "토마토파스타 음식 사진",
-      "토마토파스타 점심 메뉴",
-      "western lunch plate"
+      "토마토파스타 점심 메뉴"
     ],
     "keywords": [
       "든든함",
@@ -4955,14 +4934,28 @@
       "미팅 전"
     ],
     "budget_tag": "평범하게",
-    "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Pasta,_Tomato_Sauce,_Parmesan_(4365946820).jpg",
-    "imageSourceName": "Wikimedia Commons",
-    "imageTitle": "Pasta, Tomato Sauce, Parmesan (4365946820).jpg",
-    "imageAuthor": "Katrin Gilger",
-    "imageLicense": "CC BY-SA 2.0",
+    "imageSourceUrl": "",
+    "imageSourceName": "밥픽 제작 이미지",
+    "imageTitle": "토마토파스타 대표 이미지",
+    "imageAuthor": "밥픽",
+    "imageLicense": "프로젝트 제작 이미지",
     "walletTags": [
       "월급날"
-    ]
+    ],
+    "imageUrls": [
+      {
+        "url": "./assets/menu-reviewed/tomato-pasta.jpg",
+        "sourceName": "밥픽 제작 이미지",
+        "sourceUrl": "",
+        "title": "토마토파스타 대표 이미지",
+        "license": "프로젝트 제작 이미지"
+      }
+    ],
+    "imageReview": {
+      "status": "approved",
+      "reviewedAt": "2026-07-19",
+      "reason": "메뉴명, 구성, 음식 중심 구도와 식욕도를 대조해 승인한 밥픽 제작 이미지"
+    }
   },
   {
     "id": "ws-003",
@@ -4989,7 +4982,7 @@
     ],
     "rating": 4.6,
     "baseLikes": 323,
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/0/00/Lemon_cream_pasta_%283056103239%29.jpg",
+    "imageUrl": "./assets/menu-reviewed/cream-pasta.jpg",
     "spiceLevel": 0,
     "soupLevel": 0,
     "heaviness": 3,
@@ -5016,8 +5009,7 @@
     "imageSearchKeywords": [
       "크림파스타",
       "크림파스타 음식 사진",
-      "크림파스타 점심 메뉴",
-      "western lunch plate"
+      "크림파스타 점심 메뉴"
     ],
     "keywords": [
       "든든함",
@@ -5031,14 +5023,28 @@
       "실패 금지"
     ],
     "budget_tag": "평범하게",
-    "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Lemon_cream_pasta_(3056103239).jpg",
-    "imageSourceName": "Wikimedia Commons",
-    "imageTitle": "Lemon cream pasta (3056103239).jpg",
-    "imageAuthor": "Karen and Brad Emerson",
-    "imageLicense": "CC BY 2.0",
+    "imageSourceUrl": "",
+    "imageSourceName": "밥픽 제작 이미지",
+    "imageTitle": "크림파스타 대표 이미지",
+    "imageAuthor": "밥픽",
+    "imageLicense": "프로젝트 제작 이미지",
     "walletTags": [
       "월급날"
-    ]
+    ],
+    "imageUrls": [
+      {
+        "url": "./assets/menu-reviewed/cream-pasta.jpg",
+        "sourceName": "밥픽 제작 이미지",
+        "sourceUrl": "",
+        "title": "크림파스타 대표 이미지",
+        "license": "프로젝트 제작 이미지"
+      }
+    ],
+    "imageReview": {
+      "status": "approved",
+      "reviewedAt": "2026-07-19",
+      "reason": "메뉴명, 구성, 음식 중심 구도와 식욕도를 대조해 승인한 밥픽 제작 이미지"
+    }
   },
   {
     "id": "ws-004",
@@ -6947,7 +6953,7 @@
     ],
     "rating": 4.4,
     "baseLikes": 256,
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Bunsik_stall.jpg/960px-Bunsik_stall.jpg",
+    "imageUrl": "./assets/menu-reviewed/bunsik-fried-set.jpg",
     "spiceLevel": 0,
     "soupLevel": 0,
     "heaviness": 3,
@@ -6975,8 +6981,7 @@
     "imageSearchKeywords": [
       "튀김세트",
       "튀김세트 음식 사진",
-      "튀김세트 점심 메뉴",
-      "Korean street food lunch"
+      "튀김세트 점심 메뉴"
     ],
     "keywords": [
       "바삭함",
@@ -6993,14 +6998,28 @@
       "팀점심"
     ],
     "budget_tag": "가볍게",
-    "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Bunsik_stall.jpg",
-    "imageSourceName": "Wikimedia Commons",
-    "imageTitle": "Bunsik stall.jpg",
-    "imageAuthor": "Jens Ohlig",
-    "imageLicense": "CC BY-SA 2.0",
+    "imageSourceUrl": "",
+    "imageSourceName": "밥픽 제작 이미지",
+    "imageTitle": "튀김세트 대표 이미지",
+    "imageAuthor": "밥픽",
+    "imageLicense": "프로젝트 제작 이미지",
     "walletTags": [
       "월급 전"
-    ]
+    ],
+    "imageUrls": [
+      {
+        "url": "./assets/menu-reviewed/bunsik-fried-set.jpg",
+        "sourceName": "밥픽 제작 이미지",
+        "sourceUrl": "",
+        "title": "튀김세트 대표 이미지",
+        "license": "프로젝트 제작 이미지"
+      }
+    ],
+    "imageReview": {
+      "status": "approved",
+      "reviewedAt": "2026-07-19",
+      "reason": "메뉴명, 구성, 음식 중심 구도와 식욕도를 대조해 승인한 밥픽 제작 이미지"
+    }
   },
   {
     "id": "bs-005",
@@ -7933,7 +7952,7 @@
     ],
     "rating": 4.5,
     "baseLikes": 245,
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Phuket_Style_Crab_Curry_Kanomjean_Vermicelli_rice_noodle_with_blue_crab%2C_crab_meat_curry%2C_served_with_hard_boiled_egg%2C_pickle_carrot_and_papaya_%2825069887921%29.jpg/960px-thumbnail.jpg",
+    "imageUrl": "./assets/menu-reviewed/pu-pad-pong-curry.jpg",
     "spiceLevel": 1,
     "soupLevel": 0,
     "heaviness": 2,
@@ -7959,8 +7978,7 @@
     "imageSearchKeywords": [
       "푸팟퐁커리",
       "푸팟퐁커리 음식 사진",
-      "푸팟퐁커리 점심 메뉴",
-      "Asian lunch food"
+      "푸팟퐁커리 점심 메뉴"
     ],
     "keywords": [
       "든든함"
@@ -7972,14 +7990,28 @@
       "입맛 깨우기"
     ],
     "budget_tag": "오늘은 써도 됨",
-    "imageSourceName": "Wikimedia Commons",
-    "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Phuket_Style_Crab_Curry_Kanomjean_Vermicelli_rice_noodle_with_blue_crab,_crab_meat_curry,_served_with_hard_boiled_egg,_pickle_carrot_and_papaya_(25069887921).jpg",
-    "imageTitle": "Phuket Style Crab Curry Kanomjean Vermicelli rice noodle with blue crab, crab meat curry, served with hard boiled egg, pickle carrot and papaya (25069887921).jpg",
-    "imageAuthor": "T.Tseng",
-    "imageLicense": "CC BY 2.0",
+    "imageSourceName": "밥픽 제작 이미지",
+    "imageSourceUrl": "",
+    "imageTitle": "푸팟퐁커리 대표 이미지",
+    "imageAuthor": "밥픽",
+    "imageLicense": "프로젝트 제작 이미지",
     "walletTags": [
       "월급날"
-    ]
+    ],
+    "imageUrls": [
+      {
+        "url": "./assets/menu-reviewed/pu-pad-pong-curry.jpg",
+        "sourceName": "밥픽 제작 이미지",
+        "sourceUrl": "",
+        "title": "푸팟퐁커리 대표 이미지",
+        "license": "프로젝트 제작 이미지"
+      }
+    ],
+    "imageReview": {
+      "status": "approved",
+      "reviewedAt": "2026-07-19",
+      "reason": "메뉴명, 구성, 음식 중심 구도와 식욕도를 대조해 승인한 밥픽 제작 이미지"
+    }
   },
   {
     "id": "as-005",
@@ -8326,7 +8358,7 @@
     ],
     "rating": 4.5,
     "baseLikes": 289,
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/%EC%97%94%EC%A0%9C%EB%A6%AC%EB%84%88%EC%8A%A4_%EC%95%84%EC%9D%B4%EC%8A%A4_%EC%95%84%EB%A9%94%EB%A6%AC%EC%B9%B4%EB%85%B8_%2B_%EC%97%90%EA%B7%B8_%EB%A7%88%EC%9A%94_%EB%B0%98%EB%AF%B8_%EC%83%8C%EB%93%9C%EC%9C%84%EC%B9%98%EB%9E%91%2C_%ED%95%9C%EB%9D%BC%EB%B4%89_%EC%97%90%EC%9D%B4%EB%93%9C.jpg/960px-%EC%97%94%EC%A0%9C%EB%A6%AC%EB%84%88%EC%8A%A4_%EC%95%84%EC%9D%B4%EC%8A%A4_%EC%95%84%EB%A9%94%EB%A6%AC%EC%B9%B4%EB%85%B8_%2B_%EC%97%90%EA%B7%B8_%EB%A7%88%EC%9A%94_%EB%B0%98%EB%AF%B8_%EC%83%8C%EB%93%9C%EC%9C%84%EC%B9%98%EB%9E%91%2C_%ED%95%9C%EB%9D%BC%EB%B4%89_%EC%97%90%EC%9D%B4%EB%93%9C.jpg",
+    "imageUrl": "./assets/menu-reviewed/banh-mi.jpg",
     "spiceLevel": 0,
     "soupLevel": 0,
     "heaviness": 1,
@@ -8353,8 +8385,7 @@
     "imageSearchKeywords": [
       "반미",
       "반미 음식 사진",
-      "반미 점심 메뉴",
-      "Asian lunch food"
+      "반미 점심 메뉴"
     ],
     "keywords": [
       "빠름",
@@ -8377,14 +8408,28 @@
       "입맛 깨우기"
     ],
     "budget_tag": "가볍게",
-    "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:%EC%97%94%EC%A0%9C%EB%A6%AC%EB%84%88%EC%8A%A4_%EC%95%84%EC%9D%B4%EC%8A%A4_%EC%95%84%EB%A9%94%EB%A6%AC%EC%B9%B4%EB%85%B8_%2B_%EC%97%90%EA%B7%B8_%EB%A7%88%EC%9A%94_%EB%B0%98%EB%AF%B8_%EC%83%8C%EB%93%9C%EC%9C%84%EC%B9%98%EB%9E%91,_%ED%95%9C%EB%9D%BC%EB%B4%89_%EC%97%90%EC%9D%B4%EB%93%9C.jpg",
-    "imageSourceName": "Wikimedia Commons",
-    "imageTitle": "엔제리너스 아이스 아메리카노 + 에그 마요 반미 샌드위치랑, 한라봉 에이드.jpg",
-    "imageAuthor": "김바삭 (Kim Ba-sak)",
-    "imageLicense": "CC BY 4.0",
+    "imageSourceUrl": "",
+    "imageSourceName": "밥픽 제작 이미지",
+    "imageTitle": "반미 대표 이미지",
+    "imageAuthor": "밥픽",
+    "imageLicense": "프로젝트 제작 이미지",
     "walletTags": [
       "월급 전"
-    ]
+    ],
+    "imageUrls": [
+      {
+        "url": "./assets/menu-reviewed/banh-mi.jpg",
+        "sourceName": "밥픽 제작 이미지",
+        "sourceUrl": "",
+        "title": "반미 대표 이미지",
+        "license": "프로젝트 제작 이미지"
+      }
+    ],
+    "imageReview": {
+      "status": "approved",
+      "reviewedAt": "2026-07-19",
+      "reason": "메뉴명, 구성, 음식 중심 구도와 식욕도를 대조해 승인한 밥픽 제작 이미지"
+    }
   },
   {
     "id": "as-010",
@@ -8815,7 +8860,7 @@
     ],
     "rating": 4.2,
     "baseLikes": 192,
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Tofu_Egg_Salad_%283532877222%29.jpg/960px-Tofu_Egg_Salad_%283532877222%29.jpg",
+    "imageUrl": "./assets/menu-reviewed/tofu-salad.jpg",
     "spiceLevel": 0,
     "soupLevel": 0,
     "heaviness": 1,
@@ -8842,8 +8887,7 @@
     "imageSearchKeywords": [
       "두부샐러드",
       "두부샐러드 음식 사진",
-      "두부샐러드 점심 메뉴",
-      "healthy lunch bowl"
+      "두부샐러드 점심 메뉴"
     ],
     "keywords": [
       "빠름",
@@ -8865,14 +8909,28 @@
       "다이어트"
     ],
     "budget_tag": "가볍게",
-    "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Tofu_Egg_Salad_(3532877222).jpg",
-    "imageSourceName": "Wikimedia Commons",
-    "imageTitle": "Tofu Egg Salad (3532877222).jpg",
-    "imageAuthor": "Vegan Feast Catering",
-    "imageLicense": "CC BY 2.0",
+    "imageSourceUrl": "",
+    "imageSourceName": "밥픽 제작 이미지",
+    "imageTitle": "두부샐러드 대표 이미지",
+    "imageAuthor": "밥픽",
+    "imageLicense": "프로젝트 제작 이미지",
     "walletTags": [
       "월급 전"
-    ]
+    ],
+    "imageUrls": [
+      {
+        "url": "./assets/menu-reviewed/tofu-salad.jpg",
+        "sourceName": "밥픽 제작 이미지",
+        "sourceUrl": "",
+        "title": "두부샐러드 대표 이미지",
+        "license": "프로젝트 제작 이미지"
+      }
+    ],
+    "imageReview": {
+      "status": "approved",
+      "reviewedAt": "2026-07-19",
+      "reason": "메뉴명, 구성, 음식 중심 구도와 식욕도를 대조해 승인한 밥픽 제작 이미지"
+    }
   },
   {
     "id": "hl-004",
@@ -9731,7 +9789,7 @@
     ],
     "rating": 4.3,
     "baseLikes": 255,
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/2015%EB%85%84_2%EC%9B%94_11%EC%9D%BC_%ED%9A%A8%EC%86%8C%EC%9B%90_%EC%B2%AD%EA%B5%AD%EC%9E%A5.jpg/960px-2015%EB%85%84_2%EC%9B%94_11%EC%9D%BC_%ED%9A%A8%EC%86%8C%EC%9B%90_%EC%B2%AD%EA%B5%AD%EC%9E%A5.jpg",
+    "imageUrl": "./assets/menu-reviewed/cheonggukjang.jpg",
     "spiceLevel": 0,
     "soupLevel": 2,
     "heaviness": 2,
@@ -9759,8 +9817,7 @@
     "imageSearchKeywords": [
       "청국장",
       "청국장 음식 사진",
-      "청국장 점심 메뉴",
-      "Korean lunch food"
+      "청국장 점심 메뉴"
     ],
     "keywords": [
       "국물",
@@ -9779,14 +9836,28 @@
       "비 오는 날"
     ],
     "budget_tag": "가볍게",
-    "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:2015%EB%85%84_2%EC%9B%94_11%EC%9D%BC_%ED%9A%A8%EC%86%8C%EC%9B%90_%EC%B2%AD%EA%B5%AD%EC%9E%A5.jpg",
-    "imageSourceName": "Wikimedia Commons",
-    "imageTitle": "2015년 2월 11일 효소원 청국장.jpg",
-    "imageAuthor": "최광모",
-    "imageLicense": "CC BY-SA 4.0",
+    "imageSourceUrl": "",
+    "imageSourceName": "밥픽 제작 이미지",
+    "imageTitle": "청국장 대표 이미지",
+    "imageAuthor": "밥픽",
+    "imageLicense": "프로젝트 제작 이미지",
     "walletTags": [
       "월급 전"
-    ]
+    ],
+    "imageUrls": [
+      {
+        "url": "./assets/menu-reviewed/cheonggukjang.jpg",
+        "sourceName": "밥픽 제작 이미지",
+        "sourceUrl": "",
+        "title": "청국장 대표 이미지",
+        "license": "프로젝트 제작 이미지"
+      }
+    ],
+    "imageReview": {
+      "status": "approved",
+      "reviewedAt": "2026-07-19",
+      "reason": "메뉴명, 구성, 음식 중심 구도와 식욕도를 대조해 승인한 밥픽 제작 이미지"
+    }
   },
   {
     "id": "kr-028",
@@ -10330,7 +10401,7 @@
     ],
     "rating": 4.4,
     "baseLikes": 310,
-    "imageUrl": "./assets/menu/spam-kimchi-rice.jpg",
+    "imageUrl": "./assets/menu-reviewed/spam-kimchi-rice.jpg",
     "spiceLevel": 1,
     "soupLevel": 0,
     "heaviness": 2,
@@ -10356,8 +10427,7 @@
     "imageSearchKeywords": [
       "스팸김치덮밥",
       "스팸김치덮밥 음식 사진",
-      "스팸김치덮밥 점심 메뉴",
-      "Korean lunch food"
+      "스팸김치덮밥 점심 메뉴"
     ],
     "keywords": [
       "빠름",
@@ -10374,14 +10444,28 @@
       "미팅 전"
     ],
     "budget_tag": "가볍게",
-    "imageSourceName": "10000recipe",
-    "imageSourceUrl": "https://www.10000recipe.com/recipe/7026008",
-    "imageTitle": "스팸김치덮밥",
-    "imageAuthor": "10000recipe",
-    "imageLicense": "External food photo",
+    "imageSourceName": "밥픽 제작 이미지",
+    "imageSourceUrl": "",
+    "imageTitle": "스팸김치덮밥 대표 이미지",
+    "imageAuthor": "밥픽",
+    "imageLicense": "프로젝트 제작 이미지",
     "walletTags": [
       "월급 전"
-    ]
+    ],
+    "imageUrls": [
+      {
+        "url": "./assets/menu-reviewed/spam-kimchi-rice.jpg",
+        "sourceName": "밥픽 제작 이미지",
+        "sourceUrl": "",
+        "title": "스팸김치덮밥 대표 이미지",
+        "license": "프로젝트 제작 이미지"
+      }
+    ],
+    "imageReview": {
+      "status": "approved",
+      "reviewedAt": "2026-07-19",
+      "reason": "메뉴명, 구성, 음식 중심 구도와 식욕도를 대조해 승인한 밥픽 제작 이미지"
+    }
   },
   {
     "id": "kr-035",
@@ -10569,7 +10653,7 @@
     ],
     "rating": 4.6,
     "baseLikes": 334,
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Braised_chicken.jpg/960px-Braised_chicken.jpg",
+    "imageUrl": "./assets/menu-reviewed/soy-jjimdak.jpg",
     "spiceLevel": 0,
     "soupLevel": 0,
     "heaviness": 3,
@@ -10596,8 +10680,7 @@
     "imageSearchKeywords": [
       "간장찜닭",
       "간장찜닭 음식 사진",
-      "간장찜닭 점심 메뉴",
-      "Korean lunch food"
+      "간장찜닭 점심 메뉴"
     ],
     "keywords": [
       "든든함",
@@ -10609,14 +10692,28 @@
       "실패 금지"
     ],
     "budget_tag": "평범하게",
-    "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Braised_chicken.jpg",
-    "imageSourceName": "Wikimedia Commons",
-    "imageTitle": "Braised chicken.jpg",
-    "imageAuthor": "ZZArch",
-    "imageLicense": "CC BY-SA 3.0",
+    "imageSourceUrl": "",
+    "imageSourceName": "밥픽 제작 이미지",
+    "imageTitle": "간장찜닭 대표 이미지",
+    "imageAuthor": "밥픽",
+    "imageLicense": "프로젝트 제작 이미지",
     "walletTags": [
       "월급날"
-    ]
+    ],
+    "imageUrls": [
+      {
+        "url": "./assets/menu-reviewed/soy-jjimdak.jpg",
+        "sourceName": "밥픽 제작 이미지",
+        "sourceUrl": "",
+        "title": "간장찜닭 대표 이미지",
+        "license": "프로젝트 제작 이미지"
+      }
+    ],
+    "imageReview": {
+      "status": "approved",
+      "reviewedAt": "2026-07-19",
+      "reason": "메뉴명, 구성, 음식 중심 구도와 식욕도를 대조해 승인한 밥픽 제작 이미지"
+    }
   },
   {
     "id": "kr-038",
@@ -11057,7 +11154,7 @@
     ],
     "rating": 4.3,
     "baseLikes": 210,
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Oriental_meatballs_-_stonesoup.jpg/960px-Oriental_meatballs_-_stonesoup.jpg",
+    "imageUrl": "./assets/menu-reviewed/nanjawans-rice.jpg",
     "spiceLevel": 0,
     "soupLevel": 0,
     "heaviness": 1,
@@ -11083,8 +11180,7 @@
     "imageSearchKeywords": [
       "난자완스밥",
       "난자완스밥 음식 사진",
-      "난자완스밥 점심 메뉴",
-      "Korean Chinese food lunch"
+      "난자완스밥 점심 메뉴"
     ],
     "keywords": [
       "가벼움",
@@ -11102,14 +11198,28 @@
       "미팅 전"
     ],
     "budget_tag": "평범하게",
-    "imageSourceName": "Wikimedia Commons",
-    "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Oriental_meatballs_-_stonesoup.jpg",
-    "imageTitle": "Oriental meatballs - stonesoup.jpg",
-    "imageAuthor": "jules / stonesoup",
-    "imageLicense": "CC BY 2.0",
+    "imageSourceName": "밥픽 제작 이미지",
+    "imageSourceUrl": "",
+    "imageTitle": "난자완스밥 대표 이미지",
+    "imageAuthor": "밥픽",
+    "imageLicense": "프로젝트 제작 이미지",
     "walletTags": [
       "월급날"
-    ]
+    ],
+    "imageUrls": [
+      {
+        "url": "./assets/menu-reviewed/nanjawans-rice.jpg",
+        "sourceName": "밥픽 제작 이미지",
+        "sourceUrl": "",
+        "title": "난자완스밥 대표 이미지",
+        "license": "프로젝트 제작 이미지"
+      }
+    ],
+    "imageReview": {
+      "status": "approved",
+      "reviewedAt": "2026-07-19",
+      "reason": "메뉴명, 구성, 음식 중심 구도와 식욕도를 대조해 승인한 밥픽 제작 이미지"
+    }
   },
   {
     "id": "cn-019",
@@ -11860,7 +11970,7 @@
     ],
     "rating": 4.5,
     "baseLikes": 312,
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/5/57/Rose_Pasta.jpg",
+    "imageUrl": "./assets/menu-reviewed/rose-pasta.jpg",
     "spiceLevel": 0,
     "soupLevel": 0,
     "heaviness": 2,
@@ -11887,8 +11997,7 @@
     "imageSearchKeywords": [
       "로제파스타",
       "로제파스타 음식 사진",
-      "로제파스타 점심 메뉴",
-      "western lunch plate"
+      "로제파스타 점심 메뉴"
     ],
     "keywords": [
       "든든함",
@@ -11902,14 +12011,28 @@
       "혼밥"
     ],
     "budget_tag": "평범하게",
-    "imageSourceName": "Wikimedia Commons",
-    "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Rose_Pasta.jpg",
-    "imageTitle": "Rose Pasta.jpg",
-    "imageAuthor": "SHIN MIN KYEONG",
-    "imageLicense": "CC BY-SA 4.0",
+    "imageSourceName": "밥픽 제작 이미지",
+    "imageSourceUrl": "",
+    "imageTitle": "로제파스타 대표 이미지",
+    "imageAuthor": "밥픽",
+    "imageLicense": "프로젝트 제작 이미지",
     "walletTags": [
       "월급날"
-    ]
+    ],
+    "imageUrls": [
+      {
+        "url": "./assets/menu-reviewed/rose-pasta.jpg",
+        "sourceName": "밥픽 제작 이미지",
+        "sourceUrl": "",
+        "title": "로제파스타 대표 이미지",
+        "license": "프로젝트 제작 이미지"
+      }
+    ],
+    "imageReview": {
+      "status": "approved",
+      "reviewedAt": "2026-07-19",
+      "reason": "메뉴명, 구성, 음식 중심 구도와 식욕도를 대조해 승인한 밥픽 제작 이미지"
+    }
   },
   {
     "id": "ws-017",
@@ -12167,7 +12290,7 @@
     ],
     "rating": 4.2,
     "baseLikes": 188,
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Mushroom_sandwich_%2830297522438%29.jpg/960px-Mushroom_sandwich_%2830297522438%29.jpg",
+    "imageUrl": "./assets/menu-reviewed/mushroom-sandwich.jpg",
     "spiceLevel": 0,
     "soupLevel": 0,
     "heaviness": 1,
@@ -12195,8 +12318,7 @@
     "imageSearchKeywords": [
       "머쉬룸샌드위치",
       "머쉬룸샌드위치 음식 사진",
-      "머쉬룸샌드위치 점심 메뉴",
-      "western lunch plate"
+      "머쉬룸샌드위치 점심 메뉴"
     ],
     "keywords": [
       "빠름",
@@ -12218,14 +12340,28 @@
       "다이어트"
     ],
     "budget_tag": "가볍게",
-    "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Mushroom_sandwich_(30297522438).jpg",
-    "imageSourceName": "Wikimedia Commons",
-    "imageTitle": "Mushroom sandwich (30297522438).jpg",
-    "imageAuthor": "Ella Olsson from Stockholm, Sweden",
-    "imageLicense": "CC BY 2.0",
+    "imageSourceUrl": "",
+    "imageSourceName": "밥픽 제작 이미지",
+    "imageTitle": "머쉬룸샌드위치 대표 이미지",
+    "imageAuthor": "밥픽",
+    "imageLicense": "프로젝트 제작 이미지",
     "walletTags": [
       "월급 전"
-    ]
+    ],
+    "imageUrls": [
+      {
+        "url": "./assets/menu-reviewed/mushroom-sandwich.jpg",
+        "sourceName": "밥픽 제작 이미지",
+        "sourceUrl": "",
+        "title": "머쉬룸샌드위치 대표 이미지",
+        "license": "프로젝트 제작 이미지"
+      }
+    ],
+    "imageReview": {
+      "status": "approved",
+      "reviewedAt": "2026-07-19",
+      "reason": "메뉴명, 구성, 음식 중심 구도와 식욕도를 대조해 승인한 밥픽 제작 이미지"
+    }
   },
   {
     "id": "ws-021",
@@ -12404,7 +12540,7 @@
     ],
     "rating": 4.3,
     "baseLikes": 230,
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Chicken_tenders_%288884884960%29.jpg/960px-Chicken_tenders_%288884884960%29.jpg",
+    "imageUrl": "./assets/menu-reviewed/chicken-tender-set.jpg",
     "spiceLevel": 0,
     "soupLevel": 0,
     "heaviness": 3,
@@ -12432,8 +12568,7 @@
     "imageSearchKeywords": [
       "치킨텐더세트",
       "치킨텐더세트 음식 사진",
-      "치킨텐더세트 점심 메뉴",
-      "western lunch plate"
+      "치킨텐더세트 점심 메뉴"
     ],
     "keywords": [
       "빠름",
@@ -12450,14 +12585,28 @@
       "팀점심"
     ],
     "budget_tag": "가볍게",
-    "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Chicken_tenders_(8884884960).jpg",
-    "imageSourceName": "Wikimedia Commons",
-    "imageTitle": "Chicken tenders (8884884960).jpg",
-    "imageAuthor": "jeffreyw",
-    "imageLicense": "CC BY 2.0",
+    "imageSourceUrl": "",
+    "imageSourceName": "밥픽 제작 이미지",
+    "imageTitle": "치킨텐더세트 대표 이미지",
+    "imageAuthor": "밥픽",
+    "imageLicense": "프로젝트 제작 이미지",
     "walletTags": [
       "월급 전"
-    ]
+    ],
+    "imageUrls": [
+      {
+        "url": "./assets/menu-reviewed/chicken-tender-set.jpg",
+        "sourceName": "밥픽 제작 이미지",
+        "sourceUrl": "",
+        "title": "치킨텐더세트 대표 이미지",
+        "license": "프로젝트 제작 이미지"
+      }
+    ],
+    "imageReview": {
+      "status": "approved",
+      "reviewedAt": "2026-07-18",
+      "reason": "치킨텐더, 감자튀김, 소스와 콜슬로가 분리된 세트 사진"
+    }
   },
   {
     "id": "ff-016",
@@ -12484,7 +12633,7 @@
     ],
     "rating": 4.2,
     "baseLikes": 208,
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Bagel_sandwich_meal_prep.jpg/960px-Bagel_sandwich_meal_prep.jpg",
+    "imageUrl": "./assets/menu-reviewed/bagel-sandwich.jpg",
     "spiceLevel": 0,
     "soupLevel": 0,
     "heaviness": 1,
@@ -12512,8 +12661,7 @@
     "imageSearchKeywords": [
       "베이글샌드위치",
       "베이글샌드위치 음식 사진",
-      "베이글샌드위치 점심 메뉴",
-      "western lunch plate"
+      "베이글샌드위치 점심 메뉴"
     ],
     "keywords": [
       "빠름",
@@ -12533,14 +12681,28 @@
       "미팅 전"
     ],
     "budget_tag": "가볍게",
-    "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Bagel_sandwich_meal_prep.jpg",
-    "imageSourceName": "Wikimedia Commons",
-    "imageTitle": "Bagel sandwich meal prep.jpg",
-    "imageAuthor": "Revital Salomon",
-    "imageLicense": "CC BY-SA 4.0",
+    "imageSourceUrl": "",
+    "imageSourceName": "밥픽 제작 이미지",
+    "imageTitle": "베이글샌드위치 대표 이미지",
+    "imageAuthor": "밥픽",
+    "imageLicense": "프로젝트 제작 이미지",
     "walletTags": [
       "월급 전"
-    ]
+    ],
+    "imageUrls": [
+      {
+        "url": "./assets/menu-reviewed/bagel-sandwich.jpg",
+        "sourceName": "밥픽 제작 이미지",
+        "sourceUrl": "",
+        "title": "베이글샌드위치 대표 이미지",
+        "license": "프로젝트 제작 이미지"
+      }
+    ],
+    "imageReview": {
+      "status": "approved",
+      "reviewedAt": "2026-07-19",
+      "reason": "메뉴명, 구성, 음식 중심 구도와 식욕도를 대조해 승인한 밥픽 제작 이미지"
+    }
   },
   {
     "id": "bs-013",
@@ -12567,7 +12729,7 @@
     ],
     "rating": 4.2,
     "baseLikes": 214,
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Edo_Inari_sushi_02.JPG/960px-Edo_Inari_sushi_02.JPG",
+    "imageUrl": "./assets/menu-reviewed/inari-sushi.jpg",
     "spiceLevel": 0,
     "soupLevel": 0,
     "heaviness": 1,
@@ -12594,8 +12756,7 @@
     "imageSearchKeywords": [
       "유부초밥",
       "유부초밥 음식 사진",
-      "유부초밥 점심 메뉴",
-      "Korean street food lunch"
+      "유부초밥 점심 메뉴"
     ],
     "keywords": [
       "빠름",
@@ -12616,14 +12777,28 @@
       "미팅 전"
     ],
     "budget_tag": "가볍게",
-    "imageSourceName": "Wikimedia Commons",
-    "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Edo_Inari_sushi_02.JPG",
-    "imageTitle": "Edo Inari sushi 02.JPG",
-    "imageAuthor": "DryPot",
-    "imageLicense": "CC BY 2.5",
+    "imageSourceName": "밥픽 제작 이미지",
+    "imageSourceUrl": "",
+    "imageTitle": "유부초밥 대표 이미지",
+    "imageAuthor": "밥픽",
+    "imageLicense": "프로젝트 제작 이미지",
     "walletTags": [
       "월급 전"
-    ]
+    ],
+    "imageUrls": [
+      {
+        "url": "./assets/menu-reviewed/inari-sushi.jpg",
+        "sourceName": "밥픽 제작 이미지",
+        "sourceUrl": "",
+        "title": "유부초밥 대표 이미지",
+        "license": "프로젝트 제작 이미지"
+      }
+    ],
+    "imageReview": {
+      "status": "approved",
+      "reviewedAt": "2026-07-19",
+      "reason": "메뉴명, 구성, 음식 중심 구도와 식욕도를 대조해 승인한 밥픽 제작 이미지"
+    }
   },
   {
     "id": "bs-014",
@@ -13452,7 +13627,7 @@
     ],
     "rating": 4.4,
     "baseLikes": 250,
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Chicken_and_rice%2C_Thai%2C_2024_%2801%29.jpg/960px-Chicken_and_rice%2C_Thai%2C_2024_%2801%29.jpg",
+    "imageUrl": "./assets/menu-reviewed/khao-man-gai.jpg",
     "spiceLevel": 0,
     "soupLevel": 0,
     "heaviness": 2,
@@ -13478,8 +13653,7 @@
     "imageSearchKeywords": [
       "카오만가이",
       "카오만가이 음식 사진",
-      "카오만가이 점심 메뉴",
-      "Asian lunch food"
+      "카오만가이 점심 메뉴"
     ],
     "keywords": [
       "든든함",
@@ -13494,14 +13668,28 @@
       "미팅 전"
     ],
     "budget_tag": "평범하게",
-    "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Chicken_and_rice,_Thai,_2024_(01).jpg",
-    "imageSourceName": "Wikimedia Commons",
-    "imageTitle": "Chicken and rice, Thai, 2024 (01).jpg",
-    "imageAuthor": "Bahnfrend",
-    "imageLicense": "CC BY-SA 4.0",
+    "imageSourceUrl": "",
+    "imageSourceName": "밥픽 제작 이미지",
+    "imageTitle": "카오만가이 대표 이미지",
+    "imageAuthor": "밥픽",
+    "imageLicense": "프로젝트 제작 이미지",
     "walletTags": [
       "월급날"
-    ]
+    ],
+    "imageUrls": [
+      {
+        "url": "./assets/menu-reviewed/khao-man-gai.jpg",
+        "sourceName": "밥픽 제작 이미지",
+        "sourceUrl": "",
+        "title": "카오만가이 대표 이미지",
+        "license": "프로젝트 제작 이미지"
+      }
+    ],
+    "imageReview": {
+      "status": "approved",
+      "reviewedAt": "2026-07-19",
+      "reason": "메뉴명, 구성, 음식 중심 구도와 식욕도를 대조해 승인한 밥픽 제작 이미지"
+    }
   },
   {
     "id": "as-017",
@@ -14270,7 +14458,7 @@
     ],
     "rating": 4.5,
     "baseLikes": 365,
-    "imageUrl": "./assets/menu/tuna-mayo-rice.jpg",
+    "imageUrl": "./assets/menu-reviewed/tuna-mayo-rice.jpg",
     "spiceLevel": 0,
     "soupLevel": 0,
     "heaviness": 2,
@@ -14297,8 +14485,7 @@
     "imageSearchKeywords": [
       "참치마요덮밥",
       "참치마요덮밥 음식 사진",
-      "참치마요덮밥 점심 메뉴",
-      "Korean lunch food"
+      "참치마요덮밥 점심 메뉴"
     ],
     "keywords": [
       "빠름",
@@ -14315,14 +14502,28 @@
       "미팅 전"
     ],
     "budget_tag": "가볍게",
-    "imageSourceName": "Tistory",
-    "imageSourceUrl": "https://amyzzung.tistory.com/590",
-    "imageTitle": "참치마요덮밥",
-    "imageAuthor": "Tistory",
-    "imageLicense": "External food photo",
+    "imageSourceName": "밥픽 제작 이미지",
+    "imageSourceUrl": "",
+    "imageTitle": "참치마요덮밥 대표 이미지",
+    "imageAuthor": "밥픽",
+    "imageLicense": "프로젝트 제작 이미지",
     "walletTags": [
       "월급 전"
-    ]
+    ],
+    "imageUrls": [
+      {
+        "url": "./assets/menu-reviewed/tuna-mayo-rice.jpg",
+        "sourceName": "밥픽 제작 이미지",
+        "sourceUrl": "",
+        "title": "참치마요덮밥 대표 이미지",
+        "license": "프로젝트 제작 이미지"
+      }
+    ],
+    "imageReview": {
+      "status": "approved",
+      "reviewedAt": "2026-07-19",
+      "reason": "메뉴명, 구성, 음식 중심 구도와 식욕도를 대조해 승인한 밥픽 제작 이미지"
+    }
   },
   {
     "id": "lb-004",
@@ -14349,7 +14550,7 @@
     ],
     "rating": 4.5,
     "baseLikes": 342,
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Korean_Beef_Bulgogi_Rice_Bowl_%2834817154336%29.jpg/960px-Korean_Beef_Bulgogi_Rice_Bowl_%2834817154336%29.jpg",
+    "imageUrl": "./assets/menu-reviewed/bulgogi-lunchbox.jpg",
     "spiceLevel": 0,
     "soupLevel": 0,
     "heaviness": 2,
@@ -14376,8 +14577,7 @@
     "imageSearchKeywords": [
       "소불고기도시락",
       "소불고기도시락 음식 사진",
-      "소불고기도시락 점심 메뉴",
-      "Korean lunch food"
+      "소불고기도시락 점심 메뉴"
     ],
     "keywords": [
       "빠름",
@@ -14394,15 +14594,29 @@
       "미팅 전"
     ],
     "budget_tag": "가볍게",
-    "imageSourceName": "Wikimedia Commons",
-    "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Korean_Beef_Bulgogi_Rice_Bowl_(34817154336).jpg",
-    "imageTitle": "Korean Beef Bulgogi Rice Bowl (34817154336).jpg",
-    "imageAuthor": "A Healthier Michigan from Detroit, United States",
-    "imageLicense": "CC BY-SA 2.0",
+    "imageSourceName": "밥픽 제작 이미지",
+    "imageSourceUrl": "",
+    "imageTitle": "소불고기도시락 대표 이미지",
+    "imageAuthor": "밥픽",
+    "imageLicense": "프로젝트 제작 이미지",
     "imageBorrowedFrom": "불고기덮밥",
     "walletTags": [
       "월급 전"
-    ]
+    ],
+    "imageUrls": [
+      {
+        "url": "./assets/menu-reviewed/bulgogi-lunchbox.jpg",
+        "sourceName": "밥픽 제작 이미지",
+        "sourceUrl": "",
+        "title": "소불고기도시락 대표 이미지",
+        "license": "프로젝트 제작 이미지"
+      }
+    ],
+    "imageReview": {
+      "status": "approved",
+      "reviewedAt": "2026-07-19",
+      "reason": "메뉴명, 구성, 음식 중심 구도와 식욕도를 대조해 승인한 밥픽 제작 이미지"
+    }
   },
   {
     "id": "lb-005",
@@ -14914,7 +15128,7 @@
     ],
     "rating": 4.4,
     "baseLikes": 238,
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/%EB%8C%80%EA%B5%AC%ED%83%95.jpg/960px-%EB%8C%80%EA%B5%AC%ED%83%95.jpg",
+    "imageUrl": "./assets/menu-reviewed/daegu-tang.jpg",
     "spiceLevel": 0,
     "soupLevel": 2,
     "heaviness": 1,
@@ -14941,8 +15155,7 @@
     "imageSearchKeywords": [
       "대구탕",
       "대구탕 음식 사진",
-      "대구탕 점심 메뉴",
-      "Korean lunch food"
+      "대구탕 점심 메뉴"
     ],
     "keywords": [
       "맑은 국물",
@@ -14960,14 +15173,28 @@
       "비 오는 날"
     ],
     "budget_tag": "평범하게",
-    "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:%EB%8C%80%EA%B5%AC%ED%83%95.jpg",
-    "imageSourceName": "Wikimedia Commons",
-    "imageTitle": "대구탕.jpg",
-    "imageAuthor": "Jocelyndurrey",
-    "imageLicense": "CC BY-SA 4.0",
+    "imageSourceUrl": "",
+    "imageSourceName": "밥픽 제작 이미지",
+    "imageTitle": "대구탕 대표 이미지",
+    "imageAuthor": "밥픽",
+    "imageLicense": "프로젝트 제작 이미지",
     "walletTags": [
       "월급날"
-    ]
+    ],
+    "imageUrls": [
+      {
+        "url": "./assets/menu-reviewed/daegu-tang.jpg",
+        "sourceName": "밥픽 제작 이미지",
+        "sourceUrl": "",
+        "title": "대구탕 대표 이미지",
+        "license": "프로젝트 제작 이미지"
+      }
+    ],
+    "imageReview": {
+      "status": "approved",
+      "reviewedAt": "2026-07-18",
+      "reason": "흰 대구 살과 생선 껍질이 명확한 맑은 대구탕 사진"
+    }
   },
   {
     "id": "kr-043",
@@ -15161,7 +15388,7 @@
     ],
     "rating": 4.4,
     "baseLikes": 220,
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c4/Korean_cuisine-Hanchi_mulhoe-Sliced_raw_mitra_squid_and_vegetables_in_cold_and_spicy_soup-01.jpg",
+    "imageUrl": "./assets/menu-reviewed/mulhoe.jpg",
     "spiceLevel": 2,
     "soupLevel": 0,
     "heaviness": 1,
@@ -15188,8 +15415,7 @@
     "imageSearchKeywords": [
       "물회",
       "물회 음식 사진",
-      "물회 점심 메뉴",
-      "Korean lunch food"
+      "물회 점심 메뉴"
     ],
     "keywords": [
       "산뜻함",
@@ -15210,14 +15436,28 @@
       "비 오는 날"
     ],
     "budget_tag": "평범하게",
-    "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Korean_cuisine-Hanchi_mulhoe-Sliced_raw_mitra_squid_and_vegetables_in_cold_and_spicy_soup-01.jpg",
-    "imageSourceName": "Wikimedia Commons",
-    "imageTitle": "Korean cuisine-Hanchi mulhoe-Sliced raw mitra squid and vegetables in cold and spicy soup-01.jpg",
-    "imageAuthor": "SEEMS to be at Flickr",
-    "imageLicense": "CC BY-SA 3.0",
+    "imageSourceUrl": "",
+    "imageSourceName": "밥픽 제작 이미지",
+    "imageTitle": "물회 대표 이미지",
+    "imageAuthor": "밥픽",
+    "imageLicense": "프로젝트 제작 이미지",
     "walletTags": [
       "월급날"
-    ]
+    ],
+    "imageUrls": [
+      {
+        "url": "./assets/menu-reviewed/mulhoe.jpg",
+        "sourceName": "밥픽 제작 이미지",
+        "sourceUrl": "",
+        "title": "물회 대표 이미지",
+        "license": "프로젝트 제작 이미지"
+      }
+    ],
+    "imageReview": {
+      "status": "approved",
+      "reviewedAt": "2026-07-19",
+      "reason": "메뉴명, 구성, 음식 중심 구도와 식욕도를 대조해 승인한 밥픽 제작 이미지"
+    }
   },
   {
     "id": "kr-046",
@@ -15244,7 +15484,7 @@
     ],
     "rating": 4.6,
     "baseLikes": 318,
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/%EC%9D%B4%EC%97%B0%EC%88%98_%EC%86%8C%EB%A8%B8%EB%A6%AC%EA%B5%AD%EB%B0%A5%28%ED%99%8D%EC%B2%9C%EA%B5%B0_%ED%99%8D%EC%B2%9C%EC%9D%8D%29IMG_3838.jpg/960px-%EC%9D%B4%EC%97%B0%EC%88%98_%EC%86%8C%EB%A8%B8%EB%A6%AC%EA%B5%AD%EB%B0%A5%28%ED%99%8D%EC%B2%9C%EA%B5%B0_%ED%99%8D%EC%B2%9C%EC%9D%8D%29IMG_3838.jpg",
+    "imageUrl": "./assets/menu-reviewed/ox-head-gukbap.jpg",
     "spiceLevel": 0,
     "soupLevel": 2,
     "heaviness": 3,
@@ -15274,8 +15514,7 @@
     "imageSearchKeywords": [
       "소머리국밥",
       "소머리국밥 음식 사진",
-      "소머리국밥 점심 메뉴",
-      "Korean lunch food"
+      "소머리국밥 점심 메뉴"
     ],
     "keywords": [
       "국물",
@@ -15293,14 +15532,28 @@
       "비 오는 날"
     ],
     "budget_tag": "평범하게",
-    "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:%EC%9D%B4%EC%97%B0%EC%88%98_%EC%86%8C%EB%A8%B8%EB%A6%AC%EA%B5%AD%EB%B0%A5(%ED%99%8D%EC%B2%9C%EA%B5%B0_%ED%99%8D%EC%B2%9C%EC%9D%8D)IMG_3838.jpg",
-    "imageSourceName": "Wikimedia Commons",
-    "imageTitle": "이연수 소머리국밥(홍천군 홍천읍)IMG 3838.jpg",
-    "imageAuthor": "최광모 (Choe Kwangmo)",
-    "imageLicense": "CC0",
+    "imageSourceUrl": "",
+    "imageSourceName": "밥픽 제작 이미지",
+    "imageTitle": "소머리국밥 대표 이미지",
+    "imageAuthor": "밥픽",
+    "imageLicense": "프로젝트 제작 이미지",
     "walletTags": [
       "월급날"
-    ]
+    ],
+    "imageUrls": [
+      {
+        "url": "./assets/menu-reviewed/ox-head-gukbap.jpg",
+        "sourceName": "밥픽 제작 이미지",
+        "sourceUrl": "",
+        "title": "소머리국밥 대표 이미지",
+        "license": "프로젝트 제작 이미지"
+      }
+    ],
+    "imageReview": {
+      "status": "approved",
+      "reviewedAt": "2026-07-18",
+      "reason": "뚝배기에 소고기와 파가 푸짐하게 보이는 소머리국밥 사진"
+    }
   },
   {
     "id": "cn-022",
@@ -16129,7 +16382,7 @@
     ],
     "rating": 4.2,
     "baseLikes": 214,
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/6/64/Chicken_Nuggets.jpg",
+    "imageUrl": "./assets/menu-reviewed/chicken-nugget-set.jpg",
     "spiceLevel": 0,
     "soupLevel": 0,
     "heaviness": 3,
@@ -16157,8 +16410,7 @@
     "imageSearchKeywords": [
       "치킨너겟세트",
       "치킨너겟세트 음식 사진",
-      "치킨너겟세트 점심 메뉴",
-      "western lunch plate"
+      "치킨너겟세트 점심 메뉴"
     ],
     "keywords": [
       "빠름",
@@ -16171,14 +16423,28 @@
       "혼밥"
     ],
     "budget_tag": "가볍게",
-    "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Chicken_Nuggets.jpg",
-    "imageSourceName": "Wikimedia Commons",
-    "imageTitle": "Chicken Nuggets.jpg",
-    "imageAuthor": "James Palinsad",
-    "imageLicense": "CC BY-SA 2.0",
+    "imageSourceUrl": "",
+    "imageSourceName": "밥픽 제작 이미지",
+    "imageTitle": "치킨너겟세트 대표 이미지",
+    "imageAuthor": "밥픽",
+    "imageLicense": "프로젝트 제작 이미지",
     "walletTags": [
       "월급 전"
-    ]
+    ],
+    "imageUrls": [
+      {
+        "url": "./assets/menu-reviewed/chicken-nugget-set.jpg",
+        "sourceName": "밥픽 제작 이미지",
+        "sourceUrl": "",
+        "title": "치킨너겟세트 대표 이미지",
+        "license": "프로젝트 제작 이미지"
+      }
+    ],
+    "imageReview": {
+      "status": "approved",
+      "reviewedAt": "2026-07-19",
+      "reason": "메뉴명, 구성, 음식 중심 구도와 식욕도를 대조해 승인한 밥픽 제작 이미지"
+    }
   },
   {
     "id": "ff-018",
@@ -17320,7 +17586,7 @@
     ],
     "rating": 4.6,
     "baseLikes": 300,
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/KOREAN_BUFFET_AT_MOUNT_CHILBO_DPRK_NORTH_KOREA_OCT_2012_%288647543485%29.jpg/960px-KOREAN_BUFFET_AT_MOUNT_CHILBO_DPRK_NORTH_KOREA_OCT_2012_%288647543485%29.jpg",
+    "imageUrl": "./assets/menu-reviewed/korean-buffet.jpg",
     "spiceLevel": 0,
     "soupLevel": 0,
     "heaviness": 2,
@@ -17347,8 +17613,7 @@
     "imageSearchKeywords": [
       "한식뷔페",
       "한식뷔페 음식 사진",
-      "한식뷔페 점심 메뉴",
-      "Korean lunch food"
+      "한식뷔페 점심 메뉴"
     ],
     "keywords": [
       "혼밥 좋음",
@@ -17363,14 +17628,28 @@
       "미팅 전"
     ],
     "budget_tag": "가볍게",
-    "imageSourceName": "Wikimedia Commons",
-    "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:KOREAN_BUFFET_AT_MOUNT_CHILBO_DPRK_NORTH_KOREA_OCT_2012_(8647543485).jpg",
-    "imageTitle": "KOREAN BUFFET AT MOUNT CHILBO DPRK NORTH KOREA OCT 2012 (8647543485).jpg",
-    "imageAuthor": "calflier001",
-    "imageLicense": "CC BY-SA 2.0",
+    "imageSourceName": "밥픽 제작 이미지",
+    "imageSourceUrl": "",
+    "imageTitle": "한식뷔페 대표 이미지",
+    "imageAuthor": "밥픽",
+    "imageLicense": "프로젝트 제작 이미지",
     "walletTags": [
       "월급 전"
-    ]
+    ],
+    "imageUrls": [
+      {
+        "url": "./assets/menu-reviewed/korean-buffet.jpg",
+        "sourceName": "밥픽 제작 이미지",
+        "sourceUrl": "",
+        "title": "한식뷔페 대표 이미지",
+        "license": "프로젝트 제작 이미지"
+      }
+    ],
+    "imageReview": {
+      "status": "approved",
+      "reviewedAt": "2026-07-19",
+      "reason": "메뉴명, 구성, 음식 중심 구도와 식욕도를 대조해 승인한 밥픽 제작 이미지"
+    }
   },
   {
     "id": "top-006",
@@ -17559,7 +17838,7 @@
     ],
     "rating": 4.6,
     "baseLikes": 300,
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Boribap.JPG/960px-Boribap.JPG",
+    "imageUrl": "./assets/menu-reviewed/barley-rice-set.jpg",
     "spiceLevel": 0,
     "soupLevel": 0,
     "heaviness": 1,
@@ -17586,8 +17865,7 @@
     "imageSearchKeywords": [
       "보리밥정식",
       "보리밥정식 음식 사진",
-      "보리밥정식 점심 메뉴",
-      "Korean lunch food"
+      "보리밥정식 점심 메뉴"
     ],
     "keywords": [
       "혼밥 좋음",
@@ -17604,14 +17882,28 @@
       "미팅 전"
     ],
     "budget_tag": "가볍게",
-    "imageSourceName": "Wikimedia Commons",
-    "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Boribap.JPG",
-    "imageTitle": "Boribap.JPG",
-    "imageAuthor": "Dalgial",
-    "imageLicense": "CC BY-SA 3.0",
+    "imageSourceName": "밥픽 제작 이미지",
+    "imageSourceUrl": "",
+    "imageTitle": "보리밥정식 대표 이미지",
+    "imageAuthor": "밥픽",
+    "imageLicense": "프로젝트 제작 이미지",
     "walletTags": [
       "월급 전"
-    ]
+    ],
+    "imageUrls": [
+      {
+        "url": "./assets/menu-reviewed/barley-rice-set.jpg",
+        "sourceName": "밥픽 제작 이미지",
+        "sourceUrl": "",
+        "title": "보리밥정식 대표 이미지",
+        "license": "프로젝트 제작 이미지"
+      }
+    ],
+    "imageReview": {
+      "status": "approved",
+      "reviewedAt": "2026-07-19",
+      "reason": "메뉴명, 구성, 음식 중심 구도와 식욕도를 대조해 승인한 밥픽 제작 이미지"
+    }
   },
   {
     "id": "top-009",
@@ -17871,7 +18163,7 @@
     ],
     "rating": 4.4,
     "baseLikes": 240,
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/3/39/Jjamppong-deopbap.jpg",
+    "imageUrl": "./assets/menu-reviewed/jjamppong-rice.jpg",
     "spiceLevel": 2,
     "soupLevel": 2,
     "heaviness": 2,
@@ -17898,8 +18190,7 @@
     "imageSearchKeywords": [
       "짬뽕밥",
       "짬뽕밥 음식 사진",
-      "짬뽕밥 점심 메뉴",
-      "Korean Chinese food lunch"
+      "짬뽕밥 점심 메뉴"
     ],
     "keywords": [
       "해장",
@@ -17916,14 +18207,28 @@
       "비 오는 날"
     ],
     "budget_tag": "평범하게",
-    "imageSourceName": "Wikimedia Commons",
-    "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Jjamppong-deopbap.jpg",
-    "imageTitle": "Jjamppong-deopbap.jpg",
-    "imageAuthor": "대경라이프",
-    "imageLicense": "CC BY-SA 4.0",
+    "imageSourceName": "밥픽 제작 이미지",
+    "imageSourceUrl": "",
+    "imageTitle": "짬뽕밥 대표 이미지",
+    "imageAuthor": "밥픽",
+    "imageLicense": "프로젝트 제작 이미지",
     "walletTags": [
       "월급날"
-    ]
+    ],
+    "imageUrls": [
+      {
+        "url": "./assets/menu-reviewed/jjamppong-rice.jpg",
+        "sourceName": "밥픽 제작 이미지",
+        "sourceUrl": "",
+        "title": "짬뽕밥 대표 이미지",
+        "license": "프로젝트 제작 이미지"
+      }
+    ],
+    "imageReview": {
+      "status": "approved",
+      "reviewedAt": "2026-07-19",
+      "reason": "메뉴명, 구성, 음식 중심 구도와 식욕도를 대조해 승인한 밥픽 제작 이미지"
+    }
   },
   {
     "id": "top-013",
@@ -18653,7 +18958,7 @@
     ],
     "rating": 4.4,
     "baseLikes": 270,
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Bunsik_stall.jpg/960px-Bunsik_stall.jpg",
+    "imageUrl": "./assets/menu-reviewed/tteok-twigim-sundae-set.jpg",
     "spiceLevel": 2,
     "soupLevel": 0,
     "heaviness": 3,
@@ -18681,8 +18986,7 @@
     "imageSearchKeywords": [
       "떡튀순세트",
       "떡튀순세트 음식 사진",
-      "떡튀순세트 점심 메뉴",
-      "Korean street food lunch"
+      "떡튀순세트 점심 메뉴"
     ],
     "keywords": [
       "분식",
@@ -18700,18 +19004,32 @@
       "비 오는 날"
     ],
     "budget_tag": "가볍게",
-    "imageSourceName": "Wikimedia Commons",
-    "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Bunsik_stall.jpg",
-    "imageTitle": "Bunsik stall.jpg",
-    "imageAuthor": "Jens Ohlig",
-    "imageLicense": "CC BY-SA 2.0",
+    "imageSourceName": "밥픽 제작 이미지",
+    "imageSourceUrl": "",
+    "imageTitle": "떡튀순세트 대표 이미지",
+    "imageAuthor": "밥픽",
+    "imageLicense": "프로젝트 제작 이미지",
     "walletTags": [
       "월급 전"
-    ]
+    ],
+    "imageUrls": [
+      {
+        "url": "./assets/menu-reviewed/tteok-twigim-sundae-set.jpg",
+        "sourceName": "밥픽 제작 이미지",
+        "sourceUrl": "",
+        "title": "떡튀순세트 대표 이미지",
+        "license": "프로젝트 제작 이미지"
+      }
+    ],
+    "imageReview": {
+      "status": "approved",
+      "reviewedAt": "2026-07-19",
+      "reason": "메뉴명, 구성, 음식 중심 구도와 식욕도를 대조해 승인한 밥픽 제작 이미지"
+    }
   },
   {
     "id": "top-023",
-    "name": "프랜차이즈버거세트",
+    "name": "햄버거세트",
     "category": "양식",
     "description": "빠르게 주문하고 빠르게 먹을 수 있는 대표적인 점심 타임세이버입니다.",
     "priceLevel": "저렴",
@@ -18723,7 +19041,7 @@
     "quick": true,
     "spicy": false,
     "ingredients": [
-      "프랜차이즈버거세트",
+      "햄버거세트",
       "밥",
       "채소"
     ],
@@ -18733,7 +19051,7 @@
     ],
     "rating": 4.6,
     "baseLikes": 300,
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Teriyaki_Burger_Set%2C_at_Lotteria.jpg/960px-Teriyaki_Burger_Set%2C_at_Lotteria.jpg",
+    "imageUrl": "./assets/menu-reviewed/burger-set.jpg",
     "spiceLevel": 0,
     "soupLevel": 0,
     "heaviness": 3,
@@ -18759,10 +19077,9 @@
     "confidence": 0.77,
     "reviewReason": "프랜차이즈 버거는 빠르고 대중적인 실패 낮음 메뉴로 safe 차단을 제거. 속 편함/미팅 전 태그는 제외.",
     "imageSearchKeywords": [
-      "프랜차이즈버거세트",
-      "프랜차이즈버거세트 음식 사진",
-      "프랜차이즈버거세트 점심 메뉴",
-      "western lunch plate"
+      "햄버거세트",
+      "햄버거세트 음식 사진",
+      "햄버거세트 점심 메뉴"
     ],
     "keywords": [
       "빠름",
@@ -18776,14 +19093,28 @@
       "실패 금지"
     ],
     "budget_tag": "가볍게",
-    "imageSourceName": "Wikimedia Commons",
-    "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Teriyaki_Burger_Set,_at_Lotteria.jpg",
-    "imageTitle": "Teriyaki Burger Set, at Lotteria.jpg",
-    "imageAuthor": "Lombroso",
-    "imageLicense": "Public domain",
+    "imageSourceName": "밥픽 제작 이미지",
+    "imageSourceUrl": "",
+    "imageTitle": "햄버거세트 대표 이미지",
+    "imageAuthor": "밥픽",
+    "imageLicense": "프로젝트 제작 이미지",
     "walletTags": [
       "월급 전"
-    ]
+    ],
+    "imageUrls": [
+      {
+        "url": "./assets/menu-reviewed/burger-set.jpg",
+        "sourceName": "밥픽 제작 이미지",
+        "sourceUrl": "",
+        "title": "햄버거세트 대표 이미지",
+        "license": "프로젝트 제작 이미지"
+      }
+    ],
+    "imageReview": {
+      "status": "approved",
+      "reviewedAt": "2026-07-18",
+      "reason": "버거, 감자튀김, 음료가 모두 보이는 햄버거 세트 사진"
+    }
   },
   {
     "id": "top-024",

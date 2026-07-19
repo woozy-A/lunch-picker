@@ -5,9 +5,13 @@ const projectRoot = path.resolve(__dirname, "..");
 const menuPath = path.join(projectRoot, "src/data/menus.json");
 const filterDatasetPath = path.join(projectRoot, "src/data/menu-filter-dataset.json");
 const recommendationRulesPath = path.join(projectRoot, "src/data/recommendationRules.json");
+const imageReviewQueuePath = path.join(projectRoot, "reports/menu-image-review-queue.json");
 const menus = JSON.parse(fs.readFileSync(menuPath, "utf8"));
 const filterDataset = JSON.parse(fs.readFileSync(filterDatasetPath, "utf8"));
 const recommendationRules = JSON.parse(fs.readFileSync(recommendationRulesPath, "utf8"));
+const imageReviewQueue = fs.existsSync(imageReviewQueuePath)
+  ? JSON.parse(fs.readFileSync(imageReviewQueuePath, "utf8"))
+  : [];
 const errors = [];
 const seenIds = new Set();
 const seenNames = new Set();
@@ -135,6 +139,34 @@ menus.forEach((menu) => {
     const assetPath = path.join(projectRoot, url.replace(/^\.\//, ""));
     if (!fs.existsSync(assetPath)) report(menu, `로컬 이미지가 없습니다: ${url}`);
   });
+
+  if (menu.imageReview?.status === "approved") {
+    if (!isLocalImage(menu.imageUrl)) report(menu, "승인된 대표 사진은 로컬 자산이어야 합니다.");
+    if (!menu.imageReview.reviewedAt || !menu.imageReview.reason) {
+      report(menu, "승인된 대표 사진에 검수일 또는 검수 사유가 없습니다.");
+    }
+  }
+});
+
+const reviewQueueIds = new Set();
+imageReviewQueue.forEach((item) => {
+  const menu = menus.find((candidate) => candidate.id === item.id);
+  if (!menu) {
+    errors.push(`이미지 검수 대기열에 없는 메뉴 id가 있습니다: ${item.id}`);
+    return;
+  }
+  if (reviewQueueIds.has(item.id)) errors.push(`이미지 검수 대기열 id가 중복됩니다: ${item.id}`);
+  reviewQueueIds.add(item.id);
+  if (item.name !== menu.name) errors.push(`${item.id}: 검수 대기열 이름(${item.name})과 메뉴 이름(${menu.name})이 다릅니다.`);
+  if (!["needs-replacement", "quality-improvement"].includes(item.status)) {
+    errors.push(`${item.id}: 알 수 없는 이미지 검수 상태입니다: ${item.status}`);
+  }
+  if (!["high", "medium"].includes(item.priority)) {
+    errors.push(`${item.id}: 알 수 없는 이미지 검수 우선순위입니다: ${item.priority}`);
+  }
+  if (!item.reason || !item.replacementBrief) {
+    errors.push(`${item.id}: 이미지 판정 사유 또는 교체 사진 지침이 없습니다.`);
+  }
 });
 
 if (filterDataset.length !== menus.length) {

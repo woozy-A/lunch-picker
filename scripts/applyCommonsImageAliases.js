@@ -129,7 +129,7 @@ const ALIAS_QUERIES = {
   경양식돈까스: ["korean pork cutlet", "tonkatsu sauce"],
   화덕피자: ["wood fired pizza", "wood-fired pizza"],
   "샌드위치&스프": ["sandwich and soup", "sandwich soup"],
-  프랜차이즈버거세트: ["burger fries soda", "burger set"],
+  햄버거세트: ["burger fries soda", "burger set"],
   수제비: ["sujebi", "korean hand torn noodle soup"],
   한솥도시락: ["dosirak", "korean lunchbox"],
   닭가슴살볶음밥: ["chicken fried rice"],

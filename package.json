@@ -7,6 +7,8 @@
     "build": "vite build",
     "preview": "vite preview",
     "normalize:recommendations": "node scripts/normalizeRecommendationData.js",
+    "audit:images": "node scripts/generateImageAuditReport.js",
+    "review:generated-images": "node scripts/generateGeneratedImageReview.js",
     "check:menus": "node scripts/validateMenuData.js",
     "check:recommendations": "node scripts/checkRecommendationLogic.mjs",
     "check:data": "npm run check:menus && npm run check:recommendations"

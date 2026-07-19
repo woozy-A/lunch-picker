@@ -15,7 +15,11 @@ function copyRuntimeImages() {
         entries.forEach((entry) => {
           const url = typeof entry === "string" ? entry : entry?.url || entry?.imageUrl || entry?.localUrl;
           const normalizedPath = url?.replace(/^\.\//, "");
-          if (normalizedPath?.startsWith("assets/menu/") || normalizedPath?.startsWith("assets/menu-cache/")) {
+          if (
+            normalizedPath?.startsWith("assets/menu/")
+            || normalizedPath?.startsWith("assets/menu-cache/")
+            || normalizedPath?.startsWith("assets/menu-reviewed/")
+          ) {
             imagePaths.add(normalizedPath);
           }
         });

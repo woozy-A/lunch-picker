@@ -6,6 +6,7 @@ build/
 .env.local
 assets/vendor/
 assets/review/
+assets/menu-reviewed/*.png
 docs/worker-reports/
 docs/worker-requests/
 docs/menu-data-audit-*.md

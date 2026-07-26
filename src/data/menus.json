@@ -3859,7 +3859,7 @@
     ],
     "rating": 4.6,
     "baseLikes": 314,
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Yofu_Katsudon%2C_Renga-tei%2C_Nagaoka.jpg/960px-Yofu_Katsudon%2C_Renga-tei%2C_Nagaoka.jpg",
+    "imageUrl": "./assets/menu-reviewed/katsudon.jpg",
     "spiceLevel": 0,
     "soupLevel": 0,
     "heaviness": 3,
@@ -3885,8 +3885,7 @@
     "imageSearchKeywords": [
       "가츠동",
       "가츠동 음식 사진",
-      "가츠동 점심 메뉴",
-      "Japanese lunch food"
+      "가츠동 점심 메뉴"
     ],
     "keywords": [
       "든든함",
@@ -3900,31 +3899,28 @@
       "실패 금지"
     ],
     "budget_tag": "평범하게",
-    "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Yofu_Katsudon,_Renga-tei,_Nagaoka.jpg",
-    "imageSourceName": "Wikimedia Commons",
-    "imageTitle": "Yofu Katsudon, Renga-tei, Nagaoka.jpg",
-    "imageAuthor": "NY066",
-    "imageLicense": "CC BY-SA 3.0",
+    "imageSourceUrl": "",
+    "imageSourceName": "밥픽 제작 이미지",
+    "imageTitle": "가츠동 대표 이미지",
+    "imageAuthor": "밥픽",
+    "imageLicense": "프로젝트 제작 이미지",
     "imageUrls": [
       {
-        "url": "./assets/menu-cache/jp-004-가츠동/fzkbfk.jpg",
-        "sourceName": "Wikimedia Commons",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Yofu_Katsudon,_Renga-tei,_Nagaoka.jpg",
-        "title": "Yofu Katsudon, Renga-tei, Nagaoka.jpg",
-        "license": "CC BY-SA 3.0",
-        "cachedFrom": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Yofu_Katsudon%2C_Renga-tei%2C_Nagaoka.jpg/960px-Yofu_Katsudon%2C_Renga-tei%2C_Nagaoka.jpg",
-        "cachedAt": "2026-06-06T06:33:12.913Z"
-      },
-      {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Yofu_Katsudon%2C_Renga-tei%2C_Nagaoka.jpg/960px-Yofu_Katsudon%2C_Renga-tei%2C_Nagaoka.jpg",
-        "sourceName": "Wikimedia Commons",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Yofu_Katsudon,_Renga-tei,_Nagaoka.jpg",
-        "title": "Yofu Katsudon, Renga-tei, Nagaoka.jpg"
+        "url": "./assets/menu-reviewed/katsudon.jpg",
+        "sourceName": "밥픽 제작 이미지",
+        "sourceUrl": "",
+        "title": "가츠동 대표 이미지",
+        "license": "프로젝트 제작 이미지"
       }
     ],
     "walletTags": [
       "월급날"
-    ]
+    ],
+    "imageReview": {
+      "status": "approved",
+      "reviewedAt": "2026-07-21",
+      "reason": "밥 위에 달걀과 양파로 조린 돈카츠가 분명하게 보이는 가츠동 사진"
+    }
   },
   {
     "id": "jp-005",
@@ -4148,7 +4144,7 @@
     ],
     "rating": 4.4,
     "baseLikes": 253,
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Onigiri_udon_%2841001742365%29.jpg/960px-Onigiri_udon_%2841001742365%29.jpg",
+    "imageUrl": "./assets/menu-reviewed/udon.jpg",
     "spiceLevel": 0,
     "soupLevel": 2,
     "heaviness": 2,
@@ -4175,8 +4171,7 @@
     "imageSearchKeywords": [
       "우동",
       "우동 음식 사진",
-      "우동 점심 메뉴",
-      "Japanese lunch food"
+      "우동 점심 메뉴"
     ],
     "keywords": [
       "국물",
@@ -4198,31 +4193,28 @@
       "비 오는 날"
     ],
     "budget_tag": "가볍게",
-    "imageSourceName": "Wikimedia Commons",
-    "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Onigiri_udon_(41001742365).jpg",
-    "imageTitle": "Onigiri udon (41001742365).jpg",
-    "imageAuthor": "daisuke1230",
-    "imageLicense": "CC BY-SA 2.0",
+    "imageSourceName": "밥픽 제작 이미지",
+    "imageSourceUrl": "",
+    "imageTitle": "우동 대표 이미지",
+    "imageAuthor": "밥픽",
+    "imageLicense": "프로젝트 제작 이미지",
     "imageUrls": [
       {
-        "url": "./assets/menu-cache/jp-007-우동/qevfia.jpg",
-        "sourceName": "Wikimedia Commons",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Onigiri_udon_(41001742365).jpg",
-        "title": "Onigiri udon (41001742365).jpg",
-        "license": "CC BY-SA 2.0",
-        "cachedFrom": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Onigiri_udon_%2841001742365%29.jpg/960px-Onigiri_udon_%2841001742365%29.jpg",
-        "cachedAt": "2026-06-06T06:33:15.110Z"
-      },
-      {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Onigiri_udon_%2841001742365%29.jpg/960px-Onigiri_udon_%2841001742365%29.jpg",
-        "sourceName": "Wikimedia Commons",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Onigiri_udon_(41001742365).jpg",
-        "title": "Onigiri udon (41001742365).jpg"
+        "url": "./assets/menu-reviewed/udon.jpg",
+        "sourceName": "밥픽 제작 이미지",
+        "sourceUrl": "",
+        "title": "우동 대표 이미지",
+        "license": "프로젝트 제작 이미지"
       }
     ],
     "walletTags": [
       "월급 전"
-    ]
+    ],
+    "imageReview": {
+      "status": "approved",
+      "reviewedAt": "2026-07-26",
+      "reason": "맑은 가쓰오 육수와 굵은 흰 면발, 유부와 어묵이 선명하게 보이는 기본 우동 사진"
+    }
   },
   {
     "id": "jp-008",
@@ -5220,7 +5212,7 @@
     ],
     "rating": 4.7,
     "baseLikes": 362,
-    "imageUrl": "./assets/menu-cache/ws-006-steak-donburi/steak-donburi.jpg",
+    "imageUrl": "./assets/menu-reviewed/steak-rice-bowl.jpg",
     "spiceLevel": 0,
     "soupLevel": 0,
     "heaviness": 3,
@@ -5247,8 +5239,7 @@
     "imageSearchKeywords": [
       "스테이크덮밥",
       "스테이크덮밥 음식 사진",
-      "스테이크덮밥 점심 메뉴",
-      "western lunch plate"
+      "스테이크덮밥 점심 메뉴"
     ],
     "keywords": [
       "고기",
@@ -5263,15 +5254,29 @@
       "실패 금지"
     ],
     "budget_tag": "오늘은 써도 됨",
-    "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:SteakDonburi.jpg",
-    "imageSourceName": "Wikimedia Commons",
-    "imageTitle": "SteakDonburi.jpg",
-    "imageAuthor": "Kykk wiki",
-    "imageLicense": "CC0",
+    "imageSourceUrl": "",
+    "imageSourceName": "밥픽 제작 이미지",
+    "imageTitle": "스테이크덮밥 대표 이미지",
+    "imageAuthor": "밥픽",
+    "imageLicense": "프로젝트 제작 이미지",
     "walletTags": [
       "월급날",
       "법카"
-    ]
+    ],
+    "imageUrls": [
+      {
+        "url": "./assets/menu-reviewed/steak-rice-bowl.jpg",
+        "sourceName": "밥픽 제작 이미지",
+        "sourceUrl": "",
+        "title": "스테이크덮밥 대표 이미지",
+        "license": "프로젝트 제작 이미지"
+      }
+    ],
+    "imageReview": {
+      "status": "approved",
+      "reviewedAt": "2026-07-21",
+      "reason": "밥 위에 먹기 좋게 썬 스테이크와 채소가 올라간 덮밥 사진"
+    }
   },
   {
     "id": "ws-007",
@@ -5374,7 +5379,7 @@
     ],
     "rating": 4.4,
     "baseLikes": 229,
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Chicken_steak_with_pepper_sauce.jpg/960px-Chicken_steak_with_pepper_sauce.jpg",
+    "imageUrl": "./assets/menu-reviewed/chicken-steak.jpg",
     "spiceLevel": 0,
     "soupLevel": 0,
     "heaviness": 3,
@@ -5402,8 +5407,7 @@
     "imageSearchKeywords": [
       "치킨스테이크",
       "치킨스테이크 음식 사진",
-      "치킨스테이크 점심 메뉴",
-      "western lunch plate"
+      "치킨스테이크 점심 메뉴"
     ],
     "keywords": [
       "가벼움",
@@ -5421,14 +5425,28 @@
       "미팅 전"
     ],
     "budget_tag": "평범하게",
-    "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Chicken_steak_with_pepper_sauce.jpg",
-    "imageSourceName": "Wikimedia Commons",
-    "imageTitle": "Chicken steak with pepper sauce.jpg",
-    "imageAuthor": "Russelak1976",
-    "imageLicense": "CC BY-SA 4.0",
+    "imageSourceUrl": "",
+    "imageSourceName": "밥픽 제작 이미지",
+    "imageTitle": "치킨스테이크 대표 이미지",
+    "imageAuthor": "밥픽",
+    "imageLicense": "프로젝트 제작 이미지",
     "walletTags": [
       "월급날"
-    ]
+    ],
+    "imageUrls": [
+      {
+        "url": "./assets/menu-reviewed/chicken-steak.jpg",
+        "sourceName": "밥픽 제작 이미지",
+        "sourceUrl": "",
+        "title": "치킨스테이크 대표 이미지",
+        "license": "프로젝트 제작 이미지"
+      }
+    ],
+    "imageReview": {
+      "status": "approved",
+      "reviewedAt": "2026-07-21",
+      "reason": "완전히 익은 닭고기 속살과 노릇한 껍질이 분명한 치킨스테이크 사진"
+    }
   },
   {
     "id": "ws-009",
@@ -8612,7 +8630,7 @@
     ],
     "rating": 4.4,
     "baseLikes": 241,
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Kebab_Rice_from_the_Shawarma_Shack_at_Puso_Village_%282025-07-26%29.jpg/960px-Kebab_Rice_from_the_Shawarma_Shack_at_Puso_Village_%282025-07-26%29.jpg",
+    "imageUrl": "./assets/menu-reviewed/kebab-rice.jpg",
     "spiceLevel": 0,
     "soupLevel": 0,
     "heaviness": 3,
@@ -8640,8 +8658,7 @@
     "imageSearchKeywords": [
       "케밥라이스",
       "케밥라이스 음식 사진",
-      "케밥라이스 점심 메뉴",
-      "Asian lunch food"
+      "케밥라이스 점심 메뉴"
     ],
     "keywords": [
       "빠름",
@@ -8659,14 +8676,28 @@
       "미팅 전"
     ],
     "budget_tag": "평범하게",
-    "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Kebab_Rice_from_the_Shawarma_Shack_at_Puso_Village_(2025-07-26).jpg",
-    "imageSourceName": "Wikimedia Commons",
-    "imageTitle": "Kebab Rice from the Shawarma Shack at Puso Village (2025-07-26).jpg",
-    "imageAuthor": "Wide Awake!",
-    "imageLicense": "CC BY 4.0",
+    "imageSourceUrl": "",
+    "imageSourceName": "밥픽 제작 이미지",
+    "imageTitle": "케밥라이스 대표 이미지",
+    "imageAuthor": "밥픽",
+    "imageLicense": "프로젝트 제작 이미지",
     "walletTags": [
       "월급날"
-    ]
+    ],
+    "imageUrls": [
+      {
+        "url": "./assets/menu-reviewed/kebab-rice.jpg",
+        "sourceName": "밥픽 제작 이미지",
+        "sourceUrl": "",
+        "title": "케밥라이스 대표 이미지",
+        "license": "프로젝트 제작 이미지"
+      }
+    ],
+    "imageReview": {
+      "status": "approved",
+      "reviewedAt": "2026-07-21",
+      "reason": "밥과 구운 케밥 고기, 채소, 흰 소스 구성이 풍성하게 보이는 사진"
+    }
   },
   {
     "id": "hl-001",
@@ -9374,7 +9405,7 @@
     ],
     "rating": 4.1,
     "baseLikes": 174,
-    "imageUrl": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Shirataki%20noodle%20dish.jpg",
+    "imageUrl": "./assets/menu-reviewed/konjac-noodle-salad.jpg",
     "spiceLevel": 0,
     "soupLevel": 0,
     "heaviness": 0,
@@ -9402,8 +9433,7 @@
     "imageSearchKeywords": [
       "곤약면샐러드",
       "곤약면샐러드 음식 사진",
-      "곤약면샐러드 점심 메뉴",
-      "healthy lunch bowl"
+      "곤약면샐러드 점심 메뉴"
     ],
     "keywords": [
       "가벼움",
@@ -9422,14 +9452,28 @@
       "다이어트"
     ],
     "budget_tag": "평범하게",
-    "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Shirataki_noodle_dish.jpg",
-    "imageSourceName": "Wikimedia Commons",
-    "imageTitle": "Shirataki noodle dish.jpg",
-    "imageAuthor": "Wikimedia Commons contributor",
-    "imageLicense": "Wikimedia Commons",
+    "imageSourceUrl": "",
+    "imageSourceName": "밥픽 제작 이미지",
+    "imageTitle": "곤약면샐러드 대표 이미지",
+    "imageAuthor": "밥픽",
+    "imageLicense": "프로젝트 제작 이미지",
     "walletTags": [
       "월급날"
-    ]
+    ],
+    "imageUrls": [
+      {
+        "url": "./assets/menu-reviewed/konjac-noodle-salad.jpg",
+        "sourceName": "밥픽 제작 이미지",
+        "sourceUrl": "",
+        "title": "곤약면샐러드 대표 이미지",
+        "license": "프로젝트 제작 이미지"
+      }
+    ],
+    "imageReview": {
+      "status": "approved",
+      "reviewedAt": "2026-07-21",
+      "reason": "투명한 곤약면과 다채로운 채소가 선명하게 구분되는 샐러드 사진"
+    }
   },
   {
     "id": "hl-010",
@@ -11479,7 +11523,7 @@
     ],
     "rating": 4.5,
     "baseLikes": 268,
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/9/9c/Grilled_Salmon_and_Ochazuke_Set_in_Melbourne.jpg",
+    "imageUrl": "./assets/menu-reviewed/grilled-salmon-set.jpg",
     "spiceLevel": 0,
     "soupLevel": 0,
     "heaviness": 1,
@@ -11505,8 +11549,7 @@
     "imageSearchKeywords": [
       "연어구이정식",
       "연어구이정식 음식 사진",
-      "연어구이정식 점심 메뉴",
-      "Japanese lunch food"
+      "연어구이정식 점심 메뉴"
     ],
     "keywords": [
       "빠름",
@@ -11528,15 +11571,29 @@
       "실패 금지"
     ],
     "budget_tag": "오늘은 써도 됨",
-    "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Grilled_Salmon_and_Ochazuke_Set_in_Melbourne.jpg",
-    "imageSourceName": "Wikimedia Commons",
-    "imageTitle": "Grilled Salmon and Ochazuke Set in Melbourne.jpg",
-    "imageAuthor": "avlxyz from Melbourne",
-    "imageLicense": "CC BY-SA 2.0",
+    "imageSourceUrl": "",
+    "imageSourceName": "밥픽 제작 이미지",
+    "imageTitle": "연어구이정식 대표 이미지",
+    "imageAuthor": "밥픽",
+    "imageLicense": "프로젝트 제작 이미지",
     "walletTags": [
       "월급날",
       "법카"
-    ]
+    ],
+    "imageUrls": [
+      {
+        "url": "./assets/menu-reviewed/grilled-salmon-set.jpg",
+        "sourceName": "밥픽 제작 이미지",
+        "sourceUrl": "",
+        "title": "연어구이정식 대표 이미지",
+        "license": "프로젝트 제작 이미지"
+      }
+    ],
+    "imageReview": {
+      "status": "approved",
+      "reviewedAt": "2026-07-21",
+      "reason": "연어구이와 밥, 미소국, 반찬이 밝고 정갈하게 보이는 정식 사진"
+    }
   },
   {
     "id": "jp-018",
@@ -14207,7 +14264,7 @@
     ],
     "rating": 4.2,
     "baseLikes": 205,
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Veggie_Salad_and_Low_Carb_Wrap_%285180411342%29.jpg/960px-Veggie_Salad_and_Low_Carb_Wrap_%285180411342%29.jpg",
+    "imageUrl": "./assets/menu-reviewed/salad-wrap.jpg",
     "spiceLevel": 0,
     "soupLevel": 0,
     "heaviness": 1,
@@ -14234,8 +14291,7 @@
     "imageSearchKeywords": [
       "샐러드랩",
       "샐러드랩 음식 사진",
-      "샐러드랩 점심 메뉴",
-      "healthy lunch bowl"
+      "샐러드랩 점심 메뉴"
     ],
     "keywords": [
       "빠름",
@@ -14257,14 +14313,28 @@
       "다이어트"
     ],
     "budget_tag": "가볍게",
-    "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Veggie_Salad_and_Low_Carb_Wrap_(5180411342).jpg",
-    "imageSourceName": "Wikimedia Commons",
-    "imageTitle": "Veggie Salad and Low Carb Wrap (5180411342).jpg",
-    "imageAuthor": "Elizabeth from Lansing, MI, USA",
-    "imageLicense": "CC BY 2.0",
+    "imageSourceUrl": "",
+    "imageSourceName": "밥픽 제작 이미지",
+    "imageTitle": "샐러드랩 대표 이미지",
+    "imageAuthor": "밥픽",
+    "imageLicense": "프로젝트 제작 이미지",
     "walletTags": [
       "월급 전"
-    ]
+    ],
+    "imageUrls": [
+      {
+        "url": "./assets/menu-reviewed/salad-wrap.jpg",
+        "sourceName": "밥픽 제작 이미지",
+        "sourceUrl": "",
+        "title": "샐러드랩 대표 이미지",
+        "license": "프로젝트 제작 이미지"
+      }
+    ],
+    "imageReview": {
+      "status": "approved",
+      "reviewedAt": "2026-07-21",
+      "reason": "닭고기와 채소가 가득한 랩 단면이 선명하게 보이는 사진"
+    }
   },
   {
     "id": "hl-017",
@@ -17901,8 +17971,8 @@
     ],
     "imageReview": {
       "status": "approved",
-      "reviewedAt": "2026-07-19",
-      "reason": "메뉴명, 구성, 음식 중심 구도와 식욕도를 대조해 승인한 밥픽 제작 이미지"
+      "reviewedAt": "2026-07-26",
+      "reason": "보리밥과 우렁강된장, 여러 나물 반찬과 쌈 채소가 함께 보이는 한 상 정식 사진"
     }
   },
   {
@@ -19220,7 +19290,7 @@
     ],
     "rating": 4.4,
     "baseLikes": 240,
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Convenience_Store_LunchBox_03_%2833427954622%29.jpg/960px-Convenience_Store_LunchBox_03_%2833427954622%29.jpg",
+    "imageUrl": "./assets/menu-reviewed/hansot-lunchbox.jpg",
     "spiceLevel": 0,
     "soupLevel": 0,
     "heaviness": 1,
@@ -19247,8 +19317,7 @@
     "imageSearchKeywords": [
       "한솥도시락",
       "한솥도시락 음식 사진",
-      "한솥도시락 점심 메뉴",
-      "Korean lunch food"
+      "한솥도시락 점심 메뉴"
     ],
     "keywords": [
       "빠름",
@@ -19265,15 +19334,29 @@
       "미팅 전"
     ],
     "budget_tag": "가볍게",
-    "imageSourceName": "Wikimedia Commons",
-    "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Convenience_Store_LunchBox_03_(33427954622).jpg",
-    "imageTitle": "Convenience Store LunchBox 03 (33427954622).jpg",
-    "imageAuthor": "Republic of Korea from Seoul, Republic of Korea",
-    "imageLicense": "CC BY-SA 2.0",
+    "imageSourceName": "밥픽 제작 이미지",
+    "imageSourceUrl": "",
+    "imageTitle": "한솥도시락 대표 이미지",
+    "imageAuthor": "밥픽",
+    "imageLicense": "프로젝트 제작 이미지",
     "imageBorrowedFrom": "편의점도시락",
     "walletTags": [
       "월급 전"
-    ]
+    ],
+    "imageUrls": [
+      {
+        "url": "./assets/menu-reviewed/hansot-lunchbox.jpg",
+        "sourceName": "밥픽 제작 이미지",
+        "sourceUrl": "",
+        "title": "한솥도시락 대표 이미지",
+        "license": "프로젝트 제작 이미지"
+      }
+    ],
+    "imageReview": {
+      "status": "approved",
+      "reviewedAt": "2026-07-21",
+      "reason": "밥과 고기 반찬, 튀김, 달걀, 김치가 칸별로 담긴 따뜻한 도시락 사진"
+    }
   },
   {
     "id": "top-026",
@@ -19619,7 +19702,7 @@
     ],
     "rating": 4.6,
     "baseLikes": 300,
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Unagi_don_%283249793932%29.jpg/960px-Unagi_don_%283249793932%29.jpg",
+    "imageUrl": "./assets/menu-reviewed/unagi-don.jpg",
     "spiceLevel": 0,
     "soupLevel": 0,
     "heaviness": 3,
@@ -19646,8 +19729,7 @@
     "imageSearchKeywords": [
       "장어덮밥",
       "장어덮밥 음식 사진",
-      "장어덮밥 점심 메뉴",
-      "Japanese lunch food"
+      "장어덮밥 점심 메뉴"
     ],
     "keywords": [
       "혼밥 좋음",
@@ -19662,15 +19744,29 @@
       "미팅 전"
     ],
     "budget_tag": "오늘은 써도 됨",
-    "imageSourceName": "Wikimedia Commons",
-    "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Unagi_don_(3249793932).jpg",
-    "imageTitle": "Unagi don (3249793932).jpg",
-    "imageAuthor": "Geoff Peters from Vancouver, BC, Canada",
-    "imageLicense": "CC BY 2.0",
+    "imageSourceName": "밥픽 제작 이미지",
+    "imageSourceUrl": "",
+    "imageTitle": "장어덮밥 대표 이미지",
+    "imageAuthor": "밥픽",
+    "imageLicense": "프로젝트 제작 이미지",
     "walletTags": [
       "월급날",
       "법카"
-    ]
+    ],
+    "imageUrls": [
+      {
+        "url": "./assets/menu-reviewed/unagi-don.jpg",
+        "sourceName": "밥픽 제작 이미지",
+        "sourceUrl": "",
+        "title": "장어덮밥 대표 이미지",
+        "license": "프로젝트 제작 이미지"
+      }
+    ],
+    "imageReview": {
+      "status": "approved",
+      "reviewedAt": "2026-07-21",
+      "reason": "윤기와 구운 결이 살아 있는 장어가 밥 위를 가득 덮은 밝은 사진"
+    }
   },
   {
     "id": "top-031",

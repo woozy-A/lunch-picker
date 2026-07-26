@@ -635,24 +635,20 @@
     "name": "가츠동",
     "category": "일식",
     "image": {
-      "url": "./assets/menu-cache/jp-004-가츠동/fzkbfk.jpg",
-      "sourceName": "Wikimedia Commons",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Yofu_Katsudon,_Renga-tei,_Nagaoka.jpg",
-      "title": "Yofu Katsudon, Renga-tei, Nagaoka.jpg"
+      "url": "./assets/menu-reviewed/katsudon.jpg",
+      "sourceName": "밥픽 제작 이미지",
+      "sourceUrl": "",
+      "title": "가츠동 대표 이미지"
     },
     "flags": [
-      "quality-improvement",
-      "medium"
+      "approved"
     ],
-    "review": null,
-    "manualReview": {
-      "id": "jp-004",
-      "name": "가츠동",
-      "priority": "medium",
-      "status": "quality-improvement",
-      "reason": "돈카츠 접시에 가까워 밥 위에 얹는 가츠동 형태가 약합니다.",
-      "replacementBrief": "밥 위에 달걀과 양파로 조린 돈카츠가 올라간 일본식 가츠동"
-    }
+    "review": {
+      "status": "approved",
+      "reviewedAt": "2026-07-21",
+      "reason": "밥 위에 달걀과 양파로 조린 돈카츠가 분명하게 보이는 가츠동 사진"
+    },
+    "manualReview": null
   },
   {
     "index": 42,
@@ -690,13 +686,19 @@
     "name": "우동",
     "category": "일식",
     "image": {
-      "url": "./assets/menu-cache/jp-007-우동/qevfia.jpg",
-      "sourceName": "Wikimedia Commons",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Onigiri_udon_(41001742365).jpg",
-      "title": "Onigiri udon (41001742365).jpg"
+      "url": "./assets/menu-reviewed/udon.jpg",
+      "sourceName": "밥픽 제작 이미지",
+      "sourceUrl": "",
+      "title": "우동 대표 이미지"
     },
-    "flags": [],
-    "review": null,
+    "flags": [
+      "approved"
+    ],
+    "review": {
+      "status": "approved",
+      "reviewedAt": "2026-07-26",
+      "reason": "맑은 가쓰오 육수와 굵은 흰 면발, 유부와 어묵이 선명하게 보이는 기본 우동 사진"
+    },
     "manualReview": null
   },
   {
@@ -897,24 +899,20 @@
     "name": "스테이크덮밥",
     "category": "양식",
     "image": {
-      "url": "./assets/menu-cache/ws-006-steak-donburi/steak-donburi.jpg",
-      "sourceName": "Wikimedia Commons",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:SteakDonburi.jpg",
-      "title": "SteakDonburi.jpg"
+      "url": "./assets/menu-reviewed/steak-rice-bowl.jpg",
+      "sourceName": "밥픽 제작 이미지",
+      "sourceUrl": "",
+      "title": "스테이크덮밥 대표 이미지"
     },
     "flags": [
-      "quality-improvement",
-      "medium"
+      "approved"
     ],
-    "review": null,
-    "manualReview": {
-      "id": "ws-006",
-      "name": "스테이크덮밥",
-      "priority": "medium",
-      "status": "quality-improvement",
-      "reason": "스테이크는 보이지만 밥과 덮밥 구성이 분명하지 않습니다.",
-      "replacementBrief": "밥 위에 먹기 좋게 썬 스테이크와 채소, 소스가 올라간 덮밥"
-    }
+    "review": {
+      "status": "approved",
+      "reviewedAt": "2026-07-21",
+      "reason": "밥 위에 먹기 좋게 썬 스테이크와 채소가 올라간 덮밥 사진"
+    },
+    "manualReview": null
   },
   {
     "index": 58,
@@ -937,24 +935,20 @@
     "name": "치킨스테이크",
     "category": "양식",
     "image": {
-      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Chicken_steak_with_pepper_sauce.jpg/960px-Chicken_steak_with_pepper_sauce.jpg",
-      "sourceName": "Wikimedia Commons",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chicken_steak_with_pepper_sauce.jpg",
-      "title": "Chicken steak with pepper sauce.jpg"
+      "url": "./assets/menu-reviewed/chicken-steak.jpg",
+      "sourceName": "밥픽 제작 이미지",
+      "sourceUrl": "",
+      "title": "치킨스테이크 대표 이미지"
     },
     "flags": [
-      "quality-improvement",
-      "medium"
+      "approved"
     ],
-    "review": null,
-    "manualReview": {
-      "id": "ws-008",
-      "name": "치킨스테이크",
-      "priority": "medium",
-      "status": "quality-improvement",
-      "reason": "고기 종류가 닭고기로 명확하게 읽히지 않습니다.",
-      "replacementBrief": "노릇하게 구운 닭다리살 스테이크와 구운 채소가 접시에 담긴 사진"
-    }
+    "review": {
+      "status": "approved",
+      "reviewedAt": "2026-07-21",
+      "reason": "완전히 익은 닭고기 속살과 노릇한 껍질이 분명한 치킨스테이크 사진"
+    },
+    "manualReview": null
   },
   {
     "index": 60,
@@ -1567,24 +1561,20 @@
     "name": "케밥라이스",
     "category": "아시안",
     "image": {
-      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Kebab_Rice_from_the_Shawarma_Shack_at_Puso_Village_%282025-07-26%29.jpg/960px-Kebab_Rice_from_the_Shawarma_Shack_at_Puso_Village_%282025-07-26%29.jpg",
-      "sourceName": "Wikimedia Commons",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kebab_Rice_from_the_Shawarma_Shack_at_Puso_Village_(2025-07-26).jpg",
-      "title": "Kebab Rice from the Shawarma Shack at Puso Village (2025-07-26).jpg"
+      "url": "./assets/menu-reviewed/kebab-rice.jpg",
+      "sourceName": "밥픽 제작 이미지",
+      "sourceUrl": "",
+      "title": "케밥라이스 대표 이미지"
     },
     "flags": [
-      "quality-improvement",
-      "medium"
+      "approved"
     ],
-    "review": null,
-    "manualReview": {
-      "id": "as-012",
-      "name": "케밥라이스",
-      "priority": "medium",
-      "status": "quality-improvement",
-      "reason": "포장 용기 중심이라 음식의 풍성함과 재료가 잘 보이지 않습니다.",
-      "replacementBrief": "밥 위에 케밥 고기, 샐러드, 흰 소스가 풍성하게 담긴 한 그릇"
-    }
+    "review": {
+      "status": "approved",
+      "reviewedAt": "2026-07-21",
+      "reason": "밥과 구운 케밥 고기, 채소, 흰 소스 구성이 풍성하게 보이는 사진"
+    },
+    "manualReview": null
   },
   {
     "index": 100,
@@ -1718,24 +1708,20 @@
     "name": "곤약면샐러드",
     "category": "건강식",
     "image": {
-      "url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Shirataki%20noodle%20dish.jpg",
-      "sourceName": "Wikimedia Commons",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Shirataki_noodle_dish.jpg",
-      "title": "Shirataki noodle dish.jpg"
+      "url": "./assets/menu-reviewed/konjac-noodle-salad.jpg",
+      "sourceName": "밥픽 제작 이미지",
+      "sourceUrl": "",
+      "title": "곤약면샐러드 대표 이미지"
     },
     "flags": [
-      "quality-improvement",
-      "medium"
+      "approved"
     ],
-    "review": null,
-    "manualReview": {
-      "id": "hl-009",
-      "name": "곤약면샐러드",
-      "priority": "medium",
-      "status": "quality-improvement",
-      "reason": "화질과 구도가 약해 곤약면과 채소를 구분하기 어렵습니다.",
-      "replacementBrief": "투명한 곤약면과 다채로운 채소가 깨끗한 볼에 담긴 가벼운 샐러드"
-    }
+    "review": {
+      "status": "approved",
+      "reviewedAt": "2026-07-21",
+      "reason": "투명한 곤약면과 다채로운 채소가 선명하게 구분되는 샐러드 사진"
+    },
+    "manualReview": null
   },
   {
     "index": 109,
@@ -2127,24 +2113,20 @@
     "name": "연어구이정식",
     "category": "일식",
     "image": {
-      "url": "https://upload.wikimedia.org/wikipedia/commons/9/9c/Grilled_Salmon_and_Ochazuke_Set_in_Melbourne.jpg",
-      "sourceName": "Wikimedia Commons",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Grilled_Salmon_and_Ochazuke_Set_in_Melbourne.jpg",
-      "title": "Grilled Salmon and Ochazuke Set in Melbourne.jpg"
+      "url": "./assets/menu-reviewed/grilled-salmon-set.jpg",
+      "sourceName": "밥픽 제작 이미지",
+      "sourceUrl": "",
+      "title": "연어구이정식 대표 이미지"
     },
     "flags": [
-      "quality-improvement",
-      "medium"
+      "approved"
     ],
-    "review": null,
-    "manualReview": {
-      "id": "jp-017",
-      "name": "연어구이정식",
-      "priority": "medium",
-      "status": "quality-improvement",
-      "reason": "조명이 어둡고 구도가 멀어 연어구이 정식이 돋보이지 않습니다.",
-      "replacementBrief": "노릇한 연어구이와 밥, 미소국, 반찬이 밝게 보이는 일본식 정식"
-    }
+    "review": {
+      "status": "approved",
+      "reviewedAt": "2026-07-21",
+      "reason": "연어구이와 밥, 미소국, 반찬이 밝고 정갈하게 보이는 정식 사진"
+    },
+    "manualReview": null
   },
   {
     "index": 134,
@@ -2668,24 +2650,20 @@
     "name": "샐러드랩",
     "category": "건강식",
     "image": {
-      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Veggie_Salad_and_Low_Carb_Wrap_%285180411342%29.jpg/960px-Veggie_Salad_and_Low_Carb_Wrap_%285180411342%29.jpg",
-      "sourceName": "Wikimedia Commons",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Veggie_Salad_and_Low_Carb_Wrap_(5180411342).jpg",
-      "title": "Veggie Salad and Low Carb Wrap (5180411342).jpg"
+      "url": "./assets/menu-reviewed/salad-wrap.jpg",
+      "sourceName": "밥픽 제작 이미지",
+      "sourceUrl": "",
+      "title": "샐러드랩 대표 이미지"
     },
     "flags": [
-      "quality-improvement",
-      "medium"
+      "approved"
     ],
-    "review": null,
-    "manualReview": {
-      "id": "hl-016",
-      "name": "샐러드랩",
-      "priority": "medium",
-      "status": "quality-improvement",
-      "reason": "랩의 단면과 신선한 속재료가 충분히 보이지 않습니다.",
-      "replacementBrief": "채소와 닭고기가 가득한 랩을 반으로 잘라 단면이 보이는 사진"
-    }
+    "review": {
+      "status": "approved",
+      "reviewedAt": "2026-07-21",
+      "reason": "닭고기와 채소가 가득한 랩 단면이 선명하게 보이는 사진"
+    },
+    "manualReview": null
   },
   {
     "index": 167,
@@ -3390,8 +3368,8 @@
     ],
     "review": {
       "status": "approved",
-      "reviewedAt": "2026-07-19",
-      "reason": "메뉴명, 구성, 음식 중심 구도와 식욕도를 대조해 승인한 밥픽 제작 이미지"
+      "reviewedAt": "2026-07-26",
+      "reason": "보리밥과 우렁강된장, 여러 나물 반찬과 쌈 채소가 함께 보이는 한 상 정식 사진"
     },
     "manualReview": null
   },
@@ -3659,24 +3637,20 @@
     "name": "한솥도시락",
     "category": "한식",
     "image": {
-      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Convenience_Store_LunchBox_03_%2833427954622%29.jpg/960px-Convenience_Store_LunchBox_03_%2833427954622%29.jpg",
-      "sourceName": "Wikimedia Commons",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Convenience_Store_LunchBox_03_(33427954622).jpg",
-      "title": "Convenience Store LunchBox 03 (33427954622).jpg"
+      "url": "./assets/menu-reviewed/hansot-lunchbox.jpg",
+      "sourceName": "밥픽 제작 이미지",
+      "sourceUrl": "",
+      "title": "한솥도시락 대표 이미지"
     },
     "flags": [
-      "quality-improvement",
-      "medium"
+      "approved"
     ],
-    "review": null,
-    "manualReview": {
-      "id": "top-025",
-      "name": "한솥도시락",
-      "priority": "medium",
-      "status": "quality-improvement",
-      "reason": "편의점 도시락과 라면이 함께 보여 메뉴명과 브랜드 인상이 흐립니다.",
-      "replacementBrief": "따뜻한 밥과 고기 반찬, 튀김, 김치가 칸별로 담긴 프랜차이즈 도시락"
-    }
+    "review": {
+      "status": "approved",
+      "reviewedAt": "2026-07-21",
+      "reason": "밥과 고기 반찬, 튀김, 달걀, 김치가 칸별로 담긴 따뜻한 도시락 사진"
+    },
+    "manualReview": null
   },
   {
     "index": 228,
@@ -3744,24 +3718,20 @@
     "name": "장어덮밥",
     "category": "일식",
     "image": {
-      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Unagi_don_%283249793932%29.jpg/960px-Unagi_don_%283249793932%29.jpg",
-      "sourceName": "Wikimedia Commons",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Unagi_don_(3249793932).jpg",
-      "title": "Unagi don (3249793932).jpg"
+      "url": "./assets/menu-reviewed/unagi-don.jpg",
+      "sourceName": "밥픽 제작 이미지",
+      "sourceUrl": "",
+      "title": "장어덮밥 대표 이미지"
     },
     "flags": [
-      "quality-improvement",
-      "medium"
+      "approved"
     ],
-    "review": null,
-    "manualReview": {
-      "id": "top-030",
-      "name": "장어덮밥",
-      "priority": "medium",
-      "status": "quality-improvement",
-      "reason": "조명이 어둡고 장어의 윤기와 구운 결이 잘 드러나지 않습니다.",
-      "replacementBrief": "윤기 있는 양념 장어구이가 밥 위를 가득 덮은 밝고 정갈한 장어덮밥"
-    }
+    "review": {
+      "status": "approved",
+      "reviewedAt": "2026-07-21",
+      "reason": "윤기와 구운 결이 살아 있는 장어가 밥 위를 가득 덮은 밝은 사진"
+    },
+    "manualReview": null
   },
   {
     "index": 233,

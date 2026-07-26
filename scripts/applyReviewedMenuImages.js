@@ -1,6 +1,10 @@
 const fs = require("fs");
 const path = require("path");
-const generatedImageBatch = require("./generatedImageBatch20260719");
+const generatedImageBatch = [
+  ...require("./generatedImageBatch20260719"),
+  ...require("./generatedImageQualityBatch20260721"),
+  ...require("./generatedImagePolishBatch20260726"),
+];
 
 const projectRoot = path.resolve(__dirname, "..");
 const menuPath = path.join(projectRoot, "src/data/menus.json");
@@ -11,8 +15,8 @@ const generatedBatchReviews = Object.fromEntries(generatedImageBatch.map((item) 
   item.id,
   {
     imageUrl: `./assets/menu-reviewed/${item.filename}.jpg`,
-    reason: "메뉴명, 구성, 음식 중심 구도와 식욕도를 대조해 승인한 밥픽 제작 이미지",
-    reviewedAt: "2026-07-19",
+    reason: item.reason || "메뉴명, 구성, 음식 중심 구도와 식욕도를 대조해 승인한 밥픽 제작 이미지",
+    reviewedAt: item.reviewedAt || "2026-07-19",
   },
 ]));
 

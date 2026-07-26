@@ -1362,8 +1362,27 @@ const sourceMenus = JSON.parse(fs.readFileSync(sourcePath, "utf8"));
 const newMenuByName = new Map(newMenus.map((menu) => [menu.name, menu]));
 const existingNames = new Set(sourceMenus.map((menu) => menu.name));
 const additions = newMenus.filter((menu) => !existingNames.has(menu.name));
+
+function mergeGeneratedMenu(existingMenu, generatedMenu) {
+  const mergedMenu = { ...existingMenu, ...generatedMenu };
+  if (existingMenu.imageReview?.status !== "approved") return mergedMenu;
+
+  return {
+    ...mergedMenu,
+    imageUrl: existingMenu.imageUrl,
+    imageUrls: existingMenu.imageUrls,
+    imageSourceName: existingMenu.imageSourceName,
+    imageSourceUrl: existingMenu.imageSourceUrl,
+    imageTitle: existingMenu.imageTitle,
+    imageAuthor: existingMenu.imageAuthor,
+    imageLicense: existingMenu.imageLicense,
+    imageSearchKeywords: existingMenu.imageSearchKeywords,
+    imageReview: existingMenu.imageReview,
+  };
+}
+
 const mergedMenus = [
-  ...sourceMenus.map((menu) => (newMenuByName.has(menu.name) ? { ...menu, ...newMenuByName.get(menu.name) } : menu)),
+  ...sourceMenus.map((menu) => (newMenuByName.has(menu.name) ? mergeGeneratedMenu(menu, newMenuByName.get(menu.name)) : menu)),
   ...additions,
 ];
 
